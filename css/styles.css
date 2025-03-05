@@ -10,4 +10,8 @@ Accent Color (medium turquoise): #198080;
 body {
     background-color: #fffaf0;
     font-family: 'playfair display' serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 300;
+    color: #000000;
 }
