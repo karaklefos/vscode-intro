@@ -52,12 +52,12 @@ h1, h2, h3, h4 {
   }
   a:hover 
   a :focus{
-    color: #cc6540;
+    color: #146666;
     text-decoration: underline; /* Underlining when hovering over a link */
   }
   a:visited { /* visited link */
-    color: #ff7f50;
+    color: #F65078;
   }
   a:active { /* selected link */
-    color: #994c30;
+    color: #FF6723;
   }
