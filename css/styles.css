@@ -38,3 +38,9 @@ h1, h2, h3, h4 {
     font-size: 1.35em;
     font-weight: 400;
   }
+
+  /*Image Scaling */
+  img {
+    width: 100%;
+    height: auto;
+  }
