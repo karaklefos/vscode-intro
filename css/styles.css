@@ -50,7 +50,8 @@ h1, h2, h3, h4 {
     color: #198080;
     text-decoration: none; /* No underlining */
   }
-  a:hover {
+  a:hover 
+  a :focus{
     color: #cc6540;
     text-decoration: underline; /* Underlining when hovering over a link */
   }
