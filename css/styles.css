@@ -50,6 +50,12 @@ img {
   width: 100%;
   height: auto;
 }
+/* For LinkedIn and Behance */
+a img {
+  width: 100%;
+  max-width: 50px;
+  height: auto;
+}
 
 /* Links*/
 a {
