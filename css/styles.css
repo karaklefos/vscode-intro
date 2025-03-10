@@ -51,6 +51,12 @@ img {
   height: auto;
 }
 
+a img {
+  width: 100%;
+  max-width: 50px;
+  height: auto;
+}
+
 /* Links*/
 a {
   color: #198080;
