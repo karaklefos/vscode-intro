@@ -76,6 +76,11 @@ a img {
   margin: 5px;
 }
 
+/* Adjust LinkedIn icon specifically */
+.social-icons a[href*="linkedin"] img {
+  width: 35px; /* Slightly smaller to match Behance */
+}
+
 /* Links*/
 a {
   color: #198080;
