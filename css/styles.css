@@ -65,6 +65,17 @@ a img {
   height: auto;
 }
 
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 5px;
+}
+
 /* Links*/
 a {
   color: #198080;
