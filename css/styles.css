@@ -8,6 +8,10 @@ Accent Color (medium turquoise): #198080;
 Accent Color 2 (coral): #FF6723
 */
 
+/* Apply box-sizing to all elements */
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color: #fffaf0;
