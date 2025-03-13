@@ -157,3 +157,8 @@ background-color: #ff7f50;
 a:active {
   color: #FF6723;
 }
+
+/* Layout Styling */
+.container {
+  padding: 0 15px;
+}
