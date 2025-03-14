@@ -47,6 +47,14 @@ h1 {
   text-align: center;
 }
 
+#hero h2 {
+  text-align: center;
+}
+
+#hero p {
+  text-align: center;
+}
+
 .center {
   text-align: center;
 }
