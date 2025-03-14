@@ -53,6 +53,21 @@ nav > ul > li > a {
   color: #4a4a4a;
 }
 
+nav > ul > li a:hover,
+nav > ul > li a:focus {
+  color: #146666;
+  text-decoration: underline;
+}
+
+nav > ul > li a:visited {
+  color: #F65078;
+}
+
+nav > ul > li:active {
+  /* selected link */
+  color: #FF6723;
+}
+
 h1,
 h2,
 h3,
@@ -67,6 +82,10 @@ h1 {
 }
 
 /* Hero Section */
+
+#hero {
+  background-color: #B0B0B0;
+}
 #hero h1 {
   text-align: center;
 }
