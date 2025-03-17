@@ -251,6 +251,14 @@ a:active {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+  }
+  .logo {
+    display: block;
+    margin-left: 0; /*align to left */
+    margin-right: auto; /* ensure it doesn't stay centered */
+  }
 }
 
 /* ==============================
@@ -258,7 +266,6 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
 }
-
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
