@@ -139,7 +139,6 @@ h4 {
 #about-me h3 {
   margin-top: 0;
 }
-
 /*Image Scaling */
 img {
   width: 100%;
@@ -288,6 +287,15 @@ Medium devices (640px and larger)
 
   .col-md-6 {
     width: 50%;
+  }
+
+  #work-secondary {
+    padding-top: 110px;
+  }
+
+  /* to ensure the footer stays on its own line */
+  footer {
+    clear: both;
   }
 }
 
