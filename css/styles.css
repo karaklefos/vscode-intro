@@ -262,16 +262,19 @@ Medium devices (640px and larger)
     clear: both;
     display: table;
   }
+
   header {
     text-align: unset;
     padding: 20px 0 13px;
   }
+
   .logo {
     display: block;
     margin-left: 0; /*align to left */
     margin-right: auto; /* ensure it doesn't stay centered */
     float: left;
   }
+  
   nav {
     width: auto;
     float: right;
