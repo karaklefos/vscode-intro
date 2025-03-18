@@ -267,6 +267,10 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 4px;
   }
+
+  .col-md-6 {
+    width: 50%;
+  }
 }
 
 /* ==============================
