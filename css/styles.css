@@ -255,6 +255,7 @@ Medium devices (640px and larger)
 
   [class*=col-] {
     float: left;
+    padding: 0 10px;
   }
 
   .row::after {
@@ -274,7 +275,7 @@ Medium devices (640px and larger)
     margin-right: auto; /* ensure it doesn't stay centered */
     float: left;
   }
-  
+
   nav {
     width: auto;
     float: right;
