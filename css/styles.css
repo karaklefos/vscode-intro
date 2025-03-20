@@ -265,6 +265,12 @@ a:active {
 
 #work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
 
+/*Keyframes*/
+@keyframes color-change {
+  from {fill: #EB839C;}
+  to {fill: #fffaf0;}
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
