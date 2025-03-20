@@ -4,7 +4,7 @@ Background Color (floral white): #fffaf0;
 Background Secondary (soft grey): #B0B0B0
 Primary Color (black): #00000;
 Secondary Color (grey): #353535;
-Accent Color (blue): #3A88FF;
+Accent Color (blue): #094BAE;
 Accent Color 2 (coral): #FF6723
 */
 
@@ -169,7 +169,7 @@ a img {
 
 /* Links*/
 a {
-  color: #198080;
+  color: #094BAE;
   text-decoration: none;
   /* No underlining */
 }
@@ -194,7 +194,7 @@ a:active {
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #3A88FF;
+  background-color: #094BAE;
   color: #ffffff;
   /* needed to override the default link color */
   font-weight: 400;
@@ -230,7 +230,7 @@ a:active {
 }
 
 .button.resume {
-  background-color: #3A88FF;
+  background-color: #094BAE;
   color: #ffffff;
 }
 .button.resume:hover {
