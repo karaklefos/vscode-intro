@@ -152,6 +152,10 @@ a img {
   height: auto;
 }
 
+#my_profile_image {
+  width: 50%;
+  height: 50%;
+}
 /*For Animation */
 #austin_animation {
   width: 100%;
