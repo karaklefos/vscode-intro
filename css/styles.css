@@ -203,6 +203,7 @@ a:active {
   border-bottom: 2px solid #994c30;
   /* width of the border, type, color */
   transition: 0.2s opacity;
+  transition-property: opacity;
 }
 
 .button:hover {
