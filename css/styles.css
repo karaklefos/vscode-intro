@@ -23,7 +23,7 @@ body {
 }
 
 header {
-  background-color: #B0B0B0;
+  background-color: #E0E0E0;
   text-align: center;
   padding: 0 10px 0 10px;
   margin: 0px;
@@ -91,7 +91,7 @@ h1 {
 /* Hero Section */
 
 #hero {
-  background-color: #B0B0B0;
+  background-color: #D2D2D2;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -230,7 +230,7 @@ a:active {
 }
 
 .button.resume {
-  background-color: #094BAE;
+  background-color: #3A88FF;
   color: #ffffff;
 }
 .button.resume:hover {
