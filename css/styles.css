@@ -139,6 +139,7 @@ h4 {
 #about-me h3 {
   margin-top: 0;
 }
+
 /*Image Scaling */
 img {
   width: 100%;
@@ -151,6 +152,14 @@ a img {
   height: auto;
 }
 
+/*For Animation */
+#austin_animation {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Social Media Icons */
 .social-icons img {
   width: 40px;
   height: 40px;
