@@ -267,8 +267,9 @@ a:active {
 
 /*Keyframes*/
 @keyframes color-change {
-  from {fill: #EB839C;}
-  to {fill: #fffaf0;}
+  0% {fill: #EB839C;}
+  50% {fill: #FFF0FB;}
+  100% {fill: #fffaf0;}
 }
 
 /* ==============================
