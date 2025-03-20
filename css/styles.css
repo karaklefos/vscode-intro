@@ -271,6 +271,10 @@ a:active {
   50% {fill: #FFF0FB;}
   100% {fill: #fffaf0;}
 }
+.cloud {
+  animation: color-change 5s infinite;
+}
+
 
 /* ==============================
 Medium devices (640px and larger)
