@@ -265,13 +265,25 @@ a:active {
 
 #work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
 
-/*Keyframes*/
+/*Keyframes for Clouds*/
 @keyframes color-change {
   0% {fill: #EB839C;}
   50% {fill: #FFF0FB;}
   100% {fill: #fffaf0;}
 }
+
+/*Keyframes for Water*/
+@keyframes water-color-change {
+  0% { fill: #008080; } 
+  50% { fill: #ADD8E6; } 
+  100% { fill: #00008B; } 
+}
+
 .cloud {
+  animation: color-change 5s infinite;
+}
+
+.water {
   animation: color-change 5s infinite;
 }
 
