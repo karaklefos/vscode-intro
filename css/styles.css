@@ -265,17 +265,25 @@ a:active {
 
 #work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
 
-/*Keyframes for Water*/
-@keyframes water-color-change {
-  0% { fill: #ADD8E6; } 
-  50% { fill: #9AC3E3; } 
-  100% { fill: #4980DB; } 
+/*Keyframes for Sun*/
+@keyframes sun-color-change {
+  0% { fill: #F6B91F; } 
+  50% { fill: #FFF6E0; } 
+  100% { fill: #EB839C; } 
 }
 
-.water {
-  animation: water-color-change 5s linear infinite;
+.sun {
+  animation: sun-color-change 5s linear infinite;
 }
 
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
 
 /* ==============================
 Medium devices (640px and larger)
