@@ -167,8 +167,8 @@ a img {
 
 /* Social Media Icons */
 .social-icons img {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
 }
 
@@ -179,7 +179,7 @@ a img {
 
 /* Adjust LinkedIn icon specifically */
 .social-icons a[href*="linkedin"] img {
-  width: 35px; /* Slightly smaller to match Behance */
+  width: 45px; /* Slightly smaller to match Behance */
 }
 
 /* Links*/
