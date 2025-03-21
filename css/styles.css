@@ -84,7 +84,7 @@ h4 {
 
 h1 {
   font-size: 2.25em;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -119,7 +119,8 @@ h1 {
 
 h2 {
   font-size: 1.75em;
-  font-weight: 700;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 h3 {
