@@ -274,9 +274,9 @@ a:active {
 
 /*Keyframes for Water*/
 @keyframes water-color-change {
-  0% { fill: #008080; } 
-  50% { fill: #ADD8E6; } 
-  100% { fill: #00008B; } 
+  0% { fill: #ADD8E6; } 
+  50% { fill: #9AC3E3; } 
+  100% { fill: #4980DB; } 
 }
 
 .cloud {
@@ -284,7 +284,7 @@ a:active {
 }
 
 .water {
-  animation: color-change 5s infinite;
+  animation: water-color-change 5s infinite;
 }
 
 
