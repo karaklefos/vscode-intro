@@ -226,6 +226,10 @@ a:active {
   text-decoration: none;
 }
 
+.button:visited {
+  color: #ffffff
+}
+
 a:active {
   color: #FF6723;
 }
