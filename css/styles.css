@@ -297,8 +297,8 @@ a:active {
 
 /* Adjust the Austin animation */
 #austin_animation {
-  width: 80%; /* Make it smaller, adjust as needed */
-  max-width: 600px; /* Optional: set a maximum width */
+  width: 80%; 
+  max-width: 600px; 
   height: auto;
   display: block; /* Make it a block element */
   margin: 0 auto; /* Center it horizontally */
@@ -312,6 +312,14 @@ a:active {
   width: 80%; /* Match the animation width */
   max-width: 600px; /* Match the animation max-width */
   height: auto;
+}
+
+/* Ensure the row is centered and has a max width */
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+  max-width: 1200px; /* Adjust as needed */
+  margin: 25px auto; /* Center the row itself */
 }
 
 /* ==============================
@@ -362,6 +370,14 @@ Medium devices (640px and larger)
     margin: 0 auto;
   }
 
+  #work .row svg {
+    width: 100%;
+    max-width: 500px;
+}
+#work .row {
+    max-width: 1000px;
+}
+
   /* to ensure the footer stays on its own line */
   footer {
     clear: both;
@@ -384,6 +400,14 @@ Large devices (1024px or larger)
     max-width: 1200px; /* Adjust as needed */
     margin-left: auto;
     margin-right: auto;
+}
+
+#work .row svg {
+  width: 50%;
+  max-width: 400px;
+}
+#work .row {
+  max-width: 1200px;
 }
 }
 /* ==============================
