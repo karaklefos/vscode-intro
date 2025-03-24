@@ -160,9 +160,11 @@ a img {
 }
 
 #my_profile_image {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: auto;
+  max-width: 450px; 
 }
+
 /*For Animation */
 #austin_animation {
   width: 100%;
@@ -380,6 +382,11 @@ Medium devices (640px and larger)
     padding-top: 110px;
   }
 
+  
+    #work-secondary img { /* Target the img within work-secondary */
+        max-width: 300px; /* Adjust for medium screens */
+    }
+  
   #austin_animation {
     max-height: 100%;
     height: auto;
@@ -393,7 +400,7 @@ Medium devices (640px and larger)
 #work .row {
     max-width: 1000px;
 }
-
+  
   /* to ensure the footer stays on its own line */
   footer {
     clear: both;
