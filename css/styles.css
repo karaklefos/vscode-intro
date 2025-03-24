@@ -295,6 +295,25 @@ a:active {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
+/* Adjust the Austin animation */
+#austin_animation {
+  width: 80%; /* Make it smaller, adjust as needed */
+  max-width: 600px; /* Optional: set a maximum width */
+  height: auto;
+  display: block; /* Make it a block element */
+  margin: 0 auto; /* Center it horizontally */
+  object-fit: contain; /* Prevents distortion */
+}
+
+/* Adjust the SVG containing the animation */
+#work .row svg {
+  display: block; /* Make it a block element */
+  margin: 0 auto; /* Center it horizontally */
+  width: 80%; /* Match the animation width */
+  max-width: 600px; /* Match the animation max-width */
+  height: auto;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -338,9 +357,9 @@ Medium devices (640px and larger)
   }
 
   #austin_animation {
-    width: 100%;
     max-height: 100%;
     height: auto;
+    margin: 0 auto;
   }
 
   /* to ensure the footer stays on its own line */
