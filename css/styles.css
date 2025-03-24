@@ -103,14 +103,20 @@ h1 {
 
 #hero h1 {
   text-align: center;
+  margin-bottom: 5px;
+  line-height: 1.2;
 }
 
 #hero h2 {
   text-align: center;
+  margin-bottom: 5px;
+  line-height: 1.2;
 }
 
 #hero p {
   text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.2;
 }
 
 .center {
