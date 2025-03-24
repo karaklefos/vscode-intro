@@ -320,6 +320,8 @@ a:active {
   border-bottom: 1px solid #4a4a4a;
   max-width: 1200px; /* Adjust as needed */
   margin: 25px auto; /* Center the row itself */
+  display: flex;
+  justify-content: center;
 }
 
 /* ==============================
