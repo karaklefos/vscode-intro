@@ -405,7 +405,7 @@ Large devices (1024px or larger)
 }
 
 #work .row svg {
-  width: 50%;
+  width: 100%;
   max-width: 400px;
 }
 #work .row {
