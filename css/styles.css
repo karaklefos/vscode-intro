@@ -336,6 +336,10 @@ a:active {
   justify-content: center;
 }
 
+footer#contact .container a.button { /* Target the EMAIL ME button */
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
