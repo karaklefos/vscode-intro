@@ -380,7 +380,12 @@ Medium devices (640px and larger)
 
   .col-md-6 {
     width: 50%;
+    align-items: flex-start;
   }
+
+  .col-md-6 h3 { 
+    margin-top: 0; /* Remove default top margin */
+}
 
   #work-secondary {
     padding-top: 110px;
