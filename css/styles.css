@@ -394,11 +394,11 @@ Medium devices (640px and larger)
 #work-secondary .about-content picture {
   float: right; 
   margin-right: 20px; /* Add space between image and text */
-  max-width: 300px; /* Adjust as needed */
+  max-width: 350px; /* Adjust as needed */
 }
 
 #work-secondary img {
-  max-width: 300px; 
+  max-width: 350px; 
 }
 
   #austin_animation {
@@ -439,11 +439,11 @@ Large devices (1024px or larger)
 
 @media only screen and (min-width: 1024px) {
   #work-secondary .about-content picture {
-    max-width: 350px; 
+    max-width: 450px; 
   }
   
   #work-secondary img {
-    max-width: 350px; 
+    max-width: 450px; 
   }
 
 .container {
@@ -459,6 +459,7 @@ Large devices (1024px or larger)
 #work .row {
   max-width: 1200px;
 }
+
 }
 /* ==============================
 X-large devices (1440px or larger)
