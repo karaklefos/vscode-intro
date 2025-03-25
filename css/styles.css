@@ -429,11 +429,11 @@ Large devices (1024px or larger)
 }
 
 .col-md-6 h3 { 
-  margin-top: 10px; /* Remove default top margin */
+  margin-top: 10px; 
 }
 
 .container {
-    max-width: 1200px; /* Adjust as needed */
+    max-width: 1200px; 
     margin-left: auto;
     margin-right: auto;
 }
