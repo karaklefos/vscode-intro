@@ -400,16 +400,6 @@ Medium devices (640px and larger)
 #work-secondary img {
   max-width: 300px; 
 }
-}
-
-@media only screen and (min-width: 1024px) {
-#work-secondary .about-content picture {
-  max-width: 350px; 
-}
-
-#work-secondary img {
-  max-width: 350px; 
-}
 
   #austin_animation {
     max-height: 100%;
@@ -446,6 +436,15 @@ Large devices (1024px or larger)
 .col-md-6 h3 { 
   margin-top: 10px; 
 }
+
+@media only screen and (min-width: 1024px) {
+  #work-secondary .about-content picture {
+    max-width: 350px; 
+  }
+  
+  #work-secondary img {
+    max-width: 350px; 
+  }
 
 .container {
     max-width: 1200px; 
