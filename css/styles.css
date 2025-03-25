@@ -387,15 +387,30 @@ Medium devices (640px and larger)
     margin-top: 0; /* Remove default top margin */
 }
 
-  #work-secondary {
-    padding-top: 110px;
-  }
+#work-secondary {
+  padding-top: 110px;
+}
 
-  
-    #work-secondary img { /* Target the img within work-secondary */
-        max-width: 300px; /* Adjust for medium screens */
-    }
-  
+#work-secondary .about-content picture {
+  float: right; 
+  margin-right: 20px; /* Add space between image and text */
+  max-width: 300px; /* Adjust as needed */
+}
+
+#work-secondary img {
+  max-width: 300px; 
+}
+}
+
+@media only screen and (min-width: 1024px) {
+#work-secondary .about-content picture {
+  max-width: 350px; 
+}
+
+#work-secondary img {
+  max-width: 350px; 
+}
+
   #austin_animation {
     max-height: 100%;
     height: auto;
