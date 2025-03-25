@@ -428,6 +428,10 @@ Large devices (1024px or larger)
     width: 41.66666667%; /* Approximately 5/12 */
 }
 
+.col-md-6 h3 { 
+  margin-top: 10px; /* Remove default top margin */
+}
+
 .container {
     max-width: 1200px; /* Adjust as needed */
     margin-left: auto;
