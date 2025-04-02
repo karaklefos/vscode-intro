@@ -399,7 +399,9 @@ Medium devices (640px and larger)
 }
 
 #work-secondary img {
-  max-width: 350px; 
+  max-width: 80vw; 
+  display: block;
+  margin: 20px auto;
 }
 
   #austin_animation {
@@ -444,7 +446,7 @@ Large devices (1024px or larger)
   }
   
   #work-secondary img {
-    max-width: 450px; 
+    max-width: 90vw; 
   }
 
 .container {
