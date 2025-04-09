@@ -82,6 +82,10 @@ nav > ul > li:active {
   font-size: 24px;
 }
 
+.navtoggle.responsive li  {
+  display: block;
+}
+
 h1,
 h2,
 h3,
@@ -148,7 +152,7 @@ h4 {
 }
 
 #work-secondary {
-  padding-top: 180px;
+  padding-top: 62px;
 }
 
 #about-me h3 {
