@@ -74,6 +74,13 @@ nav > ul > li:active {
   color: #FF6723;
 }
 
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
 h1,
 h2,
 h3,
