@@ -383,6 +383,11 @@ Medium devices (640px and larger)
     margin-top: 4px;
   }
 
+  nav > ul {
+    /* Add this line */
+    margin: 1em 0;
+  }
+
   nav > ul > li {
     display: inline-block;
   }
