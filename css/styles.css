@@ -24,7 +24,6 @@ body {
 
 header {
   background-color: #E0E0E0;
-  text-align: center;
   padding: 0 10px 0 10px;
   margin: 0px;
   position: fixed;
@@ -49,8 +48,8 @@ nav > ul {
   padding: 0;
 }
 
-nav > ul > li {
-  display: inline-block;
+.navtoggle li:not(:last-child) {
+  display: none;
 }
 
 nav > ul > li > a {
@@ -374,6 +373,18 @@ Medium devices (640px and larger)
     width: auto;
     float: right;
     margin-top: 4px;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   #hero {
