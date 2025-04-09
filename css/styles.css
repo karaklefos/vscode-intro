@@ -46,6 +46,7 @@ header {
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .navtoggle li:not(:last-child) {
@@ -78,7 +79,7 @@ nav > ul > li:active {
   position: absolute;
   right: 0;
   top: 2px;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 h1,
