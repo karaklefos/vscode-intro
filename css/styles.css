@@ -96,6 +96,27 @@ nav > ul > li:active {
   padding: 0 0 10px;
 }
 
+.navtoggle .icon {
+  position: absolute;
+  right: 0;
+  top: 15px; /* Adjust top as needed */
+  font-size: 24px;
+}
+
+/* Default hamburger icon */
+.navtoggle .icon i::before {
+  content: "\f0c9"; /* Font Awesome hamburger icon (bars) */
+  font-family: "Font Awesome 6 Free"; /* Or your specific Font Awesome font family */
+  font-weight: 900; /* If using a specific weight */
+}
+
+/* "X" icon when the menu is open */
+.navtoggle.responsive .icon i::before {
+  content: "\f00d"; /* Font Awesome "X" icon */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
 h1,
 h2,
 h3,
