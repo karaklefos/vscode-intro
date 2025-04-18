@@ -175,11 +175,6 @@ img {
   height: auto;
 }
 
-a img {
-  width: 100%;
-  max-width: 50px;
-  height: auto;
-}
 
 #my_profile_image {
   width: 100%;
