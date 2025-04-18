@@ -210,6 +210,12 @@ img {
   margin: 5px;
 }
 
+/* Social Media Icons (for Font Awesome) */
+footer#contact .container .social-icons a i.fa-brands {
+  font-size: 50px; /* Adjust the size of the icons */
+  color: #333; /* Adjust the color */
+}
+
 /* Links*/
 a {
   color: #094BAE;
