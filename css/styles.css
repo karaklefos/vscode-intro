@@ -165,6 +165,14 @@ h4 {
   padding-top: 62px;
 }
 
+#work-secondary .about-content picture img{
+  max-width: 250px; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  float: none;
+  margin: 0 auto;
+}
+
 #about-me h3 {
   margin-top: 0;
 }
@@ -426,10 +434,10 @@ Medium devices (640px and larger)
   padding-top: 110px;
 }
 
-#work-secondary .about-content picture {
+#work-secondary .about-content picture img{
   float: right; 
   margin-right: 20px; /* Add space between image and text */
-  max-width: 350px; /* Adjust as needed */
+  max-width: 300px; /* Adjust as needed */
 }
 
 #work-secondary img {
