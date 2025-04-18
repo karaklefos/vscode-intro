@@ -1,6 +1,6 @@
 /*
 Colors used:
-Background Color (floral white): #fffaf0;
+Background Color (floral white): #fafafa;
 Background Secondary (soft grey): #B0B0B0
 Primary Color (black): #00000;
 Secondary Color (grey): #353535;
@@ -14,7 +14,7 @@ Accent Color 2 (coral): #FF6723
 }
 
 body {
-  background-color: #fffaf0;
+  background-color: #fafafa;
   font-family: 'Instrument Sans';
   font-size: 1em;
   font-weight: 200;
