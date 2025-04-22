@@ -636,6 +636,11 @@ Large devices (1024px or larger)
 #work .row {
   max-width: 1200px;
 }
+
+.mockup-gallery-colors {
+  width: 100%;
+  height: 50%; 
+}
 }
 }
 /* ==============================
