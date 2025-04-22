@@ -351,7 +351,9 @@ MOD MUSE
   color: #555;
 }
 
-/*Keyframes for Sun*/
+/* ===============================
+Keyframes for Sun
+=================================*/
 @keyframes sun-color-change {
   0% { fill: #F6B91F; } 
   50% { fill: #FFF6E0; } 
