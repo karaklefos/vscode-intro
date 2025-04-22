@@ -597,9 +597,9 @@ main#work-secondary .container {
   margin-right: auto; /* Center the container if you set a max-width */
 }
 
-.botanybuddy-logo img {
-  max-width: 10px;
-  height: auto;
+main#work-secondary .container .botanybuddy-logo img { /* Corrected class name to match HTML */
+  max-width: 250px; /* For medium and larger screens */
+  width: auto; /* Ensure it can shrink */
 }
   
   /* to ensure the footer stays on its own line */
