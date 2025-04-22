@@ -537,6 +537,11 @@ Medium devices (640px and larger)
 #work .row {
     max-width: 1000px;
 }
+
+.modmuse-logo img {
+  width: 350px;
+  height: auto;
+}
   
   /* to ensure the footer stays on its own line */
   footer {
