@@ -379,6 +379,16 @@ MOD MUSE
   overflow-x: hidden; /* Prevent container scrollbar */
 }
 
+.mockup-gallery-colors {
+  display: flex; 
+  overflow-x: auto; 
+  scroll-snap-type: x mandatory; /* Make scrolling snap to each image */
+  margin-bottom: 20px; /* Add some space below the gallery */
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+  width: 100%;
+  height: 150px;
+}
+
 /* ===============================
 Keyframes for Sun
 =================================*/
@@ -541,6 +551,11 @@ Medium devices (640px and larger)
 .modmuse-logo img {
   width: 350px;
   height: auto;
+}
+
+.mockup-gallery-colors {
+  width: 100%;
+  height: 250px; 
 }
   
   /* to ensure the footer stays on its own line */
