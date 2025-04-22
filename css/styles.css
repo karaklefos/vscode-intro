@@ -415,6 +415,11 @@ BOTANY BUDDY
   color: #555;
 }
 
+.botanybuddy-logo img {
+  max-width: 150px; /* Adjust to your desired maximum width */
+  height: auto; /* Maintain aspect ratio */
+}
+
 /* ===============================
 Keyframes for Sun
 =================================*/
@@ -590,6 +595,11 @@ main#work-secondary .container {
   max-width: 90vw; /* Optional: Set a maximum width for your content */
   margin-left: auto; /* Center the container if you set a max-width */
   margin-right: auto; /* Center the container if you set a max-width */
+}
+
+.botanybuddy-logo img {
+  max-width: 10px;
+  height: auto;
 }
   
   /* to ensure the footer stays on its own line */
