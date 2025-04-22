@@ -351,6 +351,34 @@ MOD MUSE
   color: #555;
 }
 
+.mockup-gallery {
+  display: flex; /* Arrange images in a row */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scroll-snap-type: x mandatory; /* Make scrolling snap to each image */
+  margin-bottom: 20px; /* Add some space below the gallery */
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+}
+
+.mockup-gallery img {
+  width: 200px;
+  max-width: 400px;
+  height: auto; 
+  flex-shrink: 0;
+  margin-right: 20px; /* Add spacing between images */
+  scroll-snap-align: start; /* Snap to the start of each image */
+}
+
+/* Remove the margin-right from the last image */
+.mockup-gallery img:last-child {
+  margin-right: 0;
+}
+
+/* Optional: Style the container further if needed */
+.container {
+  /* Your existing container styles */
+  overflow-x: hidden; /* Prevent container scrollbar */
+}
+
 /* ===============================
 Keyframes for Sun
 =================================*/
@@ -505,7 +533,7 @@ Medium devices (640px and larger)
   #work .row svg {
     width: 100%;
     max-width: 500px;
-}
+  }
 #work .row {
     max-width: 1000px;
 }
@@ -554,11 +582,10 @@ Large devices (1024px or larger)
 #work .row {
   max-width: 1200px;
 }
-
+}
 }
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
-}
 }
