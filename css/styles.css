@@ -357,6 +357,7 @@ MOD MUSE
   scroll-snap-type: x mandatory; /* Make scrolling snap to each image */
   margin-bottom: 20px; /* Add some space below the gallery */
   -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+  align-items: flex-start;
 }
 
 .mockup-gallery img {
