@@ -421,9 +421,11 @@ BOTANY BUDDY
 }
 
 
-/* ===============================
+/* ==========================================
 RECIFREE
-=================================*/
+===========================================*/
+
+/*for the process sections */
 .process-steps-recifree {
   list-style: none;
   padding: 0;
@@ -447,6 +449,7 @@ RECIFREE
   color: #555;
 }
 
+/* to ensure the list is properly in each container */
 .users-can-list li {
   background-image: none; /* Remove the gradient */
   border: none; /* Remove the border */
@@ -456,6 +459,7 @@ RECIFREE
   margin-bottom: 5px; /* Add some spacing between list items if desired */
 }
 
+/* for the user research section */
 .process-steps-recifree-user-research {
   list-style: none;
   padding: 0;
@@ -479,6 +483,7 @@ RECIFREE
   color: #555;
 }
 
+/* for the sythesis section */
 .process-steps-recifree-synthesis {
   list-style: none; /* Remove default bullets from the outer list */
   padding: 0;
