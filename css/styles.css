@@ -479,6 +479,52 @@ RECIFREE
   color: #555;
 }
 
+.process-steps-recifree-synthesis {
+  list-style: none; /* Remove default bullets from the outer list */
+  padding: 0;
+  display: grid; /* Keep grid for "Patterns" and "Frustrations" layout */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+/* Style the outer list items ("Patterns" and "Frustrations" boxes) */
+.process-steps-recifree-synthesis > li {
+  background-image: linear-gradient(to bottom, #FFC27E, #FFBCBC);
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: left; /* Align text within the boxes to the left */
+  border-radius: 100px;
+}
+
+.process-steps-recifree-synthesis > li h3 {
+  margin-top: 0;
+  color: #555;
+  margin-bottom: 10px; /* Add space below the heading */
+  text-align: center; /* Center the headings */
+}
+
+/* Style the inner unordered list for a normal list appearance */
+.process-steps-recifree-synthesis > li > ul.users-can-list {
+  list-style-type: disc; /* Or none if you don't want bullets */
+  padding-left: 20px; /* Add some indentation for the list items */
+}
+
+/* Style the list items within the inner unordered list */
+.process-steps-recifree-synthesis > li > ul.users-can-list > li {
+  background-image: none; /* Remove background from inner list items */
+  border: none; /* Remove border from inner list items */
+  padding: 5px 0; /* Add some vertical padding for spacing */
+  text-align: left; /* Ensure text is left-aligned */
+  border-radius: 0; /* Remove border-radius */
+}
+
+/* Style the paragraph within "Frustrations" */
+.process-steps-recifree-synthesis > li > p {
+  padding: 5px 0; /* Add some vertical padding */
+  text-align: left;
+}
+
 /* ===============================
 Keyframes for Sun
 =================================*/
