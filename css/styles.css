@@ -456,6 +456,28 @@ RECIFREE
   margin-bottom: 5px; /* Add some spacing between list items if desired */
 }
 
+.process-steps-recifree-user-research {
+  list-style: none;
+  padding: 0;
+  display: grid; /* Change to grid */
+  grid-template-columns: repeat(2, 1fr); /* Create two equal columns */
+  gap: 20px; /* Adjust spacing as needed */
+  margin-bottom: 30px;
+}
+
+.process-steps-recifree-user-research li {
+  background-image: linear-gradient(to bottom, #FFC27E, #F46651);
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+  /* Remove flex: 1; */
+}
+
+.process-steps-recifree-user-research h3 {
+  margin-top: 0;
+  color: #555;
+}
 
 /* ===============================
 Keyframes for Sun
