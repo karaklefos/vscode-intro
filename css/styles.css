@@ -447,6 +447,15 @@ RECIFREE
   color: #555;
 }
 
+.users-can-list li {
+  background-image: none; /* Remove the gradient */
+  border: none; /* Remove the border */
+  padding: 0; /* Remove the padding */
+  text-align: left; /* Adjust text alignment if needed */
+  border-radius: 0; /* Remove the border-radius */
+  margin-bottom: 5px; /* Add some spacing between list items if desired */
+}
+
 
 /* ===============================
 Keyframes for Sun
