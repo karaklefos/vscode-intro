@@ -387,7 +387,7 @@ MOD MUSE
   margin-bottom: 20px; /* Add some space below the gallery */
   -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
   width: 100%;
-  height: 150px;
+  align-items: flex-start;
 }
 
 /* ===============================
@@ -639,9 +639,9 @@ footer#contact .container a.button { /* Target the EMAIL ME button */
   margin-bottom: 20px; /* Adjust as needed */
 }
 
-/* ==============================
+/* ===========================================================================
 Medium devices (640px and larger)
-================================= */
+============================================================================ */
 @media only screen and (min-width: 640px) {
 
   [class*=col-] {
@@ -740,9 +740,20 @@ Medium devices (640px and larger)
 }
 
 .mockup-gallery-colors {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  margin-bottom: 20px;
+  -webkit-overflow-scrolling: touch;
   width: 100%;
-  height: 250px; 
+  /* Remove the fixed height */
 }
+
+.mockup-gallery-colors img { /* Target the image elements */
+  height: auto; /* Maintain natural height */
+  max-height: 80px; /* Adjust this value as needed for medium screens */
+}
+
 
 main#work-secondary .container {
   padding-left: 20px; /* Adjust this value for the desired left spacing */
@@ -763,9 +774,9 @@ main#work-secondary .container .botanybuddy-logo img { /* Corrected class name t
   }
 }
 
-/* ==============================
+/* =====================================================================
 Large devices (1024px or larger)
-================================= */
+====================================================================== */
 @media only screen and (min-width: 1024px) {
   .col-lg-7 {
     width: 58.33333333%; /* Approximately 7/12 */
@@ -805,6 +816,21 @@ Large devices (1024px or larger)
 .mockup-gallery-colors {
   width: 100%;
   height: 50%; 
+}
+
+.mockup-gallery-colors {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  margin-bottom: 20px;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  /* Remove the percentage height */
+}
+
+.mockup-gallery-colors img { /* Target the image elements */
+  height: auto; /* Maintain natural height */
+  max-height: 100px; /* Adjust this value as needed for large screens */
 }
 }
 }
