@@ -530,6 +530,25 @@ RECIFREE
   text-align: left;
 }
 
+/* for user personas */
+.mockup-gallery-personas {
+  display: flex; /* Arrange images in a row */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scroll-snap-type: x mandatory; /* Make scrolling snap to each image */
+  margin-bottom: 20px; /* Add some space below the gallery */
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+}
+
+.mockup-gallery-personas img {
+  width: 400px;
+  max-width: 400px;
+  height: auto; 
+  flex-shrink: 0;
+  margin-right: 20px; /* Add spacing between images */
+  scroll-snap-align: start; /* Snap to the start of each image */
+}
+
+
 /* ===============================
 Keyframes for Sun
 =================================*/
