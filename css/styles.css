@@ -746,12 +746,14 @@ Medium devices (640px and larger)
   margin-bottom: 20px;
   -webkit-overflow-scrolling: touch;
   width: 100%;
-  /* Remove the fixed height */
+  align-items: center; /* Optional: Center images vertically within the container */
 }
 
-.mockup-gallery-colors img { /* Target the image elements */
-  height: auto; /* Maintain natural height */
-  max-height: 80px; /* Adjust this value as needed for medium screens */
+.mockup-gallery-colors img {
+  height: auto;
+  max-height: 160px; /* Adjust as needed */
+  max-width: 100%; /* Ensure images don't exceed container width */
+  object-fit: contain; /* Maintain aspect ratio within the max dimensions */
 }
 
 
@@ -814,23 +816,20 @@ Large devices (1024px or larger)
 }
 
 .mockup-gallery-colors {
-  width: 100%;
-  height: 50%; 
-}
-
-.mockup-gallery-colors {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   margin-bottom: 20px;
   -webkit-overflow-scrolling: touch;
   width: 100%;
-  /* Remove the percentage height */
+  align-items: center; /* Optional: Center images vertically within the container */
 }
 
-.mockup-gallery-colors img { /* Target the image elements */
-  height: auto; /* Maintain natural height */
-  max-height: 100px; /* Adjust this value as needed for large screens */
+.mockup-gallery-colors img {
+  height: auto;
+  max-height: 200px; /* Adjust as needed */
+  max-width: 100%; /* Ensure images don't exceed container width */
+  object-fit: contain; /* Maintain aspect ratio within the max dimensions */
 }
 }
 }
