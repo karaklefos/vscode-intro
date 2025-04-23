@@ -548,6 +548,31 @@ RECIFREE
   scroll-snap-align: start; /* Snap to the start of each image */
 }
 
+/*=====================================
+SAVVY PIG
+======================================*/
+.process-steps-savvypig {
+  list-style: none;
+  padding: 0;
+  display: grid; /* Change to grid */
+  grid-template-columns: repeat(2, 1fr); /* Create two equal columns */
+  gap: 20px; /* Adjust spacing as needed */
+  margin-bottom: 30px;
+}
+
+.process-steps-savvypig li {
+  background-image: linear-gradient(to bottom, #BAEDDB, #46AA87);
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  border-radius: 80px;
+  /* Remove flex: 1; */
+}
+
+.process-steps-savvypig h3 {
+  margin-top: 0;
+  color: #555;
+}
 
 /* ===============================
 Keyframes for Sun
