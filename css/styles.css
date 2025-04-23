@@ -575,6 +575,24 @@ SAVVY PIG
   color: #555;
 }
 
+.mockup-gallery-desktop {
+  display: flex; /* Arrange images in a row */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scroll-snap-type: x mandatory; /* Make scrolling snap to each image */
+  margin-bottom: 20px; /* Add some space below the gallery */
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+  align-items: flex-start;
+}
+
+.mockup-gallery-desktop img {
+  width: 600px;
+  max-width: 600px;
+  height: auto; 
+  flex-shrink: 0;
+  margin-right: 20px; /* Add spacing between images */
+  scroll-snap-align: start; /* Snap to the start of each image */
+}
+
 /* ===============================
 Keyframes for Sun
 =================================*/
