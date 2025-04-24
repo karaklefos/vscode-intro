@@ -108,6 +108,7 @@ nav > ul > li:active {
   content: "\f0c9"; /* Font Awesome hamburger icon (bars) */
   font-family: "Font Awesome 6 Free"; /* Or your specific Font Awesome font family */
   font-weight: 900; /* If using a specific weight */
+  color: #333;
 }
 
 /* "X" icon when the menu is open */
@@ -297,18 +298,19 @@ a:active {
 }
 .button.contact:hover {
   background-color: #ff7f50;
-  color: #ffffff;
+  color: #3A3A3A;
 }
 a:active {
   color: #FF6723
 }
 
 .button.resume {
-  background-color: #3A88FF;
+  background-color: #0E6DFF;
   color: #ffffff;
 }
 .button.resume:hover {
 background-color: #ff7f50;
+color: #3A3A3A
 }
 a:active {
   color: #FF6723;
