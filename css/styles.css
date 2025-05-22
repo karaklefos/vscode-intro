@@ -183,6 +183,11 @@ h4 {
   font-weight: 400;
 }
 
+h5 {
+  font-size: 1.50em;
+  font-weight: 300;
+}
+
 #work-secondary {
   padding-top: 62px;
 }
