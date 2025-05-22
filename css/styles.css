@@ -298,7 +298,6 @@ a:active {
 .button.contact {
   background-color: transparent;
   color: #ff7f50;
-  text-transform: uppercase;
   border: 2px solid #ff7f50;
 }
 .button.contact:hover {
