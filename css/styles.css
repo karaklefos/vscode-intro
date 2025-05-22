@@ -22,6 +22,10 @@ body {
   color: #000000;
 }
 
+strong, b {
+  font-weight: 700; /* Or 600, 800, 900 for different levels of bold */
+}
+
 header {
   background-color: #D2D2D2;
   padding: 10px 0 10px;
