@@ -699,6 +699,14 @@ body {
     margin: 2rem auto; /* Centers the container horizontally */
 }
 
+/* Group for each circle and its arrow */
+.process-item-group {
+    display: flex; /* Makes the circle and arrow stay on the same line */
+    align-items: center; /* Vertically aligns circle and arrow */
+    gap: 0.5rem; /* Small gap between the circle and the arrow */
+    flex-shrink: 0; /* Prevents groups from shrinking */
+}
+
 /* Individual Process Step (wrapper for each circle and its text) */
 .process-step {
     display: flex;
@@ -733,7 +741,7 @@ body {
 /* Arrow Separator */
 .arrow-separator {
     /* Hidden by default on small screens (mobile) */
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 2rem; /* Width for the arrow container (approx. 32px) */
@@ -959,6 +967,11 @@ main#work-secondary .container .botanybuddy-logo img { /* Corrected class name t
 
     .arrow-separator {
         display: flex; /* Display arrows as flex items on medium screens and up */
+    } 
+
+    .process-container {
+        justify-content: flex-start; /* Align items to the left on small screens */
+        padding: 0 0.5rem; /* Add a small horizontal padding to prevent touching screen edges */
     }
 }
 
