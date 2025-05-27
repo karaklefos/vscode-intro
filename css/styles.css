@@ -677,7 +677,89 @@ PORTFOLIO WEBSITE
   text-align: center; /* Center the headings */
 }
 
+/* FOR DESIGN PROCESS SECTION*/
+/* Base Body Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f4f8;
+    min-height: 100vh; /* Ensures content takes at least the full viewport height */
+    margin: 0;
+    padding: 1rem; /* Adds some padding around the content */
+}
 
+/* Process Container (the main wrapper for all steps) */
+.process-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto new lines on smaller screens */
+    justify-content: center;
+    align-items: center;
+    /* Combines row-gap and column-gap */
+    /* row-gap: 1.5rem (approx. 24px) for vertical spacing when wrapped */
+    /* column-gap: 2rem (approx. 32px) for horizontal spacing */
+    gap: 1.5rem 2rem;
+    max-width: 1024px; /* Limits the maximum width of the container */
+    margin: auto; /* Centers the container horizontally */
+}
+
+/* Individual Process Step (wrapper for each circle and its text) */
+.process-step {
+    display: flex;
+    flex-direction: column; /* Stacks content vertically if needed, though mostly for centering */
+    align-items: center;
+    flex-shrink: 0; /* Prevents the circles from shrinking on smaller screens */
+}
+
+/* Circle Content Styling */
+.circle-content {
+    width: 7rem; /* Base width for circles on small screens (approx. 112px) */
+    height: 7rem; /* Base height for circles on small screens (approx. 112px) */
+    border-radius: 50%; /* Makes the div a perfect circle */
+    border: 2px solid #3b82f6; /* Blue border */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #1d4ed8; /* Darker blue text */
+    font-weight: 600; /* Semi-bold text */
+    font-size: 1rem; /* Base font size (approx. 16px) */
+    /* Subtle shadow for depth */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 300ms ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for circles */
+.circle-content:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Larger shadow on hover */
+}
+
+/* Arrow Separator */
+.arrow-separator {
+    /* Hidden by default on small screens (mobile) */
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 2rem; /* Width for the arrow container (approx. 32px) */
+    height: 2rem; /* Height for the arrow container (approx. 32px) */
+}
+
+.arrow-separator svg {
+    width: 2rem; /* SVG icon width */
+    height: 2rem; /* SVG icon height */
+    stroke: #3b82f6; /* SVG icon color (blue) */
+}
+
+/* Responsive adjustments for medium screens (768px and up) */
+@media (min-width: 768px) {
+    .circle-content {
+        width: 8rem; /* Larger width for circles on medium screens (approx. 128px) */
+        height: 8rem; /* Larger height for circles on medium screens (approx. 128px) */
+        font-size: 1.125rem; /* Larger font size for circles on medium screens (approx. 18px) */
+    }
+
+    .arrow-separator {
+        display: flex; /* Display arrows as flex items on medium screens and up */
+    }
+}
 
 
 
