@@ -694,11 +694,9 @@ body {
     justify-content: center;
     align-items: center;
     /* Combines row-gap and column-gap */
-    /* row-gap: 1.5rem (approx. 24px) for vertical spacing when wrapped */
-    /* column-gap: 2rem (approx. 32px) for horizontal spacing */
     gap: 1.5rem 2rem;
-    max-width: 1024px; /* Limits the maximum width of the container */
-    margin: auto; /* Centers the container horizontally */
+    max-width: 1200px; /* Limits the maximum width of the container */
+    margin: 2rem auto; /* Centers the container horizontally */
 }
 
 /* Individual Process Step (wrapper for each circle and its text) */
@@ -748,18 +746,6 @@ body {
     stroke: #3b82f6; /* SVG icon color (blue) */
 }
 
-/* Responsive adjustments for medium screens (768px and up) */
-@media (min-width: 768px) {
-    .circle-content {
-        width: 8rem; /* Larger width for circles on medium screens (approx. 128px) */
-        height: 8rem; /* Larger height for circles on medium screens (approx. 128px) */
-        font-size: 1.125rem; /* Larger font size for circles on medium screens (approx. 18px) */
-    }
-
-    .arrow-separator {
-        display: flex; /* Display arrows as flex items on medium screens and up */
-    }
-}
 
 
 
@@ -963,6 +949,17 @@ main#work-secondary .container .botanybuddy-logo img { /* Corrected class name t
   footer {
     clear: both;
   }
+
+  /*for DESIGN PROCESS in Portfolio Case Study*/
+  .circle-content {
+        width: 8rem; /* Larger width for circles on medium screens (approx. 128px) */
+        height: 8rem; /* Larger height for circles on medium screens (approx. 128px) */
+        font-size: 1.125rem; /* Larger font size for circles on medium screens (approx. 18px) */
+    }
+
+    .arrow-separator {
+        display: flex; /* Display arrows as flex items on medium screens and up */
+    }
 }
 
 /* =====================================================================
