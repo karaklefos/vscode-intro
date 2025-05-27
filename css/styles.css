@@ -672,9 +672,9 @@ PORTFOLIO WEBSITE
 
 .process-steps-portfolio-role > li h3 {
   margin-top: 0;
-  color: #555;
+  color: black;
   margin-bottom: 10px;
-  text-align: center; /* Center the headings */
+  text-align: left; 
 }
 
 /* FOR DESIGN PROCESS SECTION*/
