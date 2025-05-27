@@ -677,6 +677,30 @@ PORTFOLIO WEBSITE
   text-align: center; /* Center the headings */
 }
 
+/* Apply Inter font to the body and set a light background THI SIS FOR THE DESIGN PROCESS*/
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f4f8; /* A light, soft background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the content takes at least the full viewport height */
+    margin: 0; /* Remove default body margin */
+    padding: 1rem; /* Add some padding around the content */
+}
+
+/* Ensure process steps don't shrink on smaller screens */
+.process-step {
+    flex-shrink: 0;
+}
+
+/* Custom media query to hide arrows on small screens */
+@media (max-width: 767px) {
+    .arrow-separator {
+        display: none; /* Explicitly hide arrow separators on screens smaller than 'md' breakpoint */
+    }
+}
+
 
 
 
