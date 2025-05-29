@@ -687,7 +687,6 @@ body {
     background-color: #f0f4f8;
     min-height: 100vh; /* Ensures content takes at least the full viewport height */
     margin: 0;
-    padding: 1rem; /* Adds some padding around the content */
 }
 
 /* Process Container (the main wrapper for all steps) */
