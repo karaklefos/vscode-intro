@@ -32,6 +32,9 @@ header {
   margin: 0px;
   position: fixed;
   width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
   border-bottom: 3px solid #4a4a4a;
   border: solid #BDBDBD 1px; 
 	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
