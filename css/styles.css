@@ -696,9 +696,10 @@ body {
     justify-content: center;
     align-items: center;
     /* Combines row-gap and column-gap */
-    gap: 1.5rem 2rem;
+    gap: 1.5rem;
     max-width: 1200px; /* Limits the maximum width of the container */
     margin: 2rem auto; /* Centers the container horizontally */
+    padding: 0 1rem;
 }
 
 /* Group for each circle and its arrow */
@@ -973,6 +974,7 @@ main#work-secondary .container .botanybuddy-logo img { /* Corrected class name t
 
     .process-container {
         justify-content: flex-start; /* Align items to the left on small screens */
+        gap: 1.5rem 2rem;
         padding: 0 0.5rem; /* Add a small horizontal padding to prevent touching screen edges */
     }
 }
