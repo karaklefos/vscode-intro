@@ -141,7 +141,7 @@ h1 {
 /* Hero Section */
 
 #hero {
-  background-color: #D2D2D2;
+  background-image: linear-gradient(to right, #F73E6A, #7FD5F2, #5188DA);
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -149,13 +149,15 @@ h1 {
   padding-bottom: 0;
   padding-top: 70px;
   text-align: center;
+    color: #ffffff
+
 }
 
 #hero h1 {
   text-align: center;
   margin-bottom: 15px;
   font-size: 1.75em;
-  font-weight: 500;
+  font-weight: 00;
   line-height: 1.2;
 }
 
