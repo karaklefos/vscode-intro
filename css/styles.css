@@ -44,7 +44,7 @@ header {
 
 
 .logo {
-  max-width: 50px;
+  max-width: 40px;
   display: block;
   margin: 0 auto;
 }
@@ -855,8 +855,8 @@ Medium devices (640px and larger)
     margin-left: 0; /*align to left */
     margin-right: auto; /* ensure it doesn't stay centered */
     float: left;
-    min-width: 180px;
-    max-width: 180px;
+    min-width: 70px;
+    max-width: 70px;
   }
 
   nav {
