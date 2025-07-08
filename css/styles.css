@@ -832,6 +832,10 @@ footer#contact .container a.button { /* Target the EMAIL ME button */
   margin-bottom: 20px; /* Adjust as needed */
 }
 
+footer#contact .container > div:last-child p {
+    text-align: center;
+}
+
 /* ===========================================================================
 Medium devices (640px and larger)
 ============================================================================ */
