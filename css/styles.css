@@ -14,8 +14,11 @@ Accent Color 2 (coral): #FF6723
 }
 
 body {
-  background-color: #fafafa;
-  font-family: 'Instrument Sans';
+  background-image: linear-gradient(to right,
+                      rgba(247, 62, 106, 0.1), /* Faded #F73E6A (20% opacity) */
+                      rgba(127, 213, 242, 0.1), /* Faded #7FD5F2 */
+                      rgba(81, 136, 218, 0.1) /* Faded #5188DA */
+                     );  font-family: 'Instrument Sans';
   font-size: 1em;
   font-weight: 200;
   line-height: 1.6;
