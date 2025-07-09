@@ -143,18 +143,15 @@ h1 {
 /* Hero Section */
 
 #hero {
-background-image: linear-gradient(to right,
-    rgba(247, 62, 106, 0.5), /* .5 for 50% opacity */
-    rgba(127, 213, 242, 0.5), 
-    rgba(81, 136, 218, 0.5)  
-  );  padding: 20px 0;
+  background-image: linear-gradient(to right, #F73E6A, #7FD5F2, #5188DA);
+  padding: 20px 0;
   display: inline-block;
   width: 100%;
   margin: 0;
   padding-bottom: 0;
   padding-top: 70px;
   text-align: center;
-    color: #18113b
+    color: #ffffff
 
 }
 
@@ -207,7 +204,7 @@ h5 {
 /* for the divider in the hero heading between my name and UX/UI Designer */
 .divider {
     font-weight: normal; 
-    color: #18113b; 
+    color: #ffffff; 
     width: .25px;
     margin: 0 0.05em; /* Add some horizontal space around it */
     vertical-align: -10%;
@@ -809,21 +806,31 @@ Keyframes for Sun
 /* Adjust the Austin animation */
 #austin_animation {
   width: 80%; 
-  max-width: 10px; 
+  max-width: 400px; 
   height: auto;
   display: block; /* Make it a block element */
   margin: 0 auto; /* Center it horizontally */
   object-fit: contain; /* Prevents distortion */
 }
 
-/* Styling for the container that holds the SVG */
-.svg-container {
-    width: 100%; /* Make the container take full width of its parent */
-    max-width: 400px; /* This limits the container's width, which the SVG will then fill */
-    margin: 0 auto; /* Centers the container horizontally */
-    display: block; /* Ensures margin: auto works for centering */
-    padding: 20px 0; /* Optional: Add some vertical spacing */
-    /* You can remove this container if you want to apply all styling directly to #austin_animation */
+/* Adjust the SVG containing the animation */
+#work .row svg {
+  display: block; /* Make it a block element */
+  margin: 0 auto; /* Center it horizontally */
+  width: 80%; /* Match the animation width */
+  max-width: 400px; /* Match the animation max-width */
+  height: auto;
+  object-fit: contain;
+}
+
+/* Ensure the row is centered and has a max width */
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+  max-width: 1200px; /* Adjust as needed */
+  margin: 25px auto; /* Center the row itself */
+  display: flex;
+  justify-content: center;
 }
 
 
