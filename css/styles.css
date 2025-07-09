@@ -143,15 +143,18 @@ h1 {
 /* Hero Section */
 
 #hero {
-  background-image: linear-gradient(to right, #F73E6A, #7FD5F2, #5188DA);
-  padding: 20px 0;
+background-image: linear-gradient(to right,
+    rgba(247, 62, 106, 0.5), /* .5 for 50% opacity */
+    rgba(127, 213, 242, 0.5), 
+    rgba(81, 136, 218, 0.5)  
+  );  padding: 20px 0;
   display: inline-block;
   width: 100%;
   margin: 0;
   padding-bottom: 0;
   padding-top: 70px;
   text-align: center;
-    color: #ffffff
+    color: #18113b
 
 }
 
@@ -204,7 +207,7 @@ h5 {
 /* for the divider in the hero heading between my name and UX/UI Designer */
 .divider {
     font-weight: normal; 
-    color: #ffffff; 
+    color: #18113b; 
     width: .25px;
     margin: 0 0.05em; /* Add some horizontal space around it */
     vertical-align: -10%;
