@@ -855,7 +855,7 @@ footer {
 .footer-nav a {
     text-decoration: none;
     color: #333; /* Link color */
-    margin: 0 0.5em; /* Adjust spacing between links */
+    margin: 0 0.3em; /* Adjust spacing between links */
     white-space: nowrap; /* Keep links on one line */
 }
 
@@ -1041,7 +1041,7 @@ footer {
 .footer-nav a {
     text-decoration: none;
     color: #333; /* Link color */
-    margin: 0 0.5em; /* Adjust spacing between links */
+    margin: 0 .9em; /* Adjust spacing between links */
     white-space: nowrap; /* Keep links on one line */
 }
 
