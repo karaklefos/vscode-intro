@@ -154,7 +154,7 @@ background-image: linear-gradient(to right,
   padding-bottom: 0;
   padding-top: 70px;
   text-align: center;
-    color: #220b40
+    color: #200b3c
 
 }
 
@@ -207,7 +207,7 @@ h5 {
 /* for the divider in the hero heading between my name and UX/UI Designer */
 .divider {
     font-weight: normal; 
-    color: #220b40; 
+    color: #200b3c; 
     width: .25px;
     margin: 0 0.05em; /* Add some horizontal space around it */
     vertical-align: -10%;
@@ -845,7 +845,7 @@ footer#contact .container > div:last-child p {
 footer {
     text-align: center;
     padding: 2em 1em; 
-    background-color: #D2D2D2;
+    background-color: #e7e6e6;
     color: #094BAE; /* Text color */
     font-family: Instrument Sans;
     font-weight: bold;
