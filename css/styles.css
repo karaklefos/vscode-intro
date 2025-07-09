@@ -984,11 +984,12 @@ main#work-secondary .container .botanybuddy-logo img { /* Corrected class name t
   /* to ensure the footer stays on its own line */
 footer {
     text-align: center;
-    padding: 2em 1em; /* Adjust padding as needed */
-    background-color: #f8f8f8; /* Or your preferred background color */
-    color: #555; /* Text color */
+    padding: 2em 1em; 
+    background-color: #D2D2D2;
+    color: #0000; /* Text color */
     font-family: sans-serif; /* Use your website's font */
-    font-size: 0.9em;
+    font-weight: bold;
+    font-size: 1em;
 }
 
 .footer-nav {
@@ -1010,7 +1011,7 @@ footer {
     display: inline-block;
     width: 4px; /* Size of the dot */
     height: 4px; /* Size of the dot */
-    background-color: #555; /* Color of the dot */
+    background-color: #000000; /* Color of the dot */
     border-radius: 50%; /* Makes it a circle */
     vertical-align: middle;
     margin: 0 0.5em; /* Space around the dot */
@@ -1018,7 +1019,8 @@ footer {
 
 .copyright {
     font-size: 0.85em; /* Slightly smaller for copyright */
-    color: #777;
+    color: #4e4e4e;
+    font-weight: 200;
 }
 
 /* Basic responsiveness for smaller screens (optional, but good practice) */
