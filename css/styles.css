@@ -261,12 +261,6 @@ img {
   margin: 5px;
 }
 
-/* Social Media Icons (for Font Awesome) */
-footer#contact .container .social-icons a i.fa-brands {
-  font-size: 50px; /* Adjust the size of the icons */
-  color: #333; /* Adjust the color */
-}
-
 /* Links*/
 a {
   color: #094BAE;
@@ -838,9 +832,6 @@ Keyframes for Sun
   justify-content: center;
 }
 
-footer#contact .container a.button { /* Target the EMAIL ME button */
-  margin-bottom: 20px; /* Adjust as needed */
-}
 
 footer#contact .container > div:last-child p {
     text-align: center;
