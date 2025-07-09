@@ -991,10 +991,52 @@ main#work-secondary .container .botanybuddy-logo img { /* Corrected class name t
 }
   
   /* to ensure the footer stays on its own line */
-  footer {
-    clear: both;
-  }
+footer {
+    text-align: center;
+    padding: 2em 1em; /* Adjust padding as needed */
+    background-color: #f8f8f8; /* Or your preferred background color */
+    color: #555; /* Text color */
+    font-family: sans-serif; /* Use your website's font */
+    font-size: 0.9em;
+}
 
+.footer-nav {
+    margin-bottom: 0.8em; /* Space between links and copyright */
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #333; /* Link color */
+    margin: 0 0.5em; /* Adjust spacing between links */
+    white-space: nowrap; /* Keep links on one line */
+}
+
+.footer-nav a:hover {
+    color: #007bff; /* Hover color */
+}
+
+.dot-divider {
+    display: inline-block;
+    width: 4px; /* Size of the dot */
+    height: 4px; /* Size of the dot */
+    background-color: #555; /* Color of the dot */
+    border-radius: 50%; /* Makes it a circle */
+    vertical-align: middle;
+    margin: 0 0.5em; /* Space around the dot */
+}
+
+.copyright {
+    font-size: 0.85em; /* Slightly smaller for copyright */
+    color: #777;
+}
+
+/* Basic responsiveness for smaller screens (optional, but good practice) */
+@media (max-width: 600px) {
+    .footer-nav a,
+    .dot-divider {
+        margin: 0 0.3em; /* Tighten spacing on small screens */
+    }
+}
   /*for DESIGN PROCESS in Portfolio Case Study*/
   .circle-content {
         width: 8rem; /* Larger width for circles on medium screens (approx. 128px) */
