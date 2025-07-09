@@ -202,6 +202,16 @@ h5 {
   font-weight: 300;
 }
 
+/* for the divider in the hero heading between my name and UX/UI Designer */
+.divider {
+    font-weight: normal; 
+    color: #ffffff; 
+    width: .25px;
+    margin: 0 0.05em; /* Add some horizontal space around it */
+    vertical-align: -10%;
+    font-size: 1.5em;
+}
+
 #work-secondary {
   padding-top: 62px;
 }
