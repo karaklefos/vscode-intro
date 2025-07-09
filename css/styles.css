@@ -806,30 +806,21 @@ Keyframes for Sun
 /* Adjust the Austin animation */
 #austin_animation {
   width: 80%; 
-  max-width: 600px; 
+  max-width: 10px; 
   height: auto;
   display: block; /* Make it a block element */
   margin: 0 auto; /* Center it horizontally */
   object-fit: contain; /* Prevents distortion */
 }
 
-/* Adjust the SVG containing the animation */
-#work .row svg {
-  display: block; /* Make it a block element */
-  margin: 0 auto; /* Center it horizontally */
-  width: 80%; /* Match the animation width */
-  max-width: 600px; /* Match the animation max-width */
-  height: auto;
-}
-
-/* Ensure the row is centered and has a max width */
-#work .row {
-  padding-bottom: 25px;
-  border-bottom: 1px solid #4a4a4a;
-  max-width: 1200px; /* Adjust as needed */
-  margin: 25px auto; /* Center the row itself */
-  display: flex;
-  justify-content: center;
+/* Styling for the container that holds the SVG */
+.svg-container {
+    width: 100%; /* Make the container take full width of its parent */
+    max-width: 400px; /* This limits the container's width, which the SVG will then fill */
+    margin: 0 auto; /* Centers the container horizontally */
+    display: block; /* Ensures margin: auto works for centering */
+    padding: 20px 0; /* Optional: Add some vertical spacing */
+    /* You can remove this container if you want to apply all styling directly to #austin_animation */
 }
 
 
