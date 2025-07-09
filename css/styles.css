@@ -525,7 +525,7 @@ RECIFREE
   border: 1px solid #ddd;
   padding: 15px;
   text-align: left; /* Align text within the boxes to the left */
-  border-radius: 100px;
+  border-radius: 70px;
 }
 
 .process-steps-recifree-synthesis > li h3 {
