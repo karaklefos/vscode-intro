@@ -71,7 +71,7 @@ nav > ul > li > a {
 
 nav > ul > li a:hover,
 nav > ul > li a:focus {
-  color: #146666;
+  color: #136ADF; /* slightly lighter than the original state */
   text-decoration: underline;
 }
 
@@ -864,7 +864,7 @@ footer {
 }
 
 .footer-nav a:hover {
-    color: #FF6723; /* Hover color */
+    color: #136ADF; /* Hover color matches header*/
 }
 
 .dot-divider {
