@@ -204,6 +204,17 @@ h5 {
   font-weight: 300;
 }
 
+/* to ensure read more bttns stay on the right and text stays on the left */
+.col-content {
+        text-align: right; /* Aligns content (including button) to the right on mobile */
+        padding-right: 15px; /* Adds space from the right edge */
+    }
+
+    .col-content h3,
+    .col-content p {
+        text-align: left; /* Ensures heading and paragraph are left-aligned on larger screens */
+    }
+
 /* for the divider in the hero heading between my name and UX/UI Designer */
 .divider {
     font-weight: normal; 
@@ -960,6 +971,11 @@ Medium devices (640px and larger)
   .col-md-6 h3 { 
     margin-top: 0; /* Remove default top margin */
 }
+
+.col-content {
+        text-align: right; /* This is what makes it align right on mobile */
+        padding-right: 15px;
+    }
 
 #work-secondary {
   padding-top: 110px;
