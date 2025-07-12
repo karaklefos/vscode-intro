@@ -144,7 +144,8 @@ h1 {
 #hero.header-hero {
     /* Remove previous background-image from #hero */
     background-image: none;
-    padding: 100px 0; /* Significantly increase padding for more space, adjust as needed */
+    padding-top: 100px;
+    padding-bottom: 20px;
     text-align: center;
     color: #200b3c; /* Keep your existing text color */
     position: relative; /* Needed for absolute positioning of pseudo-elements */
@@ -1076,8 +1077,9 @@ Medium devices (640px and larger)
   }
 
 #hero.header-hero {
-        padding: 120px 0; /* More padding for larger screens */
-    }
+padding-top: 100px; 
+padding-bottom: 70px;   
+}
 
     #hero.header-hero h1 {
         font-size: 4em; /* Even larger on medium screens */
