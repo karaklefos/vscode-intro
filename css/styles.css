@@ -371,6 +371,115 @@ a:active {
   color: #FF6723;
 }
 
+
+
+
+/* --- Work Section (Minimalist Stack) --- */
+
+#work .container {
+    max-width: 1000px; /* Adjust based on desired content width for large screens */
+    padding: 0 20px; /* Keep some side padding for smaller screens */
+    margin: 0 auto; /* Center the container */
+    padding-bottom: 50px;
+}
+
+#work h2 {
+    text-align: center;
+    margin-bottom: 3em; /* More space below the main heading */
+    font-size: 2.5em; /* Adjust as needed */
+    color: #333; /* Darker color for emphasis */
+}
+
+.project-item {
+    margin-bottom: 60px; /* Generous vertical spacing between projects */
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Subtle separator */
+    text-align: center; /* Center content within each project item initially */
+}
+
+.project-item:last-child {
+    border-bottom: none; /* No border for the last item */
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.project-item img {
+    display: block; /* Ensures image behaves as a block element */
+    max-width: 80%; /* Limits image width for medium screens, creating whitespace */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto 30px auto; /* Center image and add spacing below */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Slightly rounded corners */
+}
+
+.project-item .project-link {
+    display: block; /* Make the whole image area clickable */
+    text-decoration: none; /* Remove underline from image link */
+}
+
+.project-item .project-content {
+    max-width: 700px; /* Constrain text width for readability on wide screens */
+    margin: 0 auto; /* Center the text content */
+    text-align: left; /* Align text left within its constrained width */
+    padding: 0 15px;
+}
+
+
+.project-item h3 {
+    font-size: 2em; /* Larger project titles */
+    margin-bottom: 15px; /* Spacing below title */
+    color: #333;
+    text-align: center; /* Center the project title */
+}
+
+.project-item p {
+    font-size: 1.1em; /* Slightly larger paragraph text */
+    line-height: 1.8; /* Improve readability */
+    color: #555;
+    margin-bottom: 30px; /* Spacing below paragraph */
+}
+
+.project-item::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Modern Button Style for "Read More" */
+.modern-button {
+    display: inline-block; /* Allows padding and margin */
+    padding: 14px 30px;
+    background-color: #5188DA; /* Your blue brand color */
+    color: white;
+    text-decoration: none;
+    border-radius: 15px; /* More rounded */
+    font-size: 1.05em;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    letter-spacing: 0.5px;
+
+    /* Mobile-first right alignment */
+    float: right;
+    margin-top: 5px; /* Space above the button */
+    margin-bottom: 5px; /* Space below the button */
+}
+
+.modern-button:hover,
+.modern-button:focus {
+    background-color: #427ACF; /* Slightly darker blue on hover */
+    transform: translateY(-2px); /* Subtle lift effect */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+
+
+
+
 /* Layout Styling */
 .container {
   padding: 0 15px;
@@ -977,6 +1086,52 @@ Medium devices (640px and larger)
     #hero.header-hero p {
         font-size: 1.3em;
     }
+
+
+
+
+
+    
+    #work h2 {
+        font-size: 2em;
+    }
+
+    .project-item {
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+    }
+
+    .project-item img {
+        max-width: 95%; /* Make image larger on smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .project-item .project-content {
+        max-width: 100%; /* Allow content to take full width */
+        padding: 0 15px; /* Add some padding to the sides */
+        text-align: center; /* Center text on small screens */
+    }
+
+    .project-item h3 {
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    .project-item p {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .modern-button {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+}
+
+
+
+
+
 }
   .col-md-6 {
     width: 50%;
