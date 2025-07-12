@@ -901,9 +901,9 @@ Medium devices (640px and larger)
 
   body {
   background-image: linear-gradient(to right,
-                      rgba(247, 62, 106, 0.1), /* Faded #F73E6A (20% opacity) */
-                      rgba(127, 213, 242, 0.1), /* Faded #7FD5F2 */
-                      rgba(81, 136, 218, 0.1) /* Faded #5188DA */
+                      rgba(247, 62, 106, 0.2), /* Faded #F73E6A (20% opacity) */
+                      rgba(127, 213, 242, 0.2), /* Faded #7FD5F2 */
+                      rgba(81, 136, 218, 0.2) /* Faded #5188DA */
                      );  font-family: 'Instrument Sans';
   }
 
