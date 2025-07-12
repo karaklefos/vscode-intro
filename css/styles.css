@@ -456,7 +456,6 @@ a:active {
 
 /* Modern Button Style for "Read More" */
 .modern-button {
-    display: inline-block; /* Allows padding and margin */
     padding: 14px 30px;
     background-color: #5188DA; /* Your blue brand color */
     color: white;
@@ -1139,7 +1138,6 @@ padding-bottom: 70px;
         padding: 12px 25px;
         font-size: 1em;
     }
-    
 }
   .col-md-6 {
     width: 50%;
@@ -1286,7 +1284,7 @@ footer {
         gap: 1.5rem 2rem;
         padding: 0 0.5rem; /* Add a small horizontal padding to prevent touching screen edges */
     }
-}
+
 
 /* =====================================================================
 Large devices (1024px or larger)
