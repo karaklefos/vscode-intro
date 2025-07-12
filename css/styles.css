@@ -30,7 +30,7 @@ strong, b {
 }
 
 header {
-background-color: rgba(210, 210, 210, 0.8);  
+background-color: rgba(210, 210, 210, 1);   /* solid for mobile for better accessibility */
 padding: 10px 0 10px;
   margin: 0px;
   position: fixed;
@@ -1048,6 +1048,9 @@ Medium devices (640px and larger)
   }
 
   header {
+    background-color: rgba(210, 210, 210, 0.8); /* See-through for larger screens */
+        backdrop-filter: blur(8px); /* Apply blur for frosted glass effect */
+        -webkit-backdrop-filter: blur(8px); /* For Safari support */
     text-align: unset;
     padding: 10px 0 10px;
   }
@@ -1136,12 +1139,7 @@ padding-bottom: 70px;
         padding: 12px 25px;
         font-size: 1em;
     }
-}
-
-
-
-
-
+    
 }
   .col-md-6 {
     width: 50%;
