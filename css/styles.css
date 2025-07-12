@@ -26,7 +26,7 @@ body {
 }
 
 strong, b {
-  font-weight: 700; /* Or 600, 800, 900 for different levels of bold */
+  font-weight: 700; 
 }
 
 header {
@@ -141,42 +141,61 @@ h1 {
 }
 
 /* Hero Section */
-
-#hero {
-background-image: linear-gradient(to right,
-                      rgba(247, 62, 106, 0.5), 
-                      rgba(127, 213, 242, 0.5), 
-                      rgba(81, 136, 218, 0.5) 
-                     );  padding: 20px 0;
-  display: inline-block;
-  width: 100%;
-  margin: 0;
-  padding-bottom: 0;
-  padding-top: 70px;
-  text-align: center;
-    color: #200b3c
-
+#hero.header-hero {
+    /* Remove previous background-image from #hero */
+    background-image: none;
+    padding: 100px 0; /* Significantly increase padding for more space, adjust as needed */
+    text-align: center;
+    color: #200b3c; /* Keep your existing text color */
+    position: relative; /* Needed for absolute positioning of pseudo-elements */
+    overflow: hidden; /* Hide overflowing blur */
 }
 
-#hero h1 {
-  text-align: center;
-  margin-bottom: 15px;
-  font-size: 1.5em;
-  font-weight: 600;
-  line-height: 1.2;
+/* Subtle ombre background effect */
+#hero.header-hero::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%; /* Make it wider than the container to ensure full coverage for the blur */
+    height: 120%; /* Make it taller */
+    background: linear-gradient(to right,
+        rgba(247, 62, 106, 0.08), /* Very faded #F73E6A */
+        rgba(127, 213, 242, 0.08), /* Very faded #7FD5F2 */
+        rgba(81, 136, 218, 0.08) /* Very faded #5188DA */
+    );
+    filter: blur(80px); /* Apply a significant blur */
+    transform: translate(-50%, -50%); /* Center the pseudo-element */
+    z-index: -1; /* Place it behind the text content */
+    border-radius: 50%; /* Make it slightly rounded for a softer feel */
 }
 
-#hero h2 {
-  text-align: center;
-  margin-bottom: 15px;
-  margin-top: 15px;
-  line-height: 1;
+
+#hero.header-hero h1 {
+    font-size: 1.5em; /* Larger font size for the main title */
+    font-weight: 600; /* Adjust font weight if 'Instrument Sans' has a thinner option */
+    margin-bottom: 0.2em; /* Reduce space below the main title */
+    line-height: 1.2;
+    color: #200b3c; /* Ensure the color matches the screenshot's dark text */
 }
 
-#hero p {
-  text-align: center;
-  margin-bottom: 20px;
-  line-height: 1.2;
+#hero.header-hero p {
+    font-size: .5em; /* Larger font size for the blurb */
+    font-weight: 200; /* Lighter font weight for the blurb */
+    max-width: 700px; /* Limit width for readability */
+    margin: 0.5em auto 0; /* Center the paragraph and add space above */
+    line-height: 1.6;
+    color: #4a4a4a; /* Adjust color for the blurb if needed, slightly lighter than main title */
+}
+
+/* For the divider in the hero heading */
+#hero.header-hero .divider {
+    font-weight: normal; 
+    color: #200b3c; 
+    width: auto; /* Remove fixed width */
+    margin: 0 0.1em; /* Adjust horizontal space around it */
+    vertical-align: baseline; /* Align with text */
+    font-size: 1.25em; /* Make the divider slightly smaller relative to H1 */
 }
 
 .center {
@@ -705,14 +724,6 @@ PORTFOLIO WEBSITE
   text-align: left; 
 }
 
-/* FOR DESIGN PROCESS SECTION*/
-/* Base Body Styles */
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: #f0f4f8;
-    min-height: 100vh; /* Ensures content takes at least the full viewport height */
-    margin: 0;
-}
 
 /* Process Container (the main wrapper for all steps) */
 .process-container {
@@ -955,14 +966,18 @@ Medium devices (640px and larger)
     display: none;
   }
 
-  #hero {
-    padding-top: 90px;
-  }
+#hero.header-hero {
+        padding: 120px 0; /* More padding for larger screens */
+    }
 
-  #hero h1{
-    font-size: 2.25em;
-  }
+    #hero.header-hero h1 {
+        font-size: 4em; /* Even larger on medium screens */
+    }
 
+    #hero.header-hero p {
+        font-size: 1.3em;
+    }
+}
   .col-md-6 {
     width: 50%;
     align-items: flex-start;
