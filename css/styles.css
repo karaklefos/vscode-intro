@@ -555,16 +555,6 @@ MOD MUSE
   overflow-x: hidden; /* Prevent container scrollbar */
 }
 
-.mockup-gallery-colors {
-  display: flex; 
-  overflow-x: auto; 
-  scroll-snap-type: x mandatory; /* Make scrolling snap to each image */
-  margin-bottom: 20px; /* Add some space below the gallery */
-  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
-  width: 100%;
-  align-items: flex-start;
-}
-
 /* ===============================
 BOTANY BUDDY
 =================================*/
@@ -1326,24 +1316,12 @@ Large devices (1024px or larger)
   max-width: 1200px;
 }
 
-.mockup-gallery-colors {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  margin-bottom: 20px;
-  -webkit-overflow-scrolling: touch;
-  width: 100%;
-  align-items: center; /* Optional: Center images vertically within the container */
-}
 
 .mockup-gallery-colors img {
-  height: auto;
   max-height: 200px; /* Adjust as needed */
-  max-width: 100%; /* Ensure images don't exceed container width */
-  object-fit: contain; /* Maintain aspect ratio within the max dimensions */
 }
 }
-}
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
