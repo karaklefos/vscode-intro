@@ -253,11 +253,11 @@ h5 {
 }
 
 #work-secondary .about-content picture img{
-  max-width: 250px; /* Adjust as needed */
-  display: flex;
+  max-width: 100%; /* Adjust as needed */
+  display: block;
   justify-content: center;
   float: none;
-  margin: 0 auto;
+  margin: 0 auto 20px auto; /* Center with bottom margin */
 }
 
 #about-me h3 {
@@ -508,7 +508,7 @@ MOD MUSE
   list-style: none;
   padding: 0;
   display: grid; /* Change to grid */
-  grid-template-columns: repeat(2, 1fr); /* Create two equal columns */
+  grid-template-columns: 1fr; 
   gap: 20px; /* Adjust spacing as needed */
   margin-bottom: 30px;
 }
@@ -563,7 +563,7 @@ BOTANY BUDDY
   list-style: none;
   padding: 0;
   display: grid; /* Change to grid */
-  grid-template-columns: repeat(2, 1fr); /* Create two equal columns */
+  grid-template-columns: 1fr; 
   gap: 20px; /* Adjust spacing as needed */
   margin-bottom: 30px;
 }
@@ -597,7 +597,7 @@ RECIFREE
   list-style: none;
   padding: 0;
   display: grid; /* Change to grid */
-  grid-template-columns: repeat(2, 1fr); /* Create two equal columns */
+  grid-template-columns: 1fr; 
   gap: 20px; /* Adjust spacing as needed */
   margin-bottom: 30px;
 }
@@ -631,7 +631,7 @@ RECIFREE
   list-style: none;
   padding: 0;
   display: grid; /* Change to grid */
-  grid-template-columns: repeat(2, 1fr); /* Create two equal columns */
+  grid-template-columns: 1fr; 
   gap: 20px; /* Adjust spacing as needed */
   margin-bottom: 30px;
 }
@@ -655,7 +655,7 @@ RECIFREE
   list-style: none; /* Remove default bullets from the outer list */
   padding: 0;
   display: grid; /* Keep grid for "Patterns" and "Frustrations" layout */
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 20px;
   margin-bottom: 30px;
 }
@@ -722,7 +722,7 @@ SAVVY PIG
   list-style: none;
   padding: 0;
   display: grid; /* Change to grid */
-  grid-template-columns: repeat(2, 1fr); /* Create two equal columns */
+  grid-template-columns: 1fr;
   gap: 20px; /* Adjust spacing as needed */
   margin-bottom: 30px;
 }
@@ -1146,13 +1146,15 @@ padding-bottom: 70px;
     }
 
 #work-secondary {
-  padding-top: 110px;
+  padding-top: 15px;
 }
 
 #work-secondary .about-content picture img{
   float: right; 
   margin-right: 20px; /* Add space between image and text */
   max-width: 300px; /* Adjust as needed */
+  height: auto;
+  display: block;
 }
 
 #work-secondary img {
@@ -1199,8 +1201,8 @@ padding-bottom: 70px;
 
 
 main#work-secondary .container {
-  padding-left: 150px; /* Adjust this value for the desired left spacing */
-  padding-right: 150px; /* Adjust this value for the desired right spacing */
+  padding-left: 15px; /* Adjust this value for the desired left spacing */
+  padding-right: 15px; /* Adjust this value for the desired right spacing */
   max-width: 90vw; /* Optional: Set a maximum width for your content */
   margin-left: auto; /* Center the container if you set a max-width */
   margin-right: auto; /* Center the container if you set a max-width */
