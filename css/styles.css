@@ -146,7 +146,7 @@ h1 {
 #hero.header-hero {
     /* Remove previous background-image from #hero */
     background-image: none;
-    padding-top: 100px;
+    padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
     color: #200b3c; /* Keep your existing text color */
