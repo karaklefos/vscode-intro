@@ -416,7 +416,7 @@ a:active {
 
 .project-item img {
     display: block; /* Ensures image behaves as a block element */
-    max-width: 80%; /* Limits image width for medium screens, creating whitespace */
+    max-width: 100%; /* Limits image width for medium screens, creating whitespace */
     height: auto; /* Maintain aspect ratio */
     margin: 0 auto 30px auto; /* Center image and add spacing below */
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
