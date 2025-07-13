@@ -23,6 +23,7 @@ body {
   font-weight: 200;
   line-height: 1.6;
   color: #000000;
+  padding-top: 70px;
 }
 
 strong, b {
@@ -1224,7 +1225,7 @@ footer {
     text-align: center;
     padding: 2em 1em; 
     background-color: #D2D2D2;
-    color: #0000; /* Text color */
+    color: #000000; /* Text color */
     font-family: Instrument Sans;
     font-weight: bold;
     font-size: 1em;
@@ -1302,7 +1303,7 @@ Large devices (1024px or larger)
   margin-top: 10px; 
 }
 
-@media only screen and (min-width: 1024px) {
+ 
   #work-secondary .about-content picture {
     max-width: 450px; 
   }
