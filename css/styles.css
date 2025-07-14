@@ -301,14 +301,6 @@ h5 {
   padding-top: 62px;
 }
 
-#work-secondary .about-content picture img{
-  max-width: 100%; /* Adjust as needed */
-  display: block;
-  justify-content: center;
-  float: none;
-  margin: 0 auto 20px auto; /* Center with bottom margin */
-}
-
 #about-me h3 {
   margin-top: 0;
 }
@@ -1201,11 +1193,10 @@ padding-bottom: 70px;
 }
 
 #work-secondary .about-content picture img{
-  float: right; 
-  margin-right: 20px; /* Add space between image and text */
   max-width: 300px; /* Adjust as needed */
   height: auto;
   display: block;
+  margin: 0 auto 20px auto;
 }
 
 #work-secondary img {
@@ -1349,7 +1340,10 @@ Large devices (1024px or larger)
 
  
   #work-secondary .about-content picture {
+    float: right;
     max-width: 450px; 
+      margin-right: 20px; /* Add space between image and text */
+
   }
   
   #work-secondary img {
