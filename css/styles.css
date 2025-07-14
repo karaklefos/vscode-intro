@@ -25,7 +25,7 @@ html {
     background-image: url('../img/mobile_bckgrnd.png'); /* Default for desktop */
     background-repeat: no-repeat;
     background-position: top right, bottom right; /* Positions the images */
-    background-size: contain; /* Ensures the image scales without cropping */
+    background-size: cover; 
     background-attachment: fixed; /* Keeps background fixed when scrolling */
      overflow-y: scroll; /* Ensures a scrollbar is always available if content overflows */
     -webkit-overflow-scrolling: touch; /* Improves scrolling performance on iOS devices */
@@ -1064,7 +1064,7 @@ Medium devices (640px and larger)
   }
 
   html {
-        background-image: url('../img/desktop_bckgrnd.png'); /* Your mobile image remains here */
+        background-image: url('../img/desktop_bckgrnd.png'); 
         background-position: center; /* Adjust position for mobile */
         background-size: cover; /* Make it cover the entire viewport on mobile */
     }
