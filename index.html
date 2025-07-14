@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kara Klefos About</title>
+    <title>Kara Klefos Home</title>
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -16,7 +16,10 @@
         content="Learn about Kara Klefos, a UX/UI designer with a background in fashion and styling. Passionate about creating user-friendly, visually engaging digital experiences.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
@@ -25,27 +28,27 @@
 </head>
 
 <body>
-    <header>
+<header>
         <div class="container">
             <div class="navtoggle" id="myNavtoggle">
-                <a href="index.html">
-                    <img src="img/small_logo_for_website.png" alt="Kara Klefos" class="logo">
+                <a href="index.html" class="logo-link">
+                    <span class="logo-text">Kara Klefos</span>
                 </a>
+                
                 <nav>
                     <ul class="navigation">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-                        <li>
-                            <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
-                                    class="fa-solid fa-bars"></i></a>
-                        </li>
                     </ul>
                 </nav>
+
+                <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
             </div>
         </div>
     </header>
-
     <div id="hero" class="header-hero">
         <div class="container">
             <h1>Kara Klefos <span class="divider">&#10072;</span> UX/UI Designer</h1>
@@ -94,46 +97,55 @@
             </section>
 
             <section class="project-item">
-            <a href="savvypig.html" class="project-link">
-                <picture>
-                    <source srcset="img/savvypig.jpg" media="(max-width:767px)">
-                    <img src="img/savvypig.jpg" alt="Savvy Pig">
-                </picture>
-            </a>
-            <div class="project-content">
-                <h3>Savvy Pig</h3>
-                <p>Savvy Pig is a financial savings app that makes money management approachable by blending a professional tone with playful design. I crafted the brand identity, logo, and app experience from the ground up, refining wireframes and prototypes while continuously using user and A/B testing to create an intuitive interface that motivates smarter saving.</p>
-                <a href="savvypig.html" class="modern-button">Read More</a>
-            </div>
-        </section>
+                <a href="savvypig.html" class="project-link">
+                    <picture>
+                        <source srcset="img/savvypig.jpg" media="(max-width:767px)">
+                        <img src="img/savvypig.jpg" alt="Savvy Pig">
+                    </picture>
+                </a>
+                <div class="project-content">
+                    <h3>Savvy Pig</h3>
+                    <p>Savvy Pig is a financial savings app that makes money management approachable by blending a
+                        professional tone with playful design. I crafted the brand identity, logo, and app experience
+                        from the ground up, refining wireframes and prototypes while continuously using user and A/B
+                        testing to create an intuitive interface that motivates smarter saving.</p>
+                    <a href="savvypig.html" class="modern-button">Read More</a>
+                </div>
+            </section>
 
-        <section class="project-item">
-            <a href="modmuse.html" class="project-link">
-                <picture>
-                    <source srcset="img/modmuse1.jpg" media="(max-width:767px)">
-                    <img src="img/modmuse1.jpg" alt="Mod Muse">
-                </picture>
-            </a>
-            <div class="project-content">
-                <h3>Mod Muse</h3>
-                <p>Mod Muse is a vintage fashion marketplace inspired by the bold style of the 1960s Mod era. I designed an end-to-end experience in Figma, from concept to prototype, that streamlines shopping for curated vintage pieces, validating design decisions through user testing to ensure a smooth, stylish experience.</p>
-                <a href="modmuse.html" class="modern-button">Read More</a>
-            </div>
-        </section>
+            <section class="project-item">
+                <a href="modmuse.html" class="project-link">
+                    <picture>
+                        <source srcset="img/modmuse1.jpg" media="(max-width:767px)">
+                        <img src="img/modmuse1.jpg" alt="Mod Muse">
+                    </picture>
+                </a>
+                <div class="project-content">
+                    <h3>Mod Muse</h3>
+                    <p>Mod Muse is a vintage fashion marketplace inspired by the bold style of the 1960s Mod era. I
+                        designed an end-to-end experience in Figma, from concept to prototype, that streamlines shopping
+                        for curated vintage pieces, validating design decisions through user testing to ensure a smooth,
+                        stylish experience.</p>
+                    <a href="modmuse.html" class="modern-button">Read More</a>
+                </div>
+            </section>
 
-        <section class="project-item">
-            <a href="portfoliowebsite.html" class="project-link">
-                <picture>
-                    <source srcset="img/portfolio_intro.jpg" media="(max-width:767px)">
-                    <img src="img/portfolio_intro.jpg" alt="Portfolio Case Study Intro Img">
-                </picture>
-            </a>
-            <div class="project-content">
-                <h3>Portfolio Website</h3>
-                <p>This portfolio website is something I built from the ground up as both the designer and coder. Using <strong>HTML, CSS, and JavaScript</strong>, I created a site that’s easy to navigate and is visually engaging. It gave me a space to showcase my case studies and highlight my ability to bring a full web experience to life - from concept to launch.</p>
-                <a href="portfoliowebsite.html" class="modern-button">Read More</a>
-            </div>
-        </section>
+            <section class="project-item">
+                <a href="portfoliowebsite.html" class="project-link">
+                    <picture>
+                        <source srcset="img/portfolio_intro.jpg" media="(max-width:767px)">
+                        <img src="img/portfolio_intro.jpg" alt="Portfolio Case Study Intro Img">
+                    </picture>
+                </a>
+                <div class="project-content">
+                    <h3>Portfolio Website</h3>
+                    <p>This portfolio website is something I built from the ground up as both the designer and coder.
+                        Using <strong>HTML, CSS, and JavaScript</strong>, I created a site that’s easy to navigate and
+                        is visually engaging. It gave me a space to showcase my case studies and highlight my ability to
+                        bring a full web experience to life - from concept to launch.</p>
+                    <a href="portfoliowebsite.html" class="modern-button">Read More</a>
+                </div>
+            </section>
         </div>
     </main>
 
