@@ -84,6 +84,13 @@ nav > ul {
   margin: 0;
 }
 
+/* Styling for individual navigation list items on mobile */
+nav > ul > li {
+    display: block; /* This makes each list item take its own line */
+    padding: 10px 15px; /* Adds space around each menu item for better touch targets */
+    border-top: 1px solid rgba(0, 0, 0, 0.1); /* Adds a subtle separator line */
+}
+
 nav > ul > li > a {
   padding: 0 15px;
   font-weight: 700;
@@ -107,6 +114,13 @@ nav > ul > li:active {
 
 .navtoggle.responsive nav {
     display: block; /* This is the main rule to show the entire navigation menu */
+    height: auto; /* **NEW:** Ensure the nav expands to fit its content */
+    max-height: calc(100vh - 70px); /* **NEW:** Prevents the menu from going off-screen (adjust 70px if your header's actual height is different) */
+    overflow-y: auto; /* **NEW:** Adds a scrollbar if the menu content is too long for the screen */
+
+    /* Explicitly force containing block formatting context */
+    overflow-x: visible; /* Ensure nothing is hidden horizontally */
+    clear: both; /* Clear any floats that might cause collapse */
 }
 
 .icon { /* Target the icon directly */
@@ -553,11 +567,6 @@ MOD MUSE
   margin-right: 0;
 }
 
-/* Optional: Style the container further if needed */
-.container {
-  /* Your existing container styles */
-  overflow-x: hidden; /* Prevent container scrollbar */
-}
 
 /* ===============================
 BOTANY BUDDY
@@ -1052,14 +1061,6 @@ Medium devices (640px and larger)
   .logo-text {
     font-size: 2.75em;
   }
-
-  /* Keep the .navtoggle as flex for consistent alignment on desktop */
-    .navtoggle {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 5px 0; /* Consistent internal padding */
-    }
 
     /* Hide the hamburger icon on desktop */
     .icon {
