@@ -13,12 +13,23 @@ Accent Color 2 (coral): #FF6723
   box-sizing: border-box;
 }
 
+html, body {
+    height: 100%; /* Ensure both html and body take full viewport height */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+}
+
+html {
+    background-color: #FFFCFC; /* Main background color for the entire page */
+    background-image: url('../img/mobile_bckgrnd.png'); /* Default for desktop */
+    background-repeat: no-repeat;
+    background-position: top right, bottom right; /* Positions the images */
+    background-size: contain; /* Ensures the image scales without cropping */
+    background-attachment: fixed; /* Keeps background fixed when scrolling */
+}
+
 body {
-  background-image: linear-gradient(to right,
-                      rgba(247, 62, 106, 0.2), /* Faded #F73E6A (20% opacity) */
-                      rgba(127, 213, 242, 0.2), /* Faded #7FD5F2 */
-                      rgba(81, 136, 218, 0.2) /* Faded #5188DA */
-                     );  font-family: 'Instrument Sans';
+  font-family: 'Instrument Sans';
   font-size: 1em;
   font-weight: 200;
   line-height: 1.6;
@@ -1031,14 +1042,6 @@ Medium devices (640px and larger)
 ============================================================================ */
 @media only screen and (min-width: 640px) {
 
-  body {
-  background-image: linear-gradient(to right,
-                      rgba(247, 62, 106, 0.2), /* Faded #F73E6A (20% opacity) */
-                      rgba(127, 213, 242, 0.2), /* Faded #7FD5F2 */
-                      rgba(81, 136, 218, 0.2) /* Faded #5188DA */
-                     );  font-family: 'Instrument Sans';
-  }
-
   [class*=col-] {
     float: left;
     padding: 0 10px;
@@ -1051,12 +1054,15 @@ Medium devices (640px and larger)
   }
 
   header {
-    background-color: rgba(246, 246, 246, 0.8); /* See-through for larger screens */
-        backdrop-filter: blur(8px); /* Apply blur for frosted glass effect */
-        -webkit-backdrop-filter: blur(8px); /* For Safari support */
     text-align: unset;
-    padding: 10px 0 10px;
+    padding: 1px 0 1px;
   }
+
+  html {
+        background-image: url('../img/desktop_bckgrnd.png'); /* Your mobile image remains here */
+        background-position: center; /* Adjust position for mobile */
+        background-size: cover; /* Make it cover the entire viewport on mobile */
+    }
 
   .logo-text {
     font-size: 2em;
