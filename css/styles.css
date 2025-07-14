@@ -47,6 +47,15 @@ padding: 10px 0 10px;
   z-index: 10;
 }
 
+/* for text logo */
+.logo-text {
+    font-family: 'Cormorant Infant', serif; /* Your specified logo font */
+    font-weight: 700; /* BOLD as per your spec */
+    font-size: 2em; /* Adjust size as needed for mobile */
+    color: #000; /* Set your desired logo text color (e.g., black) */
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
 /* Navigation Styling */
 nav > ul {
   list-style-type: none;
@@ -1039,13 +1048,8 @@ Medium devices (640px and larger)
     padding: 10px 0 10px;
   }
 
-  .logo {
-    display: block;
-    margin-left: 0; /*align to left */
-    margin-right: auto; /* ensure it doesn't stay centered */
-    float: left;
-    min-width: 70px;
-    max-width: 70px;
+  .logo-text {
+    font-size: 2.75em;
   }
 
   nav {
