@@ -31,7 +31,7 @@ strong, b {
 }
 
 header {
-background-color: rgba(210, 210, 210, 1);   /* solid for mobile for better accessibility */
+background-color: rgba(246, 246, 246, 1);   /* solid for mobile for better accessibility */
 padding: 10px 0 10px;
   margin: 0px;
   position: fixed;
@@ -1051,7 +1051,7 @@ Medium devices (640px and larger)
   }
 
   header {
-    background-color: rgba(210, 210, 210, 0.8); /* See-through for larger screens */
+    background-color: rgba(246, 246, 246, 0.8); /* See-through for larger screens */
         backdrop-filter: blur(8px); /* Apply blur for frosted glass effect */
         -webkit-backdrop-filter: blur(8px); /* For Safari support */
     text-align: unset;
@@ -1236,7 +1236,7 @@ main#work-secondary .container .botanybuddy-logo img { /* Corrected class name t
 footer {
     text-align: center;
     padding: 2em 1em; 
-    background-color: #D2D2D2;
+    background-color: #fdfdfd;
     color: #000000; /* Text color */
     font-family: Instrument Sans;
     font-weight: bold;
