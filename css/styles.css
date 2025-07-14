@@ -1242,7 +1242,7 @@ main#work-secondary .container .botanybuddy-logo img { /* Corrected class name t
   width: auto; /* Ensure it can shrink */
 }
 
-/* Apply flexbox to the container of your SVG */
+/* Apply flexbox to the container of SVG */
     .svg-container {
         display: flex;             /* Makes it a flex container */
         justify-content: center;   /* Centers flex items horizontally */
