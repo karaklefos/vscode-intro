@@ -72,7 +72,7 @@ nav {
     position: absolute; /* Positions it relative to the .navtoggle parent */
     top: 100%; /* Makes it drop down right below the header */
     left: 0;
-    background-color: rgba(210, 210, 210, 0.95); /* Background for the open menu */
+    background-color: rgba(246, 246, 246, 1); /* Background for the open menu */
     box-shadow: 0 5px 10px rgba(0,0,0,0.1); /* Subtle shadow */
     z-index: 9; /* Ensures it's above body content */
 }
