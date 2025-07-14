@@ -47,13 +47,34 @@ padding: 10px 0 10px;
   z-index: 10;
 }
 
+/* New rule to arrange Logo and Hamburger on Mobile */
+.navtoggle {
+    display: flex; /* Makes its direct children (logo, nav, icon) flex items */
+    justify-content: space-between; /* Pushes logo to left, icon/nav to right */
+    align-items: center; /* Vertically centers them */
+    padding: 5px 0; /* Adds some vertical spacing within the bar itself */
+    position: relative; /* CRUCIAL: Needed for absolute positioning of the opened nav menu */
+}
+
 /* for text logo */
 .logo-text {
     font-family: 'Cormorant Infant', serif; /* Your specified logo font */
     font-weight: 700; /* BOLD as per your spec */
-    font-size: 2em; /* Adjust size as needed for mobile */
+    font-size: 1.75em; /* Adjust size as needed for mobile */
     color: #000; /* Set your desired logo text color (e.g., black) */
     white-space: nowrap; /* Prevents text from wrapping */
+}
+
+/* Navigation Styling (Mobile - Hidden by default) */
+nav {
+    display: none; /* THIS IS THE RULE THAT HIDES THE MENU */
+    width: 100%;
+    position: absolute; /* Positions it relative to the .navtoggle parent */
+    top: 100%; /* Makes it drop down right below the header */
+    left: 0;
+    background-color: rgba(210, 210, 210, 0.95); /* Background for the open menu */
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1); /* Subtle shadow */
+    z-index: 9; /* Ensures it's above body content */
 }
 
 /* Navigation Styling */
@@ -61,10 +82,6 @@ nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-
-.navtoggle li:not(:last-child) {
-  display: none;
 }
 
 nav > ul > li > a {
@@ -88,32 +105,16 @@ nav > ul > li:active {
   color: #FF6723;
 }
 
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 24px;
-}
-
 .navtoggle.responsive nav {
-  padding: 24px 0 0;
+    display: block; /* This is the main rule to show the entire navigation menu */
 }
 
-.navtoggle.responsive li  {
-  display: block;
-  padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
-}
-
-.navtoggle.responsive li:last-child  {
-  padding: 0 0 10px;
-}
-
-.navtoggle .icon {
-  position: absolute;
-  right: 0;
-  top: 15px; /* Adjust top as needed */
-  font-size: 24px;
+.icon { /* Target the icon directly */
+    font-size: 24px;
+    color: #333; /* Color of your icon */
+    cursor: pointer;
+    display: block; /* Essential for flex alignment */
+    z-index: 11; /* Keep it on top */
 }
 
 /* Default hamburger icon */
@@ -1052,11 +1053,39 @@ Medium devices (640px and larger)
     font-size: 2.75em;
   }
 
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
-  }
+  /* Keep the .navtoggle as flex for consistent alignment on desktop */
+    .navtoggle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0; /* Consistent internal padding */
+    }
+
+    /* Hide the hamburger icon on desktop */
+    .icon {
+        display: none;
+    }
+
+    /* Show the navigation menu on desktop */
+    nav {
+        display: block; /* Make the navigation visible on desktop */
+        position: static; /* Remove absolute positioning for desktop */
+        width: auto; /* Allow nav to take only necessary width */
+        background-color: transparent; /* Remove background from desktop nav */
+        box-shadow: none; /* Remove shadow from desktop nav */
+        z-index: auto; /* Reset z-index */
+    }
+
+    /* Display nav items horizontally on desktop */
+    nav > ul > li {
+        display: inline-block; /* Arranges links side-by-side */
+        padding: 0 15px; /* Adjust spacing between desktop links as needed */
+        border-top: none; /* Remove any border separators */
+    }
+
+    nav > ul { /* Reset any margins that might have been applied for mobile */
+        margin: 0;
+    }
 
    nav > ul {
     /* Add this line */
@@ -1065,14 +1094,6 @@ Medium devices (640px and larger)
 
   nav > ul > li {
     display: inline-block;
-  }
-
-  .navtoggle li:not(:last-child) {
-    display: inline-block;
-  }
-
-  .navtoggle li:last-child {
-    display: none;
   }
 
 #hero.header-hero {
