@@ -327,9 +327,9 @@ img {
     display: block;     /* Important for centering */
     margin: 0 auto;     /* Center horizontally on mobile */
     object-fit: contain; /* Prevents distortion, good for SVGs */
-    max-height: none;   /* Reset any max-height if it was causing issues.
-                           The 'height: auto' generally handles this well. */
+    max-height: none;   
 }
+
 /* Social Media Icons */
 .social-icons img {
   width: 50px;
