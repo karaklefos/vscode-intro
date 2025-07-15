@@ -1242,21 +1242,6 @@ main#work-secondary .container .botanybuddy-logo img { /* Corrected class name t
   width: auto; /* Ensure it can shrink */
 }
 
-/* Apply flexbox to the container of SVG */
-    .svg-container {
-        display: flex;             /* Makes it a flex container */
-        justify-content: center;   /* Centers flex items horizontally */
-        align-items: center;       /* Centers flex items vertically (if height allows) */
-        width: 100%;               /* Ensure container takes full width */
-        /* You might want to add some padding or margin to .svg-container if needed */
-        /* padding: 20px 0; */
-    }
-#austin_animation {
-        width: 100%;       /* Allow it to take full width of its container on desktop */
-        max-width: 30%;   /* Ensure it doesn't exceed its container's width */
-        display: block;
-    }
-  
   /* to ensure the footer stays on its own line */
 footer {
     text-align: center;
@@ -1321,6 +1306,21 @@ footer {
         justify-content: flex-start; /* Align items to the left on small screens */
         gap: 1.5rem 2rem;
         padding: 0 0.5rem; /* Add a small horizontal padding to prevent touching screen edges */
+    }
+
+    /* Apply flexbox to the container of SVG */
+    .svg-container {
+        display: flex;             /* Makes it a flex container */
+        justify-content: center;   /* Centers flex items horizontally */
+        align-items: center;       /* Centers flex items vertically (if height allows) */
+        width: 100%;               /* Ensure container takes full width */
+        /* You might want to add some padding or margin to .svg-container if needed */
+        /* padding: 20px 0; */
+    }
+#austin_animation {
+        width: 30%;       /* Allow it to take full width of its container on desktop */
+        max-width: 80%;   /* Ensure it doesn't exceed its container's width */
+        display: block;
     }
 
 
