@@ -1104,6 +1104,12 @@ background-attachment: fixed; /* Re-enable fixed attachment for desktop where it
         display: none; /* Hide this div on desktop */
     }
 
+    /* ensures case study's have blank bckgrnd */
+    .case-study-page {
+    background-image: none !important; /* Removes the background image */
+    background-color: white; /* Sets a plain white background */
+}
+
   .logo-text {
     font-size: 2em;
   }
