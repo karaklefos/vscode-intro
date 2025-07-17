@@ -1143,8 +1143,14 @@ background-attachment: fixed; /* Re-enable fixed attachment for desktop where it
     display: inline-block;
   }
 
-   #work-secondary .dog-img {
-    max-width: 500px;
+    .about-photo {
+    width: 350px;
+  }
+
+ .image-scroll-wrapper {
+    overflow-x: hidden; /* Stop horizontal scroll on desktop */
+    justify-content: center;
+    flex-wrap: nowrap;
   }
 
 #hero.header-hero {
