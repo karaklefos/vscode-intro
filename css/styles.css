@@ -1362,7 +1362,7 @@ footer {
         /* padding: 20px 0; */
     }
 #austin_animation {
-        width: 30%;       /* Allow it to take full width of its container on desktop */
+        width: 25%;       /* Allow it to take full width of its container on desktop */
         max-width: 80%;   /* Ensure it doesn't exceed its container's width */
         display: block;
     }
