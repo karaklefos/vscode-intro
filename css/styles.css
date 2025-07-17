@@ -276,6 +276,25 @@ h5 {
   font-weight: 300;
 }
 
+/* for imgs of joey on about page */
+.image-scroll-wrapper {
+  display: flex;
+  gap: 16px; /* space between images */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 10px;
+}
+
+.about-photo {
+  flex: 0 0 auto;
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
 /* to ensure read more bttns stay on the right and text stays on the left */
 .col-content {
         text-align: right; /* Aligns content (including button) to the right on mobile */
@@ -1043,6 +1062,16 @@ footer {
     font-weight: 200;
 }
 
+    #work-secondary .dog-img {
+  width: 100%;
+  max-width: 90vw; /* Use most of the viewport width */
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 20px auto;
+}
+
+
 /* ===========================================================================
 Medium devices (640px and larger)
 ============================================================================ */
@@ -1114,6 +1143,10 @@ background-attachment: fixed; /* Re-enable fixed attachment for desktop where it
     display: inline-block;
   }
 
+   #work-secondary .dog-img {
+    max-width: 500px;
+  }
+
 #hero.header-hero {
 padding-top: 100px; 
 padding-bottom: 70px;   
@@ -1126,7 +1159,6 @@ padding-bottom: 70px;
     #hero.header-hero p {
         font-size: 1.3em;
     }
-
 
 
 
@@ -1322,7 +1354,6 @@ footer {
         max-width: 80%;   /* Ensure it doesn't exceed its container's width */
         display: block;
     }
-
 
 /* =====================================================================
 Large devices (1024px or larger)
