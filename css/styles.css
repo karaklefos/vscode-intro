@@ -197,35 +197,16 @@ h1 {
     background-image: none;
     padding-top: 20px;
     padding-bottom: 20px;
-    text-align: center;
+    text-align: left;
     color: #200b3c; /* Keep your existing text color */
     position: relative; /* Needed for absolute positioning of pseudo-elements */
     overflow: hidden; /* Hide overflowing blur */
 }
 
-/* Subtle ombre background effect */
-#hero.header-hero::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 120%; /* Make it wider than the container to ensure full coverage for the blur */
-    height: 120%; /* Make it taller */
-    background: linear-gradient(to right,
-        rgba(247, 62, 106, 0.08), /* Very faded #F73E6A */
-        rgba(127, 213, 242, 0.08), /* Very faded #7FD5F2 */
-        rgba(81, 136, 218, 0.08) /* Very faded #5188DA */
-    );
-    filter: blur(80px); /* Apply a significant blur */
-    transform: translate(-50%, -50%); /* Center the pseudo-element */
-    z-index: -1; /* Place it behind the text content */
-    border-radius: 50%; /* Make it slightly rounded for a softer feel */
-}
-
 
 #hero.header-hero h1 {
     font-size: 2.5em; /* Larger font size for the main title */
-    text-align: center;
+    text-align: left;
     font-weight: 600; /* Adjust font weight if 'Instrument Sans' has a thinner option */
     margin-bottom: 0.2em; /* Reduce space below the main title */
     line-height: 1.2;
@@ -443,16 +424,9 @@ a:active {
 
 /* --- Work Section (Minimalist Stack) --- */
 
-#work .container {
-    max-width: 1000px; /* Adjust based on desired content width for large screens */
-    padding: 0 20px; /* Keep some side padding for smaller screens */
-    margin: 0 auto; /* Center the container */
-    padding-bottom: 50px;
-}
-
 #work h1 {
-    text-align: center;
-    margin-bottom: 2em; /* More space below the main heading */
+    text-align: left;
+    margin-bottom: .75em; /* More space below the main heading */
     font-size: 2.5em; /* Adjust as needed */
     color: #333; /* Darker color for emphasis */
 }
@@ -464,59 +438,78 @@ a:active {
     color: #333; /* Darker color for emphasis */
 }
 
-.project-item {
-    margin-bottom: 60px; /* Generous vertical spacing between projects */
-    padding-bottom: 60px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Subtle separator */
-    text-align: center; /* Center content within each project item initially */
-}
-
-.project-item:last-child {
-    border-bottom: none; /* No border for the last item */
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
 .project-item img {
-    display: block; /* Ensures image behaves as a block element */
-    max-width: 100%; /* Limits image width for medium screens, creating whitespace */
-    height: auto; /* Maintain aspect ratio */
-    margin: 0 auto 30px auto; /* Center image and add spacing below */
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    border-radius: 8px; /* Slightly rounded corners */
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 30px auto;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
-
 .project-item .project-link {
     display: block; /* Make the whole image area clickable */
     text-decoration: none; /* Remove underline from image link */
 }
 
 .project-item .project-content {
-    max-width: 700px; /* Constrain text width for readability on wide screens */
-    margin: 0 auto; /* Center the text content */
-    text-align: left; /* Align text left within its constrained width */
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
     padding: 0 15px;
 }
 
-
-.project-item h3 {
-    font-size: 1.5em; /* Larger project titles */
-    margin-bottom: 15px; /* Spacing below title */
-    color: #333;
-    text-align: center; /* Center the project title */
+#work .projects-wrapper {
+    display: flex; /* Enables Flexbox */
+    overflow-x: auto; /* Allows horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    scroll-snap-type: x mandatory; /* Snaps to each project when scrolling */
+    gap: 30px; /* Space between each project card */
+    padding: 20px; /* Add padding to see shadows and prevent cards from touching edges */
+    margin-bottom: 50px; /* Space below the scrollable section */
 }
 
-.project-item p {
-    font-size: 1.1em; /* Slightly larger paragraph text */
-    line-height: 1.8; /* Improve readability */
-    color: #555;
-    margin-bottom: 30px; /* Spacing below paragraph */
+/* Style for each individual project card */
+.project-item {
+    flex: 0 0 auto; /* Prevents cards from shrinking, maintains their size */
+    width: 300px; /* Fixed width for each card - adjust as desired */
+    height: auto; /* Allow height to adjust based on content */
+    background-color: #fff; /* White background for the card */
+    border-radius: 15px; /* Rounded corners for the card */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Stronger shadow for the card effect */
+    padding: 25px; /* Padding inside each card */
+    scroll-snap-align: start; /* Aligns the start of the card when scrolling */
+    display: flex; /* Use flexbox for content within the card */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Pushes content and button to ends */
+    text-align: left; /* Align text within the card to the left */
+}
+
+.project-item img {
+    max-width: 100%; /* Ensure image fits within the card */
+    height: 180px; /* Set a fixed height for images to ensure consistency */
+    object-fit: cover; /* Crop images to fit the fixed height */
+    border-radius: 10px; /* Slightly less rounded than the card itself */
+    margin-bottom: 20px; /* Space below image */
+}
+
+.project-item h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: left; /* Left align title within card */
 }
 
 .project-item::after {
     content: "";
     display: table;
     clear: both;
+}
+
+.project-item p {
+    font-size: 0.95em; /* Slightly smaller text for better fit in cards */
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px; /* Space below paragraph */
+    flex-grow: 1; /* Allows paragraph to take up available space */
 }
 
 /* Modern Button Style for "Read More" */
@@ -536,6 +529,33 @@ a:active {
     float: right;
     margin-top: 5px; /* Space above the button */
     margin-bottom: 5px; /* Space below the button */
+}
+
+#work .navigation-arrows {
+    display: flex;
+    justify-content: flex-end; /* Align arrows to the right */
+    gap: 15px; /* Space between arrows */
+    margin-top: 30px; /* Space above arrows */
+    padding-right: 20px; /* Align with scroll container padding */
+}
+
+#work .navigation-arrows .arrow {
+    background-color: #5188DA; /* Blue background */
+    color: white;
+    border-radius: 50%; /* Make them circular */
+    width: 45px; /* Size of the arrow button */
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em; /* Size of the arrow icon */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#work .navigation-arrows .arrow:hover {
+    background-color: #427ACF;
+    transform: translateY(-2px);
 }
 
 .modern-button:hover,
