@@ -1388,6 +1388,7 @@ footer {
         max-width: 80%;   /* Ensure it doesn't exceed its container's width */
         display: block;
     }
+  }
 
 /* =====================================================================
 Large devices (1024px or larger)
