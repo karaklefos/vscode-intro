@@ -667,6 +667,16 @@ BOTANY BUDDY
   height: auto; /* Maintain aspect ratio */
 }
 
+.mockup-gallery-colors {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  margin-bottom: 20px;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  align-items: center; /* Optional: Center images vertically within the container */
+}
+
 
 /* ==========================================
 RECIFREE
