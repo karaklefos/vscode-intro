@@ -464,7 +464,7 @@ a:active {
     scroll-snap-type: x mandatory; /* Snaps to each project when scrolling */
     gap: 30px; /* Space between each project card */
     padding: 20px; /* Add padding to see shadows and prevent cards from touching edges */
-    margin-bottom: 50px; /* Space below the scrollable section */
+    margin-bottom: 20px; /* Space below the scrollable section */
 }
 
 /* Style for each individual project card */
@@ -537,7 +537,8 @@ a:active {
     display: flex;
     justify-content: flex-end; /* Align arrows to the right */
     gap: 15px; /* Space between arrows */
-    margin-top: 30px; /* Space above arrows */
+    margin-top: 0px; /* Space above arrows */
+    margin-bottom: 30px; /*Space below arros */
     padding-right: 20px; /* Align with scroll container padding */
 }
 
