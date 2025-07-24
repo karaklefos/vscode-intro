@@ -1264,7 +1264,7 @@ padding-bottom: 70px;
 }
 
 #work-secondary .about-content picture img{
-  max-width: 300px; /* Adjust as needed */
+  max-width: 300px;
   height: auto;
   display: block;
   margin: 0 auto 20px auto;
