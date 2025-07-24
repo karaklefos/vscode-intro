@@ -1188,6 +1188,7 @@ background-attachment: fixed; /* Re-enable fixed attachment for desktop where it
 
  .image-scroll-wrapper {
     justify-content: left;
+    padding-top: 40px;
     flex-wrap: nowrap;
     gap: 2px;
   }
