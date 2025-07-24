@@ -1192,6 +1192,7 @@ background-attachment: fixed; /* Re-enable fixed attachment for desktop where it
     flex-wrap: nowrap;
     gap: 5px;
     display: flex;
+    margin-bottom: 30px;
   }
 
 #hero.header-hero {
