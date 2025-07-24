@@ -1187,9 +1187,9 @@ background-attachment: fixed; /* Re-enable fixed attachment for desktop where it
   }
 
  .image-scroll-wrapper {
-    overflow-x: hidden; /* Stop horizontal scroll on desktop */
-    justify-content: center;
+    justify-content: left;
     flex-wrap: nowrap;
+    gap: 2px;
   }
 
 #hero.header-hero {
