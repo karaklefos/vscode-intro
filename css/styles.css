@@ -1216,10 +1216,11 @@ padding-bottom: 70px;
     .project-item {
         margin-bottom: 40px;
         padding-bottom: 40px;
+        width: 570px;
     }
 
     .project-item img {
-        max-width: 95%; /* Make image larger on smaller screens */
+        max-width: 100%; /* Make image larger on smaller screens */
         margin-bottom: 20px;
     }
 
@@ -1447,6 +1448,10 @@ Large devices (1024px or larger)
 .mockup-gallery-colors img {
   max-height: 200px; /* Adjust as needed */
 }
+
+ .project-item {
+        width: 800px;
+    }
 }
 
 /* ==============================
