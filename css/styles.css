@@ -1126,6 +1126,46 @@ Medium devices (640px and larger)
     padding: 1px 0 1px;
   }
 
+  /* ensures project cards are no longer horizontal*/
+  #work .projects-wrapper {
+ display: grid; /* Use grid for vertical stacking */
+        grid-template-columns: 1fr; /* One column, stacking items vertically */
+        gap: 40px; /* Space between stacked project cards */
+        overflow-x: visible; /* Disable horizontal scrolling */
+        scroll-snap-type: none; /* Disable scroll-snapping */
+        padding: 0; /* Remove padding if not needed for the stacked view */
+        margin: 0 auto; /* Center the wrapper */
+  }
+
+   .project-item {
+        flex: none; /* Override the mobile flex properties */
+        width: 100%; /* Make the cards take the full width of the container */
+        height: auto;
+        margin: 0 auto; /* Center the cards */
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        padding: 30px; /* Adjust padding for a cleaner look */
+    }
+
+    #work .navigation-arrows {
+        display: none; /* Hide the navigation arrows on larger screens */
+    }
+
+    .project-item .project-content {
+        padding: 0; /* Reset padding */
+    }
+
+    .project-item h3,
+    .project-item p {
+        text-align: left; /* Keep text left-aligned within the stacked card */
+    }
+    
+    .modern-button {
+        float: none; /* Remove float */
+        display: inline-block; /* Make button a block element to center it */
+    }
+
+    
+
   html {
         background-image: url('../img/desktop_bckgrnd.png'); 
 background-attachment: fixed; /* Re-enable fixed attachment for desktop where it works! */
