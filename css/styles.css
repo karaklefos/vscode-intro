@@ -470,7 +470,7 @@ a:active {
 /* Style for each individual project card */
 .project-item {
     flex: 0 0 auto; /* Prevents cards from shrinking, maintains their size */
-    width: 370px; /* Fixed width for each card - adjust as desired */
+    width: 90vw; /* Fixed width for each card - adjust as desired */
     height: auto; /* Allow height to adjust based on content */
     background-color: #fff; /* White background for the card */
     border-radius: 15px; /* Rounded corners for the card */
