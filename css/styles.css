@@ -1353,7 +1353,7 @@ padding-bottom: 70px;
 main#work-secondary .container {
   padding-left: 180px; /* Adjust this value for the desired left spacing */
   padding-right: 180px; /* Adjust this value for the desired right spacing */
-  max-width: 90vw; /* Optional: Set a maximum width for your content */
+  max-width: 85vw;
   margin-left: auto; /* Center the container if you set a max-width */
   margin-right: auto; /* Center the container if you set a max-width */
 }
