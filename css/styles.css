@@ -23,8 +23,8 @@ body {
 html {
   height: 100%;
   background-repeat: no-repeat;
-  background-position: top right, bottom right; /* Positions the images */
-  background-size: contain; /* Ensures the image scales without cropping */
+  background-position: center; /* Positions the images */
+  background-size: cover; /* Ensures the image scales without cropping */
   background-attachment: fixed; /* Keeps background fixed when scrolling */
   overflow-y: scroll; /* Ensures a scrollbar is always available if content overflows */
   -webkit-overflow-scrolling: touch; /* Improves scrolling performance on iOS devices */
@@ -757,6 +757,18 @@ Medium devices (640px and larger)
 
   .project-item .project-content {
     padding: 0; /* Reset padding */
+  }
+
+   /* Add background image for medium and larger screens */
+  html {
+    background-image: url("../img/desktop_bckgrnd.png"); /* Add your desktop background image */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  /* Hide mobile background on larger screens */
+  #mobile-fixed-background {
+    display: none;
   }
 }
 
