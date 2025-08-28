@@ -13,44 +13,45 @@ Accent Color 2 (coral): #FF6723
   box-sizing: border-box;
 }
 
-html, body {
-    height: 100%; /* Ensure both html and body take full viewport height */
-    margin: 0; /* Remove default body margin */
-    padding: 0; /* Remove default body padding */
+html,
+body {
+  height: 100%; /* Ensure both html and body take full viewport height */
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
 }
 
 html {
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: top right, bottom right; /* Positions the images */
-    background-size: contain; /* Ensures the image scales without cropping */
-    background-attachment: fixed; /* Keeps background fixed when scrolling */
-     overflow-y: scroll; /* Ensures a scrollbar is always available if content overflows */
-    -webkit-overflow-scrolling: touch; /* Improves scrolling performance on iOS devices */
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: top right, bottom right; /* Positions the images */
+  background-size: contain; /* Ensures the image scales without cropping */
+  background-attachment: fixed; /* Keeps background fixed when scrolling */
+  overflow-y: scroll; /* Ensures a scrollbar is always available if content overflows */
+  -webkit-overflow-scrolling: touch; /* Improves scrolling performance on iOS devices */
 }
 
 #mobile-fixed-background {
-    display: none; /* Hide by default */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../img/mobile_bckgrnd.png'); /* Your mobile image */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; /* Cover the entire viewport */
-    z-index: -1; /* Puts it behind all other content */
+  display: none; /* Hide by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/mobile_bckgrnd.png"); /* Your mobile image */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* Cover the entire viewport */
+  z-index: -1; /* Puts it behind all other content */
 }
 
 #mobile-fixed-background {
-        display: block; /* Show the fixed background div on mobile */
-    }
+  display: block; /* Show the fixed background div on mobile */
+}
 
 body {
   min-height: 100%; /* Ensures body also takes at least full viewport height */
-    width: 100%; 
-  font-family: 'Instrument Sans';
+  width: 100%;
+  font-family: "Instrument Sans";
   font-size: 1em;
   font-weight: 200;
   line-height: 1.6;
@@ -58,13 +59,14 @@ body {
   padding-top: 70px;
 }
 
-strong, b {
-  font-weight: 700; 
+strong,
+b {
+  font-weight: 700;
 }
 
 header {
-background-color: rgba(246, 246, 246, 1);   /* solid for mobile for better accessibility */
-padding: 10px 0 10px;
+  background-color: rgba(246, 246, 246, 1); /* solid for mobile for better accessibility */
+  padding: 10px 0 10px;
   margin: 0px;
   position: fixed;
   width: 100%;
@@ -72,41 +74,41 @@ padding: 10px 0 10px;
   left: 0;
   right: 0;
   border-bottom: 3px solid #4a4a4a;
-  border: solid #BDBDBD 1px; 
-	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
-	-webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
-	-moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+  border: solid #bdbdbd 1px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
   z-index: 10;
 }
 
 /* New rule to arrange Logo and Hamburger on Mobile */
 .navtoggle {
-    display: flex; /* Makes its direct children (logo, nav, icon) flex items */
-    justify-content: space-between; /* Pushes logo to left, icon/nav to right */
-    align-items: center; /* Vertically centers them */
-    padding: 5px 0; /* Adds some vertical spacing within the bar itself */
-    position: relative; /* CRUCIAL: Needed for absolute positioning of the opened nav menu */
+  display: flex; /* Makes its direct children (logo, nav, icon) flex items */
+  justify-content: space-between; /* Pushes logo to left, icon/nav to right */
+  align-items: center; /* Vertically centers them */
+  padding: 5px 0; /* Adds some vertical spacing within the bar itself */
+  position: relative; /* CRUCIAL: Needed for absolute positioning of the opened nav menu */
 }
 
 /* for text logo */
 .logo-text {
-    font-family: 'Cormorant Infant', serif; /* Your specified logo font */
-    font-weight: 700; /* BOLD as per your spec */
-    font-size: 1.75em; /* Adjust size as needed for mobile */
-    color: #000; /* Set your desired logo text color (e.g., black) */
-    white-space: nowrap; /* Prevents text from wrapping */
+  font-family: "Cormorant Infant", serif; /* Your specified logo font */
+  font-weight: 700; /* BOLD as per your spec */
+  font-size: 1.75em; /* Adjust size as needed for mobile */
+  color: #000; /* Set your desired logo text color (e.g., black) */
+  white-space: nowrap; /* Prevents text from wrapping */
 }
 
 /* Navigation Styling (Mobile - Hidden by default) */
 nav {
-    display: none; /* THIS IS THE RULE THAT HIDES THE MENU */
-    width: 100%;
-    position: absolute; /* Positions it relative to the .navtoggle parent */
-    top: 100%; /* Makes it drop down right below the header */
-    left: 0;
-    background-color: rgba(246, 246, 246, 1); /* Background for the open menu */
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1); /* Subtle shadow */
-    z-index: 9; /* Ensures it's above body content */
+  display: none; /* THIS IS THE RULE THAT HIDES THE MENU */
+  width: 100%;
+  position: absolute; /* Positions it relative to the .navtoggle parent */
+  top: 100%; /* Makes it drop down right below the header */
+  left: 0;
+  background-color: rgba(246, 246, 246, 1); /* Background for the open menu */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  z-index: 9; /* Ensures it's above body content */
 }
 
 /* Navigation Styling */
@@ -118,20 +120,20 @@ nav > ul {
 
 /* Styling for individual navigation list items on mobile */
 nav > ul > li {
-    display: block; /* This makes each list item take its own line */
-    padding: 10px 15px; /* Adds space around each menu item for better touch targets */
-    border-top: 1px solid rgba(0, 0, 0, 0.1); /* Adds a subtle separator line */
+  display: block; /* This makes each list item take its own line */
+  padding: 10px 15px; /* Adds space around each menu item for better touch targets */
+  border-top: 1px solid rgba(0, 0, 0, 0.1); /* Adds a subtle separator line */
 }
 
 nav > ul > li > a {
   padding: 0 15px;
   font-weight: 700;
-  color: #094BAE;
+  color: #094bae;
 }
 
 nav > ul > li a:hover,
 nav > ul > li a:focus {
-  color: #136ADF; /* slightly lighter than the original state */
+  color: #136adf; /* slightly lighter than the original state */
   text-decoration: underline;
 }
 
@@ -141,26 +143,27 @@ nav > ul > li a:visited {
 
 nav > ul > li:active {
   /* selected link */
-  color: #FF6723;
+  color: #ff6723;
 }
 
 .navtoggle.responsive nav {
-    display: block; /* This is the main rule to show the entire navigation menu */
-    height: auto; /* **NEW:** Ensure the nav expands to fit its content */
-    max-height: calc(100vh - 70px); /* **NEW:** Prevents the menu from going off-screen (adjust 70px if your header's actual height is different) */
-    overflow-y: auto; /* **NEW:** Adds a scrollbar if the menu content is too long for the screen */
+  display: block; /* This is the main rule to show the entire navigation menu */
+  height: auto; /* **NEW:** Ensure the nav expands to fit its content */
+  max-height: calc(100vh - 70px); /* **NEW:** Prevents the menu from going off-screen (adjust 70px if your header's actual height is different) */
+  overflow-y: auto; /* **NEW:** Adds a scrollbar if the menu content is too long for the screen */
 
-    /* Explicitly force containing block formatting context */
-    overflow-x: visible; /* Ensure nothing is hidden horizontally */
-    clear: both; /* Clear any floats that might cause collapse */
+  /* Explicitly force containing block formatting context */
+  overflow-x: visible; /* Ensure nothing is hidden horizontally */
+  clear: both; /* Clear any floats that might cause collapse */
 }
 
-.icon { /* Target the icon directly */
-    font-size: 24px;
-    color: #333; /* Color of your icon */
-    cursor: pointer;
-    display: block; /* Essential for flex alignment */
-    z-index: 11; /* Keep it on top */
+.icon {
+  /* Target the icon directly */
+  font-size: 24px;
+  color: #333; /* Color of your icon */
+  cursor: pointer;
+  display: block; /* Essential for flex alignment */
+  z-index: 11; /* Keep it on top */
 }
 
 /* Default hamburger icon */
@@ -193,43 +196,42 @@ h1 {
 
 /* Hero Section */
 #hero.header-hero {
-    /* Remove previous background-image from #hero */
-    background-image: none;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: left;
-    color: #200b3c; /* Keep your existing text color */
-    position: relative; /* Needed for absolute positioning of pseudo-elements */
-    overflow: hidden; /* Hide overflowing blur */
+  /* Remove previous background-image from #hero */
+  background-image: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+  color: #200b3c; /* Keep your existing text color */
+  position: relative; /* Needed for absolute positioning of pseudo-elements */
+  overflow: hidden; /* Hide overflowing blur */
 }
 
-
 #hero.header-hero h1 {
-    font-size: 2.5em; /* Larger font size for the main title */
-    text-align: left;
-    font-weight: 600; /* Adjust font weight if 'Instrument Sans' has a thinner option */
-    margin-bottom: 0.2em; /* Reduce space below the main title */
-    line-height: 1.2;
-    color: #200b3c; /* Ensure the color matches the screenshot's dark text */
+  font-size: 2.5em; /* Larger font size for the main title */
+  text-align: left;
+  font-weight: 600; /* Adjust font weight if 'Instrument Sans' has a thinner option */
+  margin-bottom: 0.2em; /* Reduce space below the main title */
+  line-height: 1.2;
+  color: #200b3c; /* Ensure the color matches the screenshot's dark text */
 }
 
 #hero.header-hero p {
-    font-size: .5em; /* Larger font size for the blurb */
-    font-weight: 200; /* Lighter font weight for the blurb */
-    max-width: 700px; /* Limit width for readability */
-    margin: 0.5em auto 0; /* Center the paragraph and add space above */
-    line-height: 1.6;
-    color: #4a4a4a; /* Adjust color for the blurb if needed, slightly lighter than main title */
+  font-size: .5em; /* Larger font size for the blurb */
+  font-weight: 200; /* Lighter font weight for the blurb */
+  max-width: 700px; /* Limit width for readability */
+  margin: 0.5em auto 0; /* Center the paragraph and add space above */
+  line-height: 1.6;
+  color: #4a4a4a; /* Adjust color for the blurb if needed, slightly lighter than main title */
 }
 
 /* For the divider in the hero heading */
 #hero.header-hero .divider {
-    font-weight: normal; 
-    color: #200b3c; 
-    width: auto; /* Remove fixed width */
-    margin: 0 0.1em; /* Adjust horizontal space around it */
-    vertical-align: baseline; /* Align with text */
-    font-size: 1.25em; /* Make the divider slightly smaller relative to H1 */
+  font-weight: normal;
+  color: #200b3c;
+  width: auto; /* Remove fixed width */
+  margin: 0 0.1em; /* Adjust horizontal space around it */
+  vertical-align: baseline; /* Align with text */
+  font-size: 1.25em; /* Make the divider slightly smaller relative to H1 */
 }
 
 .center {
@@ -278,23 +280,23 @@ h5 {
 
 /* to ensure read more bttns stay on the right and text stays on the left */
 .col-content {
-        text-align: right; /* Aligns content (including button) to the right on mobile */
-        padding-right: 15px; /* Adds space from the right edge */
-    }
+  text-align: right; /* Aligns content (including button) to the right on mobile */
+  padding-right: 15px; /* Adds space from the right edge */
+}
 
-    .col-content h3,
-    .col-content p {
-        text-align: left; /* Ensures heading and paragraph are left-aligned on larger screens */
-    }
+.col-content h3,
+.col-content p {
+  text-align: left; /* Ensures heading and paragraph are left-aligned on larger screens */
+}
 
 /* for the divider in the hero heading between my name and UX/UI Designer */
 .divider {
-    font-weight: normal; 
-    color: #200b3c; 
-    width: .25px;
-    margin: 0 0.05em; /* Add some horizontal space around it */
-    vertical-align: -10%;
-    font-size: 1.5em;
+  font-weight: normal;
+  color: #200b3c;
+  width: .25px;
+  margin: 0 0.05em; /* Add some horizontal space around it */
+  vertical-align: -10%;
+  font-size: 1.5em;
 }
 
 #work-secondary {
@@ -312,22 +314,21 @@ img {
   border-radius: 10px;
 }
 
-
 #my_profile_image {
   width: 100%;
   height: auto;
-  max-width: 250px; 
+  max-width: 250px;
 }
 
 /*For Animation */
 #austin_animation {
-    width: 100%;        /* Ensure it's responsive on mobile */
-    max-width: 400px;   /* Limit its max size on smaller screens to prevent overflow */
-    height: auto;       /* Maintain aspect ratio */
-    display: block;     /* Important for centering */
-    margin: 0 auto;     /* Center horizontally on mobile */
-    object-fit: contain; /* Prevents distortion, good for SVGs */
-    max-height: none;   
+  width: 100%; /* Ensure it's responsive on mobile */
+  max-width: 400px; /* Limit its max size on smaller screens to prevent overflow */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Important for centering */
+  margin: 0 auto; /* Center horizontally on mobile */
+  object-fit: contain; /* Prevents distortion, good for SVGs */
+  max-height: none;
 }
 
 /* Social Media Icons */
@@ -344,12 +345,13 @@ img {
 
 /* Links*/
 a {
-  color: #094BAE;
+  color: #094bae;
   text-decoration: none;
   /* No underlining */
 }
 
-a:hover a :focus {
+a:hover,
+a:focus {
   color: #146666;
   text-decoration: underline;
   /* Underlining when hovering over a link */
@@ -357,19 +359,19 @@ a:hover a :focus {
 
 a:visited {
   /* visited link */
-  color: #094BAE;
+  color: #094bae;
 }
 
 a:active {
   /* selected link */
-  color: #FF6723;
+  color: #ff6723;
 }
 
 /* Buttons */
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #094BAE;
+  background-color: #094bae;
   color: #ffffff;
   /* needed to override the default link color */
   font-weight: 400;
@@ -387,11 +389,7 @@ a:active {
 }
 
 .button:visited {
-  color: #ffffff
-}
-
-a:active {
-  color: #FF6723;
+  color: #ffffff;
 }
 
 .button.contact {
@@ -401,609 +399,202 @@ a:active {
 }
 .button.contact:hover {
   background-color: #ff7f50;
-  color: #3A3A3A;
+  color: #3a3a3a;
 }
 a:active {
-  color: #FF6723
+  color: #ff6723;
 }
 
 .button.resume {
-  background-color: #0E6DFF;
+  background-color: #0e6dff;
   color: #ffffff;
 }
 .button.resume:hover {
-background-color: #ff7f50;
-color: #3A3A3A
+  background-color: #ff7f50;
+  color: #3a3a3a;
 }
 a:active {
-  color: #FF6723;
+  color: #ff6723;
 }
-
-
-
 
 /* --- Work Section (Minimalist Stack) --- */
 
 #work h1 {
-    text-align: left;
-    margin-bottom: .75em; /* More space below the main heading */
-    font-size: 2.5em; /* Adjust as needed */
-    color: #333; /* Darker color for emphasis */
+  text-align: left;
+  margin-bottom: .75em; /* More space below the main heading */
+  font-size: 2.5em; /* Adjust as needed */
+  color: #333; /* Darker color for emphasis */
 }
 
 #work h2 {
-    text-align: center;
-    margin-bottom: .25em; /* More space below the main heading */
-    font-size: 2.5em; /* Adjust as needed */
-    color: #333; /* Darker color for emphasis */
+  text-align: center;
+  margin-bottom: .25em; /* More space below the main heading */
+  font-size: 2.5em; /* Adjust as needed */
+  color: #333; /* Darker color for emphasis */
 }
 
 .project-item img {
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto 30px auto;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 30px auto;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 .project-item .project-link {
-    display: block; /* Make the whole image area clickable */
-    text-decoration: none; /* Remove underline from image link */
+  display: block; /* Make the whole image area clickable */
+  text-decoration: none; /* Remove underline from image link */
 }
 
 .project-item .project-content {
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: left;
-    padding: 0 15px;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 0 15px;
 }
 
 #work .projects-wrapper {
-    display: flex; /* Enables Flexbox */
-    overflow-x: auto; /* Allows horizontal scrolling */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-    scroll-snap-type: x mandatory; /* Snaps to each project when scrolling */
-    gap: 30px; /* Space between each project card */
-    padding: 20px; /* Add padding to see shadows and prevent cards from touching edges */
-    margin-bottom: 20px; /* Space below the scrollable section */
+  display: flex; /* Enables Flexbox */
+  overflow-x: auto; /* Allows horizontal scrolling */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  scroll-snap-type: x mandatory; /* Snaps to each project when scrolling */
+  gap: 30px; /* Space between each project card */
+  padding: 20px; /* Add padding to see shadows and prevent cards from touching edges */
+  margin-bottom: 20px; /* Space below the scrollable section */
 }
 
 /* Style for each individual project card */
 .project-item {
-    flex: 0 0 auto; /* Prevents cards from shrinking, maintains their size */
-    width: 90vw; /* Fixed width for each card - adjust as desired */
-    height: auto; /* Allow height to adjust based on content */
-    background-color: #fff; /* White background for the card */
-    border-radius: 15px; /* Rounded corners for the card */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Stronger shadow for the card effect */
-    padding: 25px; /* Padding inside each card */
-    scroll-snap-align: start; /* Aligns the start of the card when scrolling */
-    display: flex; /* Use flexbox for content within the card */
-    flex-direction: column; /* Stack content vertically */
-    justify-content: space-between; /* Content spaced out, pushing button to bottom */
-    align-items: flex-start; /* Content aligned to the left */
-    text-align: left; /* Align text within the card to the left */
+  flex: 0 0 auto; /* Prevents cards from shrinking, maintains their size */
+  width: 90vw; /* Fixed width for each card - adjust as desired */
+  height: auto; /* Allow height to adjust based on content */
+  background-color: #fff; /* White background for the card */
+  border-radius: 15px; /* Rounded corners for the card */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Stronger shadow for the card effect */
+  padding: 25px; /* Padding inside each card */
+  scroll-snap-align: start; /* Aligns the start of the card when scrolling */
+  display: flex; /* Use flexbox for content within the card */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between; /* Content spaced out, pushing button to bottom */
+  align-items: flex-start; /* Content aligned to the left */
+  text-align: left; /* Align text within the card to the left */
 }
 
 .project-item img {
-    max-width: 100%; /* Ensure image fits within the card */
-    height: auto; /* Set a fixed height for images to ensure consistency */
-    object-fit: cover; /* Crop images to fit the fixed height */
-    border-radius: 10px; /* Slightly less rounded than the card itself */
-    margin-bottom: 20px; /* Space below image */
+  max-width: 100%; /* Ensure image fits within the card */
+  height: auto; /* Set a fixed height for images to ensure consistency */
+  object-fit: cover; /* Crop images to fit the fixed height */
+  border-radius: 10px; /* Slightly less rounded than the card itself */
+  margin-bottom: 20px; /* Space below image */
 }
 
 .project-item h3 {
-    font-size: 1.4em;
-    margin-bottom: 10px;
-    color: #333;
-    text-align: left; /* Left align title within card */
-     flex-grow: 1; /* Allows the paragraph to take up available vertical space */
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: left; /* Left align title within card */
+  flex-grow: 1; /* Allows the paragraph to take up available vertical space */
 }
 
 .project-item::after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .project-item p {
-    font-size: 0.95em; /* Slightly smaller text for better fit in cards */
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 20px; /* Space below paragraph */
-    flex-grow: 1; /* Allows paragraph to take up available space */
+  font-size: 0.95em; /* Slightly smaller text for better fit in cards */
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px; /* Space below paragraph */
+  flex-grow: 1; /* Allows paragraph to take up available space */
 }
 
 /* Modern Button Style for "Read More" */
 .modern-button {
-    padding: 14px 30px;
-    background-color: #5188DA; /* Your blue brand color */
-    color: white;
-    text-decoration: none;
-    border-radius: 15px; /* More rounded */
-    font-size: 1.05em;
-    font-weight: 500;
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    letter-spacing: 0.5px;
+  padding: 14px 30px;
+  background-color: #5188da; /* Your blue brand color */
+  color: white;
+  text-decoration: none;
+  border-radius: 15px; /* More rounded */
+  font-size: 1.05em;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.5px;
 
-    /* Mobile-first right alignment */
-    float: right;
-    margin-top: 5px; /* Space above the button */
-    margin-bottom: 5px; /* Space below the button */
+  /* Mobile-first right alignment */
+  float: right;
+  margin-top: 5px; /* Space above the button */
+  margin-bottom: 5px; /* Space below the button */
 }
 
 #work .navigation-arrows {
-    display: flex;
-    justify-content: flex-end; /* Align arrows to the right */
-    gap: 15px; /* Space between arrows */
-    margin-top: 0px; /* Space above arrows */
-    margin-bottom: 30px; /*Space below arros */
-    padding-right: 20px; /* Align with scroll container padding */
+  display: flex;
+  justify-content: flex-end; /* Align arrows to the right */
+  gap: 15px; /* Space between arrows */
+  margin-top: 0px; /* Space above arrows */
+  margin-bottom: 30px; /*Space below arros */
+  padding-right: 20px; /* Align with scroll container padding */
 }
 
 #work .navigation-arrows .arrow {
-    background-color: #5188DA; /* Blue background */
-    color: white;
-    border-radius: 50%; /* Make them circular */
-    width: 45px; /* Size of the arrow button */
-    height: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em; /* Size of the arrow icon */
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+  background-color: #5188da; /* Blue background */
+  color: white;
+  border-radius: 50%; /* Make them circular */
+  width: 45px; /* Size of the arrow button */
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em; /* Size of the arrow icon */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 #work .navigation-arrows .arrow:hover {
-    background-color: #427ACF;
-    transform: translateY(-2px);
+  background-color: #427acf;
+  transform: translateY(-2px);
 }
 
 .modern-button:hover,
 .modern-button:focus {
-    background-color: #427ACF; /* Slightly darker blue on hover */
-    transform: translateY(-2px); /* Subtle lift effect */
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  background-color: #427acf; /* Slightly darker blue on hover */
+  transform: translateY(-2px); /* Subtle lift effect */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
-
-
-
-
-
-
-
-
-
-/* Layout Styling */
-.container {
-  padding: 0 15px;
-}
-
-.row {
-  margin: 25px 0;
-}
-
-#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
 
 /* ===============================
-MOD MUSE
-================================= */
-.process-steps {
-  list-style: none;
-  padding: 0;
-  display: grid; /* Change to grid */
-  grid-template-columns: 1fr; 
-  gap: 20px; /* Adjust spacing as needed */
-  margin-bottom: 30px;
-}
-
-.process-steps li {
-  background-image: linear-gradient(to bottom, #EFE4F6, #96C1E8);
-  border: 1px solid #ddd;
-  padding: 15px;
-  text-align: center;
-  border-radius: 5px;
-  /* Remove flex: 1; */
-}
-
-.process-steps h3 {
-  margin-top: 0;
-  color: #555;
-}
-
-.mockup-gallery {
-  display: flex; /* Arrange images in a row */
-  overflow-x: auto; /* Enable horizontal scrolling */
-  scroll-snap-type: x mandatory; /* Make scrolling snap to each image */
-  margin-bottom: 20px; /* Add some space below the gallery */
-  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
-  align-items: flex-start;
-}
-
-.mockup-gallery img {
-  width: 200px;
-  max-width: 400px;
-  height: auto; 
-  flex-shrink: 0;
-  margin-right: 20px; /* Add spacing between images */
-  scroll-snap-align: start; /* Snap to the start of each image */
-}
-
-/* Remove the margin-right from the last image */
-.mockup-gallery img:last-child {
-  margin-right: 0;
-}
-
-
-/* ===============================
-BOTANY BUDDY
+Main Section Slide-in Animation
 =================================*/
-.process-steps-botanybuddy {
-  list-style: none;
-  padding: 0;
-  display: grid; /* Change to grid */
-  grid-template-columns: 1fr; 
-  gap: 20px; /* Adjust spacing as needed */
-  margin-bottom: 30px;
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
-.process-steps-botanybuddy li {
-  background-color: #B6D8C6;
-  border: 1px solid #ddd;
-  padding: 15px;
-  text-align: center;
-  border-radius: 5px;
-  /* Remove flex: 1; */
+main#work {
+  animation: slideInFromBottom 1.2s ease-out;
+  animation-fill-mode: both;
 }
-
-.process-steps-botanybuddy h3 {
-  margin-top: 0;
-  color: #555;
-}
-
-.botanybuddy-logo img {
-  max-width: 150px; /* Adjust to your desired maximum width */
-  height: auto; /* Maintain aspect ratio */
-}
-
-.mockup-gallery-colors {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  margin-bottom: 20px;
-  -webkit-overflow-scrolling: touch;
-  width: 100%;
-  align-items: center; /* Optional: Center images vertically within the container */
-}
-
-
-/* ==========================================
-RECIFREE
-===========================================*/
-
-/*for the process sections */
-.process-steps-recifree {
-  list-style: none;
-  padding: 0;
-  display: grid; /* Change to grid */
-  grid-template-columns: 1fr; 
-  gap: 20px; /* Adjust spacing as needed */
-  margin-bottom: 30px;
-}
-
-.process-steps-recifree li {
-  background-image: linear-gradient(to bottom, #FFC27E, #F46651);
-  border: 1px solid #ddd;
-  padding: 15px;
-  text-align: center;
-  border-radius: 5px;
-  /* Remove flex: 1; */
-}
-
-.process-steps-recifree h3 {
-  margin-top: 0;
-  color: #555;
-}
-
-/* to ensure the list is properly in each container */
-.users-can-list li {
-  background-image: none; /* Remove the gradient */
-  border: none; /* Remove the border */
-  padding: 0; /* Remove the padding */
-  text-align: left; /* Adjust text alignment if needed */
-  border-radius: 0; /* Remove the border-radius */
-  margin-bottom: 5px; /* Add some spacing between list items if desired */
-}
-
-/* for the user research section */
-.process-steps-recifree-user-research {
-  list-style: none;
-  padding: 0;
-  display: grid; /* Change to grid */
-  grid-template-columns: 1fr; 
-  gap: 20px; /* Adjust spacing as needed */
-  margin-bottom: 30px;
-}
-
-.process-steps-recifree-user-research li {
-  background-image: linear-gradient(to bottom, #E1FFC9, #83B082);
-  border: 1px solid #ddd;
-  padding: 15px;
-  text-align: center;
-  border-radius: 5px;
-  /* Remove flex: 1; */
-}
-
-.process-steps-recifree-user-research h3 {
-  margin-top: 0;
-  color: #555;
-}
-
-/* for the sythesis section */
-.process-steps-recifree-synthesis {
-  list-style: none; /* Remove default bullets from the outer list */
-  padding: 0;
-  display: grid; /* Keep grid for "Patterns" and "Frustrations" layout */
-  grid-template-columns: 1fr;
-  gap: 20px;
-  margin-bottom: 30px;
-}
-
-/* Style the outer list items ("Patterns" and "Frustrations" boxes) */
-.process-steps-recifree-synthesis > li {
-  background-image: linear-gradient(to bottom, #FFC27E, #FFBCBC);
-  border: 1px solid #ddd;
-  padding: 15px;
-  text-align: left; /* Align text within the boxes to the left */
-  border-radius: 70px;
-}
-
-.process-steps-recifree-synthesis > li h3 {
-  margin-top: 0;
-  color: #555;
-  margin-bottom: 10px; /* Add space below the heading */
-  text-align: center; /* Center the headings */
-}
-
-/* Style the inner unordered list for a normal list appearance */
-.process-steps-recifree-synthesis > li > ul.users-can-list {
-  list-style-type: disc; /* Or none if you don't want bullets */
-  padding-left: 20px; /* Add some indentation for the list items */
-}
-
-/* Style the list items within the inner unordered list */
-.process-steps-recifree-synthesis > li > ul.users-can-list > li {
-  background-image: none; /* Remove background from inner list items */
-  border: none; /* Remove border from inner list items */
-  padding: 5px 0; /* Add some vertical padding for spacing */
-  text-align: left; /* Ensure text is left-aligned */
-  border-radius: 0; /* Remove border-radius */
-}
-
-/* Style the paragraph within "Frustrations" */
-.process-steps-recifree-synthesis > li > p {
-  padding: 5px 0; /* Add some vertical padding */
-  text-align: left;
-}
-
-/* for user personas */
-.mockup-gallery-personas {
-  display: flex; /* Arrange images in a row */
-  overflow-x: auto; /* Enable horizontal scrolling */
-  scroll-snap-type: x mandatory; /* Make scrolling snap to each image */
-  margin-bottom: 20px; /* Add some space below the gallery */
-  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
-}
-
-.mockup-gallery-personas img {
-  width: 400px;
-  max-width: 400px;
-  height: auto; 
-  flex-shrink: 0;
-  margin-right: 20px; /* Add spacing between images */
-  scroll-snap-align: start; /* Snap to the start of each image */
-}
-
-/*=====================================
-SAVVY PIG
-======================================*/
-.process-steps-savvypig {
-  list-style: none;
-  padding: 0;
-  display: grid; /* Change to grid */
-  grid-template-columns: 1fr;
-  gap: 20px; /* Adjust spacing as needed */
-  margin-bottom: 30px;
-}
-
-.process-steps-savvypig li {
-  background-image: linear-gradient(to bottom, #BAEDDB, #46AA87);
-  border: 1px solid #ddd;
-  padding: 15px;
-  text-align: center;
-  border-radius: 80px;
-  /* Remove flex: 1; */
-}
-
-.process-steps-savvypig h3 {
-  margin-top: 0;
-  color: #555;
-}
-
-.mockup-gallery-desktop {
-  display: flex; /* Arrange images in a row */
-  overflow-x: auto; /* Enable horizontal scrolling */
-  scroll-snap-type: x mandatory; /* Make scrolling snap to each image */
-  margin-bottom: 20px; /* Add some space below the gallery */
-  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
-  align-items: flex-start;
-}
-
-.mockup-gallery-desktop img {
-  width: 600px;
-  max-width: 600px;
-  height: auto; 
-  flex-shrink: 0;
-  margin-right: 20px; /* Add spacing between images */
-  scroll-snap-align: start; /* Snap to the start of each image */
-}
-
-
-
-/* ==========================================
-PORTFOLIO WEBSITE
-===========================================*/
-.process-steps-porfolio-responsibilities {
-  list-style: none; /* Remove default bullets from the outer list */
-  padding: 0;
-  display: grid; /* Keep grid for "Patterns" and "Frustrations" layout */
-  grid-template-columns: 1fr;
-  gap: 20px;
-  margin-bottom: 30px;
-}
-
-/* Style the outer list items ("Patterns" and "Frustrations" boxes) */
-.process-steps-porfolio-responsibilities > li {
-  padding: 15px;
-  text-align: left; /* Align text within the boxes to the left */
-  border-radius: 0px;
-  border: 4px solid #000; /* A fallback solid border for browsers that don't support border-image */
-  border-image: linear-gradient(to bottom, #FFA9BB, #AFCDFF) 1; /* Apply the ombre gradient as a border */
-}
-
-.process-steps-porfolio-responsibilities > li h3 {
-  margin-top: 0;
-  color: black;
-  margin-bottom: 10px; /* Add space below the heading */
-  text-align: left;
-}
-
-/* Style the inner unordered list for a normal list appearance */
-.process-steps-porfolio-responsibilities > li > ul.users-can-list {
-  list-style-type: disc; /* Or none if you don't want bullets */
-  padding-left: 20px; /* Add some indentation for the list items */
-}
-
-/* Style the list items within the inner unordered list */
-.process-steps-porfolio-responsibilities > li > ul.users-can-list > li {
-  background-image: none; /* Remove background from inner list items */
-  border: none; /* Remove border from inner list items */
-  padding: 5px 0; /* Add some vertical padding for spacing */
-  text-align: left; /* Ensure text is left-aligned */
-  border-radius: 0; /* Remove border-radius */
-}
-
-/* New style for the container of the two boxes */
-.process-steps-portfolio-role {
-  list-style: none; /* Remove default bullets from the ul */
-  padding: 0;
-  display: grid; /* Use grid for layout */
-  grid-template-columns: 1fr 1fr; /* Creates two equal columns */
-  gap: 20px; /* Space between the two boxes */
-  margin-bottom: 30px;
-}
-
-/* Style for each individual box */
-.process-steps-portfolio-role > li {
-  background-image: none; /* No inner fill */
-  border-radius: 0; /* No rounded corners */
-
-  border: 4px solid #000; /* Fallback solid border */
-  border-image: linear-gradient(to bottom, #FFA9BB, #AFCDFF) 1; /* Ombre gradient border */
-
-  padding: 15px; /* Padding inside the box */
-  text-align: left; /* Align text within each box */
-}
-
-.process-steps-portfolio-role > li h3 {
-  margin-top: 0;
-  color: black;
-  margin-bottom: 10px;
-  text-align: left; 
-}
-
-
-/* Process Container (the main wrapper for all steps) */
-.process-container {
-    display: flex;
-    flex-wrap: wrap; /* Allows items to wrap onto new lines on smaller screens */
-    justify-content: center;
-    align-items: center;
-    /* Combines row-gap and column-gap */
-    gap: 1.5rem;
-    max-width: 1200px; /* Limits the maximum width of the container */
-    margin: 2rem auto; /* Centers the container horizontally */
-    padding: 0 1rem;
-}
-
-/* Group for each circle and its arrow */
-.process-item-group {
-    display: flex; /* Makes the circle and arrow stay on the same line */
-    align-items: center; /* Vertically aligns circle and arrow */
-    gap: 0.5rem; /* Small gap between the circle and the arrow */
-    flex-shrink: 0; /* Prevents groups from shrinking */
-}
-
-/* Individual Process Step (wrapper for each circle and its text) */
-.process-step {
-    display: flex;
-    flex-direction: column; /* Stacks content vertically if needed, though mostly for centering */
-    align-items: center;
-    flex-shrink: 0; /* Prevents the circles from shrinking on smaller screens */
-}
-
-/* Circle Content Styling */
-.circle-content {
-    width: 7rem; /* Base width for circles on small screens (approx. 112px) */
-    height: 7rem; /* Base height for circles on small screens (approx. 112px) */
-    border-radius: 50%; /* Makes the div a perfect circle */
-    border: 2px solid #3b82f6; /* Blue border */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #1d4ed8; /* Darker blue text */
-    font-weight: 600; /* Semi-bold text */
-    font-size: 1rem; /* Base font size (approx. 16px) */
-    /* Subtle shadow for depth */
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    transition: box-shadow 300ms ease-in-out; /* Smooth transition for hover effect */
-}
-
-/* Hover effect for circles */
-.circle-content:hover {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Larger shadow on hover */
-}
-
-/* Arrow Separator */
-.arrow-separator {
-    /* Hidden by default on small screens (mobile) */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 2rem; /* Width for the arrow container (approx. 32px) */
-    height: 2rem; /* Height for the arrow container (approx. 32px) */
-}
-
-.arrow-separator svg {
-    width: 2rem; /* SVG icon width */
-    height: 2rem; /* SVG icon height */
-    stroke: #3b82f6; /* SVG icon color (blue) */
-}
-
-
-
-
 
 /* ===============================
 Keyframes for Sun
 =================================*/
 @keyframes sun-color-change {
-  0% { fill: #F6B91F; } 
-  50% { fill: #FFF6E0; } 
-  100% { fill: #EB839C; } 
+  0% {
+    fill: #f6b91f;
+  }
+  50% {
+    fill: #fff6e0;
+  }
+  100% {
+    fill: #eb839c;
+  }
 }
 
 .sun {
@@ -1011,13 +602,21 @@ Keyframes for Sun
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-front {
@@ -1048,54 +647,53 @@ Keyframes for Sun
   justify-content: center;
 }
 
-
 footer#contact .container > div:last-child p {
-    text-align: center;
+  text-align: center;
 }
 
-  /* to ensure the footer stays on its own line */
+/* to ensure the footer stays on its own line */
 footer {
-    text-align: center;
-    padding: 2em 1em; 
-    background-color: #e9e9e9;
-    color: #094BAE; /* Text color */
-    font-family: Instrument Sans;
-    font-weight: bold;
-    font-size: .9em;
+  text-align: center;
+  padding: 2em 1em;
+  background-color: #e9e9e9;
+  color: #094bae; /* Text color */
+  font-family: Instrument Sans;
+  font-weight: bold;
+  font-size: .9em;
 }
 
 .footer-nav {
-    margin-bottom: 0.8em; /* Space between links and copyright */
+  margin-bottom: 0.8em; /* Space between links and copyright */
 }
 
 .footer-nav a {
-    text-decoration: none;
-    color: #333; /* Link color */
-    margin: 0 0.3em; /* Adjust spacing between links */
-    white-space: nowrap; /* Keep links on one line */
+  text-decoration: none;
+  color: #333; /* Link color */
+  margin: 0 0.3em; /* Adjust spacing between links */
+  white-space: nowrap; /* Keep links on one line */
 }
 
 .footer-nav a:hover {
-    color: #136ADF; /* Hover color matches header*/
+  color: #136adf; /* Hover color matches header*/
 }
 
 .dot-divider {
-    display: inline-block;
-    width: 4px; /* Size of the dot */
-    height: 4px; /* Size of the dot */
-    background-color: #000000; /* Color of the dot */
-    border-radius: 50%; /* Makes it a circle */
-    vertical-align: middle;
-    margin: 0 0.5em; /* Space around the dot */
+  display: inline-block;
+  width: 4px; /* Size of the dot */
+  height: 4px; /* Size of the dot */
+  background-color: #000000; /* Color of the dot */
+  border-radius: 50%; /* Makes it a circle */
+  vertical-align: middle;
+  margin: 0 0.5em; /* Space around the dot */
 }
 
 .copyright {
-    font-size: 0.85em; /* Slightly smaller for copyright */
-    color: #4e4e4e;
-    font-weight: 200;
+  font-size: 0.85em; /* Slightly smaller for copyright */
+  color: #4e4e4e;
+  font-weight: 200;
 }
 
-    #work-secondary .dog-img {
+#work-secondary .dog-img {
   width: 100%;
   max-width: 90vw; /* Use most of the viewport width */
   height: auto;
@@ -1104,13 +702,11 @@ footer {
   margin: 20px auto;
 }
 
-
 /* ===========================================================================
 Medium devices (640px and larger)
 ============================================================================ */
 @media only screen and (min-width: 640px) {
-
-  [class*=col-] {
+  [class*="col-"] {
     float: left;
     padding: 0 10px;
   }
@@ -1128,92 +724,91 @@ Medium devices (640px and larger)
 
   /* ensures project cards are no longer horizontal*/
   #work .projects-wrapper {
- display: grid; /* Use grid for vertical stacking */
-        grid-template-columns: 1fr; /* One column, stacking items vertically */
-        gap: 40px; /* Space between stacked project cards */
-        overflow-x: visible; /* Disable horizontal scrolling */
-        scroll-snap-type: none; /* Disable scroll-snapping */
-        padding: 0; /* Remove padding if not needed for the stacked view */
-        margin: 0 auto; /* Center the wrapper */
+    display: grid; /* Use grid for vertical stacking */
+    grid-template-columns: 1fr; /* One column, stacking items vertically */
+    gap: 40px; /* Space between stacked project cards */
+    overflow-x: visible; /* Disable horizontal scrolling */
+    scroll-snap-type: none; /* Disable scroll-snapping */
+    padding: 0; /* Remove padding if not needed for the stacked view */
+    margin: 0 auto; /* Center the wrapper */
   }
 
-   .project-item {
-        flex: none; /* Override the mobile flex properties */
-        width: 100%; /* Make the cards take the full width of the container */
-        height: auto;
-        margin: 0 auto; /* Center the cards */
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        padding: 30px; /* Adjust padding for a cleaner look */
-    }
+  .project-item {
+    flex: none; /* Override the mobile flex properties */
+    width: 100%; /* Make the cards take the full width of the container */
+    height: auto;
+    margin: 0 auto; /* Center the cards */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px; /* Adjust padding for a cleaner look */
+  }
 
-    #work .navigation-arrows {
-        display: none; /* Hide the navigation arrows on larger screens */
-    }
+  #work .navigation-arrows {
+    display: none; /* Hide the navigation arrows on larger screens */
+  }
 
-    .project-item .project-content {
-        padding: 0; /* Reset padding */
-    }
+  .project-item .project-content {
+    padding: 0; /* Reset padding */
+  }
 
-    .project-item h3,
-    .project-item p {
-        text-align: left; /* Keep text left-aligned within the stacked card */
-    }
-    
-    .modern-button {
-        float: none; /* Remove float */
-        display: inline-block; /* Make button a block element to center it */
-    }
+  .project-item h3,
+  .project-item p {
+    text-align: left; /* Keep text left-aligned within the stacked card */
+  }
 
-    
+  .modern-button {
+    float: none; /* Remove float */
+    display: inline-block; /* Make button a block element to center it */
+  }
 
   html {
-        background-image: url('../img/desktop_bckgrnd.png'); 
-background-attachment: fixed; /* Re-enable fixed attachment for desktop where it works! */
-        background-position: center;
-        background-size: cover;
-    }
+    background-image: url("../img/desktop_bckgrnd.png");
+    background-attachment: fixed; /* Re-enable fixed attachment for desktop where it works! */
+    background-position: center;
+    background-size: cover;
+  }
 
-    #mobile-fixed-background {
-        display: none; /* Hide this div on desktop */
-    }
+  #mobile-fixed-background {
+    display: none; /* Hide this div on desktop */
+  }
 
-    /* ensures case study's have blank bckgrnd */
-    .case-study-page {
+  /* ensures case study's have blank bckgrnd */
+  .case-study-page {
     background-image: none !important; /* Removes the background image */
     background-color: white; /* Sets a plain white background */
-}
+  }
 
   .logo-text {
     font-size: 2em;
   }
 
-    /* Hide the hamburger icon on desktop */
-    .icon {
-        display: none;
-    }
+  /* Hide the hamburger icon on desktop */
+  .icon {
+    display: none;
+  }
 
-    /* Show the navigation menu on desktop */
-    nav {
-        display: block; /* Make the navigation visible on desktop */
-        position: static; /* Remove absolute positioning for desktop */
-        width: auto; /* Allow nav to take only necessary width */
-        background-color: transparent; /* Remove background from desktop nav */
-        box-shadow: none; /* Remove shadow from desktop nav */
-        z-index: auto; /* Reset z-index */
-    }
+  /* Show the navigation menu on desktop */
+  nav {
+    display: block; /* Make the navigation visible on desktop */
+    position: static; /* Remove absolute positioning for desktop */
+    width: auto; /* Allow nav to take only necessary width */
+    background-color: transparent; /* Remove background from desktop nav */
+    box-shadow: none; /* Remove shadow from desktop nav */
+    z-index: auto; /* Reset z-index */
+  }
 
-    /* Display nav items horizontally on desktop */
-    nav > ul > li {
-        display: inline-block; /* Arranges links side-by-side */
-        padding: 0 15px; /* Adjust spacing between desktop links as needed */
-        border-top: none; /* Remove any border separators */
-    }
+  /* Display nav items horizontally on desktop */
+  nav > ul > li {
+    display: inline-block; /* Arranges links side-by-side */
+    padding: 0 15px; /* Adjust spacing between desktop links as needed */
+    border-top: none; /* Remove any border separators */
+  }
 
-    nav > ul { /* Reset any margins that might have been applied for mobile */
-        margin: 0;
-    }
+  nav > ul {
+    /* Reset any margins that might have been applied for mobile */
+    margin: 0;
+  }
 
-   nav > ul {
+  nav > ul {
     /* Add this line */
     margin: 1em 0;
   }
@@ -1222,11 +817,11 @@ background-attachment: fixed; /* Re-enable fixed attachment for desktop where it
     display: inline-block;
   }
 
-    .about-photo {
+  .about-photo {
     display: flex;
   }
 
- .image-scroll-wrapper {
+  .image-scroll-wrapper {
     justify-content: left;
     padding-top: 40px;
     flex-wrap: nowrap;
@@ -1235,161 +830,157 @@ background-attachment: fixed; /* Re-enable fixed attachment for desktop where it
     margin-bottom: 30px;
   }
 
-#hero.header-hero {
-padding-top: 100px; 
-padding-bottom: 70px;   
-}
+  #hero.header-hero {
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
 
-    #hero.header-hero h1 {
-        font-size: 4em; /* Even larger on medium screens */
-    }
+  #hero.header-hero h1 {
+    font-size: 4em; /* Even larger on medium screens */
+  }
 
-    #hero.header-hero p {
-        font-size: 1.3em;
-    }
+  #hero.header-hero p {
+    font-size: 1.3em;
+  }
 
+  #work h2 {
+    font-size: 2em;
+  }
 
+  .project-item {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    width: 570px;
+  }
 
+  .project-item img {
+    max-width: 100%; /* Make image larger on smaller screens */
+    margin-bottom: 20px;
+  }
 
-    
-    #work h2 {
-        font-size: 2em;
-    }
+  .project-item .project-content {
+    max-width: 100%; /* Allow content to take full width */
+    padding: 0 15px; /* Add some padding to the sides */
+    text-align: center; /* Center text on small screens */
+  }
 
-    .project-item {
-        margin-bottom: 40px;
-        padding-bottom: 40px;
-        width: 570px;
-    }
+  .project-item h3 {
+    font-size: 1.8em;
+    text-align: center;
+  }
 
-    .project-item img {
-        max-width: 100%; /* Make image larger on smaller screens */
-        margin-bottom: 20px;
-    }
+  .project-item p {
+    font-size: 1em;
+    text-align: left;
+  }
 
-    .project-item .project-content {
-        max-width: 100%; /* Allow content to take full width */
-        padding: 0 15px; /* Add some padding to the sides */
-        text-align: center; /* Center text on small screens */
-    }
-
-    .project-item h3 {
-        font-size: 1.8em;
-        text-align: center;
-    }
-
-    .project-item p {
-        font-size: 1em;
-        text-align: left;
-    }
-
-    .modern-button {
-        padding: 12px 25px;
-        font-size: 1em;
-    }
+  .modern-button {
+    padding: 12px 25px;
+    font-size: 1em;
+  }
 
   .col-md-6 {
     width: 50%;
     align-items: flex-start;
   }
 
-  .col-md-6 h3 { 
+  .col-md-6 h3 {
     margin-top: 0; /* Remove default top margin */
-}
+  }
 
-.col-content {
-        text-align: right; /* This is what makes it align right on mobile */
-        padding-right: 15px;
-    }
+  .col-content {
+    text-align: right; /* This is what makes it align right on mobile */
+    padding-right: 15px;
+  }
 
-#work-secondary {
-  padding-top: 15px;
-}
+  #work-secondary {
+    padding-top: 15px;
+  }
 
-#work-secondary .about-content picture img{
-  max-width: 300px; /* Adjust as needed */
-  height: auto;
-  display: block;
-  margin: 0 auto 20px auto;
-}
+  #work-secondary .about-content picture img {
+    max-width: 300px; /* Adjust as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+  }
 
-#work-secondary img {
-  max-width: 80vw; 
-  display: block;
-  margin: 20px auto;
-}
+  #work-secondary img {
+    max-width: 80vw;
+    display: block;
+    margin: 20px auto;
+  }
 
   #work .row svg {
     width: 100%;
     max-width: 500px;
   }
-#work .row {
+  #work .row {
     max-width: 1000px;
-}
+  }
 
-.modmuse-logo img {
-  width: 350px;
-  height: auto;
-}
+  .modmuse-logo img {
+    width: 350px;
+    height: auto;
+  }
 
-.mockup-gallery-colors {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  margin-bottom: 20px;
-  -webkit-overflow-scrolling: touch;
-  width: 100%;
-  align-items: center; /* Optional: Center images vertically within the container */
-}
+  .mockup-gallery-colors {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    margin-bottom: 20px;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    align-items: center; /* Optional: Center images vertically within the container */
+  }
 
-.mockup-gallery-colors img {
-  height: auto;
-  max-height: 160px; /* Adjust as needed */
-  max-width: 100%; /* Ensure images don't exceed container width */
-  object-fit: contain; /* Maintain aspect ratio within the max dimensions */
-}
+  .mockup-gallery-colors img {
+    height: auto;
+    max-height: 160px; /* Adjust as needed */
+    max-width: 100%; /* Ensure images don't exceed container width */
+    object-fit: contain; /* Maintain aspect ratio within the max dimensions */
+  }
 
+  main#work-secondary .container {
+    padding-left: 180px; /* Adjust this value for the desired left spacing */
+    padding-right: 180px; /* Adjust this value for the desired right spacing */
+    max-width: 85vw;
+    margin-left: auto; /* Center the container if you set a max-width */
+    margin-right: auto; /* Center the container if you set a max-width */
+  }
 
-main#work-secondary .container {
-  padding-left: 180px; /* Adjust this value for the desired left spacing */
-  padding-right: 180px; /* Adjust this value for the desired right spacing */
-  max-width: 85vw;
-  margin-left: auto; /* Center the container if you set a max-width */
-  margin-right: auto; /* Center the container if you set a max-width */
-}
-
-main#work-secondary .container .botanybuddy-logo img { /* Corrected class name to match HTML */
-  max-width: 250px; /* For medium and larger screens */
-  width: auto; /* Ensure it can shrink */
-}
+  main#work-secondary .container .botanybuddy-logo img {
+    /* Corrected class name to match HTML */
+    max-width: 250px; /* For medium and larger screens */
+    width: auto; /* Ensure it can shrink */
+  }
 
   /* to ensure the footer stays on its own line */
-footer {
+  footer {
     text-align: center;
-    padding: 2em 1em; 
+    padding: 2em 1em;
     background-color: #fdfdfd;
     color: #000000; /* Text color */
     font-family: Instrument Sans;
     font-weight: bold;
     font-size: 1em;
-}
+  }
 
-.footer-nav {
+  .footer-nav {
     margin-bottom: 0.8em; /* Space between links and copyright */
-}
+  }
 
-.footer-nav a {
+  .footer-nav a {
     text-decoration: none;
     color: #333; /* Link color */
     margin: 0 .9em; /* Adjust spacing between links */
     white-space: nowrap; /* Keep links on one line */
-}
+  }
 
-.footer-nav a:hover {
+  .footer-nav a:hover {
     color: #007bff; /* Hover color */
-}
+  }
 
-.dot-divider {
+  .dot-divider {
     display: inline-block;
     width: 4px; /* Size of the dot */
     height: 4px; /* Size of the dot */
@@ -1397,53 +988,53 @@ footer {
     border-radius: 50%; /* Makes it a circle */
     vertical-align: middle;
     margin: 0 0.5em; /* Space around the dot */
-}
+  }
 
-.copyright {
+  .copyright {
     font-size: 0.85em; /* Slightly smaller for copyright */
     color: #4e4e4e;
     font-weight: 200;
-}
+  }
 
-/* Basic responsiveness for smaller screens (optional, but good practice) */
-@media (max-width: 600px) {
+  /* Basic responsiveness for smaller screens (optional, but good practice) */
+  @media (max-width: 600px) {
     .footer-nav a,
     .dot-divider {
-        margin: 0 0.3em; /* Tighten spacing on small screens */
-    }
-}
-  /*for DESIGN PROCESS in Portfolio Case Study*/
-  .circle-content {
-        width: 8rem; /* Larger width for circles on medium screens (approx. 128px) */
-        height: 8rem; /* Larger height for circles on medium screens (approx. 128px) */
-        font-size: 1.125rem; /* Larger font size for circles on medium screens (approx. 18px) */
-    }
-
-    .arrow-separator {
-        display: flex; /* Display arrows as flex items on medium screens and up */
-    } 
-
-    .process-container {
-        justify-content: flex-start; /* Align items to the left on small screens */
-        gap: 1.5rem 2rem;
-        padding: 0 0.5rem; /* Add a small horizontal padding to prevent touching screen edges */
-    }
-
-    /* Apply flexbox to the container of SVG */
-    .svg-container {
-        display: flex;             /* Makes it a flex container */
-        justify-content: center;   /* Centers flex items horizontally */
-        align-items: center;       /* Centers flex items vertically (if height allows) */
-        width: 100%;               /* Ensure container takes full width */
-        /* You might want to add some padding or margin to .svg-container if needed */
-        /* padding: 20px 0; */
-    }
-#austin_animation {
-        width: 25%;       /* Allow it to take full width of its container on desktop */
-        max-width: 80%;   /* Ensure it doesn't exceed its container's width */
-        display: block;
+      margin: 0 0.3em; /* Tighten spacing on small screens */
     }
   }
+  /*for DESIGN PROCESS in Portfolio Case Study*/
+  .circle-content {
+    width: 8rem; /* Larger width for circles on medium screens (approx. 128px) */
+    height: 8rem; /* Larger height for circles on medium screens (approx. 128px) */
+    font-size: 1.125rem; /* Larger font size for circles on medium screens (approx. 18px) */
+  }
+
+  .arrow-separator {
+    display: flex; /* Display arrows as flex items on medium screens and up */
+  }
+
+  .process-container {
+    justify-content: flex-start; /* Align items to the left on small screens */
+    gap: 1.5rem 2rem;
+    padding: 0 0.5rem; /* Add a small horizontal padding to prevent touching screen edges */
+  }
+
+  /* Apply flexbox to the container of SVG */
+  .svg-container {
+    display: flex; /* Makes it a flex container */
+    justify-content: center; /* Centers flex items horizontally */
+    align-items: center; /* Centers flex items vertically (if height allows) */
+    width: 100%; /* Ensure container takes full width */
+    /* You might want to add some padding or margin to .svg-container if needed */
+    /* padding: 20px 0; */
+  }
+  #austin_animation {
+    width: 25%; /* Allow it to take full width of its container on desktop */
+    max-width: 80%; /* Ensure it doesn't exceed its container's width */
+    display: block;
+  }
+}
 
 /* =====================================================================
 Large devices (1024px or larger)
@@ -1451,54 +1042,45 @@ Large devices (1024px or larger)
 @media only screen and (min-width: 1024px) {
   .col-lg-7 {
     width: 58.33333333%; /* Approximately 7/12 */
-}
+  }
 
-.col-lg-5 {
+  .col-lg-5 {
     width: 41.66666667%; /* Approximately 5/12 */
-}
+  }
 
-.col-md-6 h3 { 
-  margin-top: 10px; 
-}
+  .col-md-6 h3 {
+    margin-top: 10px;
+  }
 
- 
   #work-secondary .about-content picture {
     float: right;
-    max-width: 450px; 
-      margin-right: 20px; /* Add space between image and text */
-
+    max-width: 450px;
+    margin-right: 20px; /* Add space between image and text */
   }
-  
+
   #work-secondary img {
-    max-width: 90vw; 
+    max-width: 90vw;
   }
 
-.container {
-    max-width: 1200px; 
+  .container {
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-}
+  }
 
-#work .row svg {
-  width: 100%;
-  max-width: 400px;
-}
-#work .row {
-  max-width: 1200px;
-}
+  #work .row svg {
+    width: 100%;
+    max-width: 400px;
+  }
+  #work .row {
+    max-width: 1200px;
+  }
 
+  .mockup-gallery-colors img {
+    max-height: 200px; /* Adjust as needed */
+  }
 
-.mockup-gallery-colors img {
-  max-height: 200px; /* Adjust as needed */
-}
-
- .project-item {
-        width: 800px;
-    }
-}
-
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
+  .project-item {
+    width: 800px;
+  }
 }
