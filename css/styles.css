@@ -664,6 +664,9 @@ footer {
   font-family: Instrument Sans;
   font-weight: bold;
   font-size: .9em;
+  width: 100vw;
+   margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
 }
 
 .footer-nav {
