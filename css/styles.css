@@ -700,6 +700,56 @@ footer {
   font-weight: 200;
 }
 
+/* Adding horizontal scrolling for mockup galleries */
+.mockup-gallery {
+  display: flex;
+  gap: 15px; /* space between mockup images */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.mockup-gallery img {
+  flex: 0 0 auto;
+  width: 250px; /* Fixed width for consistent sizing */
+  height: auto;
+  border-radius: 10px;
+  scroll-snap-align: start;
+  object-fit: contain;
+}
+
+.mockup-gallery-colors {
+  display: flex;
+  gap: 10px; /* space between color swatches */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+/* Adding styles for ReciFree project images to make them smaller */
+.modmuse-logo img {
+  width: 200px; /* Fixed width instead of 100% */
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 20px auto; /* Center the images */
+}
+
+/* Typography image styling */
+.modmuse-logo + div img,
+div p + picture img {
+  width: 400px; /* Slightly larger for typography samples */
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+
 #work-secondary .dog-img {
   width: 100%;
   max-width: 90vw; /* Use most of the viewport width */
