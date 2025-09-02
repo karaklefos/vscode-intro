@@ -280,47 +280,6 @@ nav > ul > li:active {
   background: transparent;
 }
 
-.icon::before,
-.icon::after {
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 2px;
-  background: var(--color-secondary);
-  border-radius: 2px;
-  transition: all var(--transition-normal) cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.icon::before {
-  top: -8px;
-}
-
-.icon::after {
-  top: 8px;
-}
-
-.icon span {
-  display: block;
-  width: 24px;
-  height: 2px;
-  background: var(--color-secondary);
-  border-radius: 2px;
-  transition: all var(--transition-normal) cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.navtoggle.responsive .icon::before {
-  top: 0;
-  transform: rotate(135deg);
-}
-
-.navtoggle.responsive .icon span {
-  background: transparent;
-}
-
-.navtoggle.responsive .icon::after {
-  top: 0;
-  transform: rotate(-135deg);
-}
 
 /* Button Components */
 .button {
