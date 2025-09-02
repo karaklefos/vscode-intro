@@ -568,7 +568,6 @@ a {
 a:hover,
 a:focus {
   color: #146666;
-  text-decoration: underline;
 }
 
 a:visited {
