@@ -779,6 +779,36 @@ Medium devices (640px and larger)
     padding: 1px 0 1px;
   }
 
+  /* Hide hamburger menu icon on medium and larger screens */
+  .icon {
+    display: none;
+  }
+
+  /* Show navigation menu normally on medium and larger screens */
+  nav {
+    display: block !important; /* Override the mobile display: none */
+    position: static; /* Reset from absolute positioning */
+    width: auto; /* Reset from 100% width */
+    background-color: transparent; /* Remove dropdown background */
+    box-shadow: none; /* Remove dropdown shadow */
+  }
+
+  /* Style navigation for horizontal layout on larger screens */
+  nav > ul {
+    display: flex; /* Make navigation items horizontal */
+    gap: 20px; /* Space between navigation items */
+  }
+
+  nav > ul > li {
+    display: inline-block; /* Reset from block display */
+    padding: 0; /* Reset mobile padding */
+    border-top: none; /* Remove mobile border */
+  }
+
+  nav > ul > li > a {
+    padding: 10px 15px; /* Adjust padding for horizontal layout */
+  }
+
   /* ensures project cards are no longer horizontal*/
   #work .projects-wrapper {
     display: grid; /* Use grid for vertical stacking */
