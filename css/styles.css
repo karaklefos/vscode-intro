@@ -201,8 +201,8 @@ header {
 
 .logo-text {
   font-family: var(--font-family-logo);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-5xl);
   color: var(--color-text-primary);
   white-space: nowrap;
   margin: 0;
