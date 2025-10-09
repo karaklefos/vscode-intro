@@ -870,6 +870,10 @@ main#work {
     display: none !important;
   }
 
+  .logo-text {
+    margin-left: .6em;
+  }
+
   nav {
     display: block !important;
     position: static;
