@@ -871,7 +871,7 @@ main#work {
   }
 
   .logo-text {
-    margin-left: .6em;
+    margin-left: .6em; /*adds white space to left*/
   }
 
   nav {
