@@ -192,7 +192,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px var(--spacing-header-padding);
+  padding: 8px 0(--spacing-header-padding);
   position: relative;
   width: var(--container-width-mobile);
   margin: 0 auto;
