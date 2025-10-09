@@ -2,16 +2,22 @@ console.log("Welcome to My Portfolio")
 
 /* Menu Toggle */
 function menuToggle() {
-  var x = document.getElementById('myNavtoggle');
-  var icon = x.querySelector('.icon i'); // Select the Font Awesome icon
+  const menu = document.getElementById("mobileMenu")
+  const icon = document.getElementById("menuIcon")
+  const iconElement = icon.querySelector("i")
 
-  if (x.className === 'navtoggle') {
-    x.className += ' responsive';
-    icon.classList.remove('fa-bars');
-    icon.classList.add('fa-xmark'); // Change to X icon
+  // Toggle active class on menu
+  menu.classList.toggle("active")
+
+  // Toggle active class on icon for rotation
+  icon.classList.toggle("active")
+
+  // Toggle between hamburger and X icon
+  if (iconElement.classList.contains("fa-bars")) {
+    iconElement.classList.remove("fa-bars")
+    iconElement.classList.add("fa-xmark")
   } else {
-    x.className = 'navtoggle';
-    icon.classList.remove('fa-xmark');
-    icon.classList.add('fa-bars'); // Change back to bars
+    iconElement.classList.remove("fa-xmark")
+    iconElement.classList.add("fa-bars")
   }
 }

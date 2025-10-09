@@ -27,6 +27,7 @@
 
 <body>
     <div id="mobile-fixed-background"></div>
+    
     <header>
         <div class="container">
             <div class="navtoggle" id="myNavtoggle">
@@ -34,15 +35,15 @@
                     <span class="logo-text">Kara Klefos</span>
                 </a>
 
-                <nav>
+                <nav id="mobileMenu">
                     <ul class="navigation">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="index.html" onclick="menuToggle()">Home</a></li>
+                        <li><a href="about.html" onclick="menuToggle()">About</a></li>
                         <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
                     </ul>
                 </nav>
 
-                <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                <a href="javascript:void(0);" class="icon" id="menuIcon" onclick="menuToggle()">
                     <i class="fa-solid fa-bars"></i>
                 </a>
             </div>
@@ -54,79 +55,97 @@
             <h1>UX/UI Designer</h1>
             <h4>Blending empathy, data, and style to create user-centered websites and apps.
             </h4>
-            <h4>With a background in fashion merchandising, styling, and digital strategy, I bring a consumer-savvy perspective to human-centered design. My process starts with user research and journey mapping to uncover insights and define needs, then moves through wireframing and prototyping to test and iterate on solutions. With hands-on front-end development skills, I bring designs to life as responsive, accessible, and visually engaging interfaces—merging creativity, logic, and thoughtful design at every stage of the process.</h4>
+            <h4>With a background in fashion merchandising, styling, and digital strategy, I bring a consumer-savvy
+                perspective to human-centered design. My process starts with user research and journey mapping to
+                uncover insights and define needs, then moves through wireframing and prototyping to test and iterate on
+                solutions. With hands-on front-end development skills, I bring designs to life as responsive,
+                accessible, and visually engaging interfaces—merging creativity, logic, and thoughtful design at every
+                stage of the process.</h4>
         </div>
     </div>
 
-<main id="work">
-    <div class="container">
-        <h1>Work</h1>
+    <main id="work">
+        <div class="container">
+            <h1>Work</h1>
 
-        <div class="projects-wrapper">
-            <section class="project-item">
-                <a href="botanybuddy.html" class="project-link">
-                    <picture>
-                        <source srcset="img/botanybuddy.jpg" media="(max-width:767px)">
-                        <img src="img/botanybuddy.jpg" alt="Botany Buddy">
-                    </picture>
-                </a>
-                <div class="project-content">
-                    <h3>Botany Buddy</h3>
-                    <p>Botany Buddy is a plant care app that helps users track routines, diagnose issues, and get personalized tips for healthy, thriving plants. I led the design from concept to high-fidelity prototype in Figma, grounded in user research and aligned with iOS and Android guidelines to ensure a seamless, platform-optimized experience.</p>
-                    <a href="botanybuddy.html" class="modern-button">Read More</a>
-                </div>
-            </section>
+            <div class="projects-wrapper">
+                <section class="project-item">
+                    <a href="botanybuddy.html" class="project-link">
+                        <picture>
+                            <source srcset="img/botanybuddy.jpg" media="(max-width:767px)">
+                            <img src="img/botanybuddy.jpg" alt="Botany Buddy">
+                        </picture>
+                    </a>
+                    <div class="project-content">
+                        <h3>Botany Buddy</h3>
+                        <p>Botany Buddy is a plant care app that helps users track routines, diagnose issues, and get
+                            personalized tips for healthy, thriving plants. I led the design from concept to
+                            high-fidelity prototype in Figma, grounded in user research and aligned with iOS and Android
+                            guidelines to ensure a seamless, platform-optimized experience.</p>
+                        <a href="botanybuddy.html" class="modern-button">Read More</a>
+                    </div>
+                </section>
 
-            <section class="project-item">
-                <a href="recifree.html" class="project-link">
-                    <picture>
-                        <source srcset="img/recifree.jpg" media="(max-width:767px)">
-                        <img src="img/recifree.jpg" alt="ReciFree">
-                    </picture>
-                </a>
-                <div class="project-content">
-                    <h3>ReciFree</h3>
-                    <p>ReciFree is a recipe app designed for users with allergens, dietary needs and/or preferences, making it easy to filter ingredients, save recipes, and plan meals without the guesswork. I focused on creating an experience that feels both approachable and empowering, with an emphasis on usability and inclusion - shaped by real user feedback and competitive insights.</p>
-                    <a href="recifree.html" class="modern-button">Read More</a>
-                </div>
-            </section>
+                <section class="project-item">
+                    <a href="recifree.html" class="project-link">
+                        <picture>
+                            <source srcset="img/recifree.jpg" media="(max-width:767px)">
+                            <img src="img/recifree.jpg" alt="ReciFree">
+                        </picture>
+                    </a>
+                    <div class="project-content">
+                        <h3>ReciFree</h3>
+                        <p>ReciFree is a recipe app designed for users with allergens, dietary needs and/or preferences,
+                            making it easy to filter ingredients, save recipes, and plan meals without the guesswork. I
+                            focused on creating an experience that feels both approachable and empowering, with an
+                            emphasis on usability and inclusion - shaped by real user feedback and competitive insights.
+                        </p>
+                        <a href="recifree.html" class="modern-button">Read More</a>
+                    </div>
+                </section>
 
-            <section class="project-item">
-                <a href="savvypig.html" class="project-link">
-                    <picture>
-                        <source srcset="img/savvypig.jpg" media="(max-width:767px)">
-                        <img src="img/savvypig.jpg" alt="Savvy Pig">
-                    </picture>
-                </a>
-                <div class="project-content">
-                    <h3>Savvy Pig</h3>
-                    <p>Savvy Pig is a financial savings app that makes money management approachable by blending a professional tone with playful design. I crafted the brand identity, logo, and app experience from the ground up, refining wireframes and prototypes while continuously using user and A/B testing to create an intuitive interface that motivates smarter saving.</p>
-                    <a href="savvypig.html" class="modern-button">Read More</a>
-                </div>
-            </section>
+                <section class="project-item">
+                    <a href="savvypig.html" class="project-link">
+                        <picture>
+                            <source srcset="img/savvypig.jpg" media="(max-width:767px)">
+                            <img src="img/savvypig.jpg" alt="Savvy Pig">
+                        </picture>
+                    </a>
+                    <div class="project-content">
+                        <h3>Savvy Pig</h3>
+                        <p>Savvy Pig is a financial savings app that makes money management approachable by blending a
+                            professional tone with playful design. I crafted the brand identity, logo, and app
+                            experience from the ground up, refining wireframes and prototypes while continuously using
+                            user and A/B testing to create an intuitive interface that motivates smarter saving.</p>
+                        <a href="savvypig.html" class="modern-button">Read More</a>
+                    </div>
+                </section>
 
-            <section class="project-item">
-                <a href="modmuse.html" class="project-link">
-                    <picture>
-                        <source srcset="img/modmuse1.jpg" media="(max-width:767px)">
-                        <img src="img/modmuse1.jpg" alt="Mod Muse">
-                    </picture>
-                </a>
-                <div class="project-content">
-                    <h3>Mod Muse</h3>
-                    <p>Mod Muse is a vintage fashion marketplace inspired by the bold style of the 1960s Mod era. I designed an end-to-end experience in Figma, from concept to prototype, that streamlines shopping for curated vintage pieces, validating design decisions through user testing to ensure a smooth, stylish experience.</p>
-                    <a href="modmuse.html" class="modern-button">Read More</a>
-                </div>
-            </section>
+                <section class="project-item">
+                    <a href="modmuse.html" class="project-link">
+                        <picture>
+                            <source srcset="img/modmuse1.jpg" media="(max-width:767px)">
+                            <img src="img/modmuse1.jpg" alt="Mod Muse">
+                        </picture>
+                    </a>
+                    <div class="project-content">
+                        <h3>Mod Muse</h3>
+                        <p>Mod Muse is a vintage fashion marketplace inspired by the bold style of the 1960s Mod era. I
+                            designed an end-to-end experience in Figma, from concept to prototype, that streamlines
+                            shopping for curated vintage pieces, validating design decisions through user testing to
+                            ensure a smooth, stylish experience.</p>
+                        <a href="modmuse.html" class="modern-button">Read More</a>
+                    </div>
+                </section>
+            </div>
+
+            <div class="navigation-arrows">
+                <div class="arrow left-arrow">&lt;</div>
+                <div class="arrow right-arrow">&gt;</div>
+            </div>
+
         </div>
-
-        <div class="navigation-arrows">
-            <div class="arrow left-arrow">&lt;</div>
-            <div class="arrow right-arrow">&gt;</div>
-        </div>
-
-    </div>
-</main>
+    </main>
     <footer id="contact">
         <div class="footer-nav">
             <a href="#top">Back to top</a>
@@ -146,30 +165,30 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
     <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const projectsWrapper = document.querySelector('.projects-wrapper');
-        const leftArrow = document.querySelector('.left-arrow');
-        const rightArrow = document.querySelector('.right-arrow');
+        document.addEventListener('DOMContentLoaded', () => {
+            const projectsWrapper = document.querySelector('.projects-wrapper');
+            const leftArrow = document.querySelector('.left-arrow');
+            const rightArrow = document.querySelector('.right-arrow');
 
-        if (projectsWrapper && leftArrow && rightArrow) {
-            const scrollAmount = 350; // Adjust based on your card width + gap
+            if (projectsWrapper && leftArrow && rightArrow) {
+                const scrollAmount = 350; // Adjust based on your card width + gap
 
-            rightArrow.addEventListener('click', () => {
-                projectsWrapper.scrollBy({
-                    left: scrollAmount,
-                    behavior: 'smooth'
+                rightArrow.addEventListener('click', () => {
+                    projectsWrapper.scrollBy({
+                        left: scrollAmount,
+                        behavior: 'smooth'
+                    });
                 });
-            });
 
-            leftArrow.addEventListener('click', () => {
-                projectsWrapper.scrollBy({
-                    left: -scrollAmount,
-                    behavior: 'smooth'
+                leftArrow.addEventListener('click', () => {
+                    projectsWrapper.scrollBy({
+                        left: -scrollAmount,
+                        behavior: 'smooth'
+                    });
                 });
-            });
-        }
-    });
-</script>
+            }
+        });
+    </script>
 </body>
 
 </html>

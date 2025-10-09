@@ -192,7 +192,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 0(--spacing-header-padding);
+  padding: 8px 0;
   position: relative;
   width: var(--container-width-mobile);
   margin: 0 auto;
@@ -209,62 +209,64 @@ header {
   line-height: 1.2;
 }
 
+/* Full-screen mobile menu that slides in from right */
 nav {
-  display: none;
+  position: fixed;
+  top: 0;
+  right: -100%;
   width: 100%;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: var(--color-background-header);
-  box-shadow: var(--shadow-sm);
-  z-index: 9;
+  height: 100vh;
+  background-color: var(--color-white);
+  z-index: 1000;
+  transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav.active {
+  right: 0;
 }
 
 nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  width: 100%;
+  text-align: center;
 }
 
 nav > ul > li {
   display: block;
-  padding: var(--spacing-header-padding) var(--spacing-lg);
-  border-top: 1px solid var(--color-shadow);
+  padding: 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+nav > ul > li:first-child {
+  border-top: 1px solid #e0e0e0;
 }
 
 nav > ul > li > a {
-  padding: 8px 0;
-  font-weight: var(--font-weight-bold);
-  color: var(--color-primary);
-  text-decoration: none;
   display: block;
-  transition: color var(--transition-fast) ease;
+  padding: 32px 20px;
+  font-size: 2em;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast) ease, background-color var(--transition-fast) ease;
 }
 
-nav > ul > li a:hover,
-nav > ul > li a:focus {
-  color: var(--color-primary-light);
-  text-decoration: underline;
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+  color: var(--color-primary);
+  background-color: rgba(9, 75, 174, 0.05);
 }
 
 nav > ul > li a:visited {
-  color: var(--color-secondary);
+  color: var(--color-text-primary);
 }
 
-nav > ul > li:active {
-  color: var(--color-accent);
-}
-
-.navtoggle.responsive nav {
-  display: block;
-  height: auto;
-  max-height: calc(100vh - var(--spacing-header-height));
-  overflow-y: auto;
-  overflow-x: visible;
-  clear: both;
-}
-
-/* Hamburger Icon Component */
+/* Hamburger icon positioned in top right, transforms to X */
 .icon {
   cursor: pointer;
   display: flex;
@@ -280,6 +282,15 @@ nav > ul > li:active {
   background: transparent;
 }
 
+.icon i {
+  font-size: 24px;
+  color: var(--color-text-primary);
+  transition: transform var(--transition-normal) ease;
+}
+
+.icon.active i {
+  transform: rotate(90deg);
+}
 
 /* Button Components */
 .button {
@@ -865,21 +876,22 @@ main#work {
     padding: var(--spacing-lg) 0;
   }
 
-  .icon,
-  .menu-overlay {
+  /* Hide mobile menu icon and show desktop navigation */
+  .icon {
     display: none !important;
   }
 
   .logo-text {
-    margin-left: .6em; /*adds white space to left*/
+    margin-left: .6em;
   }
 
   nav {
     display: block !important;
     position: static;
     width: auto;
+    height: auto;
     background-color: transparent;
-    box-shadow: none;
+    right: 0;
   }
 
   nav > ul {
@@ -891,11 +903,16 @@ main#work {
   nav > ul > li {
     display: inline-block;
     padding: 0;
+    border: none;
+  }
+
+  nav > ul > li:first-child {
     border-top: none;
   }
 
   nav > ul > li > a {
     padding: 12px var(--spacing-header-padding);
+    font-size: var(--font-size-base);
     border-radius: 4px;
     transition: all var(--transition-fast) ease;
   }
@@ -954,7 +971,7 @@ main#work {
 
 /* Large devices (768px and larger) */
 @media only screen and (min-width: 768px) {
-.col-lg-7 {
+  .col-lg-7 {
     width: 58.33333333%;
   }
   .col-lg-5 {
@@ -965,7 +982,6 @@ main#work {
     margin-top: var(--spacing-sm);
   }
 
-  /* Added max-width and centering to header navigation to match main content container */
   .navtoggle {
     max-width: var(--container-max-width);
     margin: 0 auto;
