@@ -527,14 +527,6 @@ nav > ul > li a:visited {
   margin: var(--spacing-lg) auto;
 }
 
-.modmuse-logo + div img,
-div p + picture img {
-  width: var(--image-width-lg);
-  max-width: var(--image-width-lg);
-  height: auto;
-  display: block;
-  margin: var(--spacing-lg) auto;
-}
 
 /* ===============================
    LAYOUT UTILITIES
