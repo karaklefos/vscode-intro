@@ -487,6 +487,14 @@ nav > ul > li a:visited {
   object-fit: contain;
 }
 
+/* specifically for Botany Buddy logo img */
+.botanybuddy-logo img {
+    width: 20vw;
+    height: auto; /* Keeps the image's aspect ratio */
+    display: block; /* 1. Treat the image as a block element */
+    margin: 0 auto; /* 2. Set horizontal margins to 'auto' for centering */
+}
+
 /* Image Components */
 .image-scroll-wrapper {
   display: flex;
