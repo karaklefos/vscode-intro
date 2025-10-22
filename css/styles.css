@@ -487,6 +487,36 @@ nav > ul > li a:visited {
   object-fit: contain;
 }
 
+/* for Savvy Pig desktop */
+.mockup-gallery-desktop {
+    display: flex;
+    gap: var(--spacing-lg); /* Space between images */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    margin-bottom: var(--spacing-xxl);
+    /* Hide scrollbar visually */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.mockup-gallery-desktop::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.mockup-gallery-desktop img {
+    /* Horizontal Carousel Behavior */
+    flex: 0 0 85%; /* Take up 85% of the viewport width on mobile/tablet screens */
+    max-width: 600px; /* Max size for desktop screenshots */
+    height: auto;
+    object-fit: contain;
+    /* Carousel interaction */
+    scroll-snap-align: start;
+    /* Standard styles */
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
 /* specifically for Botany Buddy logo img */
 .botanybuddy-logo img {
     width: 20vw;
@@ -993,6 +1023,11 @@ main#work {
     max-width: 450px;
     margin-right: var(--spacing-lg);
   }
+
+  /* For Savvy Pig desktop */
+   .mockup-gallery-desktop img {
+        flex: 0 0 600px; /* Fixed width for better control on desktop, ensuring clear snapping */
+    }
 }
 
 /* Extra large devices (1024px and larger) */
