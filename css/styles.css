@@ -135,7 +135,9 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: 1.4;
+  line-height: 1.6;
+  font-size: var(--font-size-lg)
+  var(--font-weight-light);
 }
 
 h1 {
