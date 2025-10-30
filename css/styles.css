@@ -1028,6 +1028,10 @@ main#work {
    .mockup-gallery-desktop img {
         flex: 0 0 600px; /* Fixed width for better control on desktop, ensuring clear snapping */
     }
+
+     .logo-text {
+    margin-left: 0em;
+  }
 }
 
 /* Extra large devices (1024px and larger) */
