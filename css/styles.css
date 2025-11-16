@@ -797,6 +797,53 @@ footer#contact .container > div:last-child p {
   z-index: -1;
 }
 
+/*FOR RECIFREE RESPONSIVE DESIGNS */
+.responsive-scroll-gallery {
+    display: flex;
+    flex-direction: row;        /* Ensures horizontal arrangement */
+    flex-wrap: nowrap;          /* CRITICAL: Forces items onto a single, non-wrapping line */
+    overflow-x: auto;           /* CRITICAL: Enables horizontal scrolling */
+    overflow-y: hidden;         /* Hides the vertical scrollbar */
+    scroll-snap-type: x mandatory; /* Enhances the carousel feel by snapping to each image */
+    -webkit-overflow-scrolling: touch; /* Improves scrolling on iOS devices */
+    
+    /* Padding/Spacing */
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-xxl);
+}
+
+/* Hide scrollbar visually (optional, based on your design preference) */
+.responsive-scroll-gallery::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+.responsive-scroll-gallery {
+    -ms-overflow-style: none;   /* IE and Edge */
+    scrollbar-width: none;      /* Firefox */
+}
+
+/* 2. IMAGES: Defines the Size and Prevents Shrinking */
+.responsive-scroll-gallery img {
+    /* CRITICAL: Prevents the image from shrinking and overrides global 'width: 100%' */
+    flex-shrink: 0; 
+
+    /* Sets the desired large width for the image (e.g., 70% of the viewport width) */
+    width: 70vw; 
+
+    /* Ensures the image doesn't get too tall */
+    max-height: 500px; 
+    
+    /* Adds space between images */
+    margin-right: 30px; 
+
+    /* Ensures image quality and snapping */
+    object-fit: contain;
+    scroll-snap-align: start;
+    
+    /* Inherit styling from your variables */
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
 /* ===============================
    ANIMATIONS
    =============================== */
@@ -998,6 +1045,12 @@ main#work {
   .mockup-gallery-colors {
     padding: var(--spacing-sm) 0;
   }
+
+  .responsive-scroll-gallery img {
+        /* On larger screens, use a fixed pixel width or smaller viewport percentage */
+        width: 80vw;
+        max-height: 800px;
+    }
 }
 
 /* Large devices (768px and larger) */
