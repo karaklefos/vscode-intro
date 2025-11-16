@@ -812,14 +812,6 @@ footer#contact .container > div:last-child p {
     margin-bottom: var(--spacing-xxl);
 }
 
-/* Hide scrollbar visually (optional, based on your design preference) */
-.responsive-scroll-gallery::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
-}
-.responsive-scroll-gallery {
-    -ms-overflow-style: none;   /* IE and Edge */
-    scrollbar-width: none;      /* Firefox */
-}
 
 /* 2. IMAGES: Defines the Size and Prevents Shrinking */
 .responsive-scroll-gallery img {
