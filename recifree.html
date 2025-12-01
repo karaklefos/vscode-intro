@@ -66,31 +66,41 @@
                         <h2><b>The Problem -</b> Managing food allergies & restrictions</h2>
                         <ul>
                             <li>
-                                <p>Managing food allergies (affecting around 32 million Americans) presents a
-                                    significant challenge in meal preparation, as existing recipe apps fail to
-                                    consistently provide clear, easy-to-see allergen indicators. Users are often forced
-                                    to manually check ingredients, leading to frustration and wasted time.</p>
+                                Managing food allergies (affecting around 32 million Americans) presents a
+                                significant challenge in meal preparation, as existing recipe apps fail to
+                                consistently provide clear, easy-to-see allergen indicators. Users are often forced
+                                to manually check ingredients, leading to frustration and wasted time.
                             </li>
                             <li>
-                                <p>Users with dietary restrictions struggle to find reliable recipes due to cluttered
-                                    interfaces, blog filler, and inconsistent, non-prominent allergen indicators.</p>
+                                Users with dietary restrictions struggle to find reliable recipes due to cluttered
+                                interfaces, blog filler, and inconsistent, non-prominent allergen indicators.
                             </li>
                         </ul>
                         <h2><b>The Goal - </b> To create a responsive web app (mobile/desktop) that prioritizes safety,
                             efficiency, and clarity, enabling users to:</h2>
                         <ul>
                             <li>
-                                <p>Easily identify which recipes are free from specific allergens.</p>
+                                Easily identify which recipes are free from specific allergens.
                             </li>
                             <li>
-                                <p>Save recipes and automatically generate an ingredient shopping list.</p>
+                                Save recipes and automatically generate an ingredient shopping list.
                             </li>
                             <li>
-                                <p>View personalized recipe recommendations with their allergies top of mind.</p>
+                                View personalized recipe recommendations with their allergies top of mind.
                             </li>
-                            <li><p>Have fun when searching for recipes through an inviting, trustworthy design.</p></li>
+                            <li>
+                                Have fun when searching for recipes through an inviting, trustworthy design.
+                            </li>
                         </ul>
 
+                        <h2><b>The Solution -</b></h2>
+                        <p>A responsive MVP web app focused on a clean,
+                            task-forward interface. <u>The core innovation is the prominent 'Not Included' Indicator,
+                                which
+                                provides users with instant, verified assurance of safety by clearly displaying their
+                                excluded allergens with a strike-through icon.</u></p>
+
+                        <h2><b>Responsive Design Examples</b></h2>
                         <p>(<i>swipe to view more</i>)</p>
                         <div class="responsive-scroll-gallery">
                             <img src="img/recifree_responsive_signin.png" alt="ReciFree Login">
@@ -102,19 +112,70 @@
                             <img src="img/recifree_responsive_savedrecipes.png" alt="ReciFree Saved Recipe">
                         </div>
 
+                        <h2><b>User Research & Synthesis</b></h2>
+                        <h3>Methodology & Users</h3>
                         <ul>
-                            <li>
-                                <h3>Hypothesis</h3>
-                                <p>With prominent allergen indicators, easy recipe saving, and personalized
-                                    recommendations, users with dietary restrictions can efficiently plan and prepare
-                                    healthy meals that meet their needs.</p>
+                            <li><b>Who:</b> Users with established dietary restrictions or food allergies actively
+                                seeking recipes that cater to their specific needs.</li>
+                            <li><b>When/Where:</b> Users browse for recipe inspiration at home (after work/before
+                                dinner) and utilize the app while grocery shopping (after work/weekends).</li>
+                            <li><b>Why:</b> Users will be able to effortlessly discover new recipes that meet their
+                                specific allergen and dietary restrictions, with clear indicators showing which recipes
+                                avoid particular allergens. Additionally, the app offers a convenient grocery shopping
+                                list feature</li>
+                        </ul>
+
+                        <h3>Key Research Insights</h3>
+                        <ul>
+                            <li><b>Clutter vs. Clarity:</b> All users cited a preference for clean, clear interfaces and
+                                felt that most current recipe sites are too cluttered and visually busy ("look the
+                                same").</li>
+                            <li><b>Efficiency over Narrative:</b> Every user expressed a desire to go straight to the
+                                recipe and ingredients and explicitly do not want to read the blogger's story behind the
+                                dish.</li>
+                            <li><b>Search Behavior:</b> While most users currently rely on broad searches (e.g.,
+                                Google), they are actively seeking a more efficient, allergen-first filtering mechanism.
+                            </li>
+                            <li><b>Core Feature Value:</b> The most important features identified were appealing photos,
+                                a clean interface, easy recipe saving, and an integrated shopping list.
                             </li>
                         </ul>
                     </div>
                 </section>
 
                 <div>
-                    <h2>Mockups</h2>
+                    <picture>
+                        <source srcset="img/recifree_bellpepper.jpg" media="(max-width:767px)">
+                        <img src="img/recifree_bellpepper.jpg" alt="ReciFree Bell Pepper">
+                    </picture>
+                </div>
+
+                <h2><b>Design Hypothesis & Core Features</b></h2>
+                <h3>Hypothesis</h3>
+                <p>With prominent allergen indicators, easy recipe saving, and personalized recommendations, users with
+                    dietary restrictions can efficiently plan and prepare healthy meals that meet their needs and reduce
+                    preparation anxiety.</p>
+                <h3>Core MVP Features</h3>
+                <ul>
+                    <li><b>Core Innovation:</b> The <u>'Not Included' Indicator</u> - The system begins with a clear,
+                        icon-driven onboarding process to capture the user’s exact excluded ingredients. The core
+                        feature is the prominent, inverse indicator: instead of requiring the user to search for what is
+                        present, the recipe clearly displays icons with a strike-through for the user's specific
+                        allergens, providing instant, verified assurance of safety and drastically lowering cognitive
+                        load.</li>
+                    <li><b>Allergen-First Filtering:</b> Users can effortlessly select categories and filters aligning
+                        with their dietary preferences to ensure safe browsing.</li>
+                    <li><b>Personalized Recommendations:</b> Recipe suggestions are tailored based on the user's
+                        specific allergy profile.</li>
+                    <li><b>Recipe Management:</b> Users can save recipes to revisit and add necessary ingredients
+                        directly to a centralized, convenient grocery list.</li>
+                    <li><b>Task-Forward UI:</b> The design bypasses the common "blog feel" by pushing the recipe and
+                        ingredients to the immediate foreground of the user experience.</li>
+                </ul>
+
+
+                <div>
+                    <h2><b>Prototypes</b></h2>
                     <p>(<i>swipe to view more</i>)</p>
                 </div>
                 <div class="mockup-gallery">
@@ -125,109 +186,14 @@
                     <img src="img/recifree_mockup_recipe.png" alt="ReciFree Recipe">
                     <img src="img/recifree_mockup_filter.png" alt="ReciFree Filter">
                 </div>
-                <div>
-                    <picture>
-                        <source srcset="img/recifree_bellpepper.jpg" media="(max-width:767px)">
-                        <img src="img/recifree_bellpepper.jpg" alt="ReciFree Bell Pepper">
-                    </picture>
-                </div>
-
-                <section class="process-objective">
-                    <div class="process">
-                        <h2>User Research</h2>
-                        <ul class="process-steps-recifree-user-research">
-                            <li>
-                                <h3>Who?</h3>
-                                <p>Users with dietary restrictions or food allergies who are seeking recipes that cater
-                                    to their specific needs.</p>
-                            </li>
-                            <li>
-                                <h3>What?</h3>
-                                <p>Users will find recipes that adhere to common allergies or diet restrictions. Save
-                                    recipes to easily access at a later time. Create a shopping list of ingredients
-                                    needed for each recipe.</p>
-                            </li>
-                            <li>
-                                <h3>When?</h3>
-                                <p>Users will use the app in their spare time when they want recipe inspiration. This
-                                    could be morning, afternoon or evening - most likely after work, during a break, or
-                                    before dinner when they want dinner ideas. As well as when they’re shopping at the
-                                    grocery store - most likely after work or on the weekends.</p>
-                            </li>
-                            <li>
-                                <h3>Where?</h3>
-                                <p>Users will utilize the app when browsing for recipe inspiration at home, as well as
-                                    when cooking at home. They will also use it while shopping at the grocery store.</p>
-                            </li>
-                            <li>
-                                <h3>Why?</h3>
-                                <p>Users will be able to effortlessly discover new recipes that meet their specific
-                                    allergen and dietary restrictions, with clear indicators showing which recipes avoid
-                                    particular allergens. Additionally, the app offers a convenient grocery shopping
-                                    list feature</p>
-                            </li>
-                            <li>
-                                <h3>How?</h3>
-                                <p>Users can accomplish their goals by selecting a category that aligns with their
-                                    allergen or diet preferences. They can then add the necessary ingredients to their
-                                    grocery list and save any recipes for future reference.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
 
                 <div>
-                    <h2>Synthesis</h2>
-                    <ul>
-                        <li>How do you typically find recipes that fit your dietary needs, and why?</li>
-                        <li>What do you enjoy/wish was different about your current go-to recipe apps?</li>
-                        <li>How often do you open a recipe website/app, and where do you typically do so?</li>
-                        <li>Do you currently plan your meals? What would make meal planning easier and more efficient
-                            for you?</li>
-                        <li>What features are most important to you in a recipe app?</li>
-                        <li>How do you prefer to search for recipes (e.g., by ingredient, meal type, dietary
-                            restriction)?</li>
-                        <li>What challenges do you face when looking for allergen-friendly recipes?</li>
-                    </ul>
-                </div>
-
-                <section class="process-objective">
-                    <div class="process">
-                        <ul class="process-steps-recifree-synthesis">
-                            <li>
-                                <h3>Patterns</h3>
-                                <ul class="users-can-list">
-                                    <li>All users said appealing photos and a clean/clear interface is most important to
-                                        them.</li>
-                                    <li>Most users go to Google to search.</li>
-                                    <li>Most users try to meal plan, but aren’t for every meal.</li>
-                                    <li>Each user said they don’t want to read the bloggers story behind the recipe.
-                                    </li>
-                                    <li>All users said most sites and apps feel too busy visually.</li>
-                                    <li>Most users search for recipes at least once a week, always at home.</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <h3>Frustrations</h3>
-                                <ul class="users-can-list">
-                                    <li>Each user said that most recipe sites/apps feel too cluttered and include too
-                                        much of a blog feel.</li>
-                                    <li>Users said they prefer to go straight to the recipe and ingredients needed for
-                                        it.</li>
-                                    <li>Users agreed most recipe sites look the same and aren’t very exciting.</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-
-                <div>
-                    <h2>User Flows</h2>
+                    <h2><b>User Flow</b></h2>
                     <img src="img/recifree_userflow.png" alt="ReciFree User Flow">
                 </div>
                 <div>
-                    <h2>Wireframes</h2>
-                    <p>Low to Mid Fidelity</p>
+                    <h2><b>Wireframes</b></h2>
+                    <h3>Low to Mid Fidelity</h3>
                     <p>(<i>swipe to view more</i>)</p>
                     <div class="mockup-gallery">
                         <img src="img/recifree_lowfidelity_home.png" alt="Low Fidelity Home">
@@ -238,7 +204,7 @@
                 </div>
 
                 <div>
-                    <h2>Style Guide</h2>
+                    <h2><b>Style Guide</b></h2>
                     <p>COLORS</p>
                 </div>
                 <div class="mockup-gallery-colors">
