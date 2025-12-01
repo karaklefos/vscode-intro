@@ -717,6 +717,7 @@ a:active {
 
 #work-secondary {
   padding-top: var(--spacing-lg);
+  overflow: auto;
 }
 
 #work-secondary .dog-img {
