@@ -126,6 +126,25 @@ body {
   padding-top: var(--spacing-header-height);
 }
 
+body.home-page #mobile-fixed-background {
+  display: block;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: url("../img/desktop_bckgrnd.png");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+z-index: -1;
+}
+
+/* New Rule: Hide the div on all other pages (like project pages) */
+body:not(.home-page) #mobile-fixed-background {
+    display: none;
+}
+
 /* ===============================
    TYPOGRAPHY
    =============================== */
@@ -946,6 +965,21 @@ main#work {
     padding: var(--spacing-lg) 0;
   }
 
+  body.home-page {
+        background-image: url("../img/desktop_bckgrnd.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        /* Ensure the body is transparent so the background shows */
+        background-color: transparent; 
+    }
+    
+    /* Keep this rule to hide the mobile div on larger screens: */
+    #mobile-fixed-background {
+      display: none;
+    }
+
+
   /* Hide mobile menu icon and show desktop navigation */
   .icon {
     display: none !important;
@@ -1022,12 +1056,6 @@ main#work {
     padding: 0;
   }
 
-  html {
-    background-image: url("../img/desktop_bckgrnd.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  }
 
   #mobile-fixed-background {
     display: none;
@@ -1124,14 +1152,6 @@ main#work {
 
   .project-item {
     width: 800px;
-  }
-
-  html {
-    background-image: url("../img/desktop_bckgrnd.png");
-    background-repeat: no-repeat;
-    background-position: top right, bottom right;
-    background-size: cover;
-    background-attachment: fixed;
   }
 
   .mockup-gallery,
