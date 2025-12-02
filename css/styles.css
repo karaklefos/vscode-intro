@@ -483,7 +483,7 @@ nav > ul > li a:visited {
   display: flex;
   gap: var(--spacing-md);
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
+  scroll-snap-type: x proximity;
   -webkit-overflow-scrolling: touch;
   padding: var(--spacing-sm) var(--spacing-lg);
   margin-bottom: var(--spacing-lg);
