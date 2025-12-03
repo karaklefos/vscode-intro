@@ -565,7 +565,7 @@ nav > ul > li a:visited {
     display: flex;
     gap: var(--spacing-lg); /* Space between images */
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: x proximity;
     -webkit-overflow-scrolling: touch;
     padding: var(--spacing-sm) var(--spacing-lg);
     margin-bottom: var(--spacing-xxl);
@@ -603,7 +603,7 @@ nav > ul > li a:visited {
   display: flex;
   gap: var(--spacing-sm);
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
+  scroll-snap-type: x proximity;
   -webkit-overflow-scrolling: touch;
   padding-bottom: var(--spacing-sm);
 }
@@ -715,7 +715,7 @@ a:active {
   display: flex;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  scroll-snap-type: x mandatory;
+  scroll-snap-type: x proximity;
   gap: var(--spacing-xxl);
   padding: var(--spacing-lg);
   margin-bottom: var(--spacing-lg);
@@ -877,7 +877,7 @@ footer#contact .container > div:last-child p {
     flex-wrap: nowrap;          /* CRITICAL: Forces items onto a single, non-wrapping line */
     overflow-x: auto;           /* CRITICAL: Enables horizontal scrolling */
     overflow-y: hidden;         /* Hides the vertical scrollbar */
-    scroll-snap-type: x mandatory; /* Enhances the carousel feel by snapping to each image */
+    scroll-snap-type: x proximity; /* Enhances the carousel feel by snapping to each image */
     -webkit-overflow-scrolling: touch; /* Improves scrolling on iOS devices */
     
     /* Padding/Spacing */
