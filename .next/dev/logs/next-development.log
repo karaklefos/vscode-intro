@@ -1,0 +1,31 @@
+[00:00:02.995] Server  LOG      ✓ Ready in 1816ms
+[00:00:10.867] Server  LOG      ○ Compiling / ...
+[00:00:14.343] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:15.171] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:00:15.171] Browser WARN    Image with src "/img/life_anew_behance.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:15.171] Browser WARN    Image with src "/img/modmuse1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:15.171] Browser WARN    Image with src "/img/recifree.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:15.171] Browser WARN    Image with src "/img/botanybuddy.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:15.171] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:15.171] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:15.171] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768445741434}
+[00:00:21.177] Browser WARN    Image with src "/img/savvypig.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:26.071] Server  LOG      ○ Compiling /projects/life-anew ...
+[00:00:32.941] Server  ERROR   C:\Users\Richard Robinson\OneDrive\Desktop\vscode-intro\.next\dev\server\chunks\ssr\node_modules_next_685e8a6e._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:33.043] Server  ERROR    ⨯ Error: Image with src "/.jpg?height=550&width=256&query=undefined" is using a query string which is not configured in images.localPatterns.
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-localpatterns
+[00:00:34.876] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:35.127] Browser ERROR   uncaughtError: Error: Image with src "/.jpg?height=550&width=256&query=undefined" is using a query string which is not configured in images.localPatterns.
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-localpatterns
+[00:01:19.412] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:01:19.423] Server  LOG      ✓ Compiled in 124ms
+[00:01:22.296] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/img/life_anew_behance_png" "received" null
+[00:01:22.394] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:22.983] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:01:22.984] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/projects/life-anew","route":"/projects/life-anew"}
+[00:01:22.984] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/projects/life-anew color: rgb(120, 120, 120) color: inherit {"dp":"/projects/life-anew","o":"http://localhost:3000/projects/life-anew","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768445809231}
+[00:02:14.422] Server  LOG      ✓ Compiled in 85ms
+[00:03:53.589] Server  LOG      ✓ Compiled in 298ms
+[00:04:06.070] Server  LOG      ✓ Compiled in 86ms
+[00:04:13.658] Server  LOG      ✓ Compiled in 72ms
+[00:04:19.275] Server  LOG      ✓ Compiled in 69ms
