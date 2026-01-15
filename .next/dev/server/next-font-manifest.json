@@ -1,0 +1,19 @@
+{
+  "app": {
+    "[project]/app/_not-found/page": [
+      "static/media/f06bf9da926bae75-s.p.c68a79fb.woff2",
+      "static/media/695d47936e37d921-s.p.9469f93d.woff2"
+    ],
+    "[project]/app/page": [
+      "static/media/f06bf9da926bae75-s.p.c68a79fb.woff2",
+      "static/media/695d47936e37d921-s.p.9469f93d.woff2"
+    ],
+    "[project]/app/projects/life-anew/page": [
+      "static/media/f06bf9da926bae75-s.p.c68a79fb.woff2",
+      "static/media/695d47936e37d921-s.p.9469f93d.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}
