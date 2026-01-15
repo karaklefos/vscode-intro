@@ -81,7 +81,7 @@ export default function AboutPage() {
                 research, journey mapping, wireframing, and prototyping. I'm proficient in Figma, Sketch, and Adobe
                 Creative Suite, and I leverage expertise in prompt engineering for research synthesis to ensure
                 high-quality, efficient design outcomes. I'm passionate about creating digital products that are as
-                intuitive as they are beautiful!
+                intuitive as they are beautiful.
               </p>
 
               <p className="text-lg leading-relaxed text-muted-foreground">
