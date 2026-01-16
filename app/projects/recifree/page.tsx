@@ -545,11 +545,6 @@ export default function ReciFreeProject() {
                 <div>
                   <h4 className="text-2xl font-semibold mb-4">TYPOGRAPHY</h4>
                   <p className="text-lg mb-8 underline">Lexend Deca</p>
-                  <div className="space-y-4">
-                    <p className="text-5xl font-bold">Aa Bb Cc</p>
-                    <p className="text-3xl font-semibold">The quick brown fox jumps</p>
-                    <p className="text-xl">Regular text for body content</p>
-                  </div>
                 </div>
               </div>
             </div>
