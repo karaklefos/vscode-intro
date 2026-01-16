@@ -472,7 +472,7 @@ export default function ModMuseProject() {
                   <h4 className="text-2xl font-semibold mb-6">LOGO</h4>
                   <div className="bg-primary/10 rounded-2xl p-12 flex justify-center mb-8">
                     <Image
-                      src="/.jpg?height=120&width=300&query=mod+muse+logo+bold+text"
+                      src="/img/modmuse_logo.png"
                       alt="Mod Muse Logo"
                       width={300}
                       height={120}
