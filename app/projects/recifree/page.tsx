@@ -174,32 +174,38 @@ export default function ReciFreeProject() {
           </motion.section>
 
           {/* Responsive Design Examples */}
-<div className="overflow-x-auto pb-6 -mx-4 px-4 scrollbar-hide snap-x snap-mandatory">
-  <div className="flex gap-6">
-    {[
-      { name: "Sign In", Image: "/img/recifree_signin.png" },
-      { name: "Onboarding", Image: "/img/recifree_onboarding.png" },
-      { name: "Home", Image: "/img/recifree_home.png" },
-      { name: "Filters", Image: "/img/recifree_filters.png" },
-      { name: "Menu", Image: "/img/recifree_menu.png" },
-      { name: "Recipe", Image: "/img/recifree_recipe.png" },
-      { name: "Saved Recipes", Image: "/img/recifree_saved.png" },
-    ].map((screen, index) => (
-      <div
-        key={index}
-        className="flex-shrink-0 w-80 rounded-2xl overflow-hidden glass-card snap-center"
-      >
-        <Image
-          src={screen.Image}
-          alt={`ReciFree ${screen.name}`}
-          width={320}
-          height={600}
-          className="w-full h-auto pointer-events-none"
-        />
-      </div>
-    ))}
-  </div>
-</div>
+          <motion.section
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="mb-20"
+          >
+            <div className="overflow-x-auto pb-6 -mx-4 px-4 scrollbar-hide snap-x snap-mandatory">
+              <div className="flex gap-6">
+                {[
+                  { name: "Sign In", Image: "/img/recifree_signin.png" },
+                  { name: "Onboarding", Image: "/img/recifree_onboarding.png" },
+                  { name: "Home", Image: "/img/recifree_home.png" },
+                  { name: "Filters", Image: "/img/recifree_filters.png" },
+                  { name: "Menu", Image: "/img/recifree_menu.png" },
+                  { name: "Recipe", Image: "/img/recifree_recipe.png" },
+                  { name: "Saved Recipes", Image: "/img/recifree_saved.png" },
+                ].map((screen, index) => (
+                  <div
+                    key={index}
+                    className="flex-shrink-0 w-80 rounded-2xl overflow-hidden glass-card snap-center"
+                  >
+                    <Image
+                      src={screen.Image}
+                      alt={`ReciFree ${screen.name}`}
+                      width={320}
+                      height={600}
+                      className="w-full h-auto pointer-events-none"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </motion.section>
 
@@ -436,50 +442,29 @@ export default function ReciFreeProject() {
             transition={{ duration: 0.8 }}
             className="mb-20"
           >
-            <div className="glass-card rounded-3xl p-8 md:p-12">
-              <h2 className="text-4xl md:text-5xl font-semibold mb-8">
-                Prototypes
-              </h2>
-              <p className="text-lg text-muted-foreground mb-12 italic">
-                (swipe to view more)
-              </p>
-
-              <div className="overflow-x-auto pb-4 -mx-4 px-4 scrollbar-hide">
-                <div className="flex gap-6 min-w-max">
-                  {[
-                    { name: "Login", Image: "/img/recifree_mockup_login.png" },
-                    {
-                      name: "Sign Up",
-                      Image: "/img/recifree_mockup_signup.png",
-                    },
-                    {
-                      name: "Allergen Info",
-                      Image: "/img/recifree_mockup_allergeninfo.png",
-                    },
-                    { name: "Home", Image: "/img/recifree_mockup_home.png" },
-                    {
-                      name: "Recipe",
-                      Image: "/img/recifree_mockup_recipe.png",
-                    },
-                    {
-                      name: "Filter",
-                      Image: "/img/recifree_mockup_filter.png",
-                    },
-                  ].map((screen, index) => (
-                    <div
-                      key={index}
-                      className="flex-shrink-0 w-64 rounded-2xl overflow-hidden glass-card snap-center"
-                    >
-                      <Image
-                        src={screen.Image}
-                        alt={`Mod Muse ${screen.name}`}
-                        width={256}
-                        height={550}
-                        className="w-full h-auto pointer-events-none"
-                      />
-                    </div>
-                  ))}
-                </div>
+            <div className="overflow-x-auto pb-6 -mx-4 px-4 scrollbar-hide snap-x snap-mandatory">
+              <div className="flex gap-6">
+                {[
+                  { name: "Login", Image: "/img/recifree_mockup_login.png" },
+                  { name: "Sign Up", Image: "/img/recifree_mockup_signup.png" },
+                  { name: "Allergen Info", Image: "/img/recifree_mockup_allergeninfo.png" },
+                  { name: "Home", Image: "/img/recifree_mockup_home.png" },
+                  { name: "Recipe", Image: "/img/recifree_mockup_recipe.png" },
+                  { name: "Filter", Image: "/img/recifree_mockup_filter.png" },
+                ].map((screen, index) => (
+                  <div
+                    key={index}
+                    className="flex-shrink-0 w-64 rounded-2xl overflow-hidden glass-card snap-center"
+                  >
+                    <Image
+                      src={screen.Image}
+                      alt={`ReciFree ${screen.name}`}
+                      width={256}
+                      height={550}
+                      className="w-full h-auto pointer-events-none"
+                    />
+                  </div>
+                ))}
               </div>
             </div>
           </motion.section>
@@ -516,51 +501,27 @@ export default function ReciFreeProject() {
             transition={{ duration: 0.8 }}
             className="mb-20"
           >
-            <div className="glass-card rounded-3xl p-8 md:p-12">
-              <h2 className="text-4xl md:text-5xl font-semibold mb-8">
-                Wireframes
-              </h2>
-              <h3 className="text-2xl font-semibold mb-8">
-                Low to Mid Fidelity
-              </h3>
-              <p className="text-lg text-muted-foreground mb-12 italic">
-                (swipe to view more)
-              </p>
-
-              <div className="overflow-x-auto pb-4 -mx-4 px-4 scrollbar-hide">
-                <div className="flex gap-6 min-w-max">
-                  {[
-                    {
-                      Image: "Low Fidelity Home",
-                      query: "/img/recifree_lowfidelity_home.png",
-                    },
-                    {
-                      Image: "Low Fidelity Cart",
-                      query: "/img/recifree_lowfidelity_cart.png",
-                    },
-                    {
-                      Image: "Mid Fidelity Home",
-                      query: "/img/recifree_midfidelity_home.png",
-                    },
-                    {
-                      Image: "Mid Fidelity Cart",
-                      query: "/img/recifree_midfidelity_cart.png",
-                    },
-                  ].map((screen, index) => (
-                    <div
-                      key={index}
-                      className="flex-shrink-0 w-80 rounded-2xl overflow-hidden glass-card bg-white"
-                    >
-                      <Image
-                        src={`/.jpg?height=600&width=320&query=${screen.query}`}
-                        alt={screen.name}
-                        width={320}
-                        height={600}
-                        className="w-full h-auto"
-                      />
-                    </div>
-                  ))}
-                </div>
+            <div className="overflow-x-auto pb-6 -mx-4 px-4 scrollbar-hide snap-x snap-mandatory">
+              <div className="flex gap-6">
+                {[
+                  { name: "Low Fidelity Home", Image: "/img/recifree_lowfidelity_home.png" },
+                  { name: "Low Fidelity Cart", Image: "/img/recifree_lowfidelity_cart.png" },
+                  { name: "Mid Fidelity Home", Image: "/img/recifree_midfidelity_home.png" },
+                  { name: "Mid Fidelity Cart", Image: "/img/recifree_midfidelity_cart.png" },
+                ].map((screen, index) => (
+                  <div
+                    key={index}
+                    className="flex-shrink-0 w-80 rounded-2xl overflow-hidden glass-card bg-white snap-center"
+                  >
+                    <Image
+                      src={screen.Image}
+                      alt={screen.name}
+                      width={320}
+                      height={600}
+                      className="w-full h-auto pointer-events-none"
+                    />
+                  </div>
+                ))}
               </div>
             </div>
           </motion.section>
@@ -620,7 +581,7 @@ export default function ReciFreeProject() {
                   <h4 className="text-2xl font-semibold mb-8">
                     ICONS & DIETARY ICONS
                   </h4>
-                  <div className="bg-white rounded-2xl p-12">
+                  <div className="bg-white rounded-2xl p-12 mb-6">
                     <Image
                       src="/img/recifree_icons.png"
                       alt="ReciFree Icons"
@@ -632,7 +593,7 @@ export default function ReciFreeProject() {
                   <div className="bg-white rounded-2xl p-12">
                     <Image
                       src="/img/recifree_dietaryicons.png"
-                      alt="ReciFree Icons"
+                      alt="ReciFree Dietary Icons"
                       width={800}
                       height={200}
                       className="w-full h-auto"
@@ -734,7 +695,6 @@ export default function ReciFreeProject() {
           </motion.div>
         </div>
       </main>
-      {/* Footer component */}
       <Footer />
     </>
   );
