@@ -555,20 +555,20 @@ export default function ReciFreeProject() {
                 <div className="flex gap-6 min-w-max">
                   {[
                     {
-                      name: "Low Fidelity Home",
-                      query: "wireframe sketch home screen",
+                      Image: "Low Fidelity Home",
+                      query: "/img/recifree_lowfidelity_home.png",
                     },
                     {
-                      name: "Low Fidelity Cart",
-                      query: "wireframe shopping cart",
+                      Image: "Low Fidelity Cart",
+                      query: "/img/recifree_lowfidelity_cart.png",
                     },
                     {
-                      name: "Mid Fidelity Home",
-                      query: "mid fidelity wireframe home",
+                      Image: "Mid Fidelity Home",
+                      query: "/img/recifree_midfidelity_home.png",
                     },
                     {
-                      name: "Mid Fidelity Cart",
-                      query: "mid fidelity cart design",
+                      Image: "Mid Fidelity Cart",
+                      query: "/img/recifree_midfidelity_cart.png",
                     },
                   ].map((screen, index) => (
                     <div
