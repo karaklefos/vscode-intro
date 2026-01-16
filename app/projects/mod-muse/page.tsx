@@ -400,7 +400,7 @@ export default function ModMuseProject() {
               <h2 className="text-4xl md:text-5xl font-semibold mb-12">Userflow</h2>
               <div className="rounded-2xl overflow-hidden">
                 <Image
-                  src="/mod-muse-user-flow-diagram.jpg"
+                  src="/img/modmuse_userflow.png"
                   alt="Mod Muse User Flow"
                   width={1200}
                   height={600}
@@ -422,7 +422,7 @@ export default function ModMuseProject() {
               <h2 className="text-4xl md:text-5xl font-semibold mb-12">Low Fidelity Wireframes</h2>
               <div className="rounded-2xl overflow-hidden">
                 <Image
-                  src="/mod-muse-low-fidelity-wireframes.jpg"
+                  src="/img/modmuse_low_fidelity_wireframes.png"
                   alt="Mod Muse Low Fidelity Wireframes"
                   width={1200}
                   height={600}
