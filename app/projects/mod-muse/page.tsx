@@ -244,12 +244,12 @@ export default function ModMuseProject() {
               <div className="overflow-x-auto pb-4 -mx-4 px-4 scrollbar-hide">
                 <div className="flex gap-6 min-w-max">
                   {[
-                    { name: "Home", query: "vintage fashion app home feed colorful" },
-                    { name: "Reviews", query: "user reviews rating interface" },
-                    { name: "Profile", query: "user profile settings vintage" },
-                    { name: "Item", query: "product detail view clothing" },
-                    { name: "Add Item", query: "upload item form interface" },
-                    { name: "Checkout", query: "checkout payment screen" },
+                    { name: "Home", Image: "/img/modmuse_home.png" },
+                    { name: "Reviews", Image: "/img/modmuse_reviews.png" },
+                    { name: "Profile", Image: "/img/modmuse_profile.png" },
+                    { name: "Item", Image: "/img/modmuse_item.png" },
+                    { name: "Add Item", Image: "/img/modmuse_additem.png" },
+                    { name: "Checkout", Image: "/img/modmuse_checkout.png" },
                   ].map((screen, index) => (
                     <div key={index} className="flex-shrink-0 w-64 rounded-2xl overflow-hidden glass-card">
                       <Image
