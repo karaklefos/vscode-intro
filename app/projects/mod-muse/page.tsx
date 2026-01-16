@@ -265,51 +265,50 @@ export default function ModMuseProject() {
           </motion.div>
 
           {/* Prototypes Section */}
-          <motion.section
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="mb-20"
+<motion.section
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.8 }}
+  className="mb-20"
+>
+  <div className="glass-card rounded-3xl p-8 md:p-12">
+    <div className="flex justify-between items-end mb-12">
+      <div>
+        <h2 className="text-4xl md:text-5xl font-semibold mb-4">Prototypes</h2>
+        <p className="text-muted-foreground italic">(swipe to view more)</p>
+      </div>
+    </div>
+
+    {/* THE SCROLLING CONTAINER */}
+    {/* -mx-4 and px-4 allow images to touch the edges on mobile while staying aligned */}
+    <div className="overflow-x-auto pb-6 -mx-4 px-4 scrollbar-hide snap-x snap-mandatory flex">
+      <div className="flex gap-6">
+        {[
+          { name: "Home", Image: "/img/modmuse_home.png" },
+          { name: "Reviews", Image: "/img/modmuse_reviews.png" },
+          { name: "Profile", Image: "/img/modmuse_profile.png" },
+          { name: "Item", Image: "/img/modmuse_item.png" },
+          { name: "Add Item", Image: "/img/modmuse_additem.png" },
+          { name: "Checkout", Image: "/img/modmuse_checkout.png" },
+        ].map((screen, index) => (
+          <div
+            key={index}
+            className="flex-shrink-0 w-64 rounded-2xl overflow-hidden glass-card snap-center border border-white/20 shadow-xl"
           >
-            <div className="glass-card rounded-3xl p-8 md:p-12">
-              <h2 className="text-4xl md:text-5xl font-semibold mb-8">
-                Prototypes
-              </h2>
-              <p className="text-lg text-muted-foreground mb-12 italic">
-                (swipe to view more)
-              </p>
-
-              {/* Prototypes Section */}
-              <div className="glass-card rounded-3xl p-8 md:p-12">
-
-                {/* FIXED SCROLLING CONTAINER */}
-                <div className="flex gap-6 overflow-x-auto pb-6 -mx-4 px-4 snap-x snap-mandatory scrollbar-hide">
-                  {[
-                    { name: "Home", Image: "/img/modmuse_home.png" },
-                    { name: "Reviews", Image: "/img/modmuse_reviews.png" },
-                    { name: "Profile", Image: "/img/modmuse_profile.png" },
-                    { name: "Item", Image: "/img/modmuse_item.png" },
-                    { name: "Add Item", Image: "/img/modmuse_additem.png" },
-                    { name: "Checkout", Image: "/img/modmuse_checkout.png" },
-                  ].map((screen, index) => (
-                    <div
-                      key={index}
-                      className="flex-shrink-0 w-64 rounded-2xl overflow-hidden glass-card snap-center"
-                    >
-                      <Image
-                        src={screen.Image}
-                        alt={`Mod Muse ${screen.name}`}
-                        width={256}
-                        height={550}
-                        className="w-full h-auto pointer-events-none"
-                      />
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </motion.section>
+            <Image
+              src={screen.Image}
+              alt={`Mod Muse ${screen.name}`}
+              width={256}
+              height={550}
+              className="w-full h-auto pointer-events-none"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</motion.section>
 
           {/* Research & Discovery Section */}
           <motion.section
