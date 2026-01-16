@@ -174,56 +174,32 @@ export default function ReciFreeProject() {
           </motion.section>
 
           {/* Responsive Design Examples */}
-          <motion.section
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="mb-20"
-          >
-            <div className="glass-card rounded-3xl p-8 md:p-12">
-              <h2 className="text-4xl md:text-5xl font-semibold mb-8">
-                Responsive Design Examples
-              </h2>
-              <p className="text-lg text-muted-foreground mb-12 italic">
-                (swipe to view more)
-              </p>
-
-              <div className="overflow-x-auto pb-4 -mx-4 px-4 scrollbar-hide">
-                <div className="flex gap-6 min-w-max">
-                  {[
-                    { name: "Sign In", query: "login screen recipe app" },
-                    {
-                      name: "Onboarding",
-                      query: "allergen selection onboarding",
-                    },
-                    { name: "Home", query: "recipe feed homepage" },
-                    {
-                      name: "Filters",
-                      query: "filter options dietary restrictions",
-                    },
-                    { name: "Menu", query: "navigation menu app" },
-                    { name: "Recipe", query: "recipe detail view ingredients" },
-                    {
-                      name: "Saved Recipes",
-                      query: "saved recipes collection",
-                    },
-                  ].map((screen, index) => (
-                    <div
-                      key={index}
-                      className="flex-shrink-0 w-80 rounded-2xl overflow-hidden glass-card"
-                    >
-                      <Image
-                        src={`/.jpg?height=600&width=320&query=${screen.query}`}
-                        alt={`ReciFree ${screen.name}`}
-                        width={320}
-                        height={600}
-                        className="w-full h-auto"
-                      />
-                    </div>
-                  ))}
-                </div>
-              </div>
+<div className="overflow-x-auto pb-6 -mx-4 px-4 scrollbar-hide snap-x snap-mandatory">
+  <div className="flex gap-6">
+    {[
+      { name: "Sign In", Image: "/img/recifree_signin.png" },
+      { name: "Onboarding", Image: "/img/recifree_onboarding.png" },
+      { name: "Home", Image: "/img/recifree_home.png" },
+      { name: "Filters", Image: "/img/recifree_filters.png" },
+      { name: "Menu", Image: "/img/recifree_menu.png" },
+      { name: "Recipe", Image: "/img/recifree_recipe.png" },
+      { name: "Saved Recipes", Image: "/img/recifree_saved.png" },
+    ].map((screen, index) => (
+      <div
+        key={index}
+        className="flex-shrink-0 w-80 rounded-2xl overflow-hidden glass-card snap-center"
+      >
+        <Image
+          src={screen.Image}
+          alt={`ReciFree ${screen.name}`}
+          width={320}
+          height={600}
+          className="w-full h-auto pointer-events-none"
+        />
+      </div>
+    ))}
+  </div>
+</div>
             </div>
           </motion.section>
 
