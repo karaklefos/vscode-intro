@@ -1,15 +1,15 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import Image from "next/image"
-import Link from "next/link"
-import Navigation from "@/components/navigation"
-import { CustomCursor } from "@/components/custom-cursor"
-import { Footer } from "@/components/footer"
-import { projects } from "@/components/projects-grid"
+import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+import Navigation from "@/components/navigation";
+import { CustomCursor } from "@/components/custom-cursor";
+import { Footer } from "@/components/footer";
+import { projects } from "@/components/projects-grid";
 
 export default function ModMuseProject() {
-  const projectData = projects.find((p) => p.title === "Mod Muse")
+  const projectData = projects.find((p) => p.title === "Mod Muse");
 
   return (
     <>
@@ -29,7 +29,13 @@ export default function ModMuseProject() {
               href="/"
               className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8"
             >
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   d="M16 10H4M4 10L10 16M4 10L10 4"
                   stroke="currentColor"
@@ -40,7 +46,9 @@ export default function ModMuseProject() {
               </svg>
               Back to Projects
             </Link>
-            <h1 className="text-5xl md:text-7xl font-semibold mb-6 text-balance">{projectData?.title}</h1>
+            <h1 className="text-5xl md:text-7xl font-semibold mb-6 text-balance">
+              {projectData?.title}
+            </h1>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed mb-6 text-pretty">
               {projectData?.description}
             </p>
@@ -80,7 +88,13 @@ export default function ModMuseProject() {
               className="inline-flex items-center gap-3 text-2xl md:text-3xl font-semibold text-primary underline hover:text-primary-dark transition-colors"
             >
               View the Interactive Prototype
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   d="M7 17L17 7M17 7H7M17 7V17"
                   stroke="currentColor"
@@ -101,13 +115,16 @@ export default function ModMuseProject() {
             className="mb-20"
           >
             <div className="glass-card rounded-3xl p-8 md:p-12">
-              <h3 className="text-3xl md:text-4xl font-semibold mb-8">The Problem</h3>
+              <h3 className="text-3xl md:text-4xl font-semibold mb-8">
+                The Problem
+              </h3>
               <ul className="space-y-6 mb-12">
                 <li className="flex gap-4">
                   <span className="text-accent text-2xl">•</span>
                   <div>
                     <p className="text-lg leading-relaxed">
-                      Vintage shoppers often face fragmented, overwhelming online experiences lacking curation.
+                      Vintage shoppers often face fragmented, overwhelming
+                      online experiences lacking curation.
                     </p>
                   </div>
                 </li>
@@ -115,21 +132,25 @@ export default function ModMuseProject() {
                   <span className="text-accent text-2xl">•</span>
                   <div>
                     <p className="text-lg leading-relaxed">
-                      Meanwhile, eco-conscious individuals need a seamless platform to buy and sell unique, secondhand
-                      pieces sustainably.
+                      Meanwhile, eco-conscious individuals need a seamless
+                      platform to buy and sell unique, secondhand pieces
+                      sustainably.
                     </p>
                   </div>
                 </li>
               </ul>
 
-              <h3 className="text-3xl md:text-4xl font-semibold mb-8">The Solution</h3>
+              <h3 className="text-3xl md:text-4xl font-semibold mb-8">
+                The Solution
+              </h3>
               <ul className="space-y-6">
                 <li className="flex gap-4">
                   <span className="text-primary text-2xl">•</span>
                   <div>
                     <p className="text-lg leading-relaxed">
-                      Mod Muse, a vintage fashion app inspired by the 1960s Mod aesthetic, offering a visually engaging,
-                      curated marketplace with seamless buy and sell functionality.
+                      Mod Muse, a vintage fashion app inspired by the 1960s Mod
+                      aesthetic, offering a visually engaging, curated
+                      marketplace with seamless buy and sell functionality.
                     </p>
                   </div>
                 </li>
@@ -137,9 +158,10 @@ export default function ModMuseProject() {
                   <span className="text-primary text-2xl">•</span>
                   <div>
                     <p className="text-lg leading-relaxed">
-                      Created a niche, emotionally resonant shopping experience that successfully bridges the gap
-                      between nostalgic design and modern usability, driving sustainability through a streamlined,
-                      dual-sided platform.
+                      Created a niche, emotionally resonant shopping experience
+                      that successfully bridges the gap between nostalgic design
+                      and modern usability, driving sustainability through a
+                      streamlined, dual-sided platform.
                     </p>
                   </div>
                 </li>
@@ -156,35 +178,45 @@ export default function ModMuseProject() {
             className="mb-20"
           >
             <div className="glass-card rounded-3xl p-8 md:p-12">
-              <h2 className="text-4xl md:text-5xl font-semibold mb-12">The Objective & Vision</h2>
+              <h2 className="text-4xl md:text-5xl font-semibold mb-12">
+                The Objective & Vision
+              </h2>
 
               <div className="space-y-8">
                 <div>
-                  <h4 className="text-2xl font-semibold mb-4">The Objective:</h4>
+                  <h4 className="text-2xl font-semibold mb-4">
+                    The Objective:
+                  </h4>
                   <p className="text-lg leading-relaxed">
-                    To provide a seamless and visually engaging user experience for buying and selling vintage pieces,
-                    inspired by the timeless appeal of the 1960s Mod aesthetic, while actively promoting sustainability
-                    through secondhand fashion.
+                    To provide a seamless and visually engaging user experience
+                    for buying and selling vintage pieces, inspired by the
+                    timeless appeal of the 1960s Mod aesthetic, while actively
+                    promoting sustainability through secondhand fashion.
                   </p>
                 </div>
 
                 <div>
                   <h4 className="text-2xl font-semibold mb-4">The Vision:</h4>
                   <p className="text-lg leading-relaxed">
-                    To be the premier destination for fashion enthusiasts and eco-conscious individuals seeking unique,
-                    curated vintage clothing.
+                    To be the premier destination for fashion enthusiasts and
+                    eco-conscious individuals seeking unique, curated vintage
+                    clothing.
                   </p>
                 </div>
 
                 <div>
-                  <h4 className="text-2xl font-semibold mb-4">The Context (Who, What, When, Why):</h4>
+                  <h4 className="text-2xl font-semibold mb-4">
+                    The Context (Who, What, When, Why):
+                  </h4>
                   <ul className="space-y-4">
                     <li className="flex gap-4">
                       <span className="text-primary text-xl">•</span>
                       <div>
                         <p className="text-lg leading-relaxed">
-                          <strong>Users -</strong> Fashion enthusiasts and eco-conscious individuals who appreciate
-                          vintage clothing and want a dedicated platform for unique pieces.
+                          <strong>Users -</strong> Fashion enthusiasts and
+                          eco-conscious individuals who appreciate vintage
+                          clothing and want a dedicated platform for unique
+                          pieces.
                         </p>
                       </div>
                     </li>
@@ -192,8 +224,9 @@ export default function ModMuseProject() {
                       <span className="text-primary text-xl">•</span>
                       <div>
                         <p className="text-lg leading-relaxed">
-                          <strong>Usage -</strong> Used primarily at home for browsing, but also ideal when shopping in
-                          person when users can't find specific pieces they need.
+                          <strong>Usage -</strong> Used primarily at home for
+                          browsing, but also ideal when shopping in person when
+                          users can't find specific pieces they need.
                         </p>
                       </div>
                     </li>
@@ -201,8 +234,10 @@ export default function ModMuseProject() {
                       <span className="text-primary text-xl">•</span>
                       <div>
                         <p className="text-lg leading-relaxed">
-                          <strong>Value Proposition -</strong> Intuitive design, curated selection, a visually engaging
-                          interface inspired by the Mod aesthetic, and a seamless platform for both buying and selling.
+                          <strong>Value Proposition -</strong> Intuitive design,
+                          curated selection, a visually engaging interface
+                          inspired by the Mod aesthetic, and a seamless platform
+                          for both buying and selling.
                         </p>
                       </div>
                     </li>
@@ -238,11 +273,24 @@ export default function ModMuseProject() {
             className="mb-20"
           >
             <div className="glass-card rounded-3xl p-8 md:p-12">
-              <h2 className="text-4xl md:text-5xl font-semibold mb-8">Prototypes</h2>
-              <p className="text-lg text-muted-foreground mb-12 italic">(swipe to view more)</p>
+              <h2 className="text-4xl md:text-5xl font-semibold mb-8">
+                Prototypes
+              </h2>
+              <p className="text-lg text-muted-foreground mb-12 italic">
+                (swipe to view more)
+              </p>
 
-              <div className="overflow-x-auto pb-4 -mx-4 px-4 scrollbar-hide">
-                <div className="flex gap-6 min-w-max">
+              {/* Prototypes Section */}
+              <div className="glass-card rounded-3xl p-8 md:p-12">
+                <h2 className="text-4xl md:text-5xl font-semibold mb-8">
+                  Prototypes
+                </h2>
+                <p className="text-lg text-muted-foreground mb-12 italic">
+                  (swipe to view more)
+                </p>
+
+                {/* FIXED SCROLLING CONTAINER */}
+                <div className="flex gap-6 overflow-x-auto pb-6 -mx-4 px-4 snap-x snap-mandatory scrollbar-hide">
                   {[
                     { name: "Home", Image: "/img/modmuse_home.png" },
                     { name: "Reviews", Image: "/img/modmuse_reviews.png" },
@@ -251,16 +299,19 @@ export default function ModMuseProject() {
                     { name: "Add Item", Image: "/img/modmuse_additem.png" },
                     { name: "Checkout", Image: "/img/modmuse_checkout.png" },
                   ].map((screen, index) => (
-  <div key={index} className="flex-shrink-0 w-64 rounded-2xl overflow-hidden glass-card">
-    <Image
-      src={screen.Image} 
-      alt={`Mod Muse ${screen.name}`}
-      width={256}
-      height={550}
-      className="w-full h-auto"
-    />
-  </div>
-))}
+                    <div
+                      key={index}
+                      className="flex-shrink-0 w-64 rounded-2xl overflow-hidden glass-card snap-center"
+                    >
+                      <Image
+                        src={screen.Image}
+                        alt={`Mod Muse ${screen.name}`}
+                        width={256}
+                        height={550}
+                        className="w-full h-auto pointer-events-none"
+                      />
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
@@ -275,27 +326,35 @@ export default function ModMuseProject() {
             className="mb-20"
           >
             <div className="glass-card rounded-3xl p-8 md:p-12">
-              <h2 className="text-4xl md:text-5xl font-semibold mb-12">Research & Discovery</h2>
+              <h2 className="text-4xl md:text-5xl font-semibold mb-12">
+                Research & Discovery
+              </h2>
 
               <div className="space-y-8">
                 <div>
                   <h4 className="text-2xl font-semibold mb-4">Methodology:</h4>
                   <p className="text-lg leading-relaxed">
                     The project was informed by a combination of{" "}
-                    <strong>user interviews, surveys, and competitive analysis,</strong> ensuring the design was
-                    grounded in real user needs and market gaps.
+                    <strong>
+                      user interviews, surveys, and competitive analysis,
+                    </strong>{" "}
+                    ensuring the design was grounded in real user needs and
+                    market gaps.
                   </p>
                 </div>
 
                 <div>
-                  <h4 className="text-2xl font-semibold mb-6">Process Steps:</h4>
+                  <h4 className="text-2xl font-semibold mb-6">
+                    Process Steps:
+                  </h4>
                   <ul className="space-y-6">
                     <li className="flex gap-4">
                       <span className="text-accent text-2xl">•</span>
                       <div>
                         <p className="text-lg leading-relaxed">
-                          <strong>Define -</strong> Independently conceived and defined Mod Muse's core purpose as a
-                          vintage fashion app promoting reuse and a unique aesthetic.
+                          <strong>Define -</strong> Independently conceived and
+                          defined Mod Muse's core purpose as a vintage fashion
+                          app promoting reuse and a unique aesthetic.
                         </p>
                       </div>
                     </li>
@@ -303,8 +362,9 @@ export default function ModMuseProject() {
                       <span className="text-accent text-2xl">•</span>
                       <div>
                         <p className="text-lg leading-relaxed">
-                          <strong>Research -</strong> Gained understanding of user fashion habits, preferences for
-                          vintage clothing, and pain points in sustainable shopping.
+                          <strong>Research -</strong> Gained understanding of
+                          user fashion habits, preferences for vintage clothing,
+                          and pain points in sustainable shopping.
                         </p>
                       </div>
                     </li>
@@ -312,8 +372,9 @@ export default function ModMuseProject() {
                       <span className="text-accent text-2xl">•</span>
                       <div>
                         <p className="text-lg leading-relaxed">
-                          <strong>Design -</strong> Translated insights into intuitive solutions through information
-                          architecture, wireframing, and interactive prototyping.
+                          <strong>Design -</strong> Translated insights into
+                          intuitive solutions through information architecture,
+                          wireframing, and interactive prototyping.
                         </p>
                       </div>
                     </li>
@@ -321,8 +382,10 @@ export default function ModMuseProject() {
                       <span className="text-accent text-2xl">•</span>
                       <div>
                         <p className="text-lg leading-relaxed">
-                          <strong>Test -</strong> Conducted usability testing to evaluate the design's effectiveness and
-                          identify key areas for iteration to ensure a seamless and engaging experience.
+                          <strong>Test -</strong> Conducted usability testing to
+                          evaluate the design's effectiveness and identify key
+                          areas for iteration to ensure a seamless and engaging
+                          experience.
                         </p>
                       </div>
                     </li>
@@ -341,16 +404,20 @@ export default function ModMuseProject() {
             className="mb-20"
           >
             <div className="glass-card rounded-3xl p-8 md:p-12">
-              <h3 className="text-3xl md:text-4xl font-semibold mb-8">Strategic Impact:</h3>
+              <h3 className="text-3xl md:text-4xl font-semibold mb-8">
+                Strategic Impact:
+              </h3>
               <ul className="space-y-6">
                 <li className="flex gap-4">
                   <span className="text-primary text-2xl">•</span>
                   <div>
                     <p className="text-lg leading-relaxed">
-                      <strong>Balancing Nostalgia and Usability -</strong> A core learning was the importance of
-                      balancing a nostalgia-driven design (the Mod aesthetic) with modern usability standards. The final
-                      design proves that an emotional connection can be created without compromising seamless navigation
-                      and intuitive interactions.
+                      <strong>Balancing Nostalgia and Usability -</strong> A
+                      core learning was the importance of balancing a
+                      nostalgia-driven design (the Mod aesthetic) with modern
+                      usability standards. The final design proves that an
+                      emotional connection can be created without compromising
+                      seamless navigation and intuitive interactions.
                     </p>
                   </div>
                 </li>
@@ -358,9 +425,10 @@ export default function ModMuseProject() {
                   <span className="text-primary text-2xl">•</span>
                   <div>
                     <p className="text-lg leading-relaxed">
-                      <strong>Brand Identity Development -</strong> Gained valuable experience in ensuring that every
-                      design choice—from typography to color schemes—aligned with the Mod aesthetic and enhanced the
-                      overall brand experience.
+                      <strong>Brand Identity Development -</strong> Gained
+                      valuable experience in ensuring that every design
+                      choice—from typography to color schemes—aligned with the
+                      Mod aesthetic and enhanced the overall brand experience.
                     </p>
                   </div>
                 </li>
@@ -368,9 +436,10 @@ export default function ModMuseProject() {
                   <span className="text-primary text-2xl">•</span>
                   <div>
                     <p className="text-lg leading-relaxed">
-                      <strong>Functional Focus -</strong> The project reinforced the significance of seamless navigation
-                      and intuitive interactions to create an enjoyable shopping and selling experience tailored to
-                      lovers of vintage fashion.
+                      <strong>Functional Focus -</strong> The project reinforced
+                      the significance of seamless navigation and intuitive
+                      interactions to create an enjoyable shopping and selling
+                      experience tailored to lovers of vintage fashion.
                     </p>
                   </div>
                 </li>
@@ -378,9 +447,10 @@ export default function ModMuseProject() {
                   <span className="text-primary text-2xl">•</span>
                   <div>
                     <p className="text-lg leading-relaxed">
-                      <strong>Moving Forward (Future Vision) -</strong> Future iterations would focus on exploring
-                      enhanced personalization features, advanced search capabilities, and community-driven elements to
-                      increase user engagement.
+                      <strong>Moving Forward (Future Vision) -</strong> Future
+                      iterations would focus on exploring enhanced
+                      personalization features, advanced search capabilities,
+                      and community-driven elements to increase user engagement.
                     </p>
                   </div>
                 </li>
@@ -397,7 +467,9 @@ export default function ModMuseProject() {
             className="mb-20"
           >
             <div className="glass-card rounded-3xl p-8 md:p-12">
-              <h2 className="text-4xl md:text-5xl font-semibold mb-12">Userflow</h2>
+              <h2 className="text-4xl md:text-5xl font-semibold mb-12">
+                Userflow
+              </h2>
               <div className="rounded-2xl overflow-hidden">
                 <Image
                   src="/img/modmuse_userflow.png"
@@ -419,7 +491,9 @@ export default function ModMuseProject() {
             className="mb-20"
           >
             <div className="glass-card rounded-3xl p-8 md:p-12">
-              <h2 className="text-4xl md:text-5xl font-semibold mb-12">Low Fidelity Wireframes</h2>
+              <h2 className="text-4xl md:text-5xl font-semibold mb-12">
+                Low Fidelity Wireframes
+              </h2>
               <div className="rounded-2xl overflow-hidden">
                 <Image
                   src="/img/modmuse_low_fidelity_wireframes.png"
@@ -441,7 +515,9 @@ export default function ModMuseProject() {
             className="mb-20"
           >
             <div className="glass-card rounded-3xl p-8 md:p-12">
-              <h2 className="text-4xl md:text-5xl font-semibold mb-12">Style Guide</h2>
+              <h2 className="text-4xl md:text-5xl font-semibold mb-12">
+                Style Guide
+              </h2>
 
               <div className="space-y-12">
                 <div>
@@ -453,19 +529,19 @@ export default function ModMuseProject() {
                       { name: "Yellow", Image: "/img/modmuse_yellow.png" },
                       { name: "White", Image: "/img/modmuse_white.png" },
                       { name: "Black", Image: "/img/modmuse_black.png" },
-                   ].map((color, index) => (
-    <div key={index} className="flex-shrink-0">
-      <Image
-        src={color.Image} // Changed this to point to your path
-        alt={`Mod Muse ${color.name}`}
-        width={120}
-        height={120}
-        className="rounded-lg"
-      />
-      <p className="text-center mt-2 text-sm">{color.name}</p>
-    </div>
-  ))}
-</div>
+                    ].map((color, index) => (
+                      <div key={index} className="flex-shrink-0">
+                        <Image
+                          src={color.Image} // Changed this to point to your path
+                          alt={`Mod Muse ${color.name}`}
+                          width={120}
+                          height={120}
+                          className="rounded-lg"
+                        />
+                        <p className="text-center mt-2 text-sm">{color.name}</p>
+                      </div>
+                    ))}
+                  </div>
                 </div>
 
                 <div>
@@ -480,7 +556,9 @@ export default function ModMuseProject() {
                     />
                   </div>
                   <div>
-                    <h5 className="text-lg font-semibold mb-4 underline">The logo must:</h5>
+                    <h5 className="text-lg font-semibold mb-4 underline">
+                      The logo must:
+                    </h5>
                     <ul className="space-y-2">
                       <li className="flex gap-3">
                         <span className="text-primary">•</span>
@@ -488,7 +566,9 @@ export default function ModMuseProject() {
                       </li>
                       <li className="flex gap-3">
                         <span className="text-primary">•</span>
-                        <p className="text-lg">Have a 1 stroke in the color #FFFFFF</p>
+                        <p className="text-lg">
+                          Have a 1 stroke in the color #FFFFFF
+                        </p>
                       </li>
                       <li className="flex gap-3">
                         <span className="text-primary">•</span>
@@ -521,16 +601,21 @@ export default function ModMuseProject() {
             className="mb-20"
           >
             <div className="glass-card rounded-3xl p-8 md:p-12 bg-gradient-to-br from-primary/5 to-accent/5">
-              <h2 className="text-4xl md:text-5xl font-semibold mb-8">Conclusion</h2>
+              <h2 className="text-4xl md:text-5xl font-semibold mb-8">
+                Conclusion
+              </h2>
               <p className="text-lg leading-relaxed text-muted-foreground mb-6">
-                Mod Muse successfully demonstrates how a vintage-inspired aesthetic can be combined with modern UX
-                principles to create a seamless, engaging platform for sustainable fashion. This case study underscores
-                the importance of user research, iterative design, and a commitment to brand consistency.
+                Mod Muse successfully demonstrates how a vintage-inspired
+                aesthetic can be combined with modern UX principles to create a
+                seamless, engaging platform for sustainable fashion. This case
+                study underscores the importance of user research, iterative
+                design, and a commitment to brand consistency.
               </p>
               <p className="text-lg leading-relaxed text-muted-foreground">
-                The final product provides a thoughtfully curated marketplace that resonates emotionally with users
-                while maintaining intuitive navigation and functionality, setting a strong foundation for future growth
-                in the vintage fashion space.
+                The final product provides a thoughtfully curated marketplace
+                that resonates emotionally with users while maintaining
+                intuitive navigation and functionality, setting a strong
+                foundation for future growth in the vintage fashion space.
               </p>
             </div>
           </motion.section>
@@ -547,7 +632,13 @@ export default function ModMuseProject() {
               href="/"
               className="inline-flex items-center gap-2 text-lg text-muted-foreground hover:text-foreground transition-colors"
             >
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   d="M16 10H4M4 10L10 16M4 10L10 4"
                   stroke="currentColor"
@@ -564,5 +655,5 @@ export default function ModMuseProject() {
       {/* Footer component */}
       <Footer />
     </>
-  )
+  );
 }
