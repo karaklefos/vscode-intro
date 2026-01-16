@@ -251,16 +251,16 @@ export default function ModMuseProject() {
                     { name: "Add Item", Image: "/img/modmuse_additem.png" },
                     { name: "Checkout", Image: "/img/modmuse_checkout.png" },
                   ].map((screen, index) => (
-                    <div key={index} className="flex-shrink-0 w-64 rounded-2xl overflow-hidden glass-card">
-                      <Image
-                        src={`/.jpg?height=550&width=256&query=${screen.query}`}
-                        alt={`Mod Muse ${screen.name}`}
-                        width={256}
-                        height={550}
-                        className="w-full h-auto"
-                      />
-                    </div>
-                  ))}
+  <div key={index} className="flex-shrink-0 w-64 rounded-2xl overflow-hidden glass-card">
+    <Image
+      src={screen.Image} 
+      alt={`Mod Muse ${screen.name}`}
+      width={256}
+      height={550}
+      className="w-full h-auto"
+    />
+  </div>
+))}
                 </div>
               </div>
             </div>
