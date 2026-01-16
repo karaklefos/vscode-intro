@@ -181,30 +181,41 @@ export default function ReciFreeProject() {
             transition={{ duration: 0.8 }}
             className="mb-20"
           >
-            <div className="overflow-x-auto pb-6 -mx-4 px-4 scrollbar-hide snap-x snap-mandatory">
-              <div className="flex gap-6">
-                {[
-                  { name: "Sign In", Image: "/img/recifree_signin.png" },
-                  { name: "Onboarding", Image: "/img/recifree_onboarding.png" },
-                  { name: "Home", Image: "/img/recifree_home.png" },
-                  { name: "Filters", Image: "/img/recifree_filters.png" },
-                  { name: "Menu", Image: "/img/recifree_menu.png" },
-                  { name: "Recipe", Image: "/img/recifree_recipe.png" },
-                  { name: "Saved Recipes", Image: "/img/recifree_saved.png" },
-                ].map((screen, index) => (
-                  <div
-                    key={index}
-                    className="flex-shrink-0 w-80 rounded-2xl overflow-hidden glass-card snap-center"
-                  >
-                    <Image
-                      src={screen.Image}
-                      alt={`ReciFree ${screen.name}`}
-                      width={320}
-                      height={600}
-                      className="w-full h-auto pointer-events-none"
-                    />
-                  </div>
-                ))}
+            <div className="glass-card rounded-3xl p-8 md:p-12">
+              <div className="flex justify-between items-end mb-12">
+                <div>
+                  <h2 className="text-4xl md:text-5xl font-semibold mb-4">
+                    Responsive Design Examples
+                  </h2>
+                  <p className="text-muted-foreground italic">Scroll to view more →</p>
+                </div>
+              </div>
+
+              <div className="overflow-x-auto pb-6 -mx-4 px-4 scrollbar-hide snap-x snap-mandatory">
+                <div className="flex gap-6">
+                  {[
+                    { name: "Sign In", Image: "/img/recifree_signin.png" },
+                    { name: "Onboarding", Image: "/img/recifree_onboarding.png" },
+                    { name: "Home", Image: "/img/recifree_home.png" },
+                    { name: "Filters", Image: "/img/recifree_filters.png" },
+                    { name: "Menu", Image: "/img/recifree_menu.png" },
+                    { name: "Recipe", Image: "/img/recifree_recipe.png" },
+                    { name: "Saved Recipes", Image: "/img/recifree_saved.png" },
+                  ].map((screen, index) => (
+                    <div
+                      key={index}
+                      className="flex-shrink-0 w-80 rounded-2xl overflow-hidden glass-card snap-center"
+                    >
+                      <Image
+                        src={screen.Image}
+                        alt={`ReciFree ${screen.name}`}
+                        width={320}
+                        height={600}
+                        className="w-full h-auto pointer-events-none"
+                      />
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </motion.section>
@@ -442,29 +453,54 @@ export default function ReciFreeProject() {
             transition={{ duration: 0.8 }}
             className="mb-20"
           >
-            <div className="overflow-x-auto pb-6 -mx-4 px-4 scrollbar-hide snap-x snap-mandatory">
-              <div className="flex gap-6">
-                {[
-                  { name: "Login", Image: "/img/recifree_mockup_login.png" },
-                  { name: "Sign Up", Image: "/img/recifree_mockup_signup.png" },
-                  { name: "Allergen Info", Image: "/img/recifree_mockup_allergeninfo.png" },
-                  { name: "Home", Image: "/img/recifree_mockup_home.png" },
-                  { name: "Recipe", Image: "/img/recifree_mockup_recipe.png" },
-                  { name: "Filter", Image: "/img/recifree_mockup_filter.png" },
-                ].map((screen, index) => (
-                  <div
-                    key={index}
-                    className="flex-shrink-0 w-64 rounded-2xl overflow-hidden glass-card snap-center"
-                  >
-                    <Image
-                      src={screen.Image}
-                      alt={`ReciFree ${screen.name}`}
-                      width={256}
-                      height={550}
-                      className="w-full h-auto pointer-events-none"
-                    />
-                  </div>
-                ))}
+            <div className="glass-card rounded-3xl p-8 md:p-12">
+              <div className="flex justify-between items-end mb-12">
+                <div>
+                  <h2 className="text-4xl md:text-5xl font-semibold mb-4">
+                    Prototypes
+                  </h2>
+                  <p className="text-muted-foreground italic">
+                    Scroll to view more →
+                  </p>
+                </div>
+              </div>
+
+              <div className="overflow-x-auto pb-6 -mx-4 px-4 scrollbar-hide snap-x snap-mandatory">
+                <div className="flex gap-6">
+                  {[
+                    { name: "Login", Image: "/img/recifree_mockup_login.png" },
+                    {
+                      name: "Sign Up",
+                      Image: "/img/recifree_mockup_signup.png",
+                    },
+                    {
+                      name: "Allergen Info",
+                      Image: "/img/recifree_mockup_allergeninfo.png",
+                    },
+                    { name: "Home", Image: "/img/recifree_mockup_home.png" },
+                    {
+                      name: "Recipe",
+                      Image: "/img/recifree_mockup_recipe.png",
+                    },
+                    {
+                      name: "Filter",
+                      Image: "/img/recifree_mockup_filter.png",
+                    },
+                  ].map((screen, index) => (
+                    <div
+                      key={index}
+                      className="flex-shrink-0 w-64 rounded-2xl overflow-hidden glass-card snap-center"
+                    >
+                      <Image
+                        src={screen.Image}
+                        alt={`ReciFree ${screen.name}`}
+                        width={256}
+                        height={550}
+                        className="w-full h-auto pointer-events-none"
+                      />
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </motion.section>
@@ -494,37 +530,46 @@ export default function ReciFreeProject() {
           </motion.section>
 
           {/* Wireframes */}
-          <motion.section
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="mb-20"
+<motion.section
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.8 }}
+  className="mb-20"
+>
+  <div className="glass-card rounded-3xl p-8 md:p-12">
+    <div className="flex justify-between items-end mb-12">
+      <div>
+        <h2 className="text-4xl md:text-5xl font-semibold mb-4">Wireframes</h2>
+        <p className="text-muted-foreground italic">Scroll to view more →</p>
+      </div>
+    </div>
+
+    <div className="overflow-x-auto pb-6 -mx-4 px-4 scrollbar-hide snap-x snap-mandatory">
+      <div className="flex gap-6">
+        {[
+          { name: "Low Fidelity Home", Image: "/img/recifree_lowfidelity_home.png" },
+          { name: "Low Fidelity Cart", Image: "/img/recifree_lowfidelity_cart.png" },
+          { name: "Mid Fidelity Home", Image: "/img/recifree_midfidelity_home.png" },
+          { name: "Mid Fidelity Cart", Image: "/img/recifree_midfidelity_cart.png" },
+        ].map((screen, index) => (
+          <div
+            key={index}
+            className="flex-shrink-0 w-80 rounded-2xl overflow-hidden glass-card bg-white snap-center"
           >
-            <div className="overflow-x-auto pb-6 -mx-4 px-4 scrollbar-hide snap-x snap-mandatory">
-              <div className="flex gap-6">
-                {[
-                  { name: "Low Fidelity Home", Image: "/img/recifree_lowfidelity_home.png" },
-                  { name: "Low Fidelity Cart", Image: "/img/recifree_lowfidelity_cart.png" },
-                  { name: "Mid Fidelity Home", Image: "/img/recifree_midfidelity_home.png" },
-                  { name: "Mid Fidelity Cart", Image: "/img/recifree_midfidelity_cart.png" },
-                ].map((screen, index) => (
-                  <div
-                    key={index}
-                    className="flex-shrink-0 w-80 rounded-2xl overflow-hidden glass-card bg-white snap-center"
-                  >
-                    <Image
-                      src={screen.Image}
-                      alt={screen.name}
-                      width={320}
-                      height={600}
-                      className="w-full h-auto pointer-events-none"
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
-          </motion.section>
+            <Image
+              src={screen.Image}
+              alt={screen.name}
+              width={320}
+              height={600}
+              className="w-full h-auto pointer-events-none"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</motion.section>
 
           {/* Style Guide */}
           <motion.section
