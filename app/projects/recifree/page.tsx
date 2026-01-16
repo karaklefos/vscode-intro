@@ -428,7 +428,7 @@ export default function ReciFreeProject() {
               <h2 className="text-4xl md:text-5xl font-semibold mb-12">User Flow</h2>
               <div className="rounded-2xl overflow-hidden">
                 <Image
-                  src="/.jpg?height=600&width=1200&query=user flow diagram recipe app journey"
+                  src="/img/recifree_userflow.png"
                   alt="ReciFree User Flow"
                   width={1200}
                   height={600}
@@ -511,7 +511,7 @@ export default function ReciFreeProject() {
                   <h4 className="text-2xl font-semibold mb-8">LOGO</h4>
                   <div className="bg-white rounded-2xl p-12 inline-block">
                     <Image
-                      src="/.jpg?height=100&width=300&query=ReciFree logo typography clean modern"
+                      src="/img/recifree_logo.png"
                       alt="ReciFree Logo"
                       width={300}
                       height={100}
