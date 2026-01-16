@@ -57,7 +57,7 @@ export default function ReciFreeProject() {
             className="mb-20 rounded-3xl overflow-hidden glass-card"
           >
             <Image
-              src="/.jpg?height=800&width=1400&query=recipe app interface allergen free cooking"
+              src="/img/recifree.jpg"
               alt="ReciFree Hero"
               width={1400}
               height={800}
