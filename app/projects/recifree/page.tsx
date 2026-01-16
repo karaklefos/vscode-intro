@@ -291,7 +291,7 @@ export default function ReciFreeProject() {
             className="mb-20 rounded-3xl overflow-hidden glass-card"
           >
             <Image
-              src="/.jpg?height=600&width=1400&query=colorful bell peppers fresh vegetables cooking"
+              src="/img/recifree_bellpepper.jpg"
               alt="Fresh Bell Peppers"
               width={1400}
               height={600}
