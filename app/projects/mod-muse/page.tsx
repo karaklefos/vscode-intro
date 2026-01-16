@@ -221,7 +221,7 @@ export default function ModMuseProject() {
             className="mb-20 rounded-3xl overflow-hidden glass-card"
           >
             <Image
-              src="/mod-muse-workspace-mockup.jpg"
+              src="/img/modmuse3.jpg"
               alt="Mod Muse Workspace"
               width={1400}
               height={800}
