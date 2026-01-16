@@ -524,7 +524,16 @@ export default function ReciFreeProject() {
                   <h4 className="text-2xl font-semibold mb-8">ICONS & DIETARY ICONS</h4>
                   <div className="bg-white rounded-2xl p-12">
                     <Image
-                      src="/.jpg?height=200&width=800&query=allergen icons dietary restriction symbols"
+                      src="/img/recifree_icons.png"
+                      alt="ReciFree Icons"
+                      width={800}
+                      height={200}
+                      className="w-full h-auto"
+                    />
+                  </div>
+                  <div className="bg-white rounded-2xl p-12">
+                    <Image
+                      src="/img/recifree_dietaryicons.png"
                       alt="ReciFree Icons"
                       width={800}
                       height={200}
