@@ -559,7 +559,7 @@ export default function ReciFreeProject() {
             className="mb-20 rounded-3xl overflow-hidden glass-card"
           >
             <Image
-              src="/.jpg?height=800&width=1400&query=tablet mockup recipe app responsive design"
+              src="/img/recifree_tablet.png"
               alt="ReciFree Tablet Mockup"
               width={1400}
               height={800}
