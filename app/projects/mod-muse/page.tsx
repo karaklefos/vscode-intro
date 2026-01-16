@@ -282,12 +282,6 @@ export default function ModMuseProject() {
 
               {/* Prototypes Section */}
               <div className="glass-card rounded-3xl p-8 md:p-12">
-                <h2 className="text-4xl md:text-5xl font-semibold mb-8">
-                  Prototypes
-                </h2>
-                <p className="text-lg text-muted-foreground mb-12 italic">
-                  (swipe to view more)
-                </p>
 
                 {/* FIXED SCROLLING CONTAINER */}
                 <div className="flex gap-6 overflow-x-auto pb-6 -mx-4 px-4 snap-x snap-mandatory scrollbar-hide">
