@@ -448,24 +448,24 @@ export default function ModMuseProject() {
                   <h4 className="text-2xl font-semibold mb-8">COLORS</h4>
                   <div className="flex flex-wrap gap-6">
                     {[
-                      { name: "Blue", color: "#0074D9", query: "blue color swatch" },
-                      { name: "Purple", color: "#B10DC9", query: "purple color swatch" },
-                      { name: "Yellow", color: "#FFDC00", query: "yellow color swatch" },
-                      { name: "White", color: "#FFFFFF", query: "white color swatch" },
-                      { name: "Black", color: "#111111", query: "black color swatch" },
-                    ].map((color, index) => (
-                      <div key={index} className="flex-shrink-0">
-                        <Image
-                          src={`/.jpg?height=120&width=120&query=${color.query}`}
-                          alt={`Mod Muse ${color.name}`}
-                          width={120}
-                          height={120}
-                          className="rounded-lg"
-                        />
-                        <p className="text-center mt-2 text-sm">{color.name}</p>
-                      </div>
-                    ))}
-                  </div>
+                      { name: "Blue", Image: "/img/modmuse_blue.png" },
+                      { name: "Purple", Image: "/img/modmuse_purple.png" },
+                      { name: "Yellow", Image: "/img/modmuse_yellow.png" },
+                      { name: "White", Image: "/img/modmuse_white.png" },
+                      { name: "Black", Image: "/img/modmuse_black.png" },
+                   ].map((color, index) => (
+    <div key={index} className="flex-shrink-0">
+      <Image
+        src={color.Image} // Changed this to point to your path
+        alt={`Mod Muse ${color.name}`}
+        width={120}
+        height={120}
+        className="rounded-lg"
+      />
+      <p className="text-center mt-2 text-sm">{color.name}</p>
+    </div>
+  ))}
+</div>
                 </div>
 
                 <div>
