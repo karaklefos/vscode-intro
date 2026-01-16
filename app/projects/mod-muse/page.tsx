@@ -57,7 +57,7 @@ export default function ModMuseProject() {
             className="mb-20 rounded-3xl overflow-hidden glass-card"
           >
             <Image
-              src="/mod-muse-hero-vintage-fashion-app.jpg"
+              src="/img/modmuse1.jpg"
               alt="Mod Muse Hero"
               width={1400}
               height={800}
