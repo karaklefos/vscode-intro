@@ -212,20 +212,20 @@ export default function BotanyBuddyProject() {
 
           {/* Prototypes iOS Section */}
           <motion.section
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="mb-20"
-          >
-            <div className="glass-card rounded-3xl p-8 md:p-12">
-              <h2 className="text-4xl md:text-5xl font-semibold mb-8">Prototypes</h2>
-              <h3 className="text-2xl font-semibold mb-8">iOS</h3>
-              <p className="text-lg text-muted-foreground mb-12 italic">(swipe to view more)</p>
+  className="mb-20"
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+>
+  <div className="glass-card rounded-3xl p-8 md:p-12">
+    <h2 className="text-4xl md:text-5xl font-semibold mb-4">Prototypes</h2>
+    <p className="text-muted-foreground italic mb-12">Scroll to view more →</p>
 
-              <div className="overflow-x-auto pb-4 -mx-4 px-4 scrollbar-hide">
-                <div className="flex gap-6 min-w-max">
-                  {[
+    {/* iOS Sub-section */}
+    <h3 className="text-2xl font-semibold mb-6">iOS</h3>
+    <div className="overflow-x-auto pb-10 -mx-4 px-4 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent snap-x snap-mandatory flex items-start">
+      <div className="flex gap-6">
+        {[
                     { name: "Splash", query: "ios splash screen plant app" },
                     { name: "Login", query: "ios login screen botanical" },
                     { name: "Home", query: "ios home plant collection" },
@@ -239,20 +239,20 @@ export default function BotanyBuddyProject() {
                     { name: "Loading", query: "ios loading screen botanical" },
                     { name: "Error", query: "ios error state message" },
                   ].map((screen, index) => (
-                    <div key={index} className="flex-shrink-0 w-64 rounded-2xl overflow-hidden glass-card">
-                      <Image
-                        src={`/.jpg?height=550&width=256&query=${screen.query}`}
-                        alt={`Botany Buddy iOS ${screen.name}`}
-                        width={256}
-                        height={550}
-                        className="w-full h-auto"
-                      />
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </motion.section>
+          <div key={index} className="flex-shrink-0 w-72 rounded-2xl overflow-hidden glass-card snap-center border border-white/10 shadow-xl">
+            <Image
+              src={screen.img}
+              alt={`iOS ${screen.name}`}
+              width={288}
+              height={600}
+              className="w-full h-auto"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</motion.section>
 
           {/* Prototypes Android Section */}
           <motion.section
