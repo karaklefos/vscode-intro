@@ -281,8 +281,9 @@ export default function ModMuseProject() {
     </div>
 
     {/* THE SCROLLING CONTAINER */}
-    {/* -mx-4 and px-4 allow images to touch the edges on mobile while staying aligned */}
-    <div className="overflow-x-auto pb-6 -mx-4 px-4 scrollbar-hide snap-x snap-mandatory flex">
+    {/* 1. Removed 'scrollbar-hide' */}
+    {/* 2. Added custom scrollbar utilities (works with tailwind-scrollbar plugin or standard CSS) */}
+    <div className="overflow-x-auto pb-8 -mx-4 px-4 snap-x snap-mandatory flex custom-scrollbar">
       <div className="flex gap-6">
         {[
           { name: "Home", Image: "/img/modmuse_home.png" },
