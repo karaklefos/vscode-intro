@@ -211,7 +211,7 @@ export default function BotanyBuddyProject() {
           </motion.section>
 
           {/* Prototypes iOS Section */}
-          <motion.section
+<motion.section
   className="mb-20"
   initial={{ opacity: 0, y: 40 }}
   whileInView={{ opacity: 1, y: 0 }}
@@ -219,29 +219,28 @@ export default function BotanyBuddyProject() {
 >
   <div className="glass-card rounded-3xl p-8 md:p-12">
     <h2 className="text-4xl md:text-5xl font-semibold mb-4">Prototypes</h2>
+    <h3 className="text-2xl font-semibold mb-6">iOS</h3>
     <p className="text-muted-foreground italic mb-12">Scroll to view more →</p>
 
-    {/* iOS Sub-section */}
-    <h3 className="text-2xl font-semibold mb-6">iOS</h3>
     <div className="overflow-x-auto pb-10 -mx-4 px-4 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent snap-x snap-mandatory flex items-start">
       <div className="flex gap-6">
         {[
-                    { name: "Splash", Image: "/img/botanybuddy_ios_mockup_splash.png" },
-                    { name: "Login", Image: "/img/botanybuddy_ios_mockup_login.png" },
-                    { name: "Home", Image: "/img/botanybuddy_ios_mockup_home.png" },
-                    { name: "Camera", Image: "/img/botanybuddy_ios_mockup_camera.png" },
-                    { name: "Photo Tips", Image: "/img/botanybuddy_ios_phototips.jpg" },
-                    { name: "Try Again", Image: "/img/botanybuddy_ios_tryagain.png" },
-                    { name: "Submit", Image: "/img/botanybuddy_ios_mockup_submit.png" },
-                    { name: "Diagnosis", Image: "/img/botanybuddy_ios_mockup_diagnosis.png" },
-                    { name: "Description", Image: "/img/botanybuddy_ios_mockup_description.png" },
-                    { name: "Profile", Image: "/img/botanybuddy_ios_mockup_profile.png" },
-                    { name: "Loading", Image: "/img/botanybuddy_ios_mockup_loading.png" },
-                    { name: "Error", Image: "/img/botanybuddy_ios_mockup_error.png" },
-                  ].map((screen, index) => (
+          { name: "Splash", Image: "/img/botanybuddy_ios_mockup_splash.png" },
+          { name: "Login", Image: "/img/botanybuddy_ios_mockup_login.png" },
+          { name: "Home", Image: "/img/botanybuddy_ios_mockup_home.png" },
+          { name: "Camera", Image: "/img/botanybuddy_ios_mockup_camera.png" },
+          { name: "Photo Tips", Image: "/img/botanybuddy_ios_phototips.jpg" },
+          { name: "Try Again", Image: "/img/botanybuddy_ios_tryagain.png" },
+          { name: "Submit", Image: "/img/botanybuddy_ios_mockup_submit.png" },
+          { name: "Diagnosis", Image: "/img/botanybuddy_ios_mockup_diagnosis.png" },
+          { name: "Description", Image: "/img/botanybuddy_ios_mockup_description.png" },
+          { name: "Profile", Image: "/img/botanybuddy_ios_mockup_profile.png" },
+          { name: "Loading", Image: "/img/botanybuddy_ios_mockup_loading.png" },
+          { name: "Error", Image: "/img/botanybuddy_ios_mockup_error.png" },
+        ].map((screen, index) => (
           <div key={index} className="flex-shrink-0 w-72 rounded-2xl overflow-hidden glass-card snap-center border border-white/10 shadow-xl">
             <Image
-              src={screen.img}
+              src={screen.Image} // Matches your array key exactly
               alt={`iOS ${screen.name}`}
               width={288}
               height={600}
