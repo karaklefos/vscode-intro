@@ -322,46 +322,52 @@ export default function BotanyBuddyProject() {
             </div>
           </motion.section>
 
-          {/* Wireframes iOS */}
-          <motion.section
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="mb-20"
-          >
-            <div className="glass-card rounded-3xl p-8 md:p-12">
-              <h2 className="text-4xl md:text-5xl font-semibold mb-8">Wireframes</h2>
-              <h3 className="text-2xl font-semibold mb-8">iOS</h3>
-              <p className="text-lg text-muted-foreground mb-12 italic">(swipe to view more)</p>
+         {/* Wireframes iOS */}
+<motion.section
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.8 }}
+  className="mb-20"
+>
+  <div className="glass-card rounded-3xl p-8 md:p-12">
+    <h2 className="text-4xl md:text-5xl font-semibold mb-8">Wireframes</h2>
+    <h3 className="text-2xl font-semibold mb-8">iOS</h3>
+    <p className="text-lg text-muted-foreground mb-12 italic">Scroll to view more →</p>
 
-              <div className="overflow-x-auto pb-4 -mx-4 px-4 scrollbar-hide">
-                <div className="flex gap-6 min-w-max">
-                  {[
-                    { name: "Login", query: "ios wireframe login sketch" },
-                    { name: "Home", query: "ios wireframe home layout" },
-                    { name: "Diagnosis", query: "ios wireframe diagnosis screen" },
-                    { name: "Camera", query: "ios wireframe camera interface" },
-                    { name: "Results", query: "ios wireframe results page" },
-                    { name: "Identity Results", query: "ios wireframe identification" },
-                    { name: "Reminder", query: "ios wireframe reminder notification" },
-                    { name: "Calendar", query: "ios wireframe calendar view" },
-                    { name: "Profile", query: "ios wireframe profile settings" },
-                  ].map((screen, index) => (
-                    <div key={index} className="flex-shrink-0 w-64 rounded-2xl overflow-hidden glass-card bg-white">
-                      <Image
-                        src={`/.jpg?height=550&width=256&query=${screen.query}`}
-                        alt={`iOS ${screen.name} Wireframe`}
-                        width={256}
-                        height={550}
-                        className="w-full h-auto"
-                      />
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </motion.section>
+    {/* Scroll Container: items-start prevents white space, scrollbar-thin adds the bar */}
+    <div className="overflow-x-auto pb-10 -mx-4 px-4 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent snap-x snap-mandatory flex items-start active:cursor-grabbing cursor-grab">
+      <div className="flex gap-6 items-start">
+        {[
+          { name: "Login", Image: "/img/botanybuddy_ios_login.jpg" },
+          { name: "Home", Image: "/img/botanybuddy_ios_home.jpg" },
+          { name: "Diagnosis", Image: "/img/botanybuddy_ios_diagnosis.jpg" },
+          { name: "Camera", Image: "/img/botanybuddy_ios_camera.jpg" },
+          { name: "Results", Image: "/img/botanybuddy_ios_results.jpg" },
+          { name: "Identity Results", Image: "/img/botanybuddy_ios_identityresults.jpg" },
+          { name: "Reminder", Image: "/img/botanybuddy_ios_reminder.jpg" },
+          { name: "Calendar", Image: "/img/botanybuddy_ios_calendar.jpg" },
+          { name: "Profile", Image: "/img/botanybuddy_ios_profile.jpg" },
+        ].map((screen, index) => (
+          <div 
+            key={index} 
+            /* Added h-fit to keep the card tight around the wireframe image */
+            className="flex-shrink-0 w-64 rounded-2xl overflow-hidden glass-card bg-white snap-center border border-white/10 shadow-xl h-fit"
+          >
+            <Image
+              /* Corrected to use screen.Image from your array */
+              src={screen.Image}
+              alt={`iOS ${screen.name} Wireframe`}
+              width={256}
+              height={550}
+              className="w-full h-auto pointer-events-none"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</motion.section>
 
           {/* Wireframes Android */}
           <motion.section
