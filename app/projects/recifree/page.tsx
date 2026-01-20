@@ -623,28 +623,34 @@ export default function ReciFreeProject() {
                 </div>
 
                 <div>
-                  <h4 className="text-2xl font-semibold mb-8">
-                    ICONS & DIETARY ICONS
-                  </h4>
-                  <div className="bg-white rounded-2xl p-12 mb-6">
-                    <Image
-                      src="/img/recifree_icons.png"
-                      alt="ReciFree Icons"
-                      width={800}
-                      height={200}
-                      className="w-full h-auto"
-                    />
-                  </div>
-                  <div className="bg-white rounded-2xl p-12">
-                    <Image
-                      src="/img/recifree_dietaryicons.png"
-                      alt="ReciFree Dietary Icons"
-                      width={800}
-                      height={200}
-                      className="w-full h-auto"
-                    />
-                  </div>
-                </div>
+  <h4 className="text-2xl font-semibold mb-8">
+    ICONS & DIETARY ICONS
+  </h4>
+  
+  {/* Standard Icons Wrapper */}
+  <div className="bg-white rounded-2xl p-6 md:p-10 mb-6 flex justify-center items-center">
+    <Image
+      src="/img/recifree_icons.png"
+      alt="ReciFree Icons"
+      width={800}
+      height={200}
+      /* Changed w-full to a specific max-width to keep icons at a natural size */
+      className="w-auto max-w-[300px] md:max-w-[500px] h-auto"
+    />
+  </div>
+
+  {/* Dietary Icons Wrapper */}
+  <div className="bg-white rounded-2xl p-6 md:p-10 flex justify-center items-center">
+    <Image
+      src="/img/recifree_dietaryicons.png"
+      alt="ReciFree Dietary Icons"
+      width={800}
+      height={200}
+      /* Using max-w here ensures these specific icons stay legible but compact */
+      className="w-auto max-w-[350px] md:max-w-[600px] h-auto"
+    />
+  </div>
+</div>
 
                 <div>
                   <h4 className="text-2xl font-semibold mb-4">TYPOGRAPHY</h4>
