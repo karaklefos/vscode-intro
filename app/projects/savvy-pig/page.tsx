@@ -57,7 +57,7 @@ export default function SavvyPigProject() {
             className="mb-20 rounded-3xl overflow-hidden glass-card"
           >
             <Image
-              src="/.jpg?height=800&width=1400&query=financial savings app mobile interface piggy bank"
+              src="/img/savvypig.jpg"
               alt="Savvy Pig Hero"
               width={1400}
               height={800}
