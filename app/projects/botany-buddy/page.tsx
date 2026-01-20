@@ -103,20 +103,22 @@ export default function BotanyBuddyProject() {
           </motion.section>
 
           {/* Background Image */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="mb-20 rounded-3xl overflow-hidden glass-card"
-          >
-            <Image
-              src="/img/botanybuddy_leafbckgrnd.jpg"
-              width={1400}
-              height={600}
-              className="w-full h-auto"
-            />
-          </motion.div>
+<motion.div
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.8 }}
+  className="mb-20 rounded-3xl overflow-hidden glass-card"
+>
+  <Image
+    src="/img/botanybuddy_leafbckgrnd.jpg"
+    alt="Botany Buddy decorative background"
+    width={1400}
+    height={600}
+    className="w-full h-auto"
+    priority
+  />
+</motion.div>
 
           {/* Research & Process */}
           <motion.section
