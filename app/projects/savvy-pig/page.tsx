@@ -129,7 +129,7 @@ export default function SavvyPigProject() {
             className="mb-20 rounded-3xl overflow-hidden glass-card"
           >
             <Image
-              src="/.jpg?height=600&width=1400&query=abstract financial growth savings money management"
+              src="/img/savvypig_ombreheader.png"
               alt="Financial Background"
               width={1400}
               height={600}
