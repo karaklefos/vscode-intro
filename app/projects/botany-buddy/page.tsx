@@ -370,44 +370,49 @@ export default function BotanyBuddyProject() {
 </motion.section>
 
           {/* Wireframes Android */}
-          <motion.section
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="mb-20"
-          >
-            <div className="glass-card rounded-3xl p-8 md:p-12">
-              <h3 className="text-2xl font-semibold mb-8">Android</h3>
-              <p className="text-lg text-muted-foreground mb-12 italic">(swipe to view more)</p>
+<motion.section
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.8 }}
+  className="mb-20"
+>
+  <div className="glass-card rounded-3xl p-8 md:p-12">
+    <h3 className="text-2xl font-semibold mb-8">Android</h3>
+    <p className="text-lg text-muted-foreground mb-12 italic">Scroll to view more →</p>
 
-              <div className="overflow-x-auto pb-4 -mx-4 px-4 scrollbar-hide">
-                <div className="flex gap-6 min-w-max">
-                  {[
-                    { name: "Login", query: "android wireframe login sketch" },
-                    { name: "Home", query: "android wireframe home layout" },
-                    { name: "Diagnose", query: "android wireframe diagnose screen" },
-                    { name: "Camera", query: "android wireframe camera interface" },
-                    { name: "Plant Diagnosis", query: "android wireframe diagnosis results" },
-                    { name: "Identity", query: "android wireframe identification" },
-                    { name: "Reminder", query: "android wireframe reminder" },
-                    { name: "Calendar", query: "android wireframe calendar" },
-                    { name: "Profile", query: "android wireframe profile" },
-                  ].map((screen, index) => (
-                    <div key={index} className="flex-shrink-0 w-64 rounded-2xl overflow-hidden glass-card bg-white">
-                      <Image
-                        src={`/.jpg?height=550&width=256&query=${screen.query}`}
-                        alt={`Android ${screen.name} Wireframe`}
-                        width={256}
-                        height={550}
-                        className="w-full h-auto"
-                      />
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </motion.section>
+    {/* Scroll Container: Removed scrollbar-hide, added scrollbar-thin and items-start */}
+    <div className="overflow-x-auto pb-10 -mx-4 px-4 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent snap-x snap-mandatory flex items-start active:cursor-grabbing cursor-grab">
+      <div className="flex gap-6 items-start">
+        {[
+          { name: "Login", Image: "/img/botanybuddy_android_login.jpg" },
+          { name: "Home", Image: "/img/botanybuddy_android_home.jpg" },
+          { name: "Diagnose", Image: "/img/botanybuddy_android_diagnose.jpg" },
+          { name: "Camera", Image: "/img/botanybuddy_android_camera.jpg" },
+          { name: "Plant Diagnosis", Image: "/img/botanybuddy_android_plantdiagnosis.jpg" },
+          { name: "Identity", Image: "/img/botanybuddy_android_indentity.jpg" },
+          { name: "Reminder", Image: "/img/botanybuddy_android_reminder.jpg" },
+          { name: "Calendar", Image: "/img/botanybuddy_android_calendar.jpg" },
+          { name: "Profile", Image: "/img/botanybuddy_android_profile.jpg" },
+        ].map((screen, index) => (
+          <div 
+            key={index} 
+            className="flex-shrink-0 w-64 rounded-2xl overflow-hidden glass-card bg-white snap-center border border-white/10 shadow-xl h-fit"
+          >
+            <Image
+              /* FIXED: pointing to screen.Image directly */
+              src={screen.Image}
+              alt={`Android ${screen.name} Wireframe`}
+              width={256}
+              height={550}
+              className="w-full h-auto pointer-events-none"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</motion.section>
 
           {/* Style Guide */}
           <motion.section
