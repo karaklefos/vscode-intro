@@ -174,51 +174,55 @@ export default function ReciFreeProject() {
           </motion.section>
 
           {/* Responsive Design Examples */}
-          <motion.section
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="mb-20"
-          >
-            <div className="glass-card rounded-3xl p-8 md:p-12">
-              <div className="flex justify-between items-end mb-12">
-                <div>
-                  <h2 className="text-4xl md:text-5xl font-semibold mb-4">
-                    Responsive Design Examples
-                  </h2>
-                  <p className="text-muted-foreground italic">Scroll to view more →</p>
-                </div>
-              </div>
+<motion.section
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.8 }}
+  className="mb-20"
+>
+  <div className="glass-card rounded-3xl p-8 md:p-12">
+    {/* Spacing Fix: Grouped Header and Hint */}
+    <div className="mb-12">
+      <h2 className="text-4xl md:text-5xl font-semibold mb-4">
+        Responsive Design Examples
+      </h2>
+      <p className="text-muted-foreground italic">
+        Scroll to view more →
+      </p>
+    </div>
 
-              <div className="overflow-x-auto pb-6 -mx-4 px-4 scrollbar-hide snap-x snap-mandatory">
-                <div className="flex gap-6">
-                  {[
-                    { name: "Sign In", Image: "/img/recifree_signin.png" },
-                    { name: "Onboarding", Image: "/img/recifree_onboarding.png" },
-                    { name: "Home", Image: "/img/recifree_home.png" },
-                    { name: "Filters", Image: "/img/recifree_filters.png" },
-                    { name: "Menu", Image: "/img/recifree_menu.png" },
-                    { name: "Recipe", Image: "/img/recifree_recipe.png" },
-                    { name: "Saved Recipes", Image: "/img/recifree_saved.png" },
-                  ].map((screen, index) => (
-                    <div
-                      key={index}
-                      className="flex-shrink-0 w-80 rounded-2xl overflow-hidden glass-card snap-center"
-                    >
-                      <Image
-                        src={screen.Image}
-                        alt={`ReciFree ${screen.name}`}
-                        width={320}
-                        height={600}
-                        className="w-full h-auto pointer-events-none"
-                      />
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </motion.section>
+    {/* The Scrolling Container */}
+    {/* Note: Replaced scrollbar-hide with scrollbar-thin to ensure it's functional as discussed */}
+    <div className="overflow-x-auto pb-8 -mx-4 px-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent snap-x snap-mandatory flex active:cursor-grabbing cursor-grab">
+      <div className="flex gap-6">
+        {[
+          { name: "Sign In", Image: "/img/recifree_signin.png" },
+          { name: "Onboarding", Image: "/img/recifree_onboarding.png" },
+          { name: "Home", Image: "/img/recifree_home.png" },
+          { name: "Filters", Image: "/img/recifree_filters.png" },
+          { name: "Menu", Image: "/img/recifree_menu.png" },
+          { name: "Recipe", Image: "/img/recifree_recipe.png" },
+          { name: "Saved Recipes", Image: "/img/recifree_saved.png" },
+        ].map((screen, index) => (
+          <div
+            key={index}
+            className="flex-shrink-0 w-80 rounded-2xl overflow-hidden glass-card snap-center border border-white/10 shadow-xl"
+          >
+            <Image
+              src={screen.Image}
+              alt={`ReciFree ${screen.name}`}
+              width={320}
+              height={600}
+              className="w-full h-auto pointer-events-none"
+              priority={index < 2} // Improves loading for first two images
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</motion.section>
 
           {/* User Research & Synthesis */}
           <motion.section
