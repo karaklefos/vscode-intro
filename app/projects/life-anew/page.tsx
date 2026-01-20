@@ -527,104 +527,115 @@ export default function LifeAnewProject() {
 </motion.section>
 
               {/* Community Facing Screens */}
-              <h4 className="text-2xl md:text-3xl font-medium mb-8 text-muted-foreground">
-                Community Facing Screens{" "}
-              </h4>
-              <p className="text-muted-foreground italic">
-                Scroll to view more →
-              </p>
+<motion.section
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.8 }}
+  className="mb-20"
+>
+  <div className="glass-card rounded-3xl p-8 md:p-12">
+    {/* Heading and Hint: Grouped with tighter spacing */}
+    <h4 className="text-2xl md:text-3xl font-medium mb-2 text-muted-foreground">
+      Community Facing Screens{" "}
+    </h4>
+    <p className="text-muted-foreground italic mb-8">
+      Scroll to view more →
+    </p>
 
-              <div className="mb-12 overflow-x-auto pb-4 -mx-4 px-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent active:cursor-grabbing cursor-grab">
-                <div className="flex gap-6 min-w-max">
-                  {[
-                    {
-                      name: "Home External",
-                      Image: "/img/lifeanew_home_external.png",
-                    },
-                    {
-                      name: "Newsletter",
-                      Image: "/img/lifeanew_newsletter.png",
-                    },
-                    {
-                      name: "Program External",
-                      Image: "/img/lifeanew_program_external.png",
-                    },
-                    {
-                      name: "Sign Up External",
-                      Image: "/img/lifeanew_signup_external.png",
-                    },
-                  ].map((screen, index) => (
-                    <div
-                      key={index}
-                      className="flex-shrink-0 w-64 rounded-2xl overflow-hidden glass-card"
-                    >
-                      <Image
-                        src={screen.Image}
-                        alt={`Life Anew ${screen.name}`}
-                        width={256}
-                        height={550}
-                        className="w-full h-auto"
-                      />
-                    </div>
-                  ))}
-                </div>
-              </div>
+    {/* THE SCROLLING CONTAINER */}
+    <div className="mb-12 overflow-x-auto pb-6 -mx-4 px-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent active:cursor-grabbing cursor-grab">
+      <div className="flex gap-6 min-w-max">
+        {[
+          {
+            name: "Home External",
+            Image: "/img/lifeanew_home_external.png",
+          },
+          {
+            name: "Newsletter",
+            Image: "/img/lifeanew_newsletter.png",
+          },
+          {
+            name: "Program External",
+            Image: "/img/lifeanew_program_external.png",
+          },
+          {
+            name: "Sign Up External",
+            Image: "/img/lifeanew_signup_external.png",
+          },
+        ].map((screen, index) => (
+          <div
+            key={index}
+            className="flex-shrink-0 w-64 rounded-2xl overflow-hidden glass-card"
+          >
+            <Image
+              src={screen.Image}
+              alt={`Life Anew ${screen.name}`}
+              width={256}
+              height={550}
+              className="w-full h-auto"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
 
-              <ul className="space-y-6">
-                <li className="flex gap-4">
-                  <span className="text-accent text-2xl">•</span>
-                  <div>
-                    <p className="text-lg leading-relaxed">
-                      <strong>Mission-Driven Hierarchy:</strong> The Home screen
-                      prominently features a strategic donation CTA. This
-                      placement aligns the design with the organization's core
-                      nonprofit mission, prioritizing immediate fundraising
-                      visibility without compromising resource access.
-                    </p>
-                  </div>
-                </li>
-                <li className="flex gap-4">
-                  <span className="text-accent text-2xl">•</span>
-                  <div>
-                    <p className="text-lg leading-relaxed">
-                      <strong>Empowering Engagement:</strong> An interactive
-                      community calendar is displayed on the Home screen,
-                      providing immediate visibility into critical resource
-                      events, educational workshops, and volunteer
-                      opportunities. This encourages proactive community
-                      participation and outreach.
-                    </p>
-                  </div>
-                </li>
-                <li className="flex gap-4">
-                  <span className="text-accent text-2xl">•</span>
-                  <div>
-                    <p className="text-lg leading-relaxed">
-                      <strong>Accessible Program Enrollment:</strong> Instead of
-                      internal management tools, the interface features a
-                      streamlined Program Catalog. Users can easily view
-                      detailed program descriptions, eligibility requirements,
-                      and complete the sign-up process digitally, removing
-                      reliance on staff mediation.
-                    </p>
-                  </div>
-                </li>
-                <li className="flex gap-4">
-                  <span className="text-accent text-2xl">•</span>
-                  <div>
-                    <p className="text-lg leading-relaxed">
-                      <strong>Visual Design:</strong> Prioritizing simplicity
-                      and trust, the overall aesthetic is designed to be highly
-                      accessible and reassuring, using a clear hierarchy and
-                      approachable language to build immediate user trust and
-                      minimize cognitive burden for individuals seeking critical
-                      support.
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </motion.section>
+    {/* Text Content List */}
+    <ul className="space-y-6">
+      <li className="flex gap-4">
+        <span className="text-accent text-2xl">•</span>
+        <div>
+          <p className="text-lg leading-relaxed">
+            <strong>Mission-Driven Hierarchy:</strong> The Home screen
+            prominently features a strategic donation CTA. This
+            placement aligns the design with the organization's core
+            nonprofit mission, prioritizing immediate fundraising
+            visibility without compromising resource access.
+          </p>
+        </div>
+      </li>
+      <li className="flex gap-4">
+        <span className="text-accent text-2xl">•</span>
+        <div>
+          <p className="text-lg leading-relaxed">
+            <strong>Empowering Engagement:</strong> An interactive
+            community calendar is displayed on the Home screen,
+            providing immediate visibility into critical resource
+            events, educational workshops, and volunteer
+            opportunities. This encourages proactive community
+            participation and outreach.
+          </p>
+        </div>
+      </li>
+      <li className="flex gap-4">
+        <span className="text-accent text-2xl">•</span>
+        <div>
+          <p className="text-lg leading-relaxed">
+            <strong>Accessible Program Enrollment:</strong> Instead of
+            internal management tools, the interface features a
+            streamlined Program Catalog. Users can easily view
+            detailed program descriptions, eligibility requirements,
+            and complete the sign-up process digitally, removing
+            reliance on staff mediation.
+          </p>
+        </div>
+      </li>
+      <li className="flex gap-4">
+        <span className="text-accent text-2xl">•</span>
+        <div>
+          <p className="text-lg leading-relaxed">
+            <strong>Visual Design:</strong> Prioritizing simplicity
+            and trust, the overall aesthetic is designed to be highly
+            accessible and reassuring, using a clear hierarchy and
+            approachable language to build immediate user trust and
+            minimize cognitive burden for individuals seeking critical
+            support.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</motion.section>
 
           {/* Conclusion */}
           <motion.div
