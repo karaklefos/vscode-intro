@@ -321,205 +321,210 @@ export default function LifeAnewProject() {
           </motion.section>
 
           {/* Prototypes Section */}
-          <motion.section
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="mb-20"
+<motion.section
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.8 }}
+  className="mb-20"
+>
+  <div className="glass-card rounded-3xl p-8 md:p-12">
+    {/* Reduced mb-12 to mb-4 to bring hint closer to title */}
+    <h2 className="text-4xl md:text-5xl font-semibold mb-4">
+      Prototypes: iPhone & Tablet
+    </h2>
+
+    {/* Employee Screens */}
+    {/* Removed mb-8 from empty h4 to eliminate dead space */}
+    <h4 className="text-2xl md:text-3xl font-medium text-muted-foreground"></h4>
+    {/* Added mb-8 to the hint to push the images further down */}
+    <p className="text-muted-foreground italic mb-8">
+      Scroll to view more →
+    </p>
+
+    <div className="mb-12 overflow-x-auto pb-4 -mx-4 px-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent active:cursor-grabbing cursor-grab">
+      <div className="flex gap-6 min-w-max">
+        {[
+          { name: "Login", Image: "/img/lifeanew_login.png" },
+          { name: "Sign Up", Image: "/img/lifeanew_signup.png" },
+          { name: "Home", Image: "/img/lifeanew_home.png" },
+          { name: "Calendar", Image: "/img/lifeanew_calendar.png" },
+          {
+            name: "Calendar Date",
+            Image: "/img/lifeanew_calendar_date.png",
+          },
+          { name: "Menu", Image: "/img/lifeanew_menu.png" },
+          {
+            name: "Menu Expanded",
+            Image: "/img/lifeanew_menu_expanded.png",
+          },
+          { name: "Messages", Image: "/img/lifeanew_messages.png" },
+          {
+            name: "Message Thread",
+            Image: "/img/lifeanew_message_thread.png",
+          },
+          {
+            name: "Restorative Circles",
+            Image: "/img/lifeanew_restorativecircles.png",
+          },
+          {
+            name: "Individual Curriculum",
+            Image: "/img/lifeanew_indivcurriculum.png",
+          },
+          { name: "Program", Image: "/img/lifeanew_program.png" },
+          { name: "Resources", Image: "/img/lifeanew_resources.png" },
+          { name: "Map", Image: "/img/lifeanew_map.png" },
+        ].map((screen, index) => (
+          <div
+            key={index}
+            className="flex-shrink-0 w-64 rounded-2xl overflow-hidden glass-card"
           >
-            <div className="glass-card rounded-3xl p-8 md:p-12">
-              <h2 className="text-4xl md:text-5xl font-semibold mb-12">
-                Prototypes: iPhone & Tablet
-              </h2>
+            <Image
+              src={screen.Image}
+              alt={screen.Image}
+              width={256}
+              height={550}
+              className="w-full h-auto"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
 
-              {/* Employee Screens */}
-              <h4 className="text-2xl md:text-3xl font-medium mb-8 text-muted-foreground"></h4>
-              <p className="text-muted-foreground italic">
-                Scroll to view more →
-              </p>
+    {/* Tablet Screens */}
+    <div className="mb-12 overflow-x-auto pb-4 -mx-4 px-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent active:cursor-grabbing cursor-grab">
+      <div className="flex gap-6 min-w-max">
+        {[
+          {
+            name: "Login iPad",
+            Image: "/img/lifeanew_login_ipad.png",
+          },
+          { name: "Home iPad", Image: "/img/lifeanew_home_ipad.png" },
+          {
+            name: "Calendar iPad",
+            Image: "/img/lifeanew_calendar_ipad.png",
+          },
+          {
+            name: "Calendar Date iPad",
+            Image: "/img/lifeanew_calendar_date_ipad.png",
+          },
+          {
+            name: "Messages iPad",
+            Image: "/img/lifeanew_messages_ipad.png",
+          },
+          {
+            name: "Circles iPad",
+            Image: "/img/lifeanew_circles_ipad.png",
+          },
+          {
+            name: "Student Circles iPad",
+            Image: "/img/lifeanew_studentcircles_ipad.png",
+          },
+          {
+            name: "ATX Peace iPad",
+            Image: "/img/lifeanew_atxpeace_ipad.png",
+          },
+          {
+            name: "Resources iPad",
+            Image: "/img/lifeanew_resources_ipad.png",
+          },
+          { name: "Map iPad", Image: "/img/lifeanew_map_ipad.png" },
+        ].map((screen, index) => (
+          <div
+            key={index}
+            className="flex-shrink-0 w-96 rounded-2xl overflow-hidden glass-card"
+          >
+            <Image
+              src={screen.Image}
+              alt={`Life Anew ${screen.name}`}
+              width={384}
+              height={512}
+              className="w-full h-auto"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
 
-              <div className="mb-12 overflow-x-auto pb-4 -mx-4 px-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent active:cursor-grabbing cursor-grab">
-                <div className="flex gap-6 min-w-max">
-                  {[
-                    { name: "Login", Image: "/img/lifeanew_login.png" },
-                    { name: "Sign Up", Image: "/img/lifeanew_signup.png" },
-                    { name: "Home", Image: "/img/lifeanew_home.png" },
-                    { name: "Calendar", Image: "/img/lifeanew_calendar.png" },
-                    {
-                      name: "Calendar Date",
-                      Image: "/img/lifeanew_calendar_date.png",
-                    },
-                    { name: "Menu", Image: "/img/lifeanew_menu.png" },
-                    {
-                      name: "Menu Expanded",
-                      Image: "/img/lifeanew_menu_expanded.png",
-                    },
-                    { name: "Messages", Image: "/img/lifeanew_messages.png" },
-                    {
-                      name: "Message Thread",
-                      Image: "/img/lifeanew_message_thread.png",
-                    },
-                    {
-                      name: "Restorative Circles",
-                      Image: "/img/lifeanew_restorativecircles.png",
-                    },
-                    {
-                      name: "Individual Curriculum",
-                      Image: "/img/lifeanew_indivcurriculum.png",
-                    },
-                    { name: "Program", Image: "/img/lifeanew_program.png" },
-                    { name: "Resources", Image: "/img/lifeanew_resources.png" },
-                    { name: "Map", Image: "/img/lifeanew_map.png" },
-                  ].map((screen, index) => (
-                    <div
-                      key={index}
-                      className="flex-shrink-0 w-64 rounded-2xl overflow-hidden glass-card"
-                    >
-                      <Image
-                        src={screen.Image}
-                        alt={screen.Image}
-                        width={256}
-                        height={550}
-                        className="w-full h-auto"
-                      />
-                    </div>
-                  ))}
-                </div>
-              </div>
+    <div className="bg-muted/30 rounded-2xl p-8 mb-12">
+      <p className="text-lg leading-relaxed mb-6">
+        The design is fully responsive and optimized for use across
+        both <strong className="underline">iPhone and Tablet</strong>{" "}
+        devices. This ensures staff maintain continuous, high-fidelity
+        access to crucial tools and data while performing tasks in the
+        field.
+      </p>
+      <p className="text-lg leading-relaxed mb-6">
+        The employee Home screen is designed to be task-forward and
+        utility-focused.
+      </p>
 
-              {/* Tablet Screens */}
-              <div className="mb-12 overflow-x-auto pb-4 -mx-4 px-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent active:cursor-grabbing cursor-grab">
-                <div className="flex gap-6 min-w-max">
-                  {[
-                    {
-                      name: "Login iPad",
-                      Image: "/img/lifeanew_login_ipad.png",
-                    },
-                    { name: "Home iPad", Image: "/img/lifeanew_home_ipad.png" },
-                    {
-                      name: "Calendar iPad",
-                      Image: "/img/lifeanew_calendar_ipad.png",
-                    },
-                    {
-                      name: "Calendar Date iPad",
-                      Image: "/img/lifeanew_calendar_date_ipad.png",
-                    },
-                    {
-                      name: "Messages iPad",
-                      Image: "/img/lifeanew_messages_ipad.png",
-                    },
-                    {
-                      name: "Circles iPad",
-                      Image: "/img/lifeanew_circles_ipad.png",
-                    },
-                    {
-                      name: "Student Circles iPad",
-                      Image: "/img/lifeanew_studentcircles_ipad.png",
-                    },
-                    {
-                      name: "ATX Peace iPad",
-                      Image: "/img/lifeanew_atxpeace_ipad.png",
-                    },
-                    {
-                      name: "Resources iPad",
-                      Image: "/img/lifeanew_resources_ipad.png",
-                    },
-                    { name: "Map iPad", Image: "/img/lifeanew_map_ipad.png" },
-                  ].map((screen, index) => (
-                    <div
-                      key={index}
-                      className="flex-shrink-0 w-96 rounded-2xl overflow-hidden glass-card"
-                    >
-                      <Image
-                        src={screen.Image}
-                        alt={`Life Anew ${screen.name}`}
-                        width={384}
-                        height={512}
-                        className="w-full h-auto"
-                      />
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div className="bg-muted/30 rounded-2xl p-8 mb-12">
-                <p className="text-lg leading-relaxed mb-6">
-                  The design is fully responsive and optimized for use across
-                  both <strong className="underline">iPhone and Tablet</strong>{" "}
-                  devices. This ensures staff maintain continuous, high-fidelity
-                  access to crucial tools and data while performing tasks in the
-                  field.
-                </p>
-                <p className="text-lg leading-relaxed mb-6">
-                  The employee Home screen is designed to be task-forward and
-                  utility-focused.
-                </p>
-
-                <ul className="space-y-6">
-                  <li className="flex gap-4">
-                    <span className="text-primary text-2xl">•</span>
-                    <div>
-                      <p className="text-lg leading-relaxed">
-                        <strong>Actionable Data:</strong> A dedicated calendar
-                        and scheduling widget provides immediate visibility into
-                        daily caseloads and upcoming events, serving as the
-                        primary touchpoint.
-                      </p>
-                    </div>
-                  </li>
-                  <li className="flex gap-4">
-                    <span className="text-primary text-2xl">•</span>
-                    <div>
-                      <p className="text-lg leading-relaxed">
-                        <strong>Geospatial Intelligence:</strong> A criticality
-                        heat map visually guides staff toward high-need areas in
-                        Austin, enabling proactive resource deployment and
-                        strategic field prioritization.
-                      </p>
-                    </div>
-                  </li>
-                  <li className="flex gap-4">
-                    <span className="text-primary text-2xl">•</span>
-                    <div>
-                      <p className="text-lg leading-relaxed">
-                        <strong>Training & Program Oversight:</strong> A
-                        dedicated module provides staff with instant access to
-                        their required training resources (e.g., how to conduct
-                        a community circle to deal with emotions instead of
-                        resorting to violence). This centralized management view
-                        eliminates fragmented paper trails and ensures staff
-                        compliance and preparedness for high-stakes
-                        interventions.
-                      </p>
-                    </div>
-                  </li>
-                  <li className="flex gap-4">
-                    <span className="text-primary text-2xl">•</span>
-                    <div>
-                      <p className="text-lg leading-relaxed">
-                        <strong>Unified Access:</strong> All organizational
-                        resources are centralized and easily navigable via a
-                        persistent menu, drastically reducing search time and
-                        reliance on fragmented internal systems.
-                      </p>
-                    </div>
-                  </li>
-                  <li className="flex gap-4">
-                    <span className="text-primary text-2xl">•</span>
-                    <div>
-                      <p className="text-lg leading-relaxed">
-                        <strong>Visual Design:</strong> Adheres to principles of
-                        clean, minimal UI and cognitive efficiency. This ensures
-                        the interface remains clutter-free and highly legible,
-                        allowing staff to maintain maximum focus on task
-                        completion during high-stakes, time-sensitive
-                        interventions.
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+      <ul className="space-y-6">
+        <li className="flex gap-4">
+          <span className="text-primary text-2xl">•</span>
+          <div>
+            <p className="text-lg leading-relaxed">
+              <strong>Actionable Data:</strong> A dedicated calendar
+              and scheduling widget provides immediate visibility into
+              daily caseloads and upcoming events, serving as the
+              primary touchpoint.
+            </p>
+          </div>
+        </li>
+        <li className="flex gap-4">
+          <span className="text-primary text-2xl">•</span>
+          <div>
+            <p className="text-lg leading-relaxed">
+              <strong>Geospatial Intelligence:</strong> A criticality
+              heat map visually guides staff toward high-need areas in
+              Austin, enabling proactive resource deployment and
+              strategic field prioritization.
+            </p>
+          </div>
+        </li>
+        <li className="flex gap-4">
+          <span className="text-primary text-2xl">•</span>
+          <div>
+            <p className="text-lg leading-relaxed">
+              <strong>Training & Program Oversight:</strong> A
+              dedicated module provides staff with instant access to
+              their required training resources (e.g., how to conduct
+              a community circle to deal with emotions instead of
+              resorting to violence). This centralized management view
+              eliminates fragmented paper trails and ensures staff
+              compliance and preparedness for high-stakes
+              interventions.
+            </p>
+          </div>
+        </li>
+        <li className="flex gap-4">
+          <span className="text-primary text-2xl">•</span>
+          <div>
+            <p className="text-lg leading-relaxed">
+              <strong>Unified Access:</strong> All organizational
+              resources are centralized and easily navigable via a
+              persistent menu, drastically reducing search time and
+              reliance on fragmented internal systems.
+            </p>
+          </div>
+        </li>
+        <li className="flex gap-4">
+          <span className="text-primary text-2xl">•</span>
+          <div>
+            <p className="text-lg leading-relaxed">
+              <strong>Visual Design:</strong> Adheres to principles of
+              clean, minimal UI and cognitive efficiency. This ensures
+              the interface remains clutter-free and highly legible,
+              allowing staff to maintain maximum focus on task
+              completion during high-stakes, time-sensitive
+              interventions.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</motion.section>
 
               {/* Community Facing Screens */}
               <h4 className="text-2xl md:text-3xl font-medium mb-8 text-muted-foreground">
