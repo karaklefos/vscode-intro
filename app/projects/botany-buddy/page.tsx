@@ -254,45 +254,51 @@ export default function BotanyBuddyProject() {
 </motion.section>
 
           {/* Prototypes Android Section */}
-          <motion.section
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="mb-20"
-          >
-            <div className="glass-card rounded-3xl p-8 md:p-12">
-              <h3 className="text-2xl font-semibold mb-8">Android</h3>
-              <p className="text-lg text-muted-foreground mb-12 italic">(swipe to view more)</p>
+<motion.section
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.8 }}
+  className="mb-20"
+>
+  <div className="glass-card rounded-3xl p-8 md:p-12">
+    <h3 className="text-2xl font-semibold mb-8">Android</h3>
+    <p className="text-muted-foreground italic mb-12">Scroll to view more →</p>
 
-              <div className="overflow-x-auto pb-4 -mx-4 px-4 scrollbar-hide">
-                <div className="flex gap-6 min-w-max">
-                  {[
-                    { name: "Splash", query: "android splash screen plant app material design" },
-                    { name: "Login", query: "android login screen botanical" },
-                    { name: "Home", query: "android home plant collection" },
-                    { name: "Camera", query: "android camera interface plant identification" },
-                    { name: "Submit", query: "android submission screen" },
-                    { name: "Diagnosis", query: "android plant diagnosis results" },
-                    { name: "Description", query: "android plant details info" },
-                    { name: "Profile", query: "android user profile" },
-                    { name: "Loading", query: "android loading screen" },
-                    { name: "Error", query: "android error message" },
-                  ].map((screen, index) => (
-                    <div key={index} className="flex-shrink-0 w-64 rounded-2xl overflow-hidden glass-card">
-                      <Image
-                        src={`/.jpg?height=550&width=256&query=${screen.query}`}
-                        alt={`Botany Buddy Android ${screen.name}`}
-                        width={256}
-                        height={550}
-                        className="w-full h-auto"
-                      />
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </motion.section>
+    {/* Scroll Container: Removed scrollbar-hide, added scrollbar-thin and items-start */}
+    <div className="overflow-x-auto pb-10 -mx-4 px-4 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent snap-x snap-mandatory flex items-start active:cursor-grabbing cursor-grab">
+      <div className="flex gap-6 items-start">
+        {[
+          { name: "Splash", Image: "/img/botanybuddy_android_mockup_splash.png" },
+          { name: "Login", Image: "/img/botanybuddy_android_mockup_login.png" },
+          { name: "Home", Image: "/img/botanybuddy_android_mockup_home.png" },
+          { name: "Camera", Image: "/img/botanybuddy_android_mockup_camera.png" },
+          { name: "Submit", Image: "/img/botanybuddy_android_mockup_submit.png" },
+          { name: "Diagnosis", Image: "/img/botanybuddy_android_mockup_diagnosis.png" },
+          { name: "Description", Image: "/img/botanybuddy_android_mockup_description.png" },
+          { name: "Profile", Image: "/img/botanybuddy_android_mockup_profile.png" },
+          { name: "Loading", Image: "/img/botanybuddy_android_mockup_loading.png" },
+          { name: "Error", Image: "/img/botanybuddy_android_mockup_error.png" },
+        ].map((screen, index) => (
+          <div 
+            key={index} 
+            /* Added h-fit to ensure the card doesn't show white space below shorter images */
+            className="flex-shrink-0 w-64 md:w-72 h-fit rounded-2xl overflow-hidden glass-card snap-center border border-white/10 shadow-xl"
+          >
+            <Image
+              /* FIXED: pointing to screen.Image instead of the placeholder URL */
+              src={screen.Image}
+              alt={`Botany Buddy Android ${screen.name}`}
+              width={288}
+              height={600}
+              className="w-full h-auto pointer-events-none"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</motion.section>
 
           {/* Userflows */}
           <motion.section
