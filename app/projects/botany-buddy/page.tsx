@@ -305,7 +305,7 @@ export default function BotanyBuddyProject() {
               <h2 className="text-4xl md:text-5xl font-semibold mb-12">Userflows</h2>
               <div className="rounded-2xl overflow-hidden">
                 <Image
-                  src="/.jpg?height=600&width=1200&query=user flow diagram plant app journey"
+                  src="/img/botanybuddy_userflow.png"
                   alt="Botany Buddy User Flow"
                   width={1200}
                   height={600}
