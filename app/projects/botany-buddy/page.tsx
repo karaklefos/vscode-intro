@@ -226,18 +226,18 @@ export default function BotanyBuddyProject() {
     <div className="overflow-x-auto pb-10 -mx-4 px-4 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent snap-x snap-mandatory flex items-start">
       <div className="flex gap-6">
         {[
-                    { name: "Splash", query: "ios splash screen plant app" },
-                    { name: "Login", query: "ios login screen botanical" },
-                    { name: "Home", query: "ios home plant collection" },
-                    { name: "Camera", query: "ios camera interface plant identification" },
-                    { name: "Photo Tips", query: "ios photo tips instructions" },
-                    { name: "Try Again", query: "ios error message retry" },
-                    { name: "Submit", query: "ios submission confirmation" },
-                    { name: "Diagnosis", query: "ios plant diagnosis results" },
-                    { name: "Description", query: "ios plant details description" },
-                    { name: "Profile", query: "ios user profile settings" },
-                    { name: "Loading", query: "ios loading screen botanical" },
-                    { name: "Error", query: "ios error state message" },
+                    { name: "Splash", Image: "/img/botanybuddy_ios_mockup_splash.png" },
+                    { name: "Login", Image: "/img/botanybuddy_ios_mockup_login.png" },
+                    { name: "Home", Image: "/img/botanybuddy_ios_mockup_home.png" },
+                    { name: "Camera", Image: "/img/botanybuddy_ios_mockup_camera.png" },
+                    { name: "Photo Tips", Image: "/img/botanybuddy_ios_phototips.jpg" },
+                    { name: "Try Again", Image: "/img/botanybuddy_ios_tryagain.png" },
+                    { name: "Submit", Image: "/img/botanybuddy_ios_mockup_submit.png" },
+                    { name: "Diagnosis", Image: "/img/botanybuddy_ios_mockup_diagnosis.png" },
+                    { name: "Description", Image: "/img/botanybuddy_ios_mockup_description.png" },
+                    { name: "Profile", Image: "/img/botanybuddy_ios_mockup_profile.png" },
+                    { name: "Loading", Image: "/img/botanybuddy_ios_mockup_loading.png" },
+                    { name: "Error", Image: "/img/botanybuddy_ios_mockup_error.png" },
                   ].map((screen, index) => (
           <div key={index} className="flex-shrink-0 w-72 rounded-2xl overflow-hidden glass-card snap-center border border-white/10 shadow-xl">
             <Image
