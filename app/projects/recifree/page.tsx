@@ -529,7 +529,7 @@ export default function ReciFreeProject() {
             </div>
           </motion.section>
 
-          {/* Wireframes */}
+         {/* Wireframes */}
 <motion.section
   initial={{ opacity: 0, y: 40 }}
   whileInView={{ opacity: 1, y: 0 }}
@@ -538,15 +538,16 @@ export default function ReciFreeProject() {
   className="mb-20"
 >
   <div className="glass-card rounded-3xl p-8 md:p-12">
-    <div className="flex justify-between items-end mb-12">
-      <div>
-        <h2 className="text-4xl md:text-5xl font-semibold mb-4">Wireframes</h2>
-        <p className="text-muted-foreground italic">Scroll to view more →</p>
-      </div>
+    {/* Spacing Fix: Grouped Header and Hint */}
+    <div className="mb-12">
+      <h2 className="text-4xl md:text-5xl font-semibold mb-4">Wireframes</h2>
+      <p className="text-muted-foreground italic">Scroll to view more →</p>
     </div>
 
-    <div className="overflow-x-auto pb-6 -mx-4 px-4 scrollbar-hide snap-x snap-mandatory">
-      <div className="flex gap-6">
+    {/* Scroll Container: Added scrollbar-thin and increased padding-bottom */}
+    <div className="overflow-x-auto pb-10 -mx-4 px-4 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent snap-x snap-mandatory flex active:cursor-grabbing cursor-grab">
+      {/* Added items-start to prevent shorter images from stretching and showing empty space */}
+      <div className="flex gap-6 items-start">
         {[
           { name: "Low Fidelity Home", Image: "/img/recifree_lowfidelity_home.png" },
           { name: "Low Fidelity Cart", Image: "/img/recifree_lowfidelity_cart.png" },
@@ -555,7 +556,8 @@ export default function ReciFreeProject() {
         ].map((screen, index) => (
           <div
             key={index}
-            className="flex-shrink-0 w-80 rounded-2xl overflow-hidden glass-card bg-white snap-center"
+            /* Removed bg-white to eliminate the white gap; added border for definition */
+            className="flex-shrink-0 w-80 rounded-2xl overflow-hidden glass-card snap-center border border-white/10 shadow-lg"
           >
             <Image
               src={screen.Image}
