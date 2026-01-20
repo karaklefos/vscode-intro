@@ -190,9 +190,9 @@ export default function ReciFreeProject() {
       <p className="text-muted-foreground italic">Scroll to view more →</p>
     </div>
 
-    {/* Scroll Container: Changed pb-6 to pb-10 to make room for a larger scrollbar */}
-    <div className="overflow-x-auto pb-10 -mx-4 px-4 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent snap-x snap-mandatory flex active:cursor-grabbing cursor-grab">
-      <div className="flex gap-8 w-full">
+    {/* Scroll Container: Added items-start to prevent vertical stretching */}
+    <div className="overflow-x-auto pb-10 -mx-4 px-4 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent snap-x snap-mandatory flex items-start active:cursor-grabbing cursor-grab">
+      <div className="flex gap-8 w-full items-start">
         {[
           { name: "Sign In", Image: "/img/recifree_responsive_login.png" },
           { name: "Sign Up", Image: "/img/recifree_responsive_signup.png" },
@@ -200,14 +200,12 @@ export default function ReciFreeProject() {
         ].map((screen, index) => (
           <div
             key={index}
-            /* Changed w-80 to w-full for the one-at-a-time effect */
-            /* Added max-w-4xl to keep it from getting too tall on giant monitors */
-            className="flex-shrink-0 w-full md:max-w-4xl mx-auto rounded-3xl overflow-hidden glass-card snap-center border border-white/10 shadow-2xl"
+            /* h-fit ensures the card height matches the image exactly */
+            className="flex-shrink-0 w-full md:max-w-4xl mx-auto h-fit rounded-3xl overflow-hidden glass-card snap-center border border-white/10 shadow-2xl"
           >
             <Image
               src={screen.Image}
               alt={`ReciFree ${screen.name}`}
-              /* Increased dimensions for higher quality at larger scale */
               width={1200}
               height={800}
               className="w-full h-auto pointer-events-none"
