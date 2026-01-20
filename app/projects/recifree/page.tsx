@@ -190,9 +190,9 @@ export default function ReciFreeProject() {
       <p className="text-muted-foreground italic">Scroll to view more →</p>
     </div>
 
-    {/* Using the exact container logic from your working Wireframes section */}
-    <div className="overflow-x-auto pb-6 -mx-4 px-4 scrollbar-hide snap-x snap-mandatory">
-      <div className="flex gap-6">
+    {/* Scroll Container: Changed pb-6 to pb-10 to make room for a larger scrollbar */}
+    <div className="overflow-x-auto pb-10 -mx-4 px-4 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent snap-x snap-mandatory flex active:cursor-grabbing cursor-grab">
+      <div className="flex gap-8 w-full">
         {[
           { name: "Sign In", Image: "/img/recifree_responsive_login.png" },
           { name: "Sign Up", Image: "/img/recifree_responsive_signup.png" },
@@ -200,14 +200,18 @@ export default function ReciFreeProject() {
         ].map((screen, index) => (
           <div
             key={index}
-            className="flex-shrink-0 w-80 rounded-2xl overflow-hidden glass-card snap-center"
+            /* Changed w-80 to w-full for the one-at-a-time effect */
+            /* Added max-w-4xl to keep it from getting too tall on giant monitors */
+            className="flex-shrink-0 w-full md:max-w-4xl mx-auto rounded-3xl overflow-hidden glass-card snap-center border border-white/10 shadow-2xl"
           >
             <Image
               src={screen.Image}
               alt={`ReciFree ${screen.name}`}
-              width={320}
-              height={600}
+              /* Increased dimensions for higher quality at larger scale */
+              width={1200}
+              height={800}
               className="w-full h-auto pointer-events-none"
+              priority={index === 0}
             />
           </div>
         ))}
