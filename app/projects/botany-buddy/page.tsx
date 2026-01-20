@@ -57,7 +57,7 @@ export default function BotanyBuddyProject() {
             className="mb-20 rounded-3xl overflow-hidden glass-card"
           >
             <Image
-              src="/.jpg?height=800&width=1400&query=plant care app mobile interface botanical"
+              src="/img/botanybuddy.jpg"
               alt="Botany Buddy Hero"
               width={1400}
               height={800}
