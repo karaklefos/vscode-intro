@@ -194,13 +194,9 @@ export default function ReciFreeProject() {
     <div className="overflow-x-auto pb-6 -mx-4 px-4 scrollbar-hide snap-x snap-mandatory">
       <div className="flex gap-6">
         {[
-          { name: "Sign In", Image: "/img/recifree_mockup_login.png" },
-          { name: "Sign Up", Image: "/img/recifree_mockup_signup.png" },
-          { name: "Onboarding", Image: "/img/recifree_mockup_allergeninfo.png" },
-          { name: "Home", Image: "/img/recifree_mockup_home.png" },
-          { name: "Filters", Image: "/img/recifree_mockup_filter.png" },
-          { name: "Menu", Image: "/img/recifree_menu.png" },
-          { name: "Recipe", Image: "/img/recifree_mockup_recipe.png" },
+          { name: "Sign In", Image: "/img/recifree_responsive_login.png" },
+          { name: "Sign Up", Image: "/img/recifree_responsive_signup.png" },
+          { name: "Onboarding", Image: "/img/recifree_responsive_allergen.png" },
         ].map((screen, index) => (
           <div
             key={index}
