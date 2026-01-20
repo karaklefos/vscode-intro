@@ -436,7 +436,7 @@ export default function BotanyBuddyProject() {
                   <p className="text-lg mb-8">Typography: Figma Hand Regular pt 30</p>
                   <div className="bg-white rounded-2xl p-12 inline-block">
                     <Image
-                      src="/.jpg?height=100&width=300&query=Botany Buddy logo handwritten botanical"
+                      src="/img/botanybuddy_logo.png"
                       alt="Botany Buddy Logo"
                       width={300}
                       height={100}
