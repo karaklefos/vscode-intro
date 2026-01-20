@@ -182,19 +182,16 @@ export default function ReciFreeProject() {
   className="mb-20"
 >
   <div className="glass-card rounded-3xl p-8 md:p-12">
-    {/* Spacing Fix: Grouped Header and Hint */}
+    {/* Spacing Fix: Grouping h2 and p */}
     <div className="mb-12">
       <h2 className="text-4xl md:text-5xl font-semibold mb-4">
         Responsive Design Examples
       </h2>
-      <p className="text-muted-foreground italic">
-        Scroll to view more →
-      </p>
+      <p className="text-muted-foreground italic">Scroll to view more →</p>
     </div>
 
-    {/* The Scrolling Container */}
-    {/* Note: Replaced scrollbar-hide with scrollbar-thin to ensure it's functional as discussed */}
-    <div className="overflow-x-auto pb-8 -mx-4 px-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent snap-x snap-mandatory flex active:cursor-grabbing cursor-grab">
+    {/* Using the exact container logic from your working Wireframes section */}
+    <div className="overflow-x-auto pb-6 -mx-4 px-4 scrollbar-hide snap-x snap-mandatory">
       <div className="flex gap-6">
         {[
           { name: "Sign In", Image: "/img/recifree_signin.png" },
@@ -207,7 +204,7 @@ export default function ReciFreeProject() {
         ].map((screen, index) => (
           <div
             key={index}
-            className="flex-shrink-0 w-80 rounded-2xl overflow-hidden glass-card snap-center border border-white/10 shadow-xl"
+            className="flex-shrink-0 w-80 rounded-2xl overflow-hidden glass-card snap-center"
           >
             <Image
               src={screen.Image}
@@ -215,7 +212,6 @@ export default function ReciFreeProject() {
               width={320}
               height={600}
               className="w-full h-auto pointer-events-none"
-              priority={index < 2} // Improves loading for first two images
             />
           </div>
         ))}
