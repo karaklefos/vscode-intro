@@ -94,23 +94,23 @@ export default function SavvyPigProject() {
           >
             <div className="glass-card rounded-3xl p-8 md:p-12">
               <h2 className="text-4xl md:text-5xl font-semibold mb-8">Mockups</h2>
-              <p className="text-lg text-muted-foreground mb-12 italic">(Scroll to view more)</p>
+              <p className="text-lg text-muted-foreground mb-12 italic">Scroll to view more →</p>
 
-              <div className="overflow-x-auto pb-4 -mx-4 px-4 scrollbar-hide">
-                <div className="flex gap-6 min-w-max">
+              <div className="overflow-x-auto pb-10 -mx-4 px-4 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent snap-x snap-mandatory flex items-start">
+                <div className="flex gap-6 items-start">
                   {[
-                    { name: "Login", query: "financial app login screen mint navy" },
-                    { name: "Sign Up", query: "financial app signup screen" },
-                    { name: "Dashboard", query: "financial dashboard savings goals" },
-                    { name: "Menu", query: "app menu navigation financial" },
-                    { name: "Transactions", query: "transaction list expense tracking" },
+                    { name: "Login", Image: "/img/savvypig_mockup_login.png" },
+                    { name: "Sign Up", Image: "/img/savvypig_mockup_signup.png" },
+                    { name: "Dashboard", Image: "/img/savvypig_mockup_dashboard.png" },
+                    { name: "Menu", Image: "/img/savvypig_mockup_menu.png" },
+                    { name: "Transactions", Image: "/img/savvypig_mockup_transactions.png" },
                   ].map((screen, index) => (
-                    <div key={index} className="flex-shrink-0 w-64 rounded-2xl overflow-hidden glass-card">
+                    <div key={index} className="flex-shrink-0 w-64 md:w-72 rounded-2xl overflow-hidden glass-card snap-center border border-white/10 shadow-xl h-fit">
                       <Image
-                        src={`/.jpg?height=550&width=256&query=${screen.query}`}
+                        src={screen.Image}
                         alt={`Savvy Pig ${screen.name}`}
-                        width={256}
-                        height={550}
+                        width={288}
+                        height={600}
                         className="w-full h-auto"
                       />
                     </div>
@@ -222,9 +222,9 @@ export default function SavvyPigProject() {
           >
             <div className="glass-card rounded-3xl p-8 md:p-12">
               <h2 className="text-4xl md:text-5xl font-semibold mb-8">User Flows</h2>
-              <div className="rounded-2xl overflow-hidden mb-6">
+              <div className="rounded-2xl overflow-hidden mb-6 border border-white/10 shadow-lg">
                 <Image
-                  src="/.jpg?height=600&width=1200&query=user flow diagram financial app journey"
+                  src="/img/savvypig_userflow.png"
                   alt="Savvy Pig User Flow"
                   width={1200}
                   height={600}
@@ -248,20 +248,20 @@ export default function SavvyPigProject() {
             <div className="glass-card rounded-3xl p-8 md:p-12">
               <h2 className="text-4xl md:text-5xl font-semibold mb-8">Wireframes</h2>
               <h3 className="text-2xl font-semibold mb-4">Low Fidelity</h3>
-              <p className="text-lg text-muted-foreground mb-12 italic">(Scroll to view more)</p>
+              <p className="text-lg text-muted-foreground mb-12 italic">Scroll to view more →</p>
 
-              <div className="overflow-x-auto pb-4 -mx-4 px-4 scrollbar-hide">
-                <div className="flex gap-6 min-w-max">
+              <div className="overflow-x-auto pb-10 -mx-4 px-4 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent snap-x snap-mandatory flex items-start">
+                <div className="flex gap-6 items-start">
                   {[
-                    { name: "Login", query: "low fidelity wireframe login sketch" },
-                    { name: "Sign Up", query: "low fidelity wireframe signup" },
-                    { name: "Dashboard", query: "low fidelity wireframe dashboard" },
-                    { name: "Transactions", query: "low fidelity wireframe transactions" },
-                    { name: "Category", query: "low fidelity wireframe category" },
+                    { name: "Login", Image: "/img/savvypig_low_login.png" },
+                    { name: "Sign Up", Image: "/img/savvypig_low_signup.png" },
+                    { name: "Dashboard", Image: "/img/savvypig_low_dashboard.png" },
+                    { name: "Transactions", Image: "/img/savvypig_low_transactions.png" },
+                    { name: "Category", Image: "/img/savvypig_low_category.png" },
                   ].map((screen, index) => (
-                    <div key={index} className="flex-shrink-0 w-64 rounded-2xl overflow-hidden glass-card bg-white">
+                    <div key={index} className="flex-shrink-0 w-64 rounded-2xl overflow-hidden glass-card bg-white snap-center border border-white/10 shadow-xl h-fit">
                       <Image
-                        src={`/.jpg?height=550&width=256&query=${screen.query}`}
+                        src={screen.Image}
                         alt={`Savvy Pig Low ${screen.name}`}
                         width={256}
                         height={550}
@@ -284,20 +284,20 @@ export default function SavvyPigProject() {
           >
             <div className="glass-card rounded-3xl p-8 md:p-12">
               <h3 className="text-2xl font-semibold mb-4">Mid Fidelity</h3>
-              <p className="text-lg text-muted-foreground mb-12 italic">(Scroll to view more)</p>
+              <p className="text-lg text-muted-foreground mb-12 italic">Scroll to view more →</p>
 
-              <div className="overflow-x-auto pb-4 -mx-4 px-4 scrollbar-hide">
-                <div className="flex gap-6 min-w-max">
+              <div className="overflow-x-auto pb-10 -mx-4 px-4 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent snap-x snap-mandatory flex items-start">
+                <div className="flex gap-6 items-start">
                   {[
-                    { name: "Login", query: "mid fidelity wireframe login" },
-                    { name: "Sign Up", query: "mid fidelity wireframe signup" },
-                    { name: "Dashboard", query: "mid fidelity wireframe dashboard" },
-                    { name: "Transactions", query: "mid fidelity wireframe transactions" },
-                    { name: "Category", query: "mid fidelity wireframe category" },
+                    { name: "Login", Image: "/img/savvypig_mid_login.png" },
+                    { name: "Sign Up", Image: "/img/savvypig_mid_signup.png" },
+                    { name: "Dashboard", Image: "/img/savvypig_mid_dashboard.png" },
+                    { name: "Transactions", Image: "/img/savvypig_mid_transactions.png" },
+                    { name: "Category", Image: "/img/savvypig_mid_category.png" },
                   ].map((screen, index) => (
-                    <div key={index} className="flex-shrink-0 w-64 rounded-2xl overflow-hidden glass-card bg-white">
+                    <div key={index} className="flex-shrink-0 w-64 rounded-2xl overflow-hidden glass-card bg-white snap-center border border-white/10 shadow-xl h-fit">
                       <Image
-                        src={`/.jpg?height=550&width=256&query=${screen.query}`}
+                        src={screen.Image}
                         alt={`Savvy Pig Mid ${screen.name}`}
                         width={256}
                         height={550}
@@ -320,20 +320,20 @@ export default function SavvyPigProject() {
           >
             <div className="glass-card rounded-3xl p-8 md:p-12">
               <h3 className="text-2xl font-semibold mb-4">High Fidelity</h3>
-              <p className="text-lg text-muted-foreground mb-12 italic">(Scroll to view more)</p>
+              <p className="text-lg text-muted-foreground mb-12 italic">Scroll to view more →</p>
 
-              <div className="overflow-x-auto pb-4 -mx-4 px-4 scrollbar-hide">
-                <div className="flex gap-6 min-w-max">
+              <div className="overflow-x-auto pb-10 -mx-4 px-4 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent snap-x snap-mandatory flex items-start">
+                <div className="flex gap-6 items-start">
                   {[
-                    { name: "Login", query: "high fidelity mockup login mint navy" },
-                    { name: "Sign Up", query: "high fidelity mockup signup" },
-                    { name: "Dashboard", query: "high fidelity mockup dashboard" },
-                    { name: "Transactions", query: "high fidelity mockup transactions" },
-                    { name: "Category", query: "high fidelity mockup category" },
+                    { name: "Login", Image: "/img/savvypig_high_login.png" },
+                    { name: "Sign Up", Image: "/img/savvypig_high_signup.png" },
+                    { name: "Dashboard", Image: "/img/savvypig_high_dashboard.png" },
+                    { name: "Transactions", Image: "/img/savvypig_high_transactions.png" },
+                    { name: "Category", Image: "/img/savvypig_high_category.png" },
                   ].map((screen, index) => (
-                    <div key={index} className="flex-shrink-0 w-64 rounded-2xl overflow-hidden glass-card">
+                    <div key={index} className="flex-shrink-0 w-64 rounded-2xl overflow-hidden glass-card snap-center border border-white/10 shadow-xl h-fit">
                       <Image
-                        src={`/.jpg?height=550&width=256&query=${screen.query}`}
+                        src={screen.Image}
                         alt={`Savvy Pig High ${screen.name}`}
                         width={256}
                         height={550}
@@ -345,23 +345,6 @@ export default function SavvyPigProject() {
               </div>
             </div>
           </motion.section>
-
-          {/* Divider Image */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="mb-20 rounded-3xl overflow-hidden glass-card"
-          >
-            <Image
-              src="/.jpg?height=400&width=1400&query=abstract mint to navy gradient ombre financial"
-              alt="Ombre Header"
-              width={1400}
-              height={400}
-              className="w-full h-auto"
-            />
-          </motion.div>
 
           {/* Style Guide */}
           <motion.section
@@ -377,7 +360,6 @@ export default function SavvyPigProject() {
               <div className="space-y-12">
                 <div>
                   <h4 className="text-2xl font-semibold mb-8">COLORS</h4>
-
                   <h5 className="text-xl font-semibold mb-6">Primary Colors</h5>
                   <div className="flex gap-6 mb-8">
                     {[
@@ -386,7 +368,7 @@ export default function SavvyPigProject() {
                     ].map((swatch) => (
                       <div key={swatch.name} className="flex flex-col items-center gap-3">
                         <div
-                          className="w-32 h-32 rounded-2xl shadow-lg"
+                          className="w-32 h-32 rounded-2xl shadow-lg border border-gray-100"
                           style={{ backgroundColor: swatch.color }}
                         ></div>
                         <p className="font-medium">{swatch.name}</p>
@@ -410,7 +392,7 @@ export default function SavvyPigProject() {
                     ].map((swatch) => (
                       <div key={swatch.name} className="flex flex-col items-center gap-3">
                         <div
-                          className="w-24 h-24 rounded-2xl shadow-lg"
+                          className="w-24 h-24 rounded-2xl shadow-lg border border-gray-100"
                           style={{ backgroundColor: swatch.color }}
                         ></div>
                         <p className="font-medium">{swatch.name}</p>
@@ -418,39 +400,27 @@ export default function SavvyPigProject() {
                       </div>
                     ))}
                   </div>
-                  <p className="text-lg leading-relaxed">
-                    These bold shades are used for illustrations like graphs and charts, ensuring accessibility.
-                  </p>
                 </div>
 
                 <div>
                   <h4 className="text-2xl font-semibold mb-8">LOGO</h4>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                     {[
-                      { name: "Full Logo", query: "savvy pig logo piggy bank mint" },
-                      { name: "Logotype", query: "savvy pig text logo typography" },
-                      { name: "Logo Outline", query: "savvy pig outline icon" },
+                      { name: "Full Logo", Image: "/img/savvypig_logo_full.png" },
+                      { name: "Logotype", Image: "/img/savvypig_logo_text.png" },
+                      { name: "Logo Outline", Image: "/img/savvypig_logo_outline.png" },
                     ].map((logo, index) => (
-                      <div key={index} className="rounded-2xl overflow-hidden glass-card bg-white p-8">
+                      <div key={index} className="rounded-2xl overflow-hidden glass-card bg-white p-8 flex items-center justify-center border border-gray-100">
                         <Image
-                          src={`/.jpg?height=200&width=300&query=${logo.query}`}
+                          src={logo.Image}
                           alt={logo.name}
                           width={300}
                           height={200}
-                          className="w-full h-auto"
+                          className="w-full h-auto object-contain"
                         />
                       </div>
                     ))}
                   </div>
-                  <p className="text-lg leading-relaxed mb-6">
-                    The logotype and Logo Outline designs ensures legibility and maintains brand recognition in smaller
-                    spaces, such as app icons, navigation bars, and footers.
-                  </p>
-                  <h5 className="text-xl font-semibold mb-4">LOGO TYPOGRAPHY</h5>
-                  <p className="text-lg leading-relaxed">
-                    Nunito ExtraBold - the logotype must remain as is due to special kerning. It also must remain in
-                    #0E3655.
-                  </p>
                 </div>
               </div>
             </div>
@@ -466,18 +436,18 @@ export default function SavvyPigProject() {
           >
             <div className="glass-card rounded-3xl p-8 md:p-12">
               <h2 className="text-4xl md:text-5xl font-semibold mb-8">Desktop Mockups</h2>
-              <p className="text-lg text-muted-foreground mb-12 italic">(Scroll to view more)</p>
+              <p className="text-lg text-muted-foreground mb-12 italic">Scroll to view more →</p>
 
-              <div className="overflow-x-auto pb-4 -mx-4 px-4 scrollbar-hide">
-                <div className="flex gap-6 min-w-max">
+              <div className="overflow-x-auto pb-10 -mx-4 px-4 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent snap-x snap-mandatory flex items-start">
+                <div className="flex gap-6 items-start">
                   {[
-                    { name: "Login", query: "desktop financial app login mint navy" },
-                    { name: "Sign Up", query: "desktop financial app signup" },
-                    { name: "Dashboard", query: "desktop financial dashboard savings" },
+                    { name: "Login", Image: "/img/savvypig_desktop_login.png" },
+                    { name: "Sign Up", Image: "/img/savvypig_desktop_signup.png" },
+                    { name: "Dashboard", Image: "/img/savvypig_desktop_dashboard.png" },
                   ].map((screen, index) => (
-                    <div key={index} className="flex-shrink-0 w-[600px] rounded-2xl overflow-hidden glass-card">
+                    <div key={index} className="flex-shrink-0 w-[600px] rounded-2xl overflow-hidden glass-card snap-center border border-white/10 shadow-xl h-fit">
                       <Image
-                        src={`/.jpg?height=400&width=600&query=${screen.query}`}
+                        src={screen.Image}
                         alt={`Savvy Pig Desktop ${screen.name}`}
                         width={600}
                         height={400}
@@ -501,18 +471,8 @@ export default function SavvyPigProject() {
             <div className="glass-card rounded-3xl p-8 md:p-12">
               <h2 className="text-4xl md:text-5xl font-semibold mb-8">Conclusion</h2>
               <p className="text-lg leading-relaxed mb-6">
-                The Savvy Pig project showcases my end-to-end design process, from the initial conceptualization and
-                branding – including the development of the name and logo – through to the creation of a user-friendly
-                and effective financial application.
-              </p>
-              <p className="text-lg leading-relaxed">
-                Recognizing the intimidation often associated with personal finance, the core objective was to design an
-                intuitive experience centered around clear expense tracking, motivating goal-setting features, and
-                easily understandable data visualization. By carefully blending a professional aesthetic with playful
-                visual elements, Savvy Pig aims to demystify money management and empower users, regardless of their
-                financial literacy, to confidently take control of their financial journey and achieve their savings
-                milestones. This case study reflects my commitment to creating accessible, engaging, and impactful
-                digital solutions that address real user needs and foster positive outcomes.
+                The Savvy Pig project showcases my end-to-end design process, from conceptualization and
+                branding to a user-friendly financial application.
               </p>
             </div>
           </motion.section>
