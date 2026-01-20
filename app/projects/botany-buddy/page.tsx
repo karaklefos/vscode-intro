@@ -111,8 +111,7 @@ export default function BotanyBuddyProject() {
             className="mb-20 rounded-3xl overflow-hidden glass-card"
           >
             <Image
-              src="/.jpg?height=600&width=1400&query=botanical leaves green plant texture nature"
-              alt="Botanical Background"
+              src="/img/botanybuddy_leafbckgrnd.jpg"
               width={1400}
               height={600}
               className="w-full h-auto"
