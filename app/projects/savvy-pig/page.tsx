@@ -406,9 +406,9 @@ export default function SavvyPigProject() {
                   <h4 className="text-2xl font-semibold mb-8">LOGO</h4>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                     {[
-                      { name: "Full Logo", Image: "/img/savvypig_logo_full.png" },
-                      { name: "Logotype", Image: "/img/savvypig_logo_text.png" },
-                      { name: "Logo Outline", Image: "/img/savvypig_logo_outline.png" },
+                      { name: "Full Logo", Image: "/img/savvypig_logo.png" },
+                      { name: "Logotype", Image: "/img/savvypig_logotypeface.png" },
+                      { name: "Logo Outline", Image: "/img/savvypig_logooutline.png" },
                     ].map((logo, index) => (
                       <div key={index} className="rounded-2xl overflow-hidden glass-card bg-white p-8 flex items-center justify-center border border-gray-100">
                         <Image
