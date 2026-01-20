@@ -265,51 +265,55 @@ export default function ModMuseProject() {
           </motion.div>
 
           {/* Prototypes Section */}
-<motion.section
-  initial={{ opacity: 0, y: 40 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true }}
-  transition={{ duration: 0.8 }}
-  className="mb-20"
->
-  <div className="glass-card rounded-3xl p-8 md:p-12">
-    <div className="flex justify-between items-end mb-12">
-      <div>
-        <h2 className="text-4xl md:text-5xl font-semibold mb-4">Prototypes</h2>
-        <p className="text-muted-foreground italic">(swipe to view more)</p>
-      </div>
-    </div>
-
-    {/* THE SCROLLING CONTAINER */}
-    {/* 1. Removed 'scrollbar-hide' */}
-    {/* 2. Added custom scrollbar utilities (works with tailwind-scrollbar plugin or standard CSS) */}
-    <div className="overflow-x-auto pb-8 -mx-4 px-4 snap-x snap-mandatory flex custom-scrollbar">
-      <div className="flex gap-6">
-        {[
-          { name: "Home", Image: "/img/modmuse_home.png" },
-          { name: "Reviews", Image: "/img/modmuse_reviews.png" },
-          { name: "Profile", Image: "/img/modmuse_profile.png" },
-          { name: "Item", Image: "/img/modmuse_item.png" },
-          { name: "Add Item", Image: "/img/modmuse_additem.png" },
-          { name: "Checkout", Image: "/img/modmuse_checkout.png" },
-        ].map((screen, index) => (
-          <div
-            key={index}
-            className="flex-shrink-0 w-64 rounded-2xl overflow-hidden glass-card snap-center border border-white/20 shadow-xl"
+          <motion.section
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="mb-20"
           >
-            <Image
-              src={screen.Image}
-              alt={`Mod Muse ${screen.name}`}
-              width={256}
-              height={550}
-              className="w-full h-auto pointer-events-none"
-            />
-          </div>
-        ))}
-      </div>
-    </div>
-  </div>
-</motion.section>
+            <div className="glass-card rounded-3xl p-8 md:p-12">
+              <div className="flex justify-between items-end mb-12">
+                <div>
+                  <h2 className="text-4xl md:text-5xl font-semibold mb-4">
+                    Prototypes
+                  </h2>
+                  <p className="text-muted-foreground italic">
+                    Scroll to view more →
+                  </p>
+                </div>
+              </div>
+
+              {/* THE SCROLLING CONTAINER */}
+              {/* 1. Removed 'scrollbar-hide' */}
+              {/* 2. Added custom scrollbar utilities (works with tailwind-scrollbar plugin or standard CSS) */}
+              <div className="overflow-x-auto pb-8 -mx-4 px-4 snap-x snap-mandatory flex custom-scrollbar">
+                <div className="flex gap-6">
+                  {[
+                    { name: "Home", Image: "/img/modmuse_home.png" },
+                    { name: "Reviews", Image: "/img/modmuse_reviews.png" },
+                    { name: "Profile", Image: "/img/modmuse_profile.png" },
+                    { name: "Item", Image: "/img/modmuse_item.png" },
+                    { name: "Add Item", Image: "/img/modmuse_additem.png" },
+                    { name: "Checkout", Image: "/img/modmuse_checkout.png" },
+                  ].map((screen, index) => (
+                    <div
+                      key={index}
+                      className="flex-shrink-0 w-64 rounded-2xl overflow-hidden glass-card snap-center border border-white/20 shadow-xl"
+                    >
+                      <Image
+                        src={screen.Image}
+                        alt={`Mod Muse ${screen.name}`}
+                        width={256}
+                        height={550}
+                        className="w-full h-auto pointer-events-none"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </motion.section>
 
           {/* Research & Discovery Section */}
           <motion.section
