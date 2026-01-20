@@ -224,7 +224,7 @@ export default function SavvyPigProject() {
               <h2 className="text-4xl md:text-5xl font-semibold mb-8">User Flows</h2>
               <div className="rounded-2xl overflow-hidden mb-6 border border-white/10 shadow-lg">
                 <Image
-                  src="/img/savvypig_userflow.png"
+                  src="/img/savvypig_userflows.png"
                   alt="Savvy Pig User Flow"
                   width={1200}
                   height={600}
