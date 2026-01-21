@@ -30,7 +30,7 @@ export const projects = [
     title: "Botany Buddy",
     description:
       "Botany Buddy is a plant care app that helps users track routines, diagnose issues, and get personalized tips for healthy, thriving plants. I led the design from concept to high-fidelity prototype in Figma, grounded in user research and aligned with iOS and Android guidelines to ensure a seamless, platform-optimized experience.",
-    image: "/img/botanybuddy.jpg",
+    image: "/img/botanybuddy_title.png",
     href: "/projects/botany-buddy",
   },
   {
