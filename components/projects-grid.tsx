@@ -37,7 +37,7 @@ export const projects = [
     title: "Savvy Pig",
     description:
       "Savvy Pig is a financial savings app that makes money management approachable by blending a professional tone with playful design. I crafted the brand identity, logo, and app experience from the ground up, refining wireframes and prototypes while continuously using user and A/B testing to create an intuitive interface that motivates smarter saving.",
-    image: "/img/savvypig.jpg",
+    image: "/img/savvypig_title.png",
     href: "/projects/savvy-pig",
   },
 ]
