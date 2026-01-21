@@ -16,7 +16,7 @@ export const projects = [
     title: "Mod Muse",
     description:
       "Mod Muse is a vintage fashion marketplace inspired by the bold style of the 1960s Mod era. I designed an end-to-end experience in Figma, from concept to prototype, that streamlines shopping for curated vintage pieces, validating design decisions through user testing to ensure a smooth, stylish experience.",
-    image: "/img/modmuse1.jpg",
+    image: "/img/modmuse_title.png",
     href: "/projects/mod-muse",
   },
   {
