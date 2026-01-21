@@ -9,7 +9,7 @@ export const projects = [
     title: "Life Anew Restorative Justice",
     description:
       "I led the design and development of a dual-platform mobile system for Life Anew—an internal enterprise app and a connected Community app. The internal tool centralizes employee training, program details, and service resources, while the external app connects community members to essential needs like shelter, food, and documentation. Focused on creating a seamless, high-efficiency interface to reduce training time and accelerate service delivery.",
-    image: "/img/lifeanew_title.png",
+    image: "/img/lifeanew_title.jpg",
     href: "/projects/life-anew",
   },
   {
