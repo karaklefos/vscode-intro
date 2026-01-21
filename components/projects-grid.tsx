@@ -23,7 +23,7 @@ export const projects = [
     title: "ReciFree",
     description:
       "ReciFree is a recipe app designed for users with allergens, dietary needs and/or preferences, making it easy to filter ingredients, save recipes, and plan meals without the guesswork. I focused on creating an experience that feels both approachable and empowering, with an emphasis on usability and inclusion - shaped by real user feedback and competitive insights.",
-    image: "/img/recifree.jpg",
+    image: "/img/recifree_title.png",
     href: "/projects/recifree",
   },
   {
