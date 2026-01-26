@@ -169,7 +169,7 @@ export default function AboutPage() {
               <ul className="space-y-3 text-lg">
                 <li className="flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-primary"></span>
-                  Design & Prototyping: Figma, Sketch, Adobe Creative Suite
+                  <b>Design & Prototyping:</b> Figma, Sketch, Adobe Creative Suite
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-primary"></span>
