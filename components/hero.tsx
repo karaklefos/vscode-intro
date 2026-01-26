@@ -1,21 +1,24 @@
-"use client"
+"use client";
 
-import { motion, type MotionValue, useTransform } from "framer-motion"
-import Navigation from "./navigation"
+import { motion, type MotionValue, useTransform } from "framer-motion";
+import Navigation from "./navigation";
 
 interface HeroProps {
-  scrollProgress: MotionValue<number>
+  scrollProgress: MotionValue<number>;
 }
 
 export function Hero({ scrollProgress }: HeroProps) {
-  const y = useTransform(scrollProgress, [0, 1], ["0%", "50%"])
-  const opacity = useTransform(scrollProgress, [0, 0.5], [1, 0])
+  const y = useTransform(scrollProgress, [0, 1], ["0%", "50%"]);
+  const opacity = useTransform(scrollProgress, [0, 0.5], [1, 0]);
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden grain-texture">
       <Navigation />
 
-      <motion.div style={{ y, opacity }} className="container mx-auto px-6 py-32 relative z-10">
+      <motion.div
+        style={{ y, opacity }}
+        className="container mx-auto px-6 py-32 relative z-10"
+      >
         <motion.div
           initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}
@@ -28,7 +31,8 @@ export function Hero({ scrollProgress }: HeroProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            Product & UX/UI <span className="text-primary italic font-serif">Designer</span>
+            Product & UX/UI{" "}
+            <span className="text-primary italic font-serif">Designer</span>
           </motion.h1>
 
           <motion.p
@@ -37,11 +41,12 @@ export function Hero({ scrollProgress }: HeroProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-            Blending empathy, data, and style to create user-centered websites and apps. Specializing in workflow
-            optimization and human-centered design for internal and external tools and enterprise platforms. Drawing on
-            my background in consumer strategy, I tackle complex challenges by implementing a rigorous, data-driven
-            process: from deep user research and journey mapping to de-risking solutions through iterative mockups and
-            prototyping.
+            By blending empathy, data, and style, I translate a decade of
+            experience in the fashion industry—styling, managing, and trend
+            forecasting—into digital tools that look as good as they function. I
+            specialize in workflow optimization: turning messy, manual processes
+            into intuitive digital experiences that save time and solve real
+            problems.
           </motion.p>
         </motion.div>
       </motion.div>
@@ -50,5 +55,5 @@ export function Hero({ scrollProgress }: HeroProps) {
       <div className="absolute top-20 right-10 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 left-10 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
     </section>
-  )
+  );
 }
