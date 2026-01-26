@@ -129,63 +129,31 @@ export default function AboutPage() {
               <ul className="space-y-3 text-lg">
                 <li className="flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-accent"></span>
-                  User Research
+                  User Research & Testing: Usability Testing, A/B Testing, User Flows, Journey Mapping.
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-accent"></span>
-                  Competitive Analysis
+                  Strategy: Trend Forecasting, Competitive Analysis, Persona Development, Data Synthesis.
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-accent"></span>
-                  User Flows
+                  Content: Copywriting, Information Architecture.
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-accent"></span>
-                  Wireframing
+                  Systems: Design Systems, Visual Identity (Brand Guidelines), Accessibility (WCAG).
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-accent"></span>
-                  Prototyping
+                  Execution: Wireframing, Prototyping, Responsive Design, Visual Design.
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-accent"></span>
-                  Persona Development
+                  Development: Front-end Coding (HTML5 / CSS3 / JavaScript), Website Creation
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-accent"></span>
-                  Logo Creation
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-2 h-2 rounded-full bg-accent"></span>
-                  Brand Guidelines
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-2 h-2 rounded-full bg-accent"></span>
-                  Visual Design
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-2 h-2 rounded-full bg-accent"></span>
-                  Responsive Design
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-2 h-2 rounded-full bg-accent"></span>
-                  A/B Testing
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-2 h-2 rounded-full bg-accent"></span>
-                  User Testing
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-2 h-2 rounded-full bg-accent"></span>
-                  Collaborative Teamwork
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-2 h-2 rounded-full bg-accent"></span>
-                  Website Creation
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-2 h-2 rounded-full bg-accent"></span>
-                  Front-end coding: HTML/CSS/Javascript
+                  AI: Prompt Engineering, AI-Assisted Design, Research Synthesis.
                 </li>
               </ul>
             </motion.div>
