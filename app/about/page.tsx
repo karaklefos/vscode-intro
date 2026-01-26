@@ -71,14 +71,13 @@ export default function AboutPage() {
               </p>
 
               <p className="text-lg leading-relaxed text-muted-foreground">
-                At Stitch Fix, I found the
-                link between my styling intuition and technical products. I
-                began providing qualitative feedback directly to engineering
-                teams to improve recommendation algorithms. This evolved into
-                work with Appen, where I analyzed AI data quality to help refine
-                machine learning models. This experience gave me a data-first
-                mindset - I understand how the "engine" under the hood affects
-                the user's experience.
+                At Stitch Fix, I found the link between my styling intuition and
+                technical products. I began providing qualitative feedback
+                directly to engineering teams to improve recommendation
+                algorithms. This evolved into work with Appen, where I analyzed
+                AI data quality to help refine machine learning models. This
+                experience gave me a data-first mindset - I understand how the
+                "engine" under the hood affects the user's experience.
               </p>
 
               <p className="text-lg leading-relaxed text-muted-foreground">
@@ -116,61 +115,106 @@ export default function AboutPage() {
             </motion.div>
           </div>
 
-         {/* Skills Grid */}
-<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-32">
-  <motion.div
-    initial={{ opacity: 0, y: 40 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    transition={{ duration: 0.8 }}
-    className="glass-card rounded-3xl p-10"
-  >
-    <h3 className="text-3xl font-semibold mb-8">Relevant Skills</h3>
-    <ul className="space-y-4 text-lg">
-      {[
-        { label: "User Research & Testing", desc: "Usability Testing, A/B Testing, User Flows, Journey Mapping" },
-        { label: "Strategy", desc: "Trend Forecasting, Competitive Analysis, Persona Development, Data Synthesis" },
-        { label: "Content", desc: "Copywriting, Information Architecture" },
-        { label: "Systems", desc: "Design Systems, Visual Identity (Brand Guidelines), Accessibility (WCAG)" },
-        { label: "Execution", desc: "Wireframing, Prototyping, Responsive Design, Visual Design" },
-        { label: "Development", desc: "Front-end Coding (HTML5 / CSS3 / JavaScript), Website Creation" },
-        { label: "AI", desc: "Prompt Engineering, AI-Assisted Design, Research Synthesis" }
-      ].map((skill, index) => (
-        <li key={index} className="flex items-start gap-3">
-          <span className="w-2 h-2 rounded-full bg-accent mt-[10px] flex-shrink-0"></span>
-          <span>
-            <strong className="font-bold">{skill.label}:</strong> {skill.desc}
-          </span>
-        </li>
-      ))}
-    </ul>
-  </motion.div>
+          {/* Skills Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-32">
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="glass-card rounded-3xl p-10"
+            >
+              <h3 className="text-3xl font-semibold mb-8">Relevant Skills</h3>
+              <ul className="space-y-4 text-lg">
+                {[
+                  {
+                    label: "User Research & Testing",
+                    desc: "Usability Testing, A/B Testing, User Flows, Journey Mapping",
+                  },
+                  {
+                    label: "Strategy",
+                    desc: "Trend Forecasting, Competitive Analysis, Persona Development, Data Synthesis",
+                  },
+                  {
+                    label: "Content",
+                    desc: "Copywriting, Information Architecture",
+                  },
+                  {
+                    label: "Systems",
+                    desc: "Design Systems, Visual Identity (Brand Guidelines), Accessibility (WCAG)",
+                  },
+                  {
+                    label: "Execution",
+                    desc: "Wireframing, Prototyping, Responsive Design, Visual Design",
+                  },
+                  {
+                    label: "Development",
+                    desc: "Front-end Coding (HTML5 / CSS3 / JavaScript), Website Creation",
+                  },
+                  {
+                    label: "AI",
+                    desc: "Prompt Engineering, AI-Assisted Design, Research Synthesis",
+                  },
+                ].map((skill, index) => (
+                  <motion.li
+                    key={index}
+                    className="flex items-start gap-3 group cursor-default"
+                    whileHover={{ x: 8 }}
+                    transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                  >
+                    <span className="w-2 h-2 rounded-full bg-accent mt-[10px] flex-shrink-0 transition-all duration-300 group-hover:scale-150 group-hover:shadow-[0_0_8px_var(--accent)]"></span>
+                    <span className="text-foreground/80 group-hover:text-foreground transition-colors duration-300">
+                      <strong className="font-bold">{skill.label}:</strong>{" "}
+                      {skill.desc}
+                    </span>
+                  </motion.li>
+                ))}
+              </ul>
+            </motion.div>
 
-  <motion.div
-    initial={{ opacity: 0, y: 40 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    transition={{ duration: 0.8, delay: 0.1 }}
-    className="glass-card rounded-3xl p-10"
-  >
-    <h3 className="text-3xl font-semibold mb-8">Tools</h3>
-    <ul className="space-y-4 text-lg">
-      {[
-        { label: "Design & Prototyping", desc: "Figma, Sketch, Adobe Creative Suite" },
-        { label: "Development & AI", desc: "VSCode, Git/Github, Webstorm, Codepen, Vercel V0, Claude, Gemini, ChatGPT" },
-        { label: "Research & Analytics", desc: "Lyssna, Survey Monkey, Google Forms, Google Analytics, Meta Insights, Draw.io" },
-        { label: "Collaboration", desc: "Slack, Zoom, Microsoft Teams" }
-      ].map((tool, index) => (
-        <li key={index} className="flex items-start gap-3">
-          <span className="w-2 h-2 rounded-full bg-primary mt-[10px] flex-shrink-0"></span>
-          <span>
-            <strong className="font-bold">{tool.label}:</strong> {tool.desc}
-          </span>
-        </li>
-      ))}
-    </ul>
-  </motion.div>
-</div>
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+              className="glass-card rounded-3xl p-10"
+            >
+              <h3 className="text-3xl font-semibold mb-8">Tools</h3>
+              <ul className="space-y-4 text-lg">
+                {[
+                  {
+                    label: "Design & Prototyping",
+                    desc: "Figma, Sketch, Adobe Creative Suite",
+                  },
+                  {
+                    label: "Development & AI",
+                    desc: "VSCode, Git/Github, Webstorm, Codepen, Vercel V0, Claude, Gemini, ChatGPT",
+                  },
+                  {
+                    label: "Research & Analytics",
+                    desc: "Lyssna, Survey Monkey, Google Forms, Google Analytics, Meta Insights, Draw.io",
+                  },
+                  {
+                    label: "Collaboration",
+                    desc: "Slack, Zoom, Microsoft Teams",
+                  },
+                ].map((tool, index) => (
+                  <motion.li
+                    key={index}
+                    className="flex items-start gap-3 group cursor-default"
+                    whileHover={{ x: 8 }}
+                    transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                  >
+                    <span className="w-2 h-2 rounded-full bg-primary mt-[10px] flex-shrink-0 transition-all duration-300 group-hover:scale-150 group-hover:shadow-[0_0_8px_var(--primary)]"></span>
+                    <span className="text-foreground/80 group-hover:text-foreground transition-colors duration-300">
+                      <strong className="font-bold">{tool.label}:</strong>{" "}
+                      {tool.desc}
+                    </span>
+                  </motion.li>
+                ))}
+              </ul>
+            </motion.div>
+          </div>
         </div>
       </main>
       <Footer />
