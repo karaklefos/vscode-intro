@@ -129,23 +129,23 @@ export default function AboutPage() {
               <ul className="space-y-3 text-lg">
                 <li className="flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-accent"></span>
-                  User Research & Testing: Usability Testing, A/B Testing, User Flows, Journey Mapping.
+                  User Research & Testing: Usability Testing, A/B Testing, User Flows, Journey Mapping
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-accent"></span>
-                  Strategy: Trend Forecasting, Competitive Analysis, Persona Development, Data Synthesis.
+                  Strategy: Trend Forecasting, Competitive Analysis, Persona Development, Data Synthesis
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-accent"></span>
-                  Content: Copywriting, Information Architecture.
+                  Content: Copywriting, Information Architecture
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-accent"></span>
-                  Systems: Design Systems, Visual Identity (Brand Guidelines), Accessibility (WCAG).
+                  Systems: Design Systems, Visual Identity (Brand Guidelines), Accessibility (WCAG)
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-accent"></span>
-                  Execution: Wireframing, Prototyping, Responsive Design, Visual Design.
+                  Execution: Wireframing, Prototyping, Responsive Design, Visual Design
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-accent"></span>
@@ -153,7 +153,7 @@ export default function AboutPage() {
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-accent"></span>
-                  AI: Prompt Engineering, AI-Assisted Design, Research Synthesis.
+                  AI: Prompt Engineering, AI-Assisted Design, Research Synthesis
                 </li>
               </ul>
             </motion.div>
@@ -169,29 +169,19 @@ export default function AboutPage() {
               <ul className="space-y-3 text-lg">
                 <li className="flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-primary"></span>
-                  Wireframing/Prototyping Tools: Figma, Sketch
+                  Design & Prototyping: Figma, Sketch, Adobe Creative Suite
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-primary"></span>
-                  Visualization Tools: Canva, Draw.io
+                  Development & AI: VSCode, Git/Github, Webstorm, Codepen, Vercel V0, Claude, Gemini, ChatGPT
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-primary"></span>
-                  Editing Tools: Adobe Illustrator, Adobe Lightroom, Adobe
-                  Photoshop
+                  Research & Analytics: Lyssna, Survey Monkey, Google Forms, Google Analytics, Meta Insights, Draw.io
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-primary"></span>
-                  Coding tools: Git, GitHub, Visual Studio Code, Webstorm,
-                  Pycharm, Codepen
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-2 h-2 rounded-full bg-primary"></span>
-                  User Research: Survey Monkey, Google Forms, Zoom, Skype
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-2 h-2 rounded-full bg-primary"></span>
-                  Usability Testing Tools: Lyssna
+                  Collaboration: Slack, Zoom, Microsoft Teams
                 </li>
               </ul>
             </motion.div>
