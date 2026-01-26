@@ -1,13 +1,16 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { CustomCursor } from "@/components/custom-cursor";
 import Navigation from "@/components/navigation";
 import { BeforeAfterSlider } from "@/components/before-after-slider";
 import Image from "next/image";
 import { Footer } from "@/components/footer";
+import { useState } from "react";
 
 export default function AboutPage() {
+  const [isExpanded, setIsExpanded] = useState(false);
+
   return (
     <>
       <CustomCursor />
@@ -45,7 +48,7 @@ export default function AboutPage() {
                 <img
                   src="/img/joey.nm.jpg"
                   alt="Kara Klefos Profile"
-                  style={{ width: "100%", height: "auto" }}
+                  className="w-full h-full object-cover"
                 />
               </div>
             </motion.div>
@@ -56,7 +59,7 @@ export default function AboutPage() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="flex flex-col justify-center space-y-6"
             >
-              <p className="text-xl md:text-2xl leading-relaxed text-secondary">
+              <p className="text-xl md:text-2xl leading-relaxed text-secondary font-medium">
                 I'm Kara, a Product & UX/UI Designer in Austin, Texas!
               </p>
 
@@ -70,39 +73,59 @@ export default function AboutPage() {
                 growth, leading to a 25% increase in inquiries.
               </p>
 
-              <p className="text-lg leading-relaxed text-muted-foreground">
-                At Stitch Fix, I found the link between my styling intuition and
-                technical products. I began providing qualitative feedback
-                directly to engineering teams to improve recommendation
-                algorithms. This evolved into work with Appen, where I analyzed
-                AI data quality to help refine machine learning models. This
-                experience gave me a data-first mindset - I understand how the
-                "engine" under the hood affects the user's experience.
-              </p>
+              {/* Mobile Read More Section */}
+              <div className="relative">
+                <AnimatePresence initial={false}>
+                  {/* Desktop view: Always visible | Mobile view: Toggle visible */}
+                  {(isExpanded || (typeof window !== 'undefined' && window.innerWidth >= 768)) && (
+                    <motion.div
+                      key="expanded-content"
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      exit={{ opacity: 0, height: 0 }}
+                      className="space-y-6 overflow-hidden"
+                    >
+                      <p className="text-lg leading-relaxed text-muted-foreground pt-0 md:pt-0">
+                        At Stitch Fix, I found the link between my styling intuition and
+                        technical products. I began providing qualitative feedback
+                        directly to engineering teams to improve recommendation
+                        algorithms. This evolved into work with Appen, where I analyzed
+                        AI data quality to help refine machine learning models.
+                      </p>
 
-              <p className="text-lg leading-relaxed text-muted-foreground">
-                I eventually moved from influencing products to building them,
-                earning certificates in UI Design and Frontend Development. My
-                first major shipped project was for Life Anew Restorative
-                Justice, where I served as the Lead Product Designer. I designed
-                a dual-sided platform that solved a massive organizational gap,
-                turning resource-access workflows that used to take weeks into a
-                process that takes minutes.
-              </p>
+                      <p className="text-lg leading-relaxed text-muted-foreground">
+                        I eventually moved from influencing products to building them,
+                        earning certificates in UI Design and Frontend Development. My
+                        first major shipped project was for Life Anew Restorative
+                        Justice, where I served as the Lead Product Designer.
+                      </p>
 
-              <p className="text-lg leading-relaxed text-muted-foreground">
-                I'm at my best when I am combining my creative eye with my
-                analytical brain. Whether I am "vibe coding" a responsive site
-                for a local business or architecting a complex internal tool, my
-                goal is to create products that are as functional as they are
-                beautiful.
-              </p>
+                      <p className="text-lg leading-relaxed text-muted-foreground">
+                        I'm at my best when I am combining my creative eye with my
+                        analytical brain. Whether I am "vibe coding" a responsive site
+                        for a local business or architecting a complex internal tool.
+                      </p>
 
-              <p className="text-lg leading-relaxed text-muted-foreground">
-                Outside of work, I'm usually with my dog, Joey, out in nature,
-                or indulging my passion for fashion - whether it's sewing or
-                styling an outfit!
-              </p>
+                      <p className="text-lg leading-relaxed text-muted-foreground">
+                        Outside of work, I'm usually with my dog, Joey, out in nature,
+                        or indulging my passion for fashion - whether it's sewing or
+                        styling an outfit!
+                      </p>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+
+                {/* The Mobile Toggle Button */}
+                {!isExpanded && (
+                  <button
+                    onClick={() => setIsExpanded(true)}
+                    className="md:hidden mt-4 text-primary font-semibold flex items-center gap-2"
+                  >
+                    Read My Full Story 
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                  </button>
+                )}
+              </div>
 
               <div className="pt-6">
                 <a
@@ -127,34 +150,13 @@ export default function AboutPage() {
               <h3 className="text-3xl font-semibold mb-8">Relevant Skills</h3>
               <ul className="space-y-4 text-lg">
                 {[
-                  {
-                    label: "User Research & Testing",
-                    desc: "Usability Testing, A/B Testing, User Flows, Journey Mapping",
-                  },
-                  {
-                    label: "Strategy",
-                    desc: "Trend Forecasting, Competitive Analysis, Persona Development, Data Synthesis",
-                  },
-                  {
-                    label: "Content",
-                    desc: "Copywriting, Information Architecture",
-                  },
-                  {
-                    label: "Systems",
-                    desc: "Design Systems, Visual Identity (Brand Guidelines), Accessibility (WCAG)",
-                  },
-                  {
-                    label: "Execution",
-                    desc: "Wireframing, Prototyping, Responsive Design, Visual Design",
-                  },
-                  {
-                    label: "Development",
-                    desc: "Front-end Coding (HTML5 / CSS3 / JavaScript), Website Creation",
-                  },
-                  {
-                    label: "AI",
-                    desc: "Prompt Engineering, AI-Assisted Design, Research Synthesis",
-                  },
+                  { label: "User Research & Testing", desc: "Usability Testing, A/B Testing, User Flows, Journey Mapping" },
+                  { label: "Strategy", desc: "Trend Forecasting, Competitive Analysis, Persona Development, Data Synthesis" },
+                  { label: "Content", desc: "Copywriting, Information Architecture" },
+                  { label: "Systems", desc: "Design Systems, Visual Identity (Brand Guidelines), Accessibility (WCAG)" },
+                  { label: "Execution", desc: "Wireframing, Prototyping, Responsive Design, Visual Design" },
+                  { label: "Development", desc: "Front-end Coding (HTML5 / CSS3 / JavaScript), Website Creation" },
+                  { label: "AI", desc: "Prompt Engineering, AI-Assisted Design, Research Synthesis" },
                 ].map((skill, index) => (
                   <motion.li
                     key={index}
@@ -164,8 +166,7 @@ export default function AboutPage() {
                   >
                     <span className="w-2 h-2 rounded-full bg-accent mt-[10px] flex-shrink-0 transition-all duration-300 group-hover:scale-150 group-hover:shadow-[0_0_8px_var(--accent)]"></span>
                     <span className="text-foreground/80 group-hover:text-foreground transition-colors duration-300">
-                      <strong className="font-bold">{skill.label}:</strong>{" "}
-                      {skill.desc}
+                      <strong className="font-bold">{skill.label}:</strong> {skill.desc}
                     </span>
                   </motion.li>
                 ))}
@@ -182,22 +183,10 @@ export default function AboutPage() {
               <h3 className="text-3xl font-semibold mb-8">Tools</h3>
               <ul className="space-y-4 text-lg">
                 {[
-                  {
-                    label: "Design & Prototyping",
-                    desc: "Figma, Sketch, Adobe Creative Suite",
-                  },
-                  {
-                    label: "Development & AI",
-                    desc: "VSCode, Git/Github, Webstorm, Codepen, Vercel V0, Claude, Gemini, ChatGPT",
-                  },
-                  {
-                    label: "Research & Analytics",
-                    desc: "Lyssna, Survey Monkey, Google Forms, Google Analytics, Meta Insights, Draw.io",
-                  },
-                  {
-                    label: "Collaboration",
-                    desc: "Slack, Zoom, Microsoft Teams",
-                  },
+                  { label: "Design & Prototyping", desc: "Figma, Sketch, Adobe Creative Suite" },
+                  { label: "Development & AI", desc: "VSCode, Git/Github, Webstorm, Codepen, Vercel V0, Claude, Gemini, ChatGPT" },
+                  { label: "Research & Analytics", desc: "Lyssna, Survey Monkey, Google Forms, Google Analytics, Meta Insights, Draw.io" },
+                  { label: "Collaboration", desc: "Slack, Zoom, Microsoft Teams" },
                 ].map((tool, index) => (
                   <motion.li
                     key={index}
@@ -207,8 +196,7 @@ export default function AboutPage() {
                   >
                     <span className="w-2 h-2 rounded-full bg-primary mt-[10px] flex-shrink-0 transition-all duration-300 group-hover:scale-150 group-hover:shadow-[0_0_8px_var(--primary)]"></span>
                     <span className="text-foreground/80 group-hover:text-foreground transition-colors duration-300">
-                      <strong className="font-bold">{tool.label}:</strong>{" "}
-                      {tool.desc}
+                      <strong className="font-bold">{tool.label}:</strong> {tool.desc}
                     </span>
                   </motion.li>
                 ))}
