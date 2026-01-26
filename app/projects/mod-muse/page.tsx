@@ -7,6 +7,7 @@ import Navigation from "@/components/navigation";
 import { CustomCursor } from "@/components/custom-cursor";
 import { Footer } from "@/components/footer";
 import { projects } from "@/components/projects-grid";
+import { ProjectNavigation } from "@/components/project-navigation"; 
 
 export default function ModMuseProject() {
   const projectData = projects.find((p) => p.title === "Mod Muse");
@@ -590,7 +591,7 @@ export default function ModMuseProject() {
             </div>
           </motion.section>
 
-          {/* Conclusion Section */}
+         {/* Conclusion Section */}
           <motion.section
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -618,39 +619,12 @@ export default function ModMuseProject() {
             </div>
           </motion.section>
 
-          {/* Back to All Projects button */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="text-center"
-          >
-            <Link
-              href="/"
-              className="inline-flex items-center gap-2 text-lg text-muted-foreground hover:text-foreground transition-colors"
-            >
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M16 10H4M4 10L10 16M4 10L10 4"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              Back to All Projects
-            </Link>
-          </motion.div>
-        </div>
+          {/* Project Navigation (replaces the old back button) */}
+          <ProjectNavigation currentHref="/projects/mod-muse" />
+          
+        </div> {/* Container closure */}
       </main>
-      {/* Footer component */}
+
       <Footer />
     </>
   );

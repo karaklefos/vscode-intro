@@ -7,6 +7,7 @@ import Navigation from "@/components/navigation";
 import { CustomCursor } from "@/components/custom-cursor";
 import { Footer } from "@/components/footer";
 import { projects } from "@/components/projects-grid";
+import { ProjectNavigation } from "@/components/project-navigation";
 
 export default function SavvyPigProject() {
   const projectData = projects.find((p) => p.title === "Savvy Pig");
@@ -603,60 +604,34 @@ export default function SavvyPigProject() {
               <h2 className="text-4xl md:text-5xl font-semibold mb-8">
                 Conclusion
               </h2>
-              <p className="text-lg leading-relaxed mb-6">
-                The Savvy Pig project showcases my end-to-end design process,
-                from the initial conceptualization and branding – including the
-                development of the name and logo – through to the creation of a
-                user-friendly and effective financial application.
-              </p>
-              <p>
-                Recognizing the intimidation often associated with personal
-                finance, the core objective was to design an intuitive
-                experience centered around clear expense tracking, motivating
-                goal-setting features, and easily understandable data
-                visualization. By carefully blending a professional aesthetic
-                with playful visual elements, Savvy Pig aims to demystify money
-                management and empower users, regardless of their financial
-                literacy, to confidently take control of their financial journey
-                and achieve their savings milestones. This case study reflects
-                my commitment to creating accessible, engaging, and impactful
-                digital solutions that address real user needs and foster
-                positive outcomes.
-              </p>
+              <div className="space-y-6 text-lg leading-relaxed">
+                <p>
+                  The Savvy Pig project showcases my end-to-end design process,
+                  from the initial conceptualization and branding – including the
+                  development of the name and logo – through to the creation of a
+                  user-friendly and effective financial application.
+                </p>
+                <p>
+                  Recognizing the intimidation often associated with personal
+                  finance, the core objective was to design an intuitive
+                  experience centered around clear expense tracking, motivating
+                  goal-setting features, and easily understandable data
+                  visualization. By carefully blending a professional aesthetic
+                  with playful visual elements, Savvy Pig aims to demystify money
+                  management and empower users, regardless of their financial
+                  literacy, to confidently take control of their financial journey
+                  and achieve their savings milestones.
+                </p>
+              </div>
             </div>
           </motion.section>
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="text-center mt-20"
-          >
-            <Link
-              href="/"
-              className="inline-flex items-center gap-2 text-lg text-muted-foreground hover:text-foreground transition-colors"
-            >
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M16 10H4M4 10L10 16M4 10L10 4"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              Back to All Projects
-            </Link>
-          </motion.div>
-        </div>
+          {/* Project Navigation */}
+          <ProjectNavigation currentHref="/projects/savvy-pig" />
+
+        </div> {/* Closes the main container div */}
       </main>
+
       <Footer />
     </>
   );
