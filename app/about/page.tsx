@@ -173,15 +173,15 @@ export default function AboutPage() {
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-primary"></span>
-                  Development & AI: VSCode, Git/Github, Webstorm, Codepen, Vercel V0, Claude, Gemini, ChatGPT
+                  <b>Development & AI:</b> VSCode, Git/Github, Webstorm, Codepen, Vercel V0, Claude, Gemini, ChatGPT
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-primary"></span>
-                  Research & Analytics: Lyssna, Survey Monkey, Google Forms, Google Analytics, Meta Insights, Draw.io
+                  <b>Research & Analytics:</b> Lyssna, Survey Monkey, Google Forms, Google Analytics, Meta Insights, Draw.io
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-primary"></span>
-                  Collaboration: Slack, Zoom, Microsoft Teams
+                  <b>Collaboration:</b> Slack, Zoom, Microsoft Teams
                 </li>
               </ul>
             </motion.div>
