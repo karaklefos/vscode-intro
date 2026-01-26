@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { CustomCursor } from "@/components/custom-cursor"
-import Navigation from "@/components/navigation"
-import { BeforeAfterSlider } from "@/components/before-after-slider"
-import Image from "next/image"
-import { Footer } from "@/components/footer"
+import { motion } from "framer-motion";
+import { CustomCursor } from "@/components/custom-cursor";
+import Navigation from "@/components/navigation";
+import { BeforeAfterSlider } from "@/components/before-after-slider";
+import Image from "next/image";
+import { Footer } from "@/components/footer";
 
 export default function AboutPage() {
   return (
@@ -41,13 +41,13 @@ export default function AboutPage() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="relative"
             >
-                <div className="aspect-[3/4] relative overflow-hidden rounded-3xl grain-texture">
-   <img 
-     src="/img/joey.nm.jpg" 
-     alt="Kara Klefos Profile" 
-     style={{ width: '100%', height: 'auto' }} 
-   />
-</div>
+              <div className="aspect-[3/4] relative overflow-hidden rounded-3xl grain-texture">
+                <img
+                  src="/img/joey.nm.jpg"
+                  alt="Kara Klefos Profile"
+                  style={{ width: "100%", height: "auto" }}
+                />
+              </div>
             </motion.div>
 
             <motion.div
@@ -61,32 +61,50 @@ export default function AboutPage() {
               </p>
 
               <p className="text-lg leading-relaxed text-muted-foreground">
-                I've always been fascinated by the 'why' behind user experiences, and equally by the power of beautiful,
-                intentional design. A lifelong lover of fashion and style, I earned my B.S. in Fashion Merchandising and
-                have spent years immersed in creating and styling. My instinct for understanding people, whether it's
-                dissecting consumer insights or seeking genuine feedback, pairs naturally with my passion for aesthetics
-                and storytelling.
+                My career began in fashion merchandising and bridal management.
+                This wasn't just about aesthetics; it was about empathy and
+                business logic. I spent years predicting trends, managing teams,
+                and learning how to translate a client's vague needs into a
+                perfect, tangible result. At Second Summer Bride, I realized
+                that a better website layout could directly drive business
+                growth, leading to a 25% increase in inquiries.
               </p>
 
               <p className="text-lg leading-relaxed text-muted-foreground">
-                My background, spanning trend forecasting, management, and digital strategy, established my expertise in
-                understanding and influencing user behavior at scale. I bring a highly consumer-savvy perspective to
-                complex design challenges, specializing in workflow optimization for internal tools and enterprise
-                platforms. I apply this unique foundation, particularly the algorithmic insights gained from my work at
-                Stitch Fix, to drive human-centered feedback and influence algorithm accuracy.
+                My background, spanning trend forecasting, management, and
+                digital strategy, established my expertise in understanding and
+                influencing user behavior at scale. At Stitch Fix, I found the
+                link between my styling intuition and technical products. I
+                began providing qualitative feedback directly to engineering
+                teams to improve recommendation algorithms. This evolved into
+                work with Appen, where I analyzed AI data quality to help refine
+                machine learning models. This experience gave me a data-first
+                mindset - I understand how the "engine" under the hood affects
+                the user's experience.
               </p>
 
               <p className="text-lg leading-relaxed text-muted-foreground">
-                In my Product & UX/UI design work, I implement a rigorous, data-driven process, specializing in user
-                research, journey mapping, wireframing, and prototyping. I'm proficient in Figma, Sketch, and Adobe
-                Creative Suite, and I leverage expertise in prompt engineering for research synthesis to ensure
-                high-quality, efficient design outcomes. I'm passionate about creating digital products that are as
-                intuitive as they are beautiful!
+                I eventually moved from influencing products to building them,
+                earning certificates in UI Design and Frontend Development. My
+                first major shipped project was for Life Anew Restorative
+                Justice, where I served as the Lead Product Designer. I designed
+                a dual-sided platform that solved a massive organizational gap,
+                turning resource-access workflows that used to take weeks into a
+                process that takes minutes.
               </p>
 
               <p className="text-lg leading-relaxed text-muted-foreground">
-                Outside of work, I'm usually with my dog, Joey, out in nature, or indulging my passion for fashion -
-                whether it's sewing or styling an outfit!
+                I'm at my best when I am combining my creative eye with my
+                analytical brain. Whether I am "vibe coding" a responsive site
+                for a local business or architecting a complex internal tool, my
+                goal is to create products that are as functional as they are
+                beautiful.
+              </p>
+
+              <p className="text-lg leading-relaxed text-muted-foreground">
+                Outside of work, I'm usually with my dog, Joey, out in nature,
+                or indulging my passion for fashion - whether it's sewing or
+                styling an outfit!
               </p>
 
               <div className="pt-6">
@@ -193,11 +211,13 @@ export default function AboutPage() {
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-primary"></span>
-                  Editing Tools: Adobe Illustrator, Adobe Lightroom, Adobe Photoshop
+                  Editing Tools: Adobe Illustrator, Adobe Lightroom, Adobe
+                  Photoshop
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-primary"></span>
-                  Coding tools: Git, GitHub, Visual Studio Code, Webstorm, Pycharm, Codepen
+                  Coding tools: Git, GitHub, Visual Studio Code, Webstorm,
+                  Pycharm, Codepen
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-primary"></span>
@@ -214,5 +234,5 @@ export default function AboutPage() {
       </main>
       <Footer />
     </>
-  )
+  );
 }
