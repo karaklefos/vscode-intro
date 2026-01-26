@@ -7,6 +7,7 @@ import Navigation from "@/components/navigation"
 import { CustomCursor } from "@/components/custom-cursor"
 import { Footer } from "@/components/footer"
 import { projects } from "@/components/projects-grid"
+import { ProjectNavigation } from "@/components/project-navigation";
 
 export default function BotanyBuddyProject() {
   const projectData = projects.find((p) => p.title === "Botany Buddy")
@@ -466,7 +467,7 @@ export default function BotanyBuddyProject() {
             </div>
           </motion.section>
 
-          {/* Conclusion */}
+          {/* Conclusion Text Section - KEEP THIS */}
           <motion.section
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -475,48 +476,33 @@ export default function BotanyBuddyProject() {
             className="mb-20"
           >
             <div className="glass-card rounded-3xl p-8 md:p-12">
-              <h2 className="text-4xl md:text-5xl font-semibold mb-8">Conclusion</h2>
+              <h2 className="text-4xl md:text-5xl font-semibold mb-8">
+                Conclusion
+              </h2>
               <div className="space-y-6 text-lg leading-relaxed">
                 <p>
-                  Developing Botany Buddy provided valuable insights into designing for a specific user need: plant
-                  care. This project highlighted the importance of combining practical tools, like care reminders and
-                  visual diagnosis, with user-friendly features such as plant identification. I learned how to create an
-                  intuitive experience that empowers users to confidently care for their plants, regardless of their
-                  experience level.
+                  Developing Botany Buddy provided valuable insights into
+                  designing for a specific user need: plant care. This project
+                  highlighted the importance of combining practical tools, like
+                  care reminders and visual diagnosis, with user-friendly
+                  features such as plant identification. I learned how to create
+                  an intuitive experience that empowers users to confidently
+                  care for their plants, regardless of their experience level.
                 </p>
                 <p>
-                  The app's impact lies in its potential to make plant care more accessible and enjoyable, fostering a
-                  deeper connection between users and their greenery. By addressing common pain points, Botany Buddy
-                  simplifies a traditionally complex task.
+                  The app's impact lies in its potential to make plant care more
+                  accessible and enjoyable, fostering a deeper connection
+                  between users and their greenery. By addressing common pain
+                  points, Botany Buddy simplifies a traditionally complex task.
                 </p>
               </div>
             </div>
           </motion.section>
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="text-center"
-          >
-            <Link
-              href="/"
-              className="inline-flex items-center gap-2 text-lg text-muted-foreground hover:text-foreground transition-colors"
-            >
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M16 10H4M4 10L10 16M4 10L10 4"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              Back to All Projects
-            </Link>
-          </motion.div>
-        </div>
+          {/* New Project Navigation - REPLACES OLD MOTION.DIV */}
+          <ProjectNavigation currentHref="/projects/botany-buddy" />
+
+        </div> {/* Closes container */}
       </main>
       <Footer />
     </>
