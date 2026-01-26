@@ -639,7 +639,8 @@ export default function LifeAnewProject() {
 </motion.section>
 
 {/* Conclusion */}
-      <ProjectNavigation currentHref="/projects/life-anew" />
+          <ProjectNavigation currentHref="/projects/life-anew" />
+        </div> {/* This was the missing tag! */}
       </main>
 
       {/* Footer */}
