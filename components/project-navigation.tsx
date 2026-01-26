@@ -10,7 +10,7 @@ const projects = [
   { title: "Mod Muse", href: "/projects/mod-muse", image: "/img/modmuse_title.jpg" },
   { title: "ReciFree", href: "/projects/recifree", image: "/img/recifree_title.png" },
   { title: "Botany Buddy", href: "/projects/botany-buddy", image: "/img/botanybuddy_title.png" },
-  { title: "Savvy Pig", href: "/projects/savvypig_title.png", image: "/img/savvypig_title.png" },
+  { title: "Savvy Pig", href: "/projects/savvy-pig", image: "/img/savvypig_title.png" },
 ];
 
 export function ProjectNavigation({ currentHref }: { currentHref: string }) {
