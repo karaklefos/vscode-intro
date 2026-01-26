@@ -71,9 +71,7 @@ export default function AboutPage() {
               </p>
 
               <p className="text-lg leading-relaxed text-muted-foreground">
-                My background, spanning trend forecasting, management, and
-                digital strategy, established my expertise in understanding and
-                influencing user behavior at scale. At Stitch Fix, I found the
+                At Stitch Fix, I found the
                 link between my styling intuition and technical products. I
                 began providing qualitative feedback directly to engineering
                 teams to improve recommendation algorithms. This evolved into
