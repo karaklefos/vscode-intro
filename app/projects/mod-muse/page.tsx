@@ -291,6 +291,7 @@ export default function ModMuseProject() {
               <div className="overflow-x-auto pb-8 -mx-4 px-4 snap-x snap-mandatory flex custom-scrollbar">
                 <div className="flex gap-6">
                   {[
+                    { name: "Login", Image: "/img/modmuse_login.png" },
                     { name: "Home", Image: "/img/modmuse_home.png" },
                     { name: "Reviews", Image: "/img/modmuse_reviews.png" },
                     { name: "Profile", Image: "/img/modmuse_profile.png" },
