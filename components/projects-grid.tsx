@@ -13,7 +13,7 @@ export const projects = [
     href: "/projects/life-anew",
   },
   {
-    title: "Mod Muse",
+    title: "Mod Mus",
     description:
       "Mod Muse is a vintage fashion marketplace inspired by the bold style of the 1960s Mod era. I designed an end-to-end experience in Figma, from concept to prototype, that streamlines shopping for curated vintage pieces.",
     image: "/img/modmuse_title.jpg",
