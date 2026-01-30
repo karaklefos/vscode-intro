@@ -249,7 +249,7 @@ export default function ContactPage() {
               <div className="glass-card rounded-3xl p-8 bg-gradient-to-br from-primary/5 to-accent/5">
                 <div className="text-6xl text-primary/20 font-serif mb-4">"</div>
                 <p className="text-xl font-light leading-relaxed mb-6 italic">
-                  Great design is more than aesthetics—it's about creating meaningful connections between people and
+                  Great design is more than aesthetics, it's about creating meaningful connections between people and
                   products.
                 </p>
                 <div className="w-16 h-1 bg-gradient-to-r from-primary to-accent rounded-full"></div>
