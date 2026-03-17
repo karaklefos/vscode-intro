@@ -41,10 +41,8 @@ export function Hero({ scrollProgress }: HeroProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-            By blending empathy, data, and style, I translate a decade of
-            experience in the fashion industry—styling, managing, and trend
-            forecasting—into digital tools that look as good as they function. I
-            specialize in workflow optimization: turning messy, manual processes
+            Blending empathy, data, and style. 
+            I specialize in workflow optimization: turning messy, manual processes
             into intuitive digital experiences that save time and solve real
             problems.
           </motion.p>
