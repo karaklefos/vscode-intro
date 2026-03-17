@@ -146,7 +146,7 @@ export default function LifeAnewProject() {
               </ul>
 
               {/* Results - highlighted section */}
-              <div className="bg-accent/10 rounded-2xl p-8 md:p-10 border border-accent/20">
+              <div className="bg-green-100 rounded-2xl p-8 md:p-10 border border-accent/20">
                 <h3 className="text-3xl md:text-4xl font-semibold mb-8">
                   The Results:
                 </h3>
