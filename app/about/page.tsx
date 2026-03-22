@@ -107,9 +107,9 @@ export default function AboutPage() {
                       </p>
 
                       <p className="text-lg leading-relaxed text-muted-foreground">
-                        Outside of work, I'm usually with my dog, Joey, out in nature,
-                        or indulging my passion for fashion - whether it's sewing or
-                        styling an outfit!
+                        Outside of work, I'm usually with my little fam (pictured left), out in nature,
+                        or indulging in something creative - whether it's sewing,
+                        styling an outfit, or at an art gallery!
                       </p>
                     </motion.div>
                   )}
