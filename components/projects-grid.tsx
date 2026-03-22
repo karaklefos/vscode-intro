@@ -4,26 +4,28 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import { useState } from "react"
 
+// Organic "River Stone" shapes: perfectly rounded, no flat edges.
+// These move continuously on both desktop and mobile.
 const SHAPES = [
   {
     id: "shape-0",
-    base: "M0.2,0.15 C0.5,0.05 0.8,0.1 0.9,0.35 C1,0.6 1,0.85 0.8,0.95 C0.6,1.05 0.3,1 0.1,0.8 C-0.05,0.6 0,0.35 0.2,0.15",
-    hover: "M0.1,0.2 C0.4,0.1 0.7,0.15 0.95,0.3 C1.1,0.5 1,0.8 0.8,0.95 C0.6,1.1 0.3,1.05 0.1,0.85 C-0.1,0.6 0.05,0.4 0.1,0.2"
+    base: "M.5,0 C.8,0 1,.2 1,.5 C1,.8 .8,1 .5,1 C.2,1 0,.8 0,.5 C0,.2 .2,0 .5,0",
+    hover: "M.5,0.05 C.9,0.05 1.05,0.3 0.95,0.6 C0.85,0.9 0.7,0.95 0.5,0.95 C0.2,0.95 0.05,0.8 0.05,0.5 C0.05,0.2 0.2,0.05 .5,0.05"
   },
   {
     id: "shape-1",
-    base: "M0.25,0.1 C0.6,0 0.9,0.05 0.95,0.3 C1,0.55 0.95,0.8 0.8,0.95 C0.65,1.1 0.3,1 0.15,0.85 C0,0.7 0.05,0.3 0.25,0.1",
-    hover: "M0.15,0.2 C0.5,0.05 0.85,0.1 0.95,0.35 C1.1,0.6 1,0.85 0.8,0.95 C0.6,1.05 0.3,1 0.1,0.8 C-0.05,0.6 0,0.4 0.15,0.2"
+    base: "M.5,0 C.9,0 1,.3 1,.5 C1,.7 .9,1 .5,1 C.1,1 0,.7 0,.5 C0,.3 .1,0 .5,0",
+    hover: "M.5,0.1 C0.8,0.1 0.95,0.2 0.95,0.5 C0.95,0.8 0.8,0.9 0.5,0.9 C0.2,0.9 0.05,0.8 0.05,0.5 C0.05,0.2 0.2,0.1 .5,0.1"
   },
   {
     id: "shape-2",
-    base: "M0.2,0.1 C0.5,0 0.85,0.05 0.95,0.3 C1.05,0.55 1,0.8 0.8,0.95 C0.6,1.1 0.2,1.05 0.1,0.85 C0,0.65 0.05,0.3 0.2,0.1",
-    hover: "M0.1,0.2 C0.4,0.05 0.75,0.1 0.95,0.35 C1.1,0.6 1,0.85 0.8,0.95 C0.6,1.05 0.3,1.1 0.1,0.9 C-0.1,0.7 0.05,0.45 0.1,0.2"
+    base: "M.5,0.05 C.8,0.05 0.95,0.2 0.95,0.5 C0.95,0.8 0.8,0.95 0.5,0.95 C0.2,0.95 0.05,0.8 0.05,0.5 C0.05,0.2 0.2,0.05 .5,0.05",
+    hover: "M.5,0 C.9,0 1,.2 1,.5 C1,.8 .8,1 .5,1 C.2,1 0,.8 0,.5 C0,.2 .2,0 .5,0"
   },
   {
     id: "shape-3",
-    base: "M0.3,0.05 C0.6,0.05 0.9,0.1 0.95,0.35 C1,0.6 0.95,0.85 0.75,0.95 C0.5,1.05 0.2,1.05 0.1,0.85 C0,0.65 0.05,0.3 0.3,0.05",
-    hover: "M0.2,0.1 C0.5,0 0.9,0.05 1,0.3 C1.1,0.6 1,0.9 0.8,1 C0.5,1.1 0.1,1 0,0.8 C-0.1,0.6 0.1,0.3 0.2,0.1"
+    base: "M.5,0 C.85,0 0.95,0.2 0.95,0.5 C0.95,0.8 0.85,1 0.5,1 C0.15,1 0.05,0.8 0.05,0.5 C0.05,0.2 0.15,0 .5,0",
+    hover: "M.5,0.05 C0.8,0.05 1,0.2 1,0.5 C1,0.8 0.8,0.95 0.5,0.95 C0.2,0.95 0,0.8 0,0.5 C0,0.2 0.2,0.05 .5,0.05"
   }
 ]
 
@@ -102,14 +104,12 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
           <defs>
             <clipPath id={shape.id} clipPathUnits="objectBoundingBox">
               <motion.path
-                animate={isHovered ? {
+                animate={{
                   d: [shape.base, shape.hover, shape.base],
-                } : {
-                  d: shape.base
                 }}
                 transition={{ 
-                  duration: isHovered ? 4 : 1, 
-                  repeat: isHovered ? Infinity : 0, 
+                  duration: 6, 
+                  repeat: Infinity, 
                   ease: "easeInOut" 
                 }}
               />
@@ -118,7 +118,7 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
         </svg>
 
         <div 
-          className="relative w-full h-full transition-transform duration-700 md:group-hover:scale-[1.03]"
+          className="relative w-full h-full transition-transform duration-1000 md:group-hover:scale-[1.04]"
           style={{ clipPath: `url(#${shape.id})` }}
         >
           <Image 
@@ -126,7 +126,7 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
             alt={project.title} 
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
-            className="object-cover transition-all brightness-[0.95] md:brightness-100 duration-700" 
+            className="object-cover transition-all brightness-[0.9] md:brightness-100 duration-1000" 
             priority={index < 2}
           />
         </div>
