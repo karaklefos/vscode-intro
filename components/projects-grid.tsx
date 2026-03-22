@@ -83,8 +83,14 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onMouseEnter={() => {
+        setIsHovered(true);
+        window.dispatchEvent(new CustomEvent("toggleCursor", { detail: true }));
+      }}
+      onMouseLeave={() => {
+        setIsHovered(false);
+        window.dispatchEvent(new CustomEvent("toggleCursor", { detail: false }));
+      }}
       className={`project-card group relative overflow-hidden rounded-3xl glass-card flex flex-col min-h-[350px] md:min-h-full ${gridClass}`}
     >
       {/* Background Image & Gradient */}
