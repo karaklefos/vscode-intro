@@ -5,7 +5,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
 
-// Organic "River Stone" shapes: perfectly rounded, no flat edges.
+// Organic "River Stone" shapes: Keeping your preferred rounded aesthetics
 const SHAPES = [
   {
     id: "shape-0",
@@ -34,7 +34,7 @@ export const projects = [
     title: "Life Anew Restorative Justice", 
     image: "/img/lifeanew_title.png", 
     href: "/projects/life-anew", 
-    description: "Designed a unified mobile application for Life Anew featuring role-based dashboards: a robust management suite for employees and an accessible resource portal for community members." 
+    description: "Lead Product Designer for a unified mobile application for Life Anew featuring role-based dashboards: a robust management suite for employees and an accessible resource portal for community members." 
   },
   { 
     title: "Mod Muse", 
@@ -69,7 +69,7 @@ export function ProjectsGrid() {
           Designs
         </motion.h2>
 
-        <div className="flex flex-col gap-y-24 md:grid md:grid-cols-12 md:gap-x-12 md:gap-y-40">
+        <div className="flex flex-col gap-y-24">
           {projects.map((project, index) => (
             <ProjectCard key={index} project={project} index={index} />
           ))}
@@ -86,7 +86,7 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
 
   return (
     <div 
-      className={`w-full col-span-12 md:grid md:grid-cols-2 md:items-center md:gap-x-12 ${isEven ? "md:mt-32" : ""}`}
+      className={`w-full md:grid md:grid-cols-2 md:items-center md:gap-x-16 ${isEven ? "md:mt-32" : ""}`}
       onMouseEnter={() => { 
         setIsHovered(true); 
         window.dispatchEvent(new CustomEvent("toggleCursor", { detail: true })) 
@@ -96,7 +96,7 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
         window.dispatchEvent(new CustomEvent("toggleCursor", { detail: false })) 
       }}
     >
-      {/* 1. Image Section wrapped in Link */}
+      {/* Image Section */}
       <Link
         href={project.href}
         className={`group relative block w-full aspect-square md:cursor-none ${isEven ? 'md:order-2' : 'md:order-1'}`}
@@ -105,14 +105,8 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
           <defs>
             <clipPath id={shape.id} clipPathUnits="objectBoundingBox">
               <motion.path
-                animate={{
-                  d: [shape.base, shape.hover, shape.base],
-                }}
-                transition={{ 
-                  duration: 6, 
-                  repeat: Infinity, 
-                  ease: "easeInOut" 
-                }}
+                animate={{ d: [shape.base, shape.hover, shape.base] }}
+                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
               />
             </clipPath>
           </defs>
@@ -133,30 +127,34 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
         </div>
       </Link>
 
-      {/* 2. Typography Section */}
+      {/* Typography Section */}
       <motion.div
-        className={`flex flex-col gap-y-4 pt-10 md:pt-0 ${isEven ? 'md:order-1 md:text-right' : 'md:order-2 md:text-left'}`}
+        className={`flex flex-col gap-y-6 pt-10 md:pt-0 ${isEven ? 'md:order-1 md:items-end md:text-right' : 'md:order-2 md:items-start md:text-left'}`}
         initial={{ opacity: 0, y: 20 }} 
         whileInView={{ opacity: 1, y: 0 }} 
         viewport={{ once: true }}
       >
         <Link href={project.href} className="group/text">
-          <h3 className="text-3xl md:text-5xl font-serif text-foreground leading-tight group-hover/text:text-primary transition-colors duration-300">
+          <h3 className="text-3xl md:text-5xl font-serif text-foreground leading-[1.2] group-hover/text:text-primary transition-colors duration-300 max-w-md">
             {project.title}
           </h3>
         </Link>
         
-        <p className={`text-muted-foreground text-sm md:text-lg leading-relaxed max-w-[90%] md:max-w-xl ${isEven ? 'md:ml-auto' : ''}`}>
+        {/* Changed text-justify to text-wrap: pretty for a balanced, clean look without gaps */}
+        <p 
+          className={`text-muted-foreground text-sm md:text-lg leading-relaxed max-w-[95%] md:max-w-md`}
+          style={{ textWrap: 'pretty' }}
+        >
           {project.description}
         </p>
 
         <Link 
           href={project.href}
-          className={`mt-4 inline-flex items-center gap-2 text-primary font-medium group/link ${isEven ? 'md:justify-end' : 'md:justify-start'}`}
+          className="mt-2 inline-flex items-center gap-3 text-primary font-semibold text-lg group/link"
         >
-          <span className="group-hover/link:underline underline-offset-4 decoration-1">Explore Design</span>
-          <motion.div animate={{ x: isHovered ? 5 : 0 }} transition={{ type: "spring", stiffness: 300 }}>
-            <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <span className="group-hover/link:underline underline-offset-8 decoration-1">Explore Design</span>
+          <motion.div animate={{ x: isHovered ? 8 : 0 }} transition={{ type: "spring", stiffness: 300 }}>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </motion.div>
