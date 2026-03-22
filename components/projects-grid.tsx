@@ -33,13 +33,6 @@ export const projects = [
     image: "/img/botanybuddy_title.png",
     href: "/projects/botany-buddy",
   },
-  {
-    title: "Savvy Pig",
-    description:
-      "Savvy Pig is a financial savings app that blends a professional tone with playful design. I crafted the brand identity and app experience, using A/B testing to create an intuitive interface.",
-    image: "/img/savvypig_title.png",
-    href: "/projects/savvy-pig",
-  },
 ]
 
 export function ProjectsGrid() {
