@@ -46,7 +46,7 @@ export default function AboutPage() {
             >
               <div className="aspect-[3/4] relative overflow-hidden rounded-3xl grain-texture">
                 <img
-                  src="/img/joey.nm.jpg"
+                  src="/img/about_photo.png"
                   alt="Kara Klefos Profile"
                   className="w-full h-full object-cover"
                 />
