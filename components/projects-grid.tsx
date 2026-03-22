@@ -2,10 +2,10 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
+import Link from "next/link"
 import { useState } from "react"
 
 // Organic "River Stone" shapes: perfectly rounded, no flat edges.
-// These move continuously on both desktop and mobile.
 const SHAPES = [
   {
     id: "shape-0",
@@ -96,7 +96,8 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
         window.dispatchEvent(new CustomEvent("toggleCursor", { detail: false })) 
       }}
     >
-      <motion.a
+      {/* 1. Image Section wrapped in Link */}
+      <Link
         href={project.href}
         className={`group relative block w-full aspect-square md:cursor-none ${isEven ? 'md:order-2' : 'md:order-1'}`}
       >
@@ -130,26 +131,36 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
             priority={index < 2}
           />
         </div>
-      </motion.a>
+      </Link>
 
+      {/* 2. Typography Section */}
       <motion.div
         className={`flex flex-col gap-y-4 pt-10 md:pt-0 ${isEven ? 'md:order-1 md:text-right' : 'md:order-2 md:text-left'}`}
         initial={{ opacity: 0, y: 20 }} 
         whileInView={{ opacity: 1, y: 0 }} 
         viewport={{ once: true }}
       >
-        <h3 className="text-3xl md:text-5xl font-serif text-foreground leading-tight">{project.title}</h3>
+        <Link href={project.href} className="group/text">
+          <h3 className="text-3xl md:text-5xl font-serif text-foreground leading-tight group-hover/text:text-primary transition-colors duration-300">
+            {project.title}
+          </h3>
+        </Link>
+        
         <p className={`text-muted-foreground text-sm md:text-lg leading-relaxed max-w-[90%] md:max-w-xl ${isEven ? 'md:ml-auto' : ''}`}>
           {project.description}
         </p>
-        <div className={`mt-4 inline-flex items-center gap-2 text-primary font-medium ${isEven ? 'md:justify-end' : 'md:justify-start'}`}>
-          <span>Explore Design</span>
-          <motion.div animate={{ x: isHovered ? 5 : 0 }}>
+
+        <Link 
+          href={project.href}
+          className={`mt-4 inline-flex items-center gap-2 text-primary font-medium group/link ${isEven ? 'md:justify-end' : 'md:justify-start'}`}
+        >
+          <span className="group-hover/link:underline underline-offset-4 decoration-1">Explore Design</span>
+          <motion.div animate={{ x: isHovered ? 5 : 0 }} transition={{ type: "spring", stiffness: 300 }}>
             <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </motion.div>
-        </div>
+        </Link>
       </motion.div>
     </div>
   )
