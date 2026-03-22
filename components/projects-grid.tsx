@@ -40,7 +40,7 @@ export const projects = [
     title: "Mod Muse", 
     image: "/img/modmuse_title.jpg", 
     href: "/projects/mod-muse", 
-    description: "A vintage fashion marketplace inspired by the bold style of the 1960s Mod era, designed as an end-to-end marketplace experience." 
+    description: "Leveraging my background in fashion merchandising, I designed Mod Muse, a curated vintage fashion app. I led the visual identity and UX strategy to create an authentic marketplace experience that celebrates 1960s 'Vibe' through a contemporary digital lens." 
   },
   { 
     title: "ReciFree", 
