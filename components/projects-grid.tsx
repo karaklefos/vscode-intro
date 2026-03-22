@@ -46,13 +46,13 @@ export const projects = [
     title: "ReciFree", 
     image: "/img/recifree_title.png", 
     href: "/projects/recifree", 
-    description: "A recipe app designed for users with allergens and dietary needs, focusing on approachable and empowering UI." 
+    description: "A comprehensive responsive web project where I owned the concept, naming, and UX strategy. ReciFree utilizes inclusive design principles and a 4-size responsive system to provide an empowering, stress-free recipe discovery experience for the allergen-conscious community." 
   },
   { 
     title: "Botany Buddy", 
     image: "/img/botanybuddy_title.png", 
     href: "/projects/botany-buddy", 
-    description: "A plant care app that helps users track routines and diagnose issues, aligned with modern iOS and Android guidelines." 
+    description: "I designed Botany Buddy as a dual-platform mobile solution, meticulously following both iOS Human Interface Guidelines and Android Material Design standards. This plant-care assistant features specialized tracking routines and a diagnostic flow." 
   },
 ]
 
