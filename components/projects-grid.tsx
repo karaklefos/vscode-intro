@@ -129,7 +129,9 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
 
       {/* Typography Section */}
       <motion.div
-        className={`flex flex-col gap-y-6 pt-10 md:pt-0 ${isEven ? 'md:order-1 md:items-end md:text-right' : 'md:order-2 md:items-start md:text-left'}`}
+        // FIX: Added 'items-center text-center' for mobile, while keeping 'md:' variants for desktop
+        className={`flex flex-col gap-y-6 pt-10 md:pt-0 items-center text-center 
+          ${isEven ? 'md:order-1 md:items-end md:text-right' : 'md:order-2 md:items-start md:text-left'}`}
         initial={{ opacity: 0, y: 20 }} 
         whileInView={{ opacity: 1, y: 0 }} 
         viewport={{ once: true }}
@@ -140,9 +142,8 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
           </h3>
         </Link>
         
-        {/* Changed text-justify to text-wrap: pretty for a balanced, clean look without gaps */}
         <p 
-          className={`text-muted-foreground text-sm md:text-lg leading-relaxed max-w-[95%] md:max-w-md`}
+          className="text-muted-foreground text-sm md:text-lg leading-relaxed max-w-[95%] md:max-w-md"
           style={{ textWrap: 'pretty' }}
         >
           {project.description}
