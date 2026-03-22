@@ -34,7 +34,7 @@ export const projects = [
     title: "Life Anew Restorative Justice", 
     image: "/img/lifeanew_title.png", 
     href: "/projects/life-anew", 
-    description: "I led the design and development of a dual-platform mobile system for Life Anew—an internal enterprise app and a connected Community app." 
+    description: "I led the design and development of both an internal and external mobile application for Life Anew — an internal enterprise app and a connected Community app." 
   },
   { 
     title: "Mod Muse", 
