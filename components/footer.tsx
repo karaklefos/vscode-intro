@@ -22,7 +22,7 @@ export function Footer() {
     <footer className="relative py-12 border-t border-border/40 bg-background/80 backdrop-blur-sm">
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          <p className="text-muted-foreground text-sm md:text-base">© Kara Klefos 2025</p>
+          <p className="text-muted-foreground text-sm md:text-base">© Kara Klefos 2026</p>
 
           <motion.button
             onClick={scrollToTop}
