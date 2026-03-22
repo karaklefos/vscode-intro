@@ -3,7 +3,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { CustomCursor } from "@/components/custom-cursor";
 import Navigation from "@/components/navigation";
-import { BeforeAfterSlider } from "@/components/before-after-slider";
 import Image from "next/image";
 import { Footer } from "@/components/footer";
 import { useState } from "react";
@@ -16,6 +15,7 @@ export default function AboutPage() {
       <CustomCursor />
       <Navigation />
 
+      {/* Background Elements */}
       <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
         <div className="absolute inset-0 bg-gradient-to-br from-violet-100/70 via-background to-blue-50/60"></div>
         <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-gradient-to-bl from-purple-300/40 to-transparent"></div>
@@ -25,6 +25,7 @@ export default function AboutPage() {
 
       <main className="min-h-screen pt-32 pb-20 relative">
         <div className="container mx-auto px-6 max-w-7xl">
+          {/* Header */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -66,9 +67,7 @@ export default function AboutPage() {
               <p className="text-lg leading-relaxed text-muted-foreground">
                 My career began in fashion merchandising and bridal management.
                 This wasn't just about aesthetics; it was about empathy and
-                business logic. I spent years predicting trends, managing teams,
-                and learning how to translate a client's vague needs into a
-                perfect, tangible result. At Second Summer Bride, I realized
+                business logic. At Second Summer Bride, I realized
                 that a better website layout could directly drive business
                 growth, leading to a 25% increase in inquiries.
               </p>
@@ -76,7 +75,6 @@ export default function AboutPage() {
               {/* Mobile Read More Section */}
               <div className="relative">
                 <AnimatePresence initial={false}>
-                  {/* Desktop view: Always visible | Mobile view: Toggle visible */}
                   {(isExpanded || (typeof window !== 'undefined' && window.innerWidth >= 768)) && (
                     <motion.div
                       key="expanded-content"
@@ -85,7 +83,7 @@ export default function AboutPage() {
                       exit={{ opacity: 0, height: 0 }}
                       className="space-y-6 overflow-hidden"
                     >
-                      <p className="text-lg leading-relaxed text-muted-foreground pt-0 md:pt-0">
+                      <p className="text-lg leading-relaxed text-muted-foreground pt-0">
                         At Stitch Fix, I found the link between my styling intuition and
                         technical products. I began providing qualitative feedback
                         directly to engineering teams to improve recommendation
@@ -115,7 +113,6 @@ export default function AboutPage() {
                   )}
                 </AnimatePresence>
 
-                {/* The Mobile Toggle Button */}
                 {!isExpanded && (
                   <button
                     onClick={() => setIsExpanded(true)}
@@ -127,12 +124,20 @@ export default function AboutPage() {
                 )}
               </div>
 
+              {/* Resume Button - Now opens in New Tab */}
               <div className="pt-6">
                 <a
                   href="/KaraKlefos_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-full font-medium hover:bg-primary/90 transition-all duration-300 hover:scale-105"
                 >
                   Open My Resume
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
                 </a>
               </div>
             </motion.div>
