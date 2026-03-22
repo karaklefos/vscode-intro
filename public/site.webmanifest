@@ -1,5 +1,5 @@
 {
-  "name": "KaraKlefos",
+  "name": "Kara Klefos",
   "short_name": "KK",
   "icons": [
     {
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
+  "theme_color": "#cdb7f5",
+  "background_color": "#cdb7f5",
   "display": "standalone"
 }
