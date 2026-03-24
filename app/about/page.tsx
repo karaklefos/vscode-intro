@@ -61,7 +61,7 @@ export default function AboutPage() {
               className="flex flex-col justify-center space-y-6"
             >
               <p className="text-xl md:text-2xl leading-relaxed text-secondary font-medium">
-                I'm Kara, a Product & UX/UI Designer in Austin, Texas!
+                I'm Kara, a Product & UX/UI Designer in Austin! 
               </p>
 
               <p className="text-lg leading-relaxed text-muted-foreground">
@@ -72,74 +72,74 @@ export default function AboutPage() {
                 growth, leading to a 25% increase in inquiries.
               </p>
 
-           {/* Mobile Read More Section */}
-<div className="relative">
-  <AnimatePresence initial={false}>
-    {(isExpanded || (typeof window !== 'undefined' && window.innerWidth >= 768)) && (
-      <motion.div
-        key="expanded-content"
-        initial={{ opacity: 0, height: 0 }}
-        animate={{ opacity: 1, height: "auto" }}
-        exit={{ opacity: 0, height: 0 }}
-        className="space-y-6 overflow-hidden"
-      >
-        <p className="text-lg leading-relaxed text-muted-foreground pt-0">
-          At Stitch Fix, I found the link between my styling intuition and
-          technical products. I began providing qualitative feedback
-          directly to engineering teams to improve recommendation
-          algorithms. This evolved into work with Appen, where I analyzed
-          AI data quality to help refine machine learning models.
-        </p>
+              {/* Mobile Read More Section */}
+              <div className="relative">
+                <AnimatePresence initial={false}>
+                  {(isExpanded || (typeof window !== 'undefined' && window.innerWidth >= 768)) && (
+                    <motion.div
+                      key="expanded-content"
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      exit={{ opacity: 0, height: 0 }}
+                      className="space-y-6 overflow-hidden"
+                    >
+                      <p className="text-lg leading-relaxed text-muted-foreground pt-0">
+                        At Stitch Fix, I found the link between my styling intuition and
+                        technical products. I began providing qualitative feedback
+                        directly to engineering teams to improve recommendation
+                        algorithms. This evolved into work with Appen, where I analyzed
+                        AI data quality to help refine machine learning models.
+                      </p>
 
-        <p className="text-lg leading-relaxed text-muted-foreground">
-          I eventually moved from influencing products to building them,
-          earning certificates in UI Design and Frontend Development. My
-          first major shipped project was for Life Anew Restorative
-          Justice, where I served as the Lead Product Designer.
-        </p>
+                      <p className="text-lg leading-relaxed text-muted-foreground">
+                        I eventually moved from influencing products to building them,
+                        earning certificates in UI Design and Frontend Development. My
+                        first major shipped project was for Life Anew Restorative
+                        Justice, where I served as the Lead Product Designer.
+                      </p>
 
-        <p className="text-lg leading-relaxed text-muted-foreground">
-          I'm at my best when I am combining my creative eye with my
-          analytical brain. Whether I am "vibe coding" a responsive site
-          for a local business or architecting a complex internal tool.
-        </p>
+                      <p className="text-lg leading-relaxed text-muted-foreground">
+                        I'm at my best when I am combining my creative eye with my
+                        analytical brain. Whether I am "vibe coding" a responsive site
+                        for a local business or architecting a complex internal tool.
+                      </p>
 
-        <p className="text-lg leading-relaxed text-muted-foreground">
-          Outside of work, I'm usually with my little fam (pictured left), out in nature,
-          or indulging in something creative - whether it's sewing,
-          styling an outfit, or at an art gallery!
-        </p>
-      </motion.div>
-    )}
-  </AnimatePresence>
+                      <p className="text-lg leading-relaxed text-muted-foreground">
+                        Outside of work, I'm usually with my little fam (pictured left), out in nature,
+                        or indulging in something creative - whether it's sewing,
+                        styling an outfit, or at an art gallery! 
+                      </p>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
 
-  {/* Updated Toggle Button */}
-  <button
-    onClick={() => setIsExpanded(!isExpanded)}
-    className="md:hidden mt-4 text-primary font-semibold flex items-center gap-2 hover:opacity-80 transition-opacity"
-  >
-    {isExpanded ? "Show Less" : "Read My Full Story"}
-    <motion.svg 
-      width="20" 
-      height="20" 
-      viewBox="0 0 24 24" 
-      fill="none" 
-      stroke="currentColor" 
-      strokeWidth="2" 
-      strokeLinecap="round" 
-      strokeLinejoin="round"
-      animate={{ rotate: isExpanded ? 180 : 0 }}
-      transition={{ duration: 0.3 }}
-    >
-      <path d="m6 9 6 6 6-6"/>
-    </motion.svg>
-  </button>
-</div>
+                {/* Toggle Button */}
+                <button
+                  onClick={() => setIsExpanded(!isExpanded)}
+                  className="md:hidden mt-4 text-primary font-semibold flex items-center gap-2 hover:opacity-80 transition-opacity"
+                >
+                  {isExpanded ? "Show Less" : "Read My Full Story"}
+                  <motion.svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    animate={{ rotate: isExpanded ? 180 : 0 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </motion.svg>
+                </button>
+              </div>
 
-              {/* Resume Button - Now opens in New Tab */}
+              {/* Resume Button - FIXED TAGS */}
               <div className="pt-6">
                 <a
-                  href="/KaraKlefos_Resume.pdf"
+                  href="/Kara_Klefos_Resume.pdf?v=2"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-full font-medium hover:bg-primary/90 transition-all duration-300 hover:scale-105"
