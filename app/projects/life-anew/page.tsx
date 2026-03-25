@@ -219,10 +219,10 @@ export default function LifeAnewProject() {
           <div className="w-full overflow-x-auto pb-12 cursor-grab active:cursor-grabbing snap-x snap-mandatory no-scrollbar">
             <div className="flex gap-6 px-[5%] md:px-[10%] min-w-max">
               {[
-                { src: "/img/lifeanew_final_1.png", label: "Staff Home" },
-                { src: "/img/lifeanew_final_2.png", label: "Resource Directory" },
-                { src: "/img/lifeanew_iphone_staff.png", label: "Circle Modalities" },
-                { src: "/img/lifeanew_mockup_1.png", label: "Facilitation Guide" },
+                { src: "/img/lifeanew_home.png", label: "Staff Home" },
+                { src: "/img/lifeanew_menu.png", label: "Resource Directory" },
+                { src: "/img/lifeanew_restorative_circles.png", label: "Circle Modalities" },
+                { src: "/img/lifeanew_indivcurriculum.png", label: "Facilitation Guide" },
               ].map((screen, index) => (
                 <div key={index} className="flex-none w-[280px] md:w-[320px] snap-center">
                   <div className="rounded-[2.5rem] p-3 bg-gray-900 shadow-xl border-[6px] border-gray-800 aspect-[9/19] relative overflow-hidden">
@@ -267,7 +267,7 @@ export default function LifeAnewProject() {
                 <div className="relative w-full max-w-[400px] aspect-[3/4] rounded-[2.5rem] bg-gray-900 p-3 shadow-2xl border-[6px] border-gray-800">
                   <div className="w-full h-full overflow-hidden rounded-[1.8rem] bg-white relative">
                     <Image
-                      src="/img/lifeanew_ipad_staff.png"
+                      src="/img/lifeanew_ipad_atxpeace.png"
                       alt="Staff iPad View"
                       fill
                       className="object-cover"
