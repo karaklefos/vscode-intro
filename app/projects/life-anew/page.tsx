@@ -222,8 +222,8 @@ export default function LifeAnewProject() {
             {[
               { src: "/img/lifeanew_home.png", label: "Staff Home" },
               { src: "/img/lifeanew_menu.png", label: "Resource Directory" },
-              { src: "/img/lifeanew_restorative_circles.png", label: "Curriculum Guidelines" },
-              { src: "/img/lifeanew_indivcurriculum.png", label: "Immediate Actions" },
+              { src: "/img/lifeanew_restorative_circles.png", label: "Curriculum Hub" },
+              { src: "/img/lifeanew_indivcurriculum.png", label: "Facilitation Guide" },
             ].map((screen, index) => (
               <div key={index} className="flex-none w-[280px] md:w-[320px] snap-center">
                 <div className="rounded-[2.5rem] p-3 bg-gray-900 shadow-xl border-[6px] border-gray-800 aspect-[9/19] relative overflow-hidden">
