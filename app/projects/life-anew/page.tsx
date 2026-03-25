@@ -85,8 +85,8 @@ export default function LifeAnewProject() {
               <Image
                 src="/img/life_anew_behance.png"
                 alt="Life Anew Restorative Justice"
-                width={1400}
-                height={800}
+                width={1200}
+                height={675}
                 className="w-full h-auto"
                 priority
               />
@@ -133,7 +133,7 @@ export default function LifeAnewProject() {
             <Image
               src="/img/lifeanew_mockup_desk.png"
               alt="Life Anew Desk Mockup"
-              width={1400}
+              width={1200}
               height={800}
               className="w-full h-auto rounded-2xl shadow-lg"
             />
