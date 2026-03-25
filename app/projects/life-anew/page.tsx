@@ -44,7 +44,7 @@ export default function LifeAnewProject() {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16 py-8 border-y border-gray-100">
                 <div>
                   <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Role</p>
-                  <p className="font-medium">Product Designer & Developer</p>
+                  <p className="font-medium">Lead Product Designer</p>
                 </div>
                 <div>
                   <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Timeline</p>
