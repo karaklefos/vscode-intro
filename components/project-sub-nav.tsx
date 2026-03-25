@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 
-const navItems = [
+// The fallback links for Life Anew so that page doesn't break
+const defaultNavItems = [
   { name: "Impact", href: "#impact" },
   { name: "Challenge", href: "#challenge" },
   { name: "Architecture", href: "#architecture" },
@@ -10,7 +11,8 @@ const navItems = [
   { name: "The Solution", href: "#solution" },
 ];
 
-export function ProjectSubNav() {
+// We now pass "items" as a prop to make this reusable across all case studies
+export function ProjectSubNav({ items = defaultNavItems }: { items?: { name: string; href: string }[] }) {
   const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
@@ -23,23 +25,19 @@ export function ProjectSubNav() {
       { threshold: 0.5 }
     );
 
-    navItems.forEach((item) => {
+    items.forEach((item) => {
       const el = document.querySelector(item.href);
       if (el) observer.observe(el);
     });
 
     return () => observer.disconnect();
-  }, []);
+  }, [items]);
 
   return (
     <nav className="sticky top-[64px] z-40 w-full bg-white/90 backdrop-blur-md border-b border-gray-100">
       <div className="container mx-auto px-6 max-w-6xl">
-        {/* 1. overflow-x-auto + no-scrollbar: allows swiping on mobile 
-          2. flex-nowrap: keeps all items on one single line
-          3. justify-start md:justify-center: left-aligned on mobile, centered on laptop
-        */}
         <div className="flex items-center justify-start md:justify-center gap-8 h-14 overflow-x-auto no-scrollbar flex-nowrap">
-          {navItems.map((item) => (
+          {items.map((item) => (
             <a
               key={item.name}
               href={item.href}
