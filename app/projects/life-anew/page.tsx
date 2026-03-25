@@ -205,38 +205,40 @@ export default function LifeAnewProject() {
           </div>
         </section>
 
-        {/* 6. THE FINAL SOLUTION: STAFF IPHONE GALLERY */}
-        <section id="solution" className="py-24 bg-white overflow-hidden">
+       {/* 6. THE FINAL SOLUTION: STAFF IPHONE GALLERY */}
+        <section id="solution" className="py-24 bg-white overflow-x-hidden">
           <div className="container mx-auto px-6 max-w-6xl mb-12">
             <h2 className="text-sm uppercase tracking-widest text-accent font-bold mb-4">The Final Solution</h2>
             <h3 className="text-4xl font-semibold mb-6 text-black">Staff Mobile Ecosystem</h3>
             <p className="text-lg text-muted-foreground max-w-3xl leading-relaxed">
               To empower staff in the field, I designed a high-utility mobile interface that prioritizes 
-              zero-friction access to resource coordination. The following screens demonstrate the 
-              transition from fragmented paperwork to a centralized digital workflow.
+              zero-friction access to resource coordination.
             </p>
           </div>
 
-          {/* Horizontal iPhone Scroll Gallery */}
-          <div className="flex gap-6 overflow-x-auto pb-12 px-[5%] md:px-[10%] no-scrollbar snap-x snap-mandatory">
-            {[
-              { src: "/img/lifeanew_home.png", label: "Staff Home" },
-              { src: "/img/lifeanew_menu.png", label: "Resource Directory" },
-              { src: "/img/lifeanew_restorative_circles.png", label: "Curriculum Hub" },
-              { src: "/img/lifeanew_indivcurriculum.png", label: "Facilitation Guide" },
-            ].map((screen, index) => (
-              <div key={index} className="flex-none w-[280px] md:w-[320px] snap-center">
-                <div className="rounded-[2.5rem] p-3 bg-gray-900 shadow-xl border-[6px] border-gray-800 aspect-[9/19] relative overflow-hidden">
-                  <Image
-                    src={screen.src}
-                    alt={screen.label}
-                    fill
-                    className="object-cover rounded-[1.8rem]"
-                  />
+          <div className="w-full overflow-x-auto pb-12 cursor-grab active:cursor-grabbing snap-x snap-mandatory no-scrollbar">
+            <div className="flex gap-6 px-[5%] md:px-[10%] min-w-max">
+              {[
+                { src: "/img/lifeanew_final_1.png", label: "Staff Home" },
+                { src: "/img/lifeanew_final_2.png", label: "Resource Directory" },
+                { src: "/img/lifeanew_iphone_staff.png", label: "Circle Modalities" },
+                { src: "/img/lifeanew_mockup_1.png", label: "Facilitation Guide" },
+              ].map((screen, index) => (
+                <div key={index} className="flex-none w-[280px] md:w-[320px] snap-center">
+                  <div className="rounded-[2.5rem] p-3 bg-gray-900 shadow-xl border-[6px] border-gray-800 aspect-[9/19] relative overflow-hidden">
+                    <Image
+                      src={screen.src}
+                      alt={screen.label}
+                      fill
+                      className="object-cover rounded-[1.8rem]"
+                    />
+                  </div>
+                  <p className="mt-4 text-center text-sm font-semibold text-black tracking-tight uppercase">
+                    {screen.label}
+                  </p>
                 </div>
-                <p className="mt-4 text-center text-sm font-medium text-muted-foreground italic">{screen.label}</p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </section>
 
@@ -248,8 +250,7 @@ export default function LifeAnewProject() {
                 <h3 className="text-3xl font-bold mb-6 text-black">Administrative HQ</h3>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                   While the iPhone handles the field, the iPad version provides the high-density data 
-                  needed for team leads to oversee entire sectors. I utilized the larger screen real estate 
-                  to provide side-by-side comparisons of resource availability and case urgency.
+                  needed for team leads to oversee entire sectors.
                 </p>
                 <div className="space-y-4">
                   <div className="flex gap-3">
@@ -262,12 +263,11 @@ export default function LifeAnewProject() {
                   </div>
                 </div>
               </div>
-
               <div className="lg:col-span-7 flex justify-center">
-                <div className="relative w-full max-w-[500px] aspect-[3/4] rounded-[2rem] bg-gray-900 p-3 shadow-2xl border-[6px] border-gray-800">
-                  <div className="w-full h-full overflow-hidden rounded-[1.5rem] bg-white relative">
+                <div className="relative w-full max-w-[400px] aspect-[3/4] rounded-[2.5rem] bg-gray-900 p-3 shadow-2xl border-[6px] border-gray-800">
+                  <div className="w-full h-full overflow-hidden rounded-[1.8rem] bg-white relative">
                     <Image
-                      src="/img/lifeanew_ipad_atxpeace.png"
+                      src="/img/lifeanew_ipad_staff.png"
                       alt="Staff iPad View"
                       fill
                       className="object-cover"
@@ -281,31 +281,27 @@ export default function LifeAnewProject() {
 
         {/* 8. COMMUNITY FACING APP */}
         <section className="py-24 bg-white overflow-hidden">
-          <div className="container mx-auto px-6 max-w-6xl">
-            <div className="text-center max-w-3xl mx-auto mb-16">
-              <h2 className="text-sm uppercase tracking-widest text-accent font-bold mb-4">Direct Impact</h2>
-              <h3 className="text-4xl font-semibold mb-6 text-black">The Community Access Portal</h3>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                The final piece of the ecosystem is the citizen-facing app. This tool was designed 
-                specifically to reduce the psychological barrier to seeking help, providing a clean, 
-                supportive interface for families in crisis.
-              </p>
-            </div>
-
+          <div className="container mx-auto px-6 max-w-6xl text-center">
+            <h2 className="text-sm uppercase tracking-widest text-accent font-bold mb-4">Direct Impact</h2>
+            <h3 className="text-4xl font-semibold mb-6 text-black">The Community Access Portal</h3>
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-16">
+              Designed specifically to reduce the psychological barrier to seeking help, providing a clean, 
+              supportive interface for families in crisis.
+            </p>
             <div className="flex justify-center">
-               <div className="w-[280px] md:w-[320px] rounded-[2.5rem] p-3 bg-gray-900 shadow-2xl border-[6px] border-gray-800 aspect-[9/19] relative overflow-hidden">
-                  <Image
-                    src="/img/lifeanew_home_external.png"
-                    alt="Community Member App"
-                    fill
-                    className="object-cover rounded-[1.8rem]"
-                  />
-                </div>
+              <div className="w-[280px] md:w-[320px] rounded-[2.5rem] p-3 bg-gray-900 shadow-2xl border-[6px] border-gray-800 aspect-[9/19] relative overflow-hidden">
+                <Image
+                  src="/img/lifeanew_home_external.png"
+                  alt="Community Member App"
+                  fill
+                  className="object-cover rounded-[1.8rem]"
+                />
+              </div>
             </div>
           </div>
         </section>
 
-        {/* 9. THE IMPACT (Your Original Results Text) */}
+        {/* 9. THE IMPACT */}
         <section id="impact-metrics" className="py-24 bg-black text-white">
           <div className="container mx-auto px-6 max-w-4xl text-center">
              <h3 className="text-3xl font-bold mb-12">The Resulting Change</h3>
@@ -316,21 +312,16 @@ export default function LifeAnewProject() {
                 </div>
                 <div>
                   <p className="text-5xl font-bold text-accent mb-2">Weeks</p>
-                  <p className="text-gray-400 text-sm uppercase tracking-wider text-strike">To Moments</p>
+                  <p className="text-gray-400 text-sm uppercase tracking-wider">To Moments</p>
                 </div>
                 <div>
                   <p className="text-5xl font-bold text-accent mb-2">50%</p>
                   <p className="text-gray-400 text-sm uppercase tracking-wider">Onboarding Speed</p>
                 </div>
              </div>
-             <p className="mt-16 text-xl text-gray-300 italic font-light leading-relaxed max-w-2xl mx-auto">
-               "The platform's release allowed teams to pivot from hours of bureaucratic paperwork 
-               to direct client support, ensuring no family was left waiting during a crisis."
-             </p>
           </div>
         </section>
 
-        {/* FOOTER & NAV WRAPPERS */}
         <ProjectNavigation currentHref="/projects/life-anew" />
       </main>
       <Footer />
