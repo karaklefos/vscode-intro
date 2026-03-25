@@ -264,10 +264,10 @@ export default function LifeAnewProject() {
               </div>
 
               <div className="lg:col-span-7 flex justify-center">
-                <div className="relative w-full max-w-[650px] aspect-[4/3] rounded-[2rem] bg-gray-900 p-3 shadow-2xl border-[6px] border-gray-800">
+                <div className="relative w-full max-w-[500px] aspect-[3/4] rounded-[2rem] bg-gray-900 p-3 shadow-2xl border-[6px] border-gray-800">
                   <div className="w-full h-full overflow-hidden rounded-[1.5rem] bg-white relative">
                     <Image
-                      src="/img/lifeanew_ipad_staff.png"
+                      src="/img/lifeanew_ipad_atxpeace.png"
                       alt="Staff iPad View"
                       fill
                       className="object-cover"
