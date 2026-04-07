@@ -31,7 +31,7 @@ export function Hero({ scrollProgress }: HeroProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            Product & UX/UI{" "}
+            Product & UX{" "}
             <span className="text-primary italic font-serif">Designer</span>
           </motion.h1>
 
