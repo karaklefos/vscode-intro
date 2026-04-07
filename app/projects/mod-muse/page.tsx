@@ -54,7 +54,7 @@ export default function ModMuseProject() {
                 priority
               />
             </div>
-            
+
             {/* Prototype Link */}
             <div className="mt-12 text-center">
               <a
@@ -132,50 +132,27 @@ export default function ModMuseProject() {
         {/* 4. OBJECTIVE & VISION */}
         <section id="vision" className="py-24 bg-white">
           <div className="container mx-auto px-6 max-w-4xl">
-             <div className="mb-16">
-                <h2 className="text-sm uppercase tracking-widest text-accent font-bold mb-4">Core Strategy</h2>
-                <h3 className="text-4xl font-semibold mb-6 text-black">The Objective & Vision</h3>
-             </div>
+            <div className="mb-16">
+              <h2 className="text-sm uppercase tracking-widest text-accent font-bold mb-4">Core Strategy</h2>
+              <h3 className="text-4xl font-semibold mb-6 text-black">The Objective & Vision</h3>
+            </div>
 
-             <div className="space-y-12">
-                <div>
-                  <h4 className="text-xl font-bold mb-3 text-black">The Objective:</h4>
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    To provide a seamless and visually engaging user experience for buying and selling vintage pieces, inspired by the timeless appeal of the 1960s Mod aesthetic, while actively promoting sustainability through secondhand fashion.
-                  </p>
-                </div>
+            <div className="space-y-12">
+              <div>
+                <h4 className="text-xl font-bold mb-3 text-black">The Objective:</h4>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  To provide a seamless and visually engaging user experience for buying and selling vintage pieces, inspired by the timeless appeal of the 1960s Mod aesthetic, while actively promoting sustainability through secondhand fashion.
+                </p>
+              </div>
 
-                <div>
-                  <h4 className="text-xl font-bold mb-3 text-black">The Vision:</h4>
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    To be the premier destination for fashion enthusiasts and eco-conscious individuals seeking unique, curated vintage clothing.
-                  </p>
-                </div>
+              <div>
+                <h4 className="text-xl font-bold mb-3 text-black">The Vision:</h4>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  To be the premier destination for fashion enthusiasts and eco-conscious individuals seeking unique, curated vintage clothing.
+                </p>
+              </div>
 
-                <div className="bg-gray-50 p-8 rounded-3xl border border-gray-100">
-                  <h4 className="text-xl font-bold mb-6 text-black">The Context (Who, What, When, Why):</h4>
-                  <ul className="space-y-6">
-                    <li className="flex gap-4">
-                      <span className="text-accent text-xl mt-1">•</span>
-                      <p className="text-lg text-muted-foreground leading-relaxed">
-                        <strong className="text-black">Users -</strong> Fashion enthusiasts and eco-conscious individuals who appreciate vintage clothing and want a dedicated platform for unique pieces.
-                      </p>
-                    </li>
-                    <li className="flex gap-4">
-                      <span className="text-accent text-xl mt-1">•</span>
-                      <p className="text-lg text-muted-foreground leading-relaxed">
-                        <strong className="text-black">Usage -</strong> Used primarily at home for browsing, but also ideal when shopping in person when users can't find specific pieces they need.
-                      </p>
-                    </li>
-                    <li className="flex gap-4">
-                      <span className="text-accent text-xl mt-1">•</span>
-                      <p className="text-lg text-muted-foreground leading-relaxed">
-                        <strong className="text-black">Value Proposition -</strong> Intuitive design, curated selection, a visually engaging interface inspired by the Mod aesthetic, and a seamless platform for both buying and selling.
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-             </div>
+            </div>
           </div>
         </section>
 
@@ -200,13 +177,13 @@ export default function ModMuseProject() {
         <section id="prototypes" className="py-24 bg-white overflow-x-hidden">
           <div className="container mx-auto px-6 max-w-6xl mb-12">
             <div className="flex justify-between items-end">
-                <div>
-                    <h2 className="text-sm uppercase tracking-widest text-accent font-bold mb-4">Interface Design</h2>
-                    <h3 className="text-4xl font-semibold text-black">Prototypes</h3>
-                </div>
-                <p className="text-sm font-medium text-muted-foreground italic hidden md:block">
-                    Swipe to explore →
-                </p>
+              <div>
+                <h2 className="text-sm uppercase tracking-widest text-accent font-bold mb-4">Interface Design</h2>
+                <h3 className="text-4xl font-semibold text-black">Prototypes</h3>
+              </div>
+              <p className="text-sm font-medium text-muted-foreground italic hidden md:block">
+                Swipe to explore →
+              </p>
             </div>
           </div>
 
@@ -246,74 +223,74 @@ export default function ModMuseProject() {
             <h3 className="text-4xl font-semibold mb-12 text-black">Research & Discovery</h3>
 
             <div className="space-y-12">
-                <div>
-                  <h4 className="text-xl font-bold mb-3 text-black">Methodology:</h4>
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    The project was informed by a combination of <strong className="text-black">user interviews, surveys, and competitive analysis,</strong> ensuring the design was grounded in real user needs and market gaps.
-                  </p>
-                </div>
+              <div>
+                <h4 className="text-xl font-bold mb-3 text-black">Methodology:</h4>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  The project was informed by a combination of <strong className="text-black">user interviews, surveys, and competitive analysis,</strong> ensuring the design was grounded in real user needs and market gaps.
+                </p>
+              </div>
 
-                <div>
-                  <h4 className="text-xl font-bold mb-6 text-black">Process Steps:</h4>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm">
-                        <p className="text-lg text-muted-foreground leading-relaxed">
-                          <strong className="text-black block mb-2">Define</strong>
-                          Independently conceived and defined Mod Muse's core purpose as a vintage fashion app promoting reuse and a unique aesthetic.
-                        </p>
-                    </div>
-                    <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm">
-                        <p className="text-lg text-muted-foreground leading-relaxed">
-                          <strong className="text-black block mb-2">Research</strong>
-                          Gained understanding of user fashion habits, preferences for vintage clothing, and pain points in sustainable shopping.
-                        </p>
-                    </div>
-                    <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm">
-                        <p className="text-lg text-muted-foreground leading-relaxed">
-                          <strong className="text-black block mb-2">Design</strong>
-                          Translated insights into intuitive solutions through information architecture, wireframing, and interactive prototyping.
-                        </p>
-                    </div>
-                    <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm">
-                        <p className="text-lg text-muted-foreground leading-relaxed">
-                          <strong className="text-black block mb-2">Test</strong>
-                          Conducted usability testing to evaluate the design's effectiveness and identify key areas for iteration to ensure a seamless and engaging experience.
-                        </p>
-                    </div>
+              <div>
+                <h4 className="text-xl font-bold mb-6 text-black">Process Steps:</h4>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm">
+                    <p className="text-lg text-muted-foreground leading-relaxed">
+                      <strong className="text-black block mb-2">Define</strong>
+                      Independently conceived and defined Mod Muse's core purpose as a vintage fashion app promoting reuse and a unique aesthetic.
+                    </p>
+                  </div>
+                  <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm">
+                    <p className="text-lg text-muted-foreground leading-relaxed">
+                      <strong className="text-black block mb-2">Research</strong>
+                      Gained understanding of user fashion habits, preferences for vintage clothing, and pain points in sustainable shopping.
+                    </p>
+                  </div>
+                  <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm">
+                    <p className="text-lg text-muted-foreground leading-relaxed">
+                      <strong className="text-black block mb-2">Design</strong>
+                      Translated insights into intuitive solutions through information architecture, wireframing, and interactive prototyping.
+                    </p>
+                  </div>
+                  <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm">
+                    <p className="text-lg text-muted-foreground leading-relaxed">
+                      <strong className="text-black block mb-2">Test</strong>
+                      Conducted usability testing to evaluate the design's effectiveness and identify key areas for iteration to ensure a seamless and engaging experience.
+                    </p>
                   </div>
                 </div>
+              </div>
             </div>
           </div>
         </section>
 
-       {/* 8. USERFLOW & WIREFRAMES */}
+        {/* 8. USERFLOW & WIREFRAMES */}
         <section id="wireframes" className="py-24 bg-white">
           <div className="container mx-auto px-6 max-w-5xl">
-             <div className="mb-24">
-                <h3 className="text-3xl font-semibold mb-8 text-black text-center">Userflow</h3>
-                <div className="rounded-[2rem] overflow-hidden shadow-md border border-gray-100 bg-gray-50 p-4">
-                  <Image
-                    src="/img/modmuse_userflow.png"
-                    alt="Mod Muse User Flow"
-                    width={1200}
-                    height={600}
-                    className="w-full h-auto rounded-xl"
-                  />
-                </div>
-             </div>
+            <div className="mb-24">
+              <h3 className="text-3xl font-semibold mb-8 text-black text-center">Userflow</h3>
+              <div className="rounded-[2rem] overflow-hidden shadow-md border border-gray-100 bg-gray-50 p-4">
+                <Image
+                  src="/img/modmuse_userflow.png"
+                  alt="Mod Muse User Flow"
+                  width={1200}
+                  height={600}
+                  className="w-full h-auto rounded-xl"
+                />
+              </div>
+            </div>
 
-             <div>
-                <h3 className="text-3xl font-semibold mb-8 text-black text-center">Low Fidelity Wireframes</h3>
-                <div className="rounded-[2rem] overflow-hidden shadow-md border border-gray-100 bg-gray-50 p-4">
-                  <Image
-                    src="/img/modmuse_low_fidelity_wireframes.png"
-                    alt="Mod Muse Low Fidelity Wireframes"
-                    width={1200}
-                    height={600}
-                    className="w-full h-auto rounded-xl"
-                  />
-                </div>
-             </div>
+            <div>
+              <h3 className="text-3xl font-semibold mb-8 text-black text-center">Low Fidelity Wireframes</h3>
+              <div className="rounded-[2rem] overflow-hidden shadow-md border border-gray-100 bg-gray-50 p-4">
+                <Image
+                  src="/img/modmuse_low_fidelity_wireframes.png"
+                  alt="Mod Muse Low Fidelity Wireframes"
+                  width={1200}
+                  height={600}
+                  className="w-full h-auto rounded-xl"
+                />
+              </div>
+            </div>
           </div>
         </section>
 
@@ -326,82 +303,82 @@ export default function ModMuseProject() {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-                {/* Colors */}
-                <div>
-                  <h4 className="text-sm font-bold tracking-widest text-black mb-6 uppercase">Colors</h4>
-                  <div className="flex flex-wrap gap-4">
-                    {[
-                      { name: "Blue", Image: "/img/modmuse_blue.png" },
-                      { name: "Purple", Image: "/img/modmuse_purple.png" },
-                      { name: "Yellow", Image: "/img/modmuse_yellow.png" },
-                      { name: "White", Image: "/img/modmuse_white.png" },
-                      { name: "Black", Image: "/img/modmuse_black.png" },
-                    ].map((color, index) => (
-                      <div key={index} className="flex-shrink-0">
-                        <div className="w-20 h-20 rounded-full overflow-hidden shadow-sm border border-gray-200 mb-3">
-                            <Image
-                            src={color.Image}
-                            alt={`Mod Muse ${color.name}`}
-                            width={80}
-                            height={80}
-                            className="object-cover w-full h-full"
-                            />
-                        </div>
-                        <p className="text-center text-xs font-medium text-muted-foreground uppercase">{color.name}</p>
+              {/* Colors */}
+              <div>
+                <h4 className="text-sm font-bold tracking-widest text-black mb-6 uppercase">Colors</h4>
+                <div className="flex flex-wrap gap-4">
+                  {[
+                    { name: "Blue", Image: "/img/modmuse_blue.png" },
+                    { name: "Purple", Image: "/img/modmuse_purple.png" },
+                    { name: "Yellow", Image: "/img/modmuse_yellow.png" },
+                    { name: "White", Image: "/img/modmuse_white.png" },
+                    { name: "Black", Image: "/img/modmuse_black.png" },
+                  ].map((color, index) => (
+                    <div key={index} className="flex-shrink-0">
+                      <div className="w-20 h-20 rounded-full overflow-hidden shadow-sm border border-gray-200 mb-3">
+                        <Image
+                          src={color.Image}
+                          alt={`Mod Muse ${color.name}`}
+                          width={80}
+                          height={80}
+                          className="object-cover w-full h-full"
+                        />
                       </div>
-                    ))}
-                  </div>
-                  
-                  {/* Typography inside the same column */}
-                  <div className="mt-16">
-                     <h4 className="text-sm font-bold tracking-widest text-black mb-6 uppercase">Typography</h4>
-                     <div className="space-y-6">
-                        <div>
-                            <p className="text-xs text-muted-foreground uppercase tracking-widest mb-1">Headings</p>
-                            <p className="text-2xl font-bold text-black font-montserrat">Montserrat Bold / SemiBold</p>
-                        </div>
-                        <div>
-                            <p className="text-xs text-muted-foreground uppercase tracking-widest mb-1">Body</p>
-                            <p className="text-xl text-black font-montserrat">Montserrat Regular</p>
-                        </div>
-                     </div>
-                  </div>
+                      <p className="text-center text-xs font-medium text-muted-foreground uppercase">{color.name}</p>
+                    </div>
+                  ))}
                 </div>
 
-                {/* Logo & Rules */}
-                <div>
-                  <h4 className="text-sm font-bold tracking-widest text-black mb-6 uppercase">Logo & Usage</h4>
-                  <div className="bg-white rounded-[2rem] p-12 flex justify-center mb-8 shadow-sm border border-gray-100">
-                    <Image
-                      src="/img/modmuse_logo.png"
-                      alt="Mod Muse Logo"
-                      width={300}
-                      height={120}
-                      className="w-auto h-auto"
-                    />
-                  </div>
-                  <div className="bg-white p-8 rounded-[2rem] border border-gray-100 shadow-sm">
-                    <h5 className="text-sm font-bold text-black mb-4 uppercase tracking-widest">The logo must:</h5>
-                    <ul className="space-y-3">
-                      <li className="flex gap-3">
-                        <span className="text-accent">•</span>
-                        <p className="text-sm font-medium text-muted-foreground">Be in all caps</p>
-                      </li>
-                      <li className="flex gap-3">
-                        <span className="text-accent">•</span>
-                        <p className="text-sm font-medium text-muted-foreground">Have a 1px stroke in the color #FFFFFF</p>
-                      </li>
-                      <li className="flex gap-3">
-                        <span className="text-accent">•</span>
-                        <p className="text-sm font-medium text-muted-foreground">Have an inner shadow</p>
-                      </li>
-                      <li className="flex gap-3">
-                        <span className="text-accent">•</span>
-                        <p className="text-sm font-medium text-muted-foreground">Remain the color #0074D9</p>
-                      </li>
-                    </ul>
+                {/* Typography inside the same column */}
+                <div className="mt-16">
+                  <h4 className="text-sm font-bold tracking-widest text-black mb-6 uppercase">Typography</h4>
+                  <div className="space-y-6">
+                    <div>
+                      <p className="text-xs text-muted-foreground uppercase tracking-widest mb-1">Headings</p>
+                      <p className="text-2xl font-bold text-black font-montserrat">Montserrat Bold / SemiBold</p>
+                    </div>
+                    <div>
+                      <p className="text-xs text-muted-foreground uppercase tracking-widest mb-1">Body</p>
+                      <p className="text-xl text-black font-montserrat">Montserrat Regular</p>
+                    </div>
                   </div>
                 </div>
+              </div>
+
+              {/* Logo & Rules */}
+              <div>
+                <h4 className="text-sm font-bold tracking-widest text-black mb-6 uppercase">Logo & Usage</h4>
+                <div className="bg-white rounded-[2rem] p-12 flex justify-center mb-8 shadow-sm border border-gray-100">
+                  <Image
+                    src="/img/modmuse_logo.png"
+                    alt="Mod Muse Logo"
+                    width={300}
+                    height={120}
+                    className="w-auto h-auto"
+                  />
+                </div>
+                <div className="bg-white p-8 rounded-[2rem] border border-gray-100 shadow-sm">
+                  <h5 className="text-sm font-bold text-black mb-4 uppercase tracking-widest">The logo must:</h5>
+                  <ul className="space-y-3">
+                    <li className="flex gap-3">
+                      <span className="text-accent">•</span>
+                      <p className="text-sm font-medium text-muted-foreground">Be in all caps</p>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-accent">•</span>
+                      <p className="text-sm font-medium text-muted-foreground">Have a 1px stroke in the color #FFFFFF</p>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-accent">•</span>
+                      <p className="text-sm font-medium text-muted-foreground">Have an inner shadow</p>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-accent">•</span>
+                      <p className="text-sm font-medium text-muted-foreground">Remain the color #0074D9</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </section>
