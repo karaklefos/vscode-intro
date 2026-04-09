@@ -22,8 +22,7 @@ export function ProjectNavigation({ currentHref }: { currentHref: string }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
-      // Note the pb-32 added at the end of the className below
-      className="flex flex-col md:flex-row items-center justify-between gap-12 mt-32 pt-12 pb-32 border-t border-foreground/10"
+      className="flex flex-col md:flex-row items-center justify-between gap-12 mt-20 pt-12 pb-16 border-t border-foreground/10"
     >
       <Link
         href="/"
