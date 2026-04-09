@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Instrument_Sans, Cormorant_Infant } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { Footer } from "@/components/footer"
 import "./globals.css"
 
 const instrumentSans = Instrument_Sans({
@@ -19,13 +20,7 @@ const cormorantInfant = Cormorant_Infant({
 
 export const metadata: Metadata = {
   title: "Kara Klefos | Product & UX/UI Designer",
-  description:
-    "UX/UI Designer specializing in workflow optimization and human-centered design for internal and external tools and enterprise platforms.",
-  generator: "v0.app",
-  icons: {
-    icon: [{ url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" }],
-    apple: "/apple-touch-icon.png",
-  },
+  description: "UX/UI Designer specializing in workflow optimization and human-centered design.",
 }
 
 export default function RootLayout({
@@ -39,6 +34,7 @@ export default function RootLayout({
         <main className="flex-grow">
           {children}
         </main>
+        <Footer />
         <Analytics />
       </body>
     </html>
