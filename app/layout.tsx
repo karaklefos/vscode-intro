@@ -3,7 +3,7 @@ import type { Metadata } from "next"
 import { Instrument_Sans, Cormorant_Infant } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { Footer } from "@/components/footer"
-import "@/app/globals.css"
+import "./globals.css"
 
 const instrumentSans = Instrument_Sans({
   subsets: ["latin"],
@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${instrumentSans.variable} ${cormorantInfant.variable}`}>
       <body className="font-sans antialiased flex flex-col min-h-screen">
-        <main className="flex-grow">
+        <main className="grow">
           {children}
         </main>
         <Footer />
