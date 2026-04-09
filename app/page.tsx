@@ -5,7 +5,6 @@ import { useRef } from "react"
 import { Hero } from "@/components/hero"
 import { ProjectsGrid } from "@/components/projects-grid"
 import { CustomCursor } from "@/components/custom-cursor"
-import { Footer } from "@/components/footer"
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -29,7 +28,6 @@ export default function Home() {
         <Hero scrollProgress={scrollYProgress} />
         <ProjectsGrid />
       </div>
-      <Footer />
     </>
   )
 }
