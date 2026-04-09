@@ -1,21 +1,20 @@
 "use client"
 
-import Link from "next/link";
-import Image from "next/image";
-import { motion } from "framer-motion";
+import Link from "next/link"
+import Image from "next/image"
+import { motion } from "framer-motion"
 
-// This array acts as your "Source of Truth" for the project order
 const projects = [
   { title: "Life Anew Restorative Justice", href: "/projects/life-anew", image: "/img/lifeanew_title.jpg" },
   { title: "Mod Muse", href: "/projects/mod-muse", image: "/img/modmuse_title.jpg" },
   { title: "ReciFree", href: "/projects/recifree", image: "/img/recifree_title.png" },
   { title: "Botany Buddy", href: "/projects/botany-buddy", image: "/img/botanybuddy_title.png" },
-];
+]
 
 export function ProjectNavigation({ currentHref }: { currentHref: string }) {
-  const currentIndex = projects.findIndex((p) => p.href === currentHref);
-  const nextIndex = (currentIndex + 1) % projects.length;
-  const nextProject = projects[nextIndex];
+  const currentIndex = projects.findIndex((p) => p.href === currentHref)
+  const nextIndex = (currentIndex + 1) % projects.length
+  const nextProject = projects[nextIndex]
 
   return (
     <motion.div
@@ -23,9 +22,9 @@ export function ProjectNavigation({ currentHref }: { currentHref: string }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
-      className="flex flex-col md:flex-row items-center justify-between gap-12 mt-32 pt-12 border-t border-foreground/10"
+      // Note the pb-32 added at the end of the className below
+      className="flex flex-col md:flex-row items-center justify-between gap-12 mt-32 pt-12 pb-32 border-t border-foreground/10"
     >
-      {/* Back Link */}
       <Link
         href="/"
         className="group flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors order-2 md:order-1"
@@ -36,7 +35,6 @@ export function ProjectNavigation({ currentHref }: { currentHref: string }) {
         All Projects
       </Link>
 
-      {/* Next Project Link with Thumbnail */}
       <Link
         href={nextProject.href}
         className="group flex items-center gap-6 text-right order-1 md:order-2"
@@ -51,16 +49,10 @@ export function ProjectNavigation({ currentHref }: { currentHref: string }) {
           </div>
         </div>
 
-        {/* The Thumbnail */}
         <div className="relative w-20 h-20 md:w-32 md:h-24 overflow-hidden rounded-xl border border-foreground/10 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-2 shadow-lg">
-          <Image 
-            src={nextProject.image} 
-            alt={nextProject.title} 
-            fill 
-            className="object-cover"
-          />
+          <Image src={nextProject.image} alt={nextProject.title} fill className="object-cover" />
         </div>
       </Link>
     </motion.div>
-  );
+  )
 }

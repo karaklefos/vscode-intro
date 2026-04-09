@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Navigation from "@/components/navigation";
 import { CustomCursor } from "@/components/custom-cursor";
-import { Footer } from "@/components/footer";
 import { projects } from "@/components/projects-grid";
 import { ProjectNavigation } from "@/components/project-navigation";
 import { ProjectSubNav } from "@/components/project-sub-nav";
@@ -408,7 +407,6 @@ export default function ReciFreeProject() {
 
         <ProjectNavigation currentHref="/projects/recifree" />
       </main>
-      <Footer />
     </>
   );
 }

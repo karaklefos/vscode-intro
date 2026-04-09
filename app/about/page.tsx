@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { CustomCursor } from "@/components/custom-cursor";
 import Navigation from "@/components/navigation";
 import Image from "next/image";
-import { Footer } from "@/components/footer";
 import { useState } from "react";
 
 export default function AboutPage() {
@@ -222,7 +221,6 @@ export default function AboutPage() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

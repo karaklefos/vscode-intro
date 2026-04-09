@@ -2,7 +2,6 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Instrument_Sans, Cormorant_Infant } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
-import { Footer } from "@/components/footer" // Ensure this path is correct
 import "./globals.css"
 
 const instrumentSans = Instrument_Sans({
@@ -40,7 +39,6 @@ export default function RootLayout({
         <main className="flex-grow">
           {children}
         </main>
-        <Footer />
         <Analytics />
       </body>
     </html>

@@ -8,6 +8,7 @@ export function Footer() {
 
   useEffect(() => {
     const handleScroll = () => {
+      // The button appears after scrolling 300px
       setShowButton(window.scrollY > 300)
     }
     window.addEventListener("scroll", handleScroll)
