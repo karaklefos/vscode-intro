@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Instrument_Sans, Cormorant_Infant } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { Footer } from "@/components/footer"
+// @ts-expect-error - TypeScript sometimes struggles with CSS modules in the app directory
 import "./globals.css"
 
 const instrumentSans = Instrument_Sans({
