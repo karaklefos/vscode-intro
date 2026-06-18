@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import { useState } from "react"
 import Navigation from "@/components/navigation"
 import { CustomCursor } from "@/components/custom-cursor"
-import { Footer } from "@/components/footer"
+// The unused Footer import has been removed from here!
 
 export default function ContactPage() {
   const [formStatus, setFormStatus] = useState<"idle" | "success" | "error">("idle")
