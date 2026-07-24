@@ -68,6 +68,16 @@ export default function ModMuseProject() {
                 </div>
               </section>
 
+              {/* STICKY NAV */}
+                      <ProjectSubNav items={[
+                        { name: "The Challenge", href: "#challenge" },
+                        { name: "Process", href: "#process" },
+                        { name: "iOS Prototype", href: "#ios" },
+                        { name: "Android Prototype", href: "#android" },
+                        { name: "Visuals", href: "#visuals" },
+                        { name: "Conclusion", href: "#conclusion" },
+                      ]} />
+
         {/* 2. HERO IMAGE */}
         <section className="pb-12 bg-white">
           <div className="container mx-auto px-6 max-w-6xl">
@@ -410,60 +420,19 @@ export default function ModMuseProject() {
         </section>
 
         {/* 10. STRATEGIC IMPACT & CONCLUSION */}
-        <section className="py-24 bg-white">
-          <div className="container mx-auto px-6 max-w-4xl">
-            {/* Impact */}
-            <div className="mb-20">
-              <h2 className="text-sm uppercase tracking-widest text-accent font-bold mb-4">Results</h2>
-              <h3 className="text-4xl font-semibold mb-8 text-black">Strategic Impact</h3>
-              <ul className="space-y-8">
-                <li className="flex gap-4">
-                  <span className="text-accent text-2xl mt-1">•</span>
-                  <div>
-                    <p className="text-lg text-muted-foreground leading-relaxed">
-                      <strong className="text-black">Balancing Nostalgia and Usability -</strong> A core learning was the importance of balancing a nostalgia-driven design (the Mod aesthetic) with modern usability standards. The final design proves that an emotional connection can be created without compromising seamless navigation and intuitive interactions.
-                    </p>
-                  </div>
-                </li>
-                <li className="flex gap-4">
-                  <span className="text-accent text-2xl mt-1">•</span>
-                  <div>
-                    <p className="text-lg text-muted-foreground leading-relaxed">
-                      <strong className="text-black">Brand Identity Development -</strong> Gained valuable experience in ensuring that every design choice—from typography to color schemes—aligned with the Mod aesthetic and enhanced the overall brand experience.
-                    </p>
-                  </div>
-                </li>
-                <li className="flex gap-4">
-                  <span className="text-accent text-2xl mt-1">•</span>
-                  <div>
-                    <p className="text-lg text-muted-foreground leading-relaxed">
-                      <strong className="text-black">Functional Focus -</strong> The project reinforced the significance of seamless navigation and intuitive interactions to create an enjoyable shopping and selling experience tailored to lovers of vintage fashion.
-                    </p>
-                  </div>
-                </li>
-                <li className="flex gap-4">
-                  <span className="text-accent text-2xl mt-1">•</span>
-                  <div>
-                    <p className="text-lg text-muted-foreground leading-relaxed">
-                      <strong className="text-black">Moving Forward (Future Vision) -</strong> Future iterations would focus on exploring enhanced personalization features, advanced search capabilities, and community-driven elements to increase user engagement.
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            {/* Conclusion Wrapper */}
-            <div className="bg-black text-white rounded-[2rem] p-10 md:p-16 text-center">
-              <h2 className="text-3xl font-bold mb-6">Conclusion</h2>
-              <p className="text-lg leading-relaxed text-gray-300 mb-6 max-w-2xl mx-auto">
-                Mod Muse successfully demonstrates how a vintage-inspired aesthetic can be combined with modern UX principles to create a seamless, engaging platform for sustainable fashion. This case study underscores the importance of user research, iterative design, and a commitment to brand consistency.
-              </p>
-              <p className="text-lg leading-relaxed text-gray-300 max-w-2xl mx-auto">
-                The final product provides a thoughtfully curated marketplace that resonates emotionally with users while maintaining intuitive navigation and functionality, setting a strong foundation for future growth in the vintage fashion space.
-              </p>
-            </div>
+        <section id="conclusion" className="py-24 bg-black text-white">
+          <div className="container mx-auto px-6 max-w-4xl text-center">
+             <h2 className="text-sm uppercase tracking-widest text-accent font-bold mb-4">Conclusion</h2>
+             <h3 className="text-3xl md:text-5xl font-bold mb-12 tracking-tight">Vintage Aesthetic, Modern Functionality</h3>
+             <div className="space-y-8 text-left text-gray-400 text-lg leading-relaxed">
+                <p>
+Mod Muse successfully demonstrates how a vintage-inspired aesthetic can be combined with modern UX principles to create a seamless, engaging platform for sustainable fashion. This case study underscores the importance of user research, iterative design, and a commitment to brand consistency.                </p>
+                <p>
+The final product provides a thoughtfully curated marketplace that resonates emotionally with users while maintaining intuitive navigation and functionality, setting a strong foundation for future growth in the vintage fashion space.                </p>
+             </div>
           </div>
         </section>
+
 
         <ProjectNavigation currentHref="/projects/mod-muse" />
       </main>
