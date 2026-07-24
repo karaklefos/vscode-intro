@@ -49,13 +49,13 @@ export default function ModMuseProject() {
                         <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Timeline</p>
                         <p className="font-medium">2024</p>
                       </div>
+                       <div>
+                        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Tools</p>
+                        <p className="font-medium">Figma</p>
+                      </div>
                       <div>
                         <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Platform</p>
                         <p className="font-medium">iOS (Native)</p>
-                      </div>
-                      <div>
-                        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Tools</p>
-                        <p className="font-medium">Figma</p>
                       </div>
                     </div>
       
@@ -422,8 +422,7 @@ export default function ModMuseProject() {
         {/* 10. STRATEGIC IMPACT & CONCLUSION */}
         <section id="conclusion" className="py-24 bg-black text-white">
           <div className="container mx-auto px-6 max-w-4xl text-center">
-             <h2 className="text-sm uppercase tracking-widest text-accent font-bold mb-4">Conclusion</h2>
-             <h3 className="text-3xl md:text-5xl font-bold mb-12 tracking-tight">Vintage Aesthetic, Modern Functionality</h3>
+             <h3 className="text-3xl md:text-5xl font-bold mb-12 tracking-tight">Conclusion</h3>
              <div className="space-y-8 text-left text-gray-400 text-lg leading-relaxed">
                 <p>
 Mod Muse successfully demonstrates how a vintage-inspired aesthetic can be combined with modern UX principles to create a seamless, engaging platform for sustainable fashion. This case study underscores the importance of user research, iterative design, and a commitment to brand consistency.                </p>

@@ -35,14 +35,14 @@ export default function PortfolioWebsiteProject() {
               </Link>
 
               <h1 className="text-5xl md:text-8xl font-bold mb-6 tracking-tight leading-[0.9]">
-                Ryan Up<br />
-                <span className="text-muted-foreground/40">In Here</span>
+                Ryan Up In Here<br />
+                <span className="text-muted-foreground/40">Portfolio</span>
 
               </h1>
 
               <div className="mt-6 flex justify-center md:justify-start">
                 <Link
-                  href="https://example.com"
+                  href="https://ryanupinhere.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 bg-accent text-white px-5 py-3 rounded-full font-semibold shadow-lg hover:opacity-95"
@@ -55,7 +55,7 @@ export default function PortfolioWebsiteProject() {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16 py-8 border-y border-gray-100">
                 <div>
                   <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Role</p>
-                  <p className="font-medium">UX Designer & Developer</p>
+                  <p className="font-medium text-green-600">UX Designer & Developer</p>
                 </div>
                 <div>
                   <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Timeline</p>
@@ -66,8 +66,8 @@ export default function PortfolioWebsiteProject() {
                   <p className="font-medium">Figma, Next.js, Tailwind</p>
                 </div>
                 <div>
-                  <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Focus</p>
-                  <p className="font-medium text-blue-600">Desktop-first UX</p>
+                  <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Platform</p>
+                  <p className="font-medium">Responsive Web App</p>
                 </div>
               </div>
 
@@ -238,22 +238,22 @@ export default function PortfolioWebsiteProject() {
           </div>
         </section>
 
-        {/* 7. IMPACT */}
-        <section id="impact" className="py-24 bg-black text-white">
+        {/* 7. CONCLUSION */}
+        <section id="conclusion" className="py-24 bg-black text-white">
           <div className="container mx-auto px-6 max-w-4xl text-center">
-            <h3 className="text-3xl font-bold mb-12">The Impact</h3>
+            <h3 className="text-3xl font-bold mb-12">Results</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               <div>
-                <p className="text-5xl font-bold text-blue-400 mb-2">+30%</p>
-                <p className="text-gray-400 text-sm uppercase tracking-wider">Desktop Engagement</p>
+                <p className="text-5xl font-bold text-blue-400 mb-2">100%</p>
+                <p className="text-gray-400 text-sm uppercase tracking-wider">Lighthouse Score</p>
               </div>
               <div>
-                <p className="text-5xl font-bold text-blue-400 mb-2">2.5s</p>
-                <p className="text-gray-400 text-sm uppercase tracking-wider">Load Time</p>
+                <p className="text-5xl font-bold text-blue-400 mb-2">0.7s</p>
+                <p className="text-gray-400 text-sm uppercase tracking-wider">Load Time (LCP)</p>
               </div>
               <div>
-                <p className="text-5xl font-bold text-blue-400 mb-2">Stable</p>
-                <p className="text-gray-400 text-sm uppercase tracking-wider">Visual Hierarchy</p>
+                <p className="text-5xl font-bold text-blue-400 mb-2">100%</p>
+                <p className="text-gray-400 text-sm uppercase tracking-wider">Best Practices</p>
               </div>
             </div>
           </div>

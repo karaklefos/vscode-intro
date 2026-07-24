@@ -54,12 +54,12 @@ export default function BotanyBuddyProject() {
                   <p className="font-medium">2025</p>
                 </div>
                 <div>
-                  <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Platform</p>
-                  <p className="font-medium">iOS & Android (Native)</p>
-                </div>
-                <div>
                   <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Tools</p>
                   <p className="font-medium">Figma</p>
+                </div>
+                <div>
+                  <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Platform</p>
+                  <p className="font-medium">iOS & Android (Native)</p>
                 </div>
               </div>
 
@@ -422,8 +422,7 @@ export default function BotanyBuddyProject() {
         {/* 9. THE IMPACT / CONCLUSION */}
         <section id="conclusion" className="py-24 bg-black text-white">
           <div className="container mx-auto px-6 max-w-4xl text-center">
-             <h2 className="text-sm uppercase tracking-widest text-accent font-bold mb-4">Conclusion</h2>
-             <h3 className="text-3xl md:text-5xl font-bold mb-12 tracking-tight">Fostering Green Connections.</h3>
+             <h3 className="text-3xl md:text-5xl font-bold mb-12 tracking-tight">Conclusion</h3>
              <div className="space-y-8 text-left text-gray-400 text-lg leading-relaxed">
                 <p>
                     Developing Botany Buddy provided valuable insights into designing for a specific user need: plant care. This project highlighted the importance of combining practical tools, like care reminders and visual diagnosis, with user-friendly features such as plant identification. I learned how to create an intuitive experience that empowers users to confidently care for their plants, regardless of their experience level.

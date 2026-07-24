@@ -43,7 +43,7 @@ export default function LifeAnewProject() {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16 py-8 border-y border-gray-100">
                 <div>
                   <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Role</p>
-                  <p className="font-medium">Lead Product Designer</p>
+                  <p className="font-medium text-green-600">Product Designer</p>
                 </div>
                 <div>
                   <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Timeline</p>
@@ -55,7 +55,7 @@ export default function LifeAnewProject() {
                 </div>
                 <div>
                   <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Impact</p>
-                  <p className="font-medium text-green-600">60% Efficiency Gain</p>
+                  <p className="font-medium">60% Efficiency Gain</p>
                 </div>
               </div>
 
@@ -303,7 +303,7 @@ export default function LifeAnewProject() {
         {/* 9. THE IMPACT */}
         <section id="impact-metrics" className="py-24 bg-black text-white">
           <div className="container mx-auto px-6 max-w-4xl text-center">
-             <h3 className="text-3xl font-bold mb-12">The Resulting Change</h3>
+             <h3 className="text-3xl font-bold mb-12">Results </h3>
              <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                 <div>
                   <p className="text-5xl font-bold text-accent mb-2">60%</p>
