@@ -35,7 +35,9 @@ export default function PortfolioWebsiteProject() {
               </Link>
 
               <h1 className="text-5xl md:text-8xl font-bold mb-6 tracking-tight leading-[0.9]">
-                Ryan Up In Here<br />
+                Ryan Up<br />
+                <span className="text-muted-foreground/40">In Here</span>
+
               </h1>
 
               <div className="mt-6 flex justify-center md:justify-start">
