@@ -47,7 +47,7 @@ export default function BotanyBuddyProject() {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16 py-8 border-y border-gray-100">
                 <div>
                   <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Role</p>
-                  <p className="font-medium">UI/UX Designer</p>
+                  <p className="font-medium text-green-600">UX/UI Designer</p>
                 </div>
                 <div>
                   <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Timeline</p>
@@ -58,8 +58,8 @@ export default function BotanyBuddyProject() {
                   <p className="font-medium">iOS & Android (Native)</p>
                 </div>
                 <div>
-                  <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Focus</p>
-                  <p className="font-medium text-green-600">Platform Parity</p>
+                  <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Tools</p>
+                  <p className="font-medium">Figma</p>
                 </div>
               </div>
 

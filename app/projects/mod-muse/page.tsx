@@ -47,7 +47,7 @@ export default function ModMuseProject() {
                       </div>
                       <div>
                         <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Timeline</p>
-                        <p className="font-medium">2 Months (2024)</p>
+                        <p className="font-medium">2024</p>
                       </div>
                       <div>
                         <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Tools</p>
