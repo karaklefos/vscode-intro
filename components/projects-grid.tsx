@@ -38,10 +38,10 @@ export const projects = [
     visible: true,
   },
   { 
-    title: "Portfolio Website", 
-    image: "/img/portfolio_intro.jpg", 
-    href: "/projects/portfolio-website", 
-    description: "Placeholder summary text for a portfolio website case study that emphasizes desktop-first responsive layout and polished web presentation.",
+    title: "Ryan Up In Here", 
+    image: "/img/ryanupinhere_home.png", 
+    href: "/projects/ryan-up-in-here", 
+    description: "A responsive portfolio website crafted for Austin-based game developer, Ryan Up In Here. I designed the site to highlight visual hierarchy, content clarity, and polished interaction states across wide screens.",
     visible: true,
   },
   { 

@@ -60,7 +60,7 @@ export default function PortfolioWebsiteProject() {
 
               <div className="max-w-3xl">
                 <p className="text-2xl md:text-3xl font-light leading-relaxed text-pretty">
-                  {projectData?.description || "A responsive portfolio website crafted for desktop-first audiences, highlighting visual hierarchy, content clarity, and polished interaction states across wide screens."}
+                  {projectData?.description || "A responsive portfolio website crafted for Austin-based game developer Ryan Myers, creator of Ryan Up In Here."}
                 </p>
               </div>
             </motion.div>
@@ -90,8 +90,8 @@ export default function PortfolioWebsiteProject() {
               className="rounded-3xl overflow-hidden shadow-2xl"
             >
               <Image
-                src="/img/portfolio_intro.jpg"
-                alt="Portfolio Website Hero"
+                src="/img/ryanupinhere_home.png"
+                alt="Ryan Up In Here Hero"
                 width={1400}
                 height={900}
                 className="w-full h-auto"
