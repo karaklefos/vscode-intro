@@ -34,25 +34,36 @@ export const projects = [
     title: "Life Anew Restorative Justice", 
     image: "/img/lifeanew_title.png", 
     href: "/projects/life-anew", 
-    description: "Lead Product Designer for a unified mobile application for Life Anew featuring role-based dashboards: a robust management suite for employees and an accessible resource portal for community members." 
+    description: "Lead Product Designer for a unified mobile application for Life Anew featuring role-based dashboards: a robust management suite for employees and an accessible resource portal for community members.",
+    visible: true,
+  },
+  { 
+    title: "Portfolio Website", 
+    image: "/img/portfolio_intro.jpg", 
+    href: "/projects/portfolio-website", 
+    description: "Placeholder summary text for a portfolio website case study that emphasizes desktop-first responsive layout and polished web presentation.",
+    visible: true,
   },
   { 
     title: "Mod Muse", 
     image: "/img/modmuse_title.jpg", 
     href: "/projects/mod-muse", 
-    description: "Leveraging my background in fashion merchandising, I designed Mod Muse, a curated vintage fashion app. I led the visual identity and UX strategy to create an authentic marketplace experience that celebrates 1960s 'Vibe' through a contemporary digital lens." 
+    description: "Leveraging my background in fashion merchandising, I designed Mod Muse, a curated vintage fashion app. I led the visual identity and UX strategy to create an authentic marketplace experience that celebrates 1960s 'Vibe' through a contemporary digital lens.",
+    visible: true,
   },
   { 
     title: "ReciFree", 
     image: "/img/recifree_title.png", 
     href: "/projects/recifree", 
-    description: "A comprehensive responsive web project where I owned the concept, naming, and UX strategy. ReciFree utilizes inclusive design principles and a 4-size responsive system to provide an empowering, stress-free recipe discovery experience for the allergen-conscious community." 
+    description: "A comprehensive responsive web project where I owned the concept, naming, and UX strategy. ReciFree utilizes inclusive design principles and a 4-size responsive system to provide an empowering, stress-free recipe discovery experience for the allergen-conscious community.",
+    visible: false, // Hidden from the home page showcase but preserved for direct access by URL
   },
   { 
     title: "Botany Buddy", 
     image: "/img/botanybuddy_title.png", 
     href: "/projects/botany-buddy", 
-    description: "I designed Botany Buddy as a dual-platform mobile solution, meticulously following both iOS Human Interface Guidelines and Android Material Design standards. This plant-care assistant features specialized tracking routines and a diagnostic flow." 
+    description: "I designed Botany Buddy as a dual-platform mobile solution, meticulously following both iOS Human Interface Guidelines and Android Material Design standards. This plant-care assistant features specialized tracking routines and a diagnostic flow.",
+    visible: true,
   },
 ]
 
@@ -70,7 +81,7 @@ export function ProjectsGrid() {
         </motion.h2>
 
         <div className="flex flex-col gap-y-24">
-          {projects.map((project, index) => (
+          {projects.filter((project) => project.visible !== false).map((project, index) => (
             <ProjectCard key={index} project={project} index={index} />
           ))}
         </div>
