@@ -35,8 +35,8 @@ export default function ModMuseProject() {
                     </Link>
       
                     <h1 className="text-5xl md:text-8xl font-bold mb-10 tracking-tight leading-[0.9]">
-                      Mod <br />
-                      <span className="text-muted-foreground/40">Muse</span>
+                      Mod Muse<br />
+                      <span className="text-muted-foreground/40">Vintage Fashion</span>
                     </h1>
       
                     {/* Metadata Bar */}
@@ -50,12 +50,12 @@ export default function ModMuseProject() {
                         <p className="font-medium">2024</p>
                       </div>
                       <div>
-                        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Tools</p>
-                        <p className="font-medium">Figma</p>
+                        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Platform</p>
+                        <p className="font-medium">iOS (Native)</p>
                       </div>
                       <div>
-                        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Purpose</p>
-                        <p className="font-medium">Bootcamp Project</p>
+                        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Tools</p>
+                        <p className="font-medium">Figma</p>
                       </div>
                     </div>
       
