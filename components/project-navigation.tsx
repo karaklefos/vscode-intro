@@ -3,13 +3,10 @@
 import Link from "next/link"
 import Image from "next/image"
 import { motion } from "framer-motion"
+import { projects as allProjects } from "@/components/projects-grid"
 
-const projects = [
-  { title: "Life Anew Restorative Justice", href: "/projects/life-anew", image: "/img/lifeanew_title.jpg" },
-  { title: "Mod Muse", href: "/projects/mod-muse", image: "/img/modmuse_title.jpg" },
-  { title: "ReciFree", href: "/projects/recifree", image: "/img/recifree_title.png" },
-  { title: "Botany Buddy", href: "/projects/botany-buddy", image: "/img/botanybuddy_title.png" },
-]
+// Use the projects array from projects-grid as the single source of truth.
+const projects = allProjects.filter((p) => p.visible !== false)
 
 export function ProjectNavigation({ currentHref }: { currentHref: string }) {
   const currentIndex = projects.findIndex((p) => p.href === currentHref)

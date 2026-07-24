@@ -10,7 +10,7 @@ import { ProjectNavigation } from "@/components/project-navigation";
 import { ProjectSubNav } from "@/components/project-sub-nav";
 
 export default function PortfolioWebsiteProject() {
-  const projectData = projects.find((p) => p.href === "/projects/portfolio-website");
+  const projectData = projects.find((p) => p.href === "/projects/ryan-up-in-here");
 
   return (
     <>
@@ -34,19 +34,30 @@ export default function PortfolioWebsiteProject() {
                 Back to Projects
               </Link>
 
-              <h1 className="text-5xl md:text-8xl font-bold mb-10 tracking-tight leading-[0.9]">
-                Portfolio Website <br />
-                <span className="text-muted-foreground/40">Modern Desktop Presentation</span>
+              <h1 className="text-5xl md:text-8xl font-bold mb-6 tracking-tight leading-[0.9]">
+                Ryan Up In Here<br />
               </h1>
+
+              <div className="mt-6 flex justify-center md:justify-start">
+                <Link
+                  href="https://example.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 bg-accent text-white px-5 py-3 rounded-full font-semibold shadow-lg hover:opacity-95"
+                >
+                  Visit Shipped Website
+                  <span aria-hidden>↗</span>
+                </Link>
+              </div>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16 py-8 border-y border-gray-100">
                 <div>
                   <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Role</p>
-                  <p className="font-medium">Product & Visual Designer</p>
+                  <p className="font-medium">UX Designer & Developer</p>
                 </div>
                 <div>
                   <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Timeline</p>
-                  <p className="font-medium">4 Months (2026)</p>
+                  <p className="font-medium">2 Months (2026)</p>
                 </div>
                 <div>
                   <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Tools</p>
@@ -246,7 +257,7 @@ export default function PortfolioWebsiteProject() {
           </div>
         </section>
 
-        <ProjectNavigation currentHref="/projects/portfolio-website" />
+        <ProjectNavigation currentHref="/projects/ryan-up-in-here" />
       </main>
     </>
   );
