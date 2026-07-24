@@ -236,8 +236,8 @@ export default function BotanyBuddyProject() {
                 { name: "Loading", Image: "/img/botanybuddy_ios_mockup_loading.png" },
                 { name: "Error", Image: "/img/botanybuddy_ios_mockup_error.png" },
               ].map((screen, index) => (
-                <div key={index} className="flex-none w-[260px] md:w-[280px] snap-center">
-                  <div className="rounded-[2.5rem] p-3 bg-gray-900 shadow-xl border-[6px] border-gray-800 aspect-[9/19] relative overflow-hidden">
+                <div key={index} className="flex-none w-65 md:w-70 snap-center">
+                  <div className="rounded-[2.5rem] p-3 bg-gray-900 shadow-xl border-[6px] border-gray-800 aspect-9/19 relative overflow-hidden">
                     <Image
                       src={screen.Image}
                       alt={`iOS • ${screen.name}`}
@@ -278,8 +278,8 @@ export default function BotanyBuddyProject() {
                 { name: "Loading", Image: "/img/botanybuddy_android_mockup_loading.png" },
                 { name: "Error", Image: "/img/botanybuddy_android_mockup_error.png" },
               ].map((screen, index) => (
-                <div key={index} className="flex-none w-[260px] md:w-[280px] snap-center">
-                  <div className="rounded-[2.5rem] p-3 bg-gray-800 shadow-xl border-[6px] border-gray-700 aspect-[9/19] relative overflow-hidden">
+                <div key={index} className="flex-none w-65 md:w-70 snap-center">
+                  <div className="rounded-[2.5rem] p-3 bg-gray-800 shadow-xl border-[6px] border-gray-700 aspect-9/19 relative overflow-hidden">
                     <Image
                       src={screen.Image}
                       alt={`Android • ${screen.name}`}
@@ -321,7 +321,7 @@ export default function BotanyBuddyProject() {
             </div>
 
             {/* THE GALLERY STAGE */}
-            <div className="relative min-h-[500px]">
+            <div className="relative min-h-125">
               <motion.div
                 key={platform}
                 initial={{ opacity: 0, x: 20 }}
@@ -353,7 +353,7 @@ export default function BotanyBuddyProject() {
                       { name: "Profile", src: "/img/botanybuddy_android_profile.jpg" },
                     ]).map((screen, i) => (
                       <div key={i} className="flex-none w-64 snap-center group">
-                        <div className="bg-gray-50 rounded-[2rem] p-4 border border-gray-100 shadow-sm transition-transform group-hover:-translate-y-2">
+                        <div className="bg-gray-50 rounded-4xl p-4 border border-gray-100 shadow-sm transition-transform group-hover:-translate-y-2">
                           <Image 
                             src={screen.src} 
                             alt={`${platform} • ${screen.name}`} 
@@ -381,7 +381,7 @@ export default function BotanyBuddyProject() {
             <h3 className="text-4xl font-semibold mb-12 text-black">Style Guide & System</h3>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              <div className="bg-white p-12 rounded-[2rem] border border-gray-100 flex flex-col justify-between">
+              <div className="bg-white p-12 rounded-4xl border border-gray-100 flex flex-col justify-between">
                 <div>
                   <h4 className="text-xs uppercase tracking-widest text-muted-foreground mb-8">Primary Palette</h4>
                   <div className="grid grid-cols-3 gap-4">
@@ -407,7 +407,7 @@ export default function BotanyBuddyProject() {
                 </div>
               </div>
 
-              <div className="bg-white p-12 rounded-[2rem] border border-gray-100 flex items-center justify-center">
+              <div className="bg-white p-12 rounded-4xl border border-gray-100 flex items-center justify-center">
                 <div className="text-center">
                   <h4 className="text-xs uppercase tracking-widest text-muted-foreground mb-8">Design Context</h4>
                   <p className="text-lg text-muted-foreground leading-relaxed">
