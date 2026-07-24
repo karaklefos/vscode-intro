@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import Navigation from "@/components/navigation";
@@ -16,30 +17,56 @@ export default function ModMuseProject() {
       <CustomCursor />
       <Navigation />
 
-      <main className="bg-white">
-        {/* 1. PROJECT HEADER */}
-        <section className="pt-40 pb-16 bg-white">
-          <div className="container mx-auto px-6 max-w-4xl text-center">
-            <Link
-              href="/"
-              className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-black transition-colors mb-8"
-            >
-              <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 10H4M4 10L10 16M4 10L10 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-              Back to Projects
-            </Link>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-black tracking-tight">
-              {projectData?.title || "Mod Muse"}
-            </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed mb-6 max-w-2xl mx-auto">
-              {projectData?.description}
-            </p>
-            <div className="inline-block px-4 py-1.5 rounded-full bg-gray-100 border border-gray-200 text-sm font-medium text-black">
-              UX/UI Case Study | Native App - iOS
-            </div>
-          </div>
-        </section>
+      <main className="relative bg-white">
+              {/* 1. IMPACT & METRICS SECTION */}
+              <section id="impact" className="pt-32 pb-16">
+                <div className="container mx-auto px-6 max-w-6xl">
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                  >
+                    <Link
+                      href="/"
+                      className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-12 font-medium group"
+                    >
+                      <span className="group-hover:-translate-x-1 transition-transform">←</span>
+                      Back to Projects
+                    </Link>
+      
+                    <h1 className="text-5xl md:text-8xl font-bold mb-10 tracking-tight leading-[0.9]">
+                      Mod <br />
+                      <span className="text-muted-foreground/40">Muse</span>
+                    </h1>
+      
+                    {/* Metadata Bar */}
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16 py-8 border-y border-gray-100">
+                      <div>
+                        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Role</p>
+                        <p className="font-medium text-green-600">UX/UI Designer</p>
+                      </div>
+                      <div>
+                        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Timeline</p>
+                        <p className="font-medium">2 Months (2024)</p>
+                      </div>
+                      <div>
+                        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Tools</p>
+                        <p className="font-medium">Figma</p>
+                      </div>
+                      <div>
+                        <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Purpose</p>
+                        <p className="font-medium">Bootcamp Project</p>
+                      </div>
+                    </div>
+      
+                    <div className="max-w-3xl">
+                      <p className="text-2xl md:text-3xl font-light leading-relaxed text-pretty">
+                        {projectData?.description}
+                      </p>
+                    </div>
+                  </motion.div>
+                </div>
+              </section>
 
         {/* 2. HERO IMAGE */}
         <section className="pb-12 bg-white">
