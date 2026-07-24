@@ -216,20 +216,20 @@ export default function LifeAnewProject() {
           </div>
 
           <div className="w-full overflow-x-auto pb-12 cursor-grab active:cursor-grabbing snap-x snap-mandatory no-scrollbar">
-            <div className="flex gap-6 px-[5%] md:px-[10%] min-w-max">
+            <div className="flex gap-6 px-5 md:px-10 min-w-max">
               {[
                 { src: "/img/lifeanew_home.png", label: "Staff Home" },
                 { src: "/img/lifeanew_menu.png", label: "Resource Directory" },
                 { src: "/img/lifeanew_restorative_circles.png", label: "Circle Modalities" },
                 { src: "/img/lifeanew_indivcurriculum.png", label: "Facilitation Guide" },
               ].map((screen, index) => (
-                <div key={index} className="flex-none w-[280px] md:w-[320px] snap-center">
-                  <div className="rounded-[2.5rem] p-3 bg-gray-900 shadow-xl border-[6px] border-gray-800 aspect-[9/19] relative overflow-hidden">
+                <div key={index} className="flex-none w-70 md:w-80 snap-center">
+                  <div className="rounded-4xl p-3 bg-gray-900 shadow-xl border-4 border-gray-800 aspect-9/19 relative overflow-hidden">
                     <Image
                       src={screen.src}
                       alt={screen.label}
                       fill
-                      className="object-cover rounded-[1.8rem]"
+                      className="object-cover rounded-3xl"
                     />
                   </div>
                   <p className="mt-4 text-center text-sm font-semibold text-black tracking-tight uppercase">
@@ -263,8 +263,8 @@ export default function LifeAnewProject() {
                 </div>
               </div>
               <div className="lg:col-span-7 flex justify-center">
-                <div className="relative w-full max-w-[400px] aspect-[3/4] rounded-[2.5rem] bg-gray-900 p-3 shadow-2xl border-[6px] border-gray-800">
-                  <div className="w-full h-full overflow-hidden rounded-[1.8rem] bg-white relative">
+                <div className="relative w-full max-w-md aspect-3/4 rounded-4xl bg-gray-900 p-3 shadow-2xl border-4 border-gray-800">
+                  <div className="w-full h-full overflow-hidden rounded-3xl bg-white relative">
                     <Image
                       src="/img/lifeanew_ipad_atxpeace.png"
                       alt="Staff iPad View"
@@ -287,14 +287,14 @@ export default function LifeAnewProject() {
               Designed specifically to reduce the psychological barrier to seeking help, providing a clean, 
               supportive interface for families in crisis.
             </p>
-            <div className="flex justify-center">
-              <div className="w-[280px] md:w-[320px] rounded-[2.5rem] p-3 bg-gray-900 shadow-2xl border-[6px] border-gray-800 aspect-[9/19] relative overflow-hidden">
-                <Image
-                  src="/img/lifeanew_home_external.png"
-                  alt="Community Member App"
-                  fill
-                  className="object-cover rounded-[1.8rem]"
-                />
+              <div className="flex justify-center">
+              <div className="w-70 md:w-80 rounded-4xl p-3 bg-gray-900 shadow-2xl border-4 border-gray-800 aspect-9/19 relative overflow-hidden">
+                  <Image
+                    src="/img/lifeanew_home_external.png"
+                    alt="Community Member App"
+                    fill
+                    className="object-cover rounded-3xl"
+                  />
               </div>
             </div>
           </div>

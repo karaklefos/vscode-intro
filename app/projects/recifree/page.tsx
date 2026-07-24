@@ -150,8 +150,8 @@ export default function ReciFreeProject() {
                     { name: "Onboarding", Image: "/img/recifree_responsive_allergen.png" },
                     ].map((screen, index) => (
                     <div
-                        key={index}
-                        className="flex-shrink-0 w-full md:max-w-4xl mx-auto h-fit rounded-3xl overflow-hidden glass-card snap-center border border-white/10 shadow-2xl"
+                      key={index}
+                      className="shrink-0 w-full md:max-w-4xl mx-auto h-fit rounded-3xl overflow-hidden glass-card snap-center border border-white/10 shadow-2xl"
                     >
                         <Image
                         src={screen.Image}
@@ -246,8 +246,8 @@ export default function ReciFreeProject() {
             </p>
           </div>
 
-          <div className="w-full overflow-x-auto pb-12 cursor-grab active:cursor-grabbing snap-x snap-mandatory no-scrollbar">
-            <div className="flex gap-6 px-[5%] md:px-[10%] min-w-max">
+            <div className="w-full overflow-x-auto pb-12 cursor-grab active:cursor-grabbing snap-x snap-mandatory no-scrollbar">
+            <div className="flex gap-6 px-5 md:px-10 min-w-max">
               {[
                 { src: "/img/recifree_mockup_login.png", label: "Secure Login" },
                 { src: "/img/recifree_mockup_signup.png", label: "User Onboarding" },
@@ -256,13 +256,13 @@ export default function ReciFreeProject() {
                 { src: "/img/recifree_mockup_recipe.png", label: "Recipe Details" },
                 { src: "/img/recifree_mockup_filter.png", label: "Advanced Filtering" },
               ].map((screen, index) => (
-                <div key={index} className="flex-none w-[280px] md:w-[320px] snap-center">
-                  <div className="rounded-[2.5rem] p-3 bg-gray-900 shadow-xl border-[6px] border-gray-800 aspect-[9/19] relative overflow-hidden">
+                <div key={index} className="flex-none w-70 md:w-80 snap-center">
+                  <div className="rounded-4xl p-3 bg-gray-900 shadow-xl border-4 border-gray-800 aspect-9/19 relative overflow-hidden">
                     <Image
                       src={screen.src}
                       alt={screen.label}
                       fill
-                      className="object-cover rounded-[1.8rem]"
+                      className="object-cover rounded-3xl"
                     />
                   </div>
                   <p className="mt-4 text-center text-sm font-semibold text-black tracking-tight uppercase">
@@ -327,7 +327,7 @@ export default function ReciFreeProject() {
             <h3 className="text-4xl font-semibold mb-12 text-black">Branding & System</h3>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <div className="bg-gray-50 p-12 rounded-[2rem] border border-gray-100 flex flex-col justify-between">
+                <div className="bg-gray-50 p-12 rounded-2xl border border-gray-100 flex flex-col justify-between">
                     <div>
                         <h4 className="text-xs uppercase tracking-widest text-muted-foreground mb-8">Typography & Colors</h4>
                         <p className="text-3xl font-medium underline mb-12">Lexend Deca</p>
@@ -340,7 +340,7 @@ export default function ReciFreeProject() {
                             ].map((swatch) => (
                                 <div key={swatch.name} className="flex flex-col items-center gap-2">
                                     <div className="w-16 h-16 rounded-full shadow-inner" style={{ backgroundColor: swatch.color }}></div>
-                                    <span className="text-[10px] uppercase font-bold text-muted-foreground">{swatch.name}</span>
+                                    <span className="text-xs uppercase font-bold text-muted-foreground">{swatch.name}</span>
                                 </div>
                             ))}
                         </div>
@@ -351,11 +351,11 @@ export default function ReciFreeProject() {
                 </div>
 
                 <div className="space-y-6">
-                    <div className="bg-gray-50 p-8 rounded-[2rem] border border-gray-100">
+                    <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
                         <h4 className="text-xs uppercase tracking-widest text-muted-foreground mb-6">Iconography System</h4>
                         <Image src="/img/recifree_icons.png" alt="System Icons" width={500} height={200} className="w-full h-auto" />
                     </div>
-                    <div className="bg-gray-50 p-8 rounded-[2rem] border border-gray-100">
+                    <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
                         <h4 className="text-xs uppercase tracking-widest text-muted-foreground mb-6">Dietary Icons</h4>
                         <Image src="/img/recifree_dietaryicons.png" alt="Dietary Icons" width={500} height={200} className="w-full h-auto" />
                     </div>
@@ -375,7 +375,7 @@ export default function ReciFreeProject() {
                 </p>
               </div>
               <div className="lg:col-span-7 flex justify-center">
-                <div className="relative w-full rounded-[2rem] overflow-hidden shadow-2xl border border-gray-200">
+                <div className="relative w-full rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
                     <Image
                       src="/img/recifree_tablet.png"
                       alt="ReciFree Tablet View"

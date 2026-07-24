@@ -34,7 +34,7 @@ export function ProjectSubNav({ items = defaultNavItems }: { items?: { name: str
   }, [items]);
 
   return (
-    <nav className="sticky top-[64px] z-40 w-full bg-white/90 backdrop-blur-md border-b border-gray-100">
+    <nav className="sticky top-16 z-40 w-full bg-white/90 backdrop-blur-md border-b border-gray-100">
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="flex items-center justify-start md:justify-center gap-8 h-14 overflow-x-auto no-scrollbar flex-nowrap">
           {items.map((item) => (
