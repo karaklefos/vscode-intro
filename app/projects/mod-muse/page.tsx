@@ -81,7 +81,7 @@ export default function ModMuseProject() {
         {/* 2. HERO IMAGE */}
         <section className="pb-12 bg-white">
           <div className="container mx-auto px-6 max-w-6xl">
-            <div className="w-full rounded-[2rem] overflow-hidden shadow-2xl relative aspect-[16/9]">
+            <div className="w-full rounded-4xl overflow-hidden shadow-2xl relative aspect-video">
               <Image
                 src="/img/modmuse1.jpg"
                 alt="Mod Muse Hero"
@@ -196,7 +196,7 @@ export default function ModMuseProject() {
         <section className="py-12 bg-white">
           <div className="container mx-auto px-6">
             <div className="flex justify-center">
-              <div className="w-full max-w-5xl overflow-hidden rounded-[2rem] shadow-sm">
+              <div className="w-full max-w-5xl overflow-hidden rounded-4xl shadow-sm">
                 <Image
                   src="/img/modmuse3.jpg"
                   alt="Mod Muse Workspace"
@@ -234,8 +234,8 @@ export default function ModMuseProject() {
                 { name: "Add Item", Image: "/img/modmuse_additem.png" },
                 { name: "Checkout", Image: "/img/modmuse_checkout.png" },
               ].map((screen, index) => (
-                <div key={index} className="flex-none w-[280px] md:w-[320px] snap-center">
-                  <div className="rounded-[2.5rem] p-3 bg-gray-900 shadow-xl border-[6px] border-gray-800 aspect-[9/19] relative overflow-hidden">
+                <div key={index} className="flex-none w-70 md:w-[320px] snap-center">
+                  <div className="rounded-[2.5rem] p-3 bg-gray-900 shadow-xl border-[6px] border-gray-800 aspect-9/19 relative overflow-hidden">
                     <Image
                       src={screen.Image}
                       alt={`Mod Muse ${screen.name}`}
@@ -304,7 +304,7 @@ export default function ModMuseProject() {
           <div className="container mx-auto px-6 max-w-5xl">
             <div className="mb-24">
               <h3 className="text-3xl font-semibold mb-8 text-black text-center">Userflow</h3>
-              <div className="rounded-[2rem] overflow-hidden shadow-md border border-gray-100 bg-gray-50 p-4">
+              <div className="rounded-4xl overflow-hidden shadow-md border border-gray-100 bg-gray-50 p-4">
                 <Image
                   src="/img/modmuse_userflow.png"
                   alt="Mod Muse User Flow"
@@ -317,7 +317,7 @@ export default function ModMuseProject() {
 
             <div>
               <h3 className="text-3xl font-semibold mb-8 text-black text-center">Low Fidelity Wireframes</h3>
-              <div className="rounded-[2rem] overflow-hidden shadow-md border border-gray-100 bg-gray-50 p-4">
+              <div className="rounded-4xl overflow-hidden shadow-md border border-gray-100 bg-gray-50 p-4">
                 <Image
                   src="/img/modmuse_low_fidelity_wireframes.png"
                   alt="Mod Muse Low Fidelity Wireframes"
@@ -350,7 +350,7 @@ export default function ModMuseProject() {
                     { name: "White", Image: "/img/modmuse_white.png" },
                     { name: "Black", Image: "/img/modmuse_black.png" },
                   ].map((color, index) => (
-                    <div key={index} className="flex-shrink-0">
+                    <div key={index} className="shrink-0">
                       <div className="w-20 h-20 rounded-full overflow-hidden shadow-sm border border-gray-200 mb-3">
                         <Image
                           src={color.Image}
@@ -384,7 +384,7 @@ export default function ModMuseProject() {
               {/* Logo & Rules */}
               <div>
                 <h4 className="text-sm font-bold tracking-widest text-black mb-6 uppercase">Logo & Usage</h4>
-                <div className="bg-white rounded-[2rem] p-12 flex justify-center mb-8 shadow-sm border border-gray-100">
+                <div className="bg-white rounded-4xl p-12 flex justify-center mb-8 shadow-sm border border-gray-100">
                   <Image
                     src="/img/modmuse_logo.png"
                     alt="Mod Muse Logo"
@@ -393,7 +393,7 @@ export default function ModMuseProject() {
                     className="w-auto h-auto"
                   />
                 </div>
-                <div className="bg-white p-8 rounded-[2rem] border border-gray-100 shadow-sm">
+                <div className="bg-white p-8 rounded-4xl border border-gray-100 shadow-sm">
                   <h5 className="text-sm font-bold text-black mb-4 uppercase tracking-widest">The logo must:</h5>
                   <ul className="space-y-3">
                     <li className="flex gap-3">
