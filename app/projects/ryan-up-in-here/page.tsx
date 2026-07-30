@@ -84,7 +84,7 @@ export default function PortfolioWebsiteProject() {
         <ProjectSubNav
           items={[
             { name: "Overview", href: "#overview" },
-            { name: "The Challenge", href: "#challenge" },
+            { name: "The Goal", href: "#goal" },
             { name: "Research", href: "#research" },
             { name: "Solution", href: "#solution" },
             { name: "Visuals", href: "#visuals" },
@@ -114,12 +114,12 @@ export default function PortfolioWebsiteProject() {
           </div>
         </section>
 
-        {/* 2. THE CHALLENGE */}
-        <section id="challenge" className="py-24 bg-white">
+        {/* 2. THE GOAL */}
+        <section id="goal" className="py-24 bg-white">
           <div className="container mx-auto px-6 max-w-6xl">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
               <div className="md:col-span-4">
-                <h2 className="text-sm uppercase tracking-widest text-accent font-bold mb-4">The Challenge</h2>
+                <h2 className="text-sm uppercase tracking-widest text-accent font-bold mb-4">The Goal</h2>
                 <h3 className="text-3xl font-semibold leading-tight">
                   Creating a polished desktop portfolio with clarity at scale
                 </h3>
@@ -128,7 +128,7 @@ export default function PortfolioWebsiteProject() {
               <div className="md:col-span-8">
                 <div className="space-y-12">
                   <p className="text-xl text-muted-foreground leading-relaxed">
-                    The main challenge was balancing rich visual storytelling with fast desktop performance, making sure the portfolio felt sophisticated without overwhelming the user on large canvas screens.
+                    The main goal was to balance rich visual storytelling with fast desktop performance, making sure the portfolio felt sophisticated without overwhelming the user on large canvas screens.
                   </p>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -238,8 +238,8 @@ export default function PortfolioWebsiteProject() {
           </div>
         </section>
 
-        {/* 7. CONCLUSION */}
-        <section id="conclusion" className="py-24 bg-black text-white">
+        {/* 7. IMPACT */}
+        <section id="impact" className="py-24 bg-black text-white">
           <div className="container mx-auto px-6 max-w-4xl text-center">
             <h3 className="text-3xl font-bold mb-12">Results</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
