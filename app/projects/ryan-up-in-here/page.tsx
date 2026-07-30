@@ -128,7 +128,7 @@ export default function PortfolioWebsiteProject() {
               <div className="md:col-span-8">
                 <div className="space-y-12">
                   <p className="text-xl text-muted-foreground leading-relaxed">
-                    The main goal was to balance rich visual storytelling with fast desktop performance, making sure the portfolio felt sophisticated without overwhelming the user on large canvas screens.
+                    The main goal was to create a portfolio website that balances rich visual storytelling with fast desktop performance, making sure the portfolio felt sophisticated without overwhelming the user on large canvas screens.
                   </p>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
