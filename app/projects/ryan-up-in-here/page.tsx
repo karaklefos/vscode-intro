@@ -162,7 +162,7 @@ export default function PortfolioWebsiteProject() {
           <div className="container mx-auto px-6 max-w-6xl">
             <div className="mb-16">
               <h2 className="text-sm uppercase tracking-widest text-accent font-bold mb-4">Desktop</h2>
-              <h3 className="text-4xl md:text-5xl font-semibold tracking-tight">Desktop-first content strategy</h3>
+              <h3 className="text-4xl md:text-4xl font-semibold tracking-tight">A widescreen, high-contrast desktop experience.</h3>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
@@ -177,8 +177,7 @@ export default function PortfolioWebsiteProject() {
                 <div>
                   <h4 className="text-xl font-bold mb-3 text-black">Structured content flow</h4>
                   <p className="text-muted-foreground leading-relaxed">
-                    Prioritized user scanning with clear sectional breaks, readable headline hierarchy, and generous spacing for desktop readers.
-                  </p>
+The desktop layout acts as an immersive terminal for Ryan's backend architecture and video game environments. By pairing a dark grid background with vibrant neon accents, the aesthetic leans heavily into a fun, cyberpunk vibe while remaining strictly accessible. Generous whitespace and a consistent top header bar keep the interface minimalist and clean, allowing the high-contrast elements to pop naturally without overwhelming the user on larger screens.                  </p>
                 </div>
               </div>
             </div>
