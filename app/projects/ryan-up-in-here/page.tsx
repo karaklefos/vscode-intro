@@ -87,7 +87,6 @@ export default function PortfolioWebsiteProject() {
             { name: "The Goal", href: "#goal" },
             { name: "Desktop", href: "#desktop" },
             { name: "Mobile", href: "#mobile" },
-            { name: "Visuals", href: "#visuals" },
             { name: "Impact", href: "#impact" },
           ]}
         />
@@ -214,25 +213,6 @@ export default function PortfolioWebsiteProject() {
                 <div className="relative w-full aspect-9/16 bg-slate-200 flex items-center justify-center">
                   <span className="text-muted-foreground text-center px-4">Mobile Persistent Illusion Page</span>
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* 6. VISUALS */}
-        <section id="visuals" className="py-24 bg-white overflow-hidden">
-          <div className="container mx-auto px-6 max-w-6xl text-center">
-            <h2 className="text-sm uppercase tracking-widest text-accent font-bold mb-4">Visual Presentation</h2>
-            <h3 className="text-4xl font-semibold mb-6 text-black">Desktop web imagery with refined spacing</h3>
-            <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-16">
-              Visual mockups lean into browser aspect ratios while preserving the same motion and polish as the broader site.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="rounded-3xl overflow-hidden shadow-xl border border-gray-100 bg-slate-200 aspect-16/10 flex items-center justify-center">
-                <span className="text-muted-foreground">Landing page presentation</span>
-              </div>
-              <div className="rounded-3xl overflow-hidden shadow-xl border border-gray-100 bg-slate-200 aspect-16/10 flex items-center justify-center">
-                <span className="text-muted-foreground">Content section preview</span>
               </div>
             </div>
           </div>
