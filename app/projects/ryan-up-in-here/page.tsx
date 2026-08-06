@@ -86,7 +86,7 @@ export default function PortfolioWebsiteProject() {
             { name: "Overview", href: "#overview" },
             { name: "The Goal", href: "#goal" },
             { name: "Research", href: "#research" },
-            { name: "Solution", href: "#solution" },
+            { name: "Mobile", href: "#mobile" },
             { name: "Visuals", href: "#visuals" },
             { name: "Impact", href: "#impact" },
           ]}
@@ -186,8 +186,8 @@ export default function PortfolioWebsiteProject() {
           </div>
         </section>
 
-        {/* 5. SOLUTION */}
-        <section id="solution" className="py-24 bg-gray-50">
+        {/* 5. MOBILE */}
+        <section id="mobile" className="py-24 bg-gray-50">
           <div className="container mx-auto px-6 max-w-6xl">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 items-end">
               <div>
