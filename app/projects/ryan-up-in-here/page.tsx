@@ -120,24 +120,22 @@ export default function PortfolioWebsiteProject() {
               <div className="md:col-span-4">
                 <h2 className="text-sm uppercase tracking-widest text-accent font-bold mb-4">Goal</h2>
                 <h3 className="text-3xl font-semibold leading-tight">
-                  Creating a polished desktop portfolio with clarity at scale
-                </h3>
+Building an accessible, high-energy gaming portfolio designed to scale              </h3>
               </div>
 
               <div className="md:col-span-8">
                 <div className="space-y-12">
                   <p className="text-xl text-muted-foreground leading-relaxed">
-                    The main goal was to create a portfolio website that balances rich visual storytelling with fast desktop performance, making sure the portfolio felt sophisticated without overwhelming the user on large canvas screens.
-                  </p>
+The goal was to create a responsive portfolio that balances rich, cyberpunk visual storytelling with fast cross-device performance—ensuring high-contrast neon accents and dark grid layouts feel bold on widescreen displays while remaining clean, accessible, and uncluttered on mobile.                  </p>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div>
                       <h4 className="font-bold mb-2 text-black">A refined browsing experience</h4>
-                      <p className="text-muted-foreground">Build a layout that scales cleanly from wide monitors to smaller tablets while preserving strong typography and hierarchy.</p>
+                      <p className="text-muted-foreground">Build a layout that scales cleanly from wide monitors to smartphone screens while preserving strong typography and hierarchy.</p>
                     </div>
                     <div>
                       <h4 className="font-bold mb-2 text-black">High-fidelity presentation</h4>
-                      <p className="text-muted-foreground">Create compelling visual sections that feel intentional, clear, and polished on desktop screens.</p>
+                      <p className="text-muted-foreground">Create compelling visual sections that highlight backend and gaming projects through a minimal cyberpunk aesthetic that feels polished, intentional, and accessible on any screen size.</p>
                     </div>
                   </div>
                 </div>
@@ -162,7 +160,7 @@ export default function PortfolioWebsiteProject() {
           <div className="container mx-auto px-6 max-w-6xl">
             <div className="mb-16">
               <h2 className="text-sm uppercase tracking-widest text-accent font-bold mb-4">Desktop</h2>
-              <h3 className="text-4xl md:text-4xl font-semibold tracking-tight">A widescreen, high-contrast desktop experience.</h3>
+              <h3 className="text-4xl md:text-4xl font-semibold tracking-tight">A widescreen, high-contrast desktop experience</h3>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
@@ -190,7 +188,7 @@ The desktop layout acts as an immersive terminal for Ryan's backend architecture
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 items-end">
               <div>
                 <h2 className="text-sm uppercase tracking-widest text-accent font-bold mb-4">Mobile</h2>
-                <h3 className="text-4xl font-semibold tracking-tight">A fluid, fully responsive mobile web app.</h3>
+                <h3 className="text-4xl font-semibold tracking-tight">A fluid, fully responsive mobile web app</h3>
               </div>
               <p className="text-lg text-muted-foreground">
                 Translating the cyberpunk aesthetic to mobile required precise spacing to keep the bold visuals from feeling cluttered. The dark grid and high-contrast neon accents scale down seamlessly, preserving clean whitespace, full accessibility, and a fluid web app feel on smaller screens.
