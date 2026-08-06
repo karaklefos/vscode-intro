@@ -84,7 +84,7 @@ export default function PortfolioWebsiteProject() {
         <ProjectSubNav
           items={[
             { name: "Overview", href: "#overview" },
-            { name: "The Goal", href: "#goal" },
+            { name: "Goal", href: "#goal" },
             { name: "Desktop", href: "#desktop" },
             { name: "Mobile", href: "#mobile" },
             { name: "Impact", href: "#impact" },
@@ -118,7 +118,7 @@ export default function PortfolioWebsiteProject() {
           <div className="container mx-auto px-6 max-w-6xl">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
               <div className="md:col-span-4">
-                <h2 className="text-sm uppercase tracking-widest text-accent font-bold mb-4">The Goal</h2>
+                <h2 className="text-sm uppercase tracking-widest text-accent font-bold mb-4">Goal</h2>
                 <h3 className="text-3xl font-semibold leading-tight">
                   Creating a polished desktop portfolio with clarity at scale
                 </h3>
