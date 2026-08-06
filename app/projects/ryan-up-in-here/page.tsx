@@ -190,10 +190,10 @@ The desktop layout acts as an immersive terminal for Ryan's backend architecture
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 items-end">
               <div>
                 <h2 className="text-sm uppercase tracking-widest text-accent font-bold mb-4">Mobile</h2>
-                <h3 className="text-4xl font-semibold tracking-tight">A polished, desktop-first portfolio experience</h3>
+                <h3 className="text-4xl font-semibold tracking-tight">A fluid, fully responsive mobile web app.</h3>
               </div>
               <p className="text-lg text-muted-foreground">
-                The website uses clean cards, wide imagery, and a modular system designed to showcase work elegantly on larger screens.
+                Translating the cyberpunk aesthetic to mobile required precise spacing to keep the bold visuals from feeling cluttered. The dark grid and high-contrast neon accents scale down seamlessly, preserving clean whitespace, full accessibility, and a fluid web app feel on smaller screens.
               </p>
             </div>
 
