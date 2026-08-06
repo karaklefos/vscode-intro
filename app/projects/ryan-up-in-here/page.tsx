@@ -85,7 +85,7 @@ export default function PortfolioWebsiteProject() {
           items={[
             { name: "Overview", href: "#overview" },
             { name: "The Goal", href: "#goal" },
-            { name: "Research", href: "#research" },
+            { name: "Desktop", href: "#desktop" },
             { name: "Mobile", href: "#mobile" },
             { name: "Visuals", href: "#visuals" },
             { name: "Impact", href: "#impact" },
@@ -158,11 +158,11 @@ export default function PortfolioWebsiteProject() {
           </div>
         </section>
 
-        {/* 4. RESEARCH HIGHLIGHTS */}
-        <section id="research" className="py-24 bg-white">
+        {/* 4. DESKTOP */}
+        <section id="desktop" className="py-24 bg-white">
           <div className="container mx-auto px-6 max-w-6xl">
             <div className="mb-16">
-              <h2 className="text-sm uppercase tracking-widest text-accent font-bold mb-4">Research Highlights</h2>
+              <h2 className="text-sm uppercase tracking-widest text-accent font-bold mb-4">Desktop</h2>
               <h3 className="text-4xl md:text-5xl font-semibold tracking-tight">Desktop-first content strategy</h3>
             </div>
 
