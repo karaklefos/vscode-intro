@@ -191,7 +191,7 @@ export default function PortfolioWebsiteProject() {
           <div className="container mx-auto px-6 max-w-6xl">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 items-end">
               <div>
-                <h2 className="text-sm uppercase tracking-widest text-accent font-bold mb-4">The Solution</h2>
+                <h2 className="text-sm uppercase tracking-widest text-accent font-bold mb-4">Mobile</h2>
                 <h3 className="text-4xl font-semibold tracking-tight">A polished, desktop-first portfolio experience</h3>
               </div>
               <p className="text-lg text-muted-foreground">
@@ -201,18 +201,18 @@ export default function PortfolioWebsiteProject() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="rounded-3xl overflow-hidden shadow-md bg-white border border-gray-100">
-                <div className="relative w-full aspect-4/3 bg-slate-200 flex items-center justify-center">
-                  <span className="text-muted-foreground">Homepage interface</span>
+                <div className="relative w-full aspect-[9/16] bg-slate-200 flex items-center justify-center">
+                  <span className="text-muted-foreground text-center px-4">Mobile Home</span>
                 </div>
               </div>
               <div className="rounded-3xl overflow-hidden shadow-md bg-white border border-gray-100">
-                <div className="relative w-full aspect-4/3 bg-slate-200 flex items-center justify-center">
-                  <span className="text-muted-foreground">Project detail view</span>
+                <div className="relative w-full aspect-[9/16] bg-slate-200 flex items-center justify-center">
+                  <span className="text-muted-foreground text-center px-4">Mobile Games Page</span>
                 </div>
               </div>
               <div className="rounded-3xl overflow-hidden shadow-md bg-white border border-gray-100">
-                <div className="relative w-full aspect-4/3 bg-slate-200 flex items-center justify-center">
-                  <span className="text-muted-foreground">Case study preview section</span>
+                <div className="relative w-full aspect-[9/16] bg-slate-200 flex items-center justify-center">
+                  <span className="text-muted-foreground text-center px-4">Mobile Persistent Illusion Page</span>
                 </div>
               </div>
             </div>
