@@ -196,19 +196,34 @@ The desktop layout acts as an immersive terminal for Ryan's backend architecture
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="rounded-3xl overflow-hidden shadow-md bg-white border border-gray-100">
-                <div className="relative w-full aspect-9/16 bg-slate-200 flex items-center justify-center">
-                  <span className="text-muted-foreground text-center px-4">Mobile Home</span>
+              <div className="rounded-3xl overflow-hidden">
+                <div className="relative w-full aspect-9/16 flex items-center justify-center">
+                  <Image
+                    src="/img/ryanupinhere_mobile_home.png"
+                    alt="Mobile Home - Ryan Up In Here"
+                    fill
+                    className="object-contain"
+                  />
                 </div>
               </div>
-              <div className="rounded-3xl overflow-hidden shadow-md bg-white border border-gray-100">
-                <div className="relative w-full aspect-9/16 bg-slate-200 flex items-center justify-center">
-                  <span className="text-muted-foreground text-center px-4">Mobile Games Page</span>
+              <div className="rounded-3xl overflow-hidden">
+                <div className="relative w-full aspect-9/16 flex items-center justify-center">
+                  <Image
+                    src="/img/ryanupinhere_mobile_games.png"
+                    alt="Mobile Games Page - Ryan Up In Here"
+                    fill
+                    className="object-contain"
+                  />
                 </div>
               </div>
-              <div className="rounded-3xl overflow-hidden shadow-md bg-white border border-gray-100">
-                <div className="relative w-full aspect-9/16 bg-slate-200 flex items-center justify-center">
-                  <span className="text-muted-foreground text-center px-4">Mobile Persistent Illusion Page</span>
+              <div className="rounded-3xl overflow-hidden">
+                <div className="relative w-full aspect-9/16 flex items-center justify-center">
+                  <Image
+                    src="/img/ryanupinhere_mobile_persistent.png"
+                    alt="Mobile Persistent Illusion Page - Ryan Up In Here"
+                    fill
+                    className="object-contain"
+                  />
                 </div>
               </div>
             </div>
