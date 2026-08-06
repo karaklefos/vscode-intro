@@ -144,13 +144,18 @@ The goal was to create a responsive portfolio that balances rich, cyberpunk visu
           </div>
         </section>
 
-        {/* 3. DESKTOP MOCKUP INTERSTITIAL */}
+      {/* 3. DESKTOP MOCKUP INTERSTITIAL */}
         <section className="bg-gray-50 py-24">
           <div className="container mx-auto px-6 max-w-6xl text-center">
-            <div className="rounded-3xl overflow-hidden border border-gray-200 shadow-lg">
-              <div className="relative w-full aspect-16/10 bg-slate-200 flex items-center justify-center">
-                <span className="text-muted-foreground text-lg">Desktop browser mockup placeholder</span>
-              </div>
+            {/* Swapped to match the Hero structure for cohesive rounding and shadows */}
+            <div className="rounded-3xl overflow-hidden shadow-xl inline-block w-full">
+              <Image
+                src="/img/ryanupinhere_games.png"
+                alt="Desktop Games Page - Ryan Up In Here"
+                width={1400}
+                height={900}
+                className="w-full h-auto"
+              />
             </div>
           </div>
         </section>
