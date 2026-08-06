@@ -201,17 +201,17 @@ export default function PortfolioWebsiteProject() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="rounded-3xl overflow-hidden shadow-md bg-white border border-gray-100">
-                <div className="relative w-full aspect-[9/16] bg-slate-200 flex items-center justify-center">
+                <div className="relative w-full aspect-9/16 bg-slate-200 flex items-center justify-center">
                   <span className="text-muted-foreground text-center px-4">Mobile Home</span>
                 </div>
               </div>
               <div className="rounded-3xl overflow-hidden shadow-md bg-white border border-gray-100">
-                <div className="relative w-full aspect-[9/16] bg-slate-200 flex items-center justify-center">
+                <div className="relative w-full aspect-9/16 bg-slate-200 flex items-center justify-center">
                   <span className="text-muted-foreground text-center px-4">Mobile Games Page</span>
                 </div>
               </div>
               <div className="rounded-3xl overflow-hidden shadow-md bg-white border border-gray-100">
-                <div className="relative w-full aspect-[9/16] bg-slate-200 flex items-center justify-center">
+                <div className="relative w-full aspect-9/16 bg-slate-200 flex items-center justify-center">
                   <span className="text-muted-foreground text-center px-4">Mobile Persistent Illusion Page</span>
                 </div>
               </div>
