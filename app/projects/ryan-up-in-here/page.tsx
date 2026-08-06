@@ -150,8 +150,8 @@ The goal was to create a responsive portfolio that balances rich, cyberpunk visu
             {/* Swapped to match the Hero structure for cohesive rounding and shadows */}
             <div className="rounded-3xl overflow-hidden shadow-xl inline-block w-full">
               <Image
-                src="/img/ryanupinhere_games.png"
-                alt="Desktop Games Page - Ryan Up In Here"
+                src="/img/ryanupinhere_persistent_info.png"
+                alt="Desktop Persistent Info Layout - Ryan Up In Here"
                 width={1400}
                 height={900}
                 className="w-full h-auto"
@@ -170,10 +170,15 @@ The goal was to create a responsive portfolio that balances rich, cyberpunk visu
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
               <div className="lg:col-span-8">
-                <div className="rounded-3xl overflow-hidden border border-gray-100 shadow-sm">
-                  <div className="relative w-full aspect-16/10 bg-slate-100 flex items-center justify-center">
-                    <span className="text-muted-foreground text-lg">Content layout and grid exploration</span>
-                  </div>
+                {/* Updated to tightly hug the image for proper rounded corners */}
+                <div className="rounded-3xl overflow-hidden shadow-xl w-full">
+                  <Image
+                    src="/img/ryanupinhere_games.png"
+                    alt="Desktop Games Page - Ryan Up In Here"
+                    width={1400}
+                    height={900}
+                    className="w-full h-auto"
+                  />
                 </div>
               </div>
               <div className="lg:col-span-4 space-y-8">
